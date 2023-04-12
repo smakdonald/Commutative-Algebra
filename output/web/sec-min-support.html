@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Minimal Primes and Support</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Commutative Algebra">
+<meta property="book:author" content="Sam Macdonald">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra:</span> <span class="subtitle">An example to get you started</span></a></h1>
+<p class="byline">Sam Macdonald</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="ch-decomposing-ideals.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-decomposing-ideals.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec-ass-primes.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\ann{\operatorname{ann}}
+\newcommand{\Ass}{\operatorname{Ass}}
+\def\Aut{\operatorname{Aut}}
+\def\can{{\mathrm {can}}}
+\def\char{\operatorname{char}}
+\def\cp{\operatorname{CharPoly}}
+\def\codim{\operatorname{codim}} 
+\def\coker{\operatorname{coker}}
+\DeclareMathOperator*{\colim}{colim} 
+\def\cont{\operatorname{cont}} 
+\def\diam{\operatorname{diam}} 
+\def\dm{\operatorname{dim}} 
+\DeclareMathOperator{\edim}{embdim} 
+\def\End{\operatorname{End}} 
+\def\eval{\operatorname{eval}} 
+\def\Ext{\operatorname{Ext}} 
+\def\Frac{\operatorname{Frac}}
+\def\Fun{\operatorname{Fun}}
+\def\Gal{\operatorname{Gal}}
+\def\gcd{\operatorname{gcd}}
+\newcommand{\GL}{\operatorname{GL}} 
+\newcommand{\ht}{\operatorname{height}} 
+\def\Hom{\operatorname{Hom}} 
+\def\id{\operatorname{id}} 
+\def\im{\operatorname{im}} 
+\def\Inn{\operatorname{Inn}}
+\def\ker{\operatorname{ker}}
+\def\lcm{\operatorname{lcm}} 
+\def\Mat{\operatorname{Mat}}
+\newcommand{\Min}{\operatorname{Min}}
+\def\mp{\operatorname{MinPoly}}
+\def\mSpec{\operatorname{mSpec}}
+\def\MSpec{\operatorname{MSpec}}
+\def\null{\operatorname{Nul}}
+\DeclareMathOperator{\ns}{nullspace}
+\newcommand{\opp}{\operatorname{opp}}
+\def\Orb{\operatorname{Orb}} 
+\def\Out{\operatorname{Out}}
+\def\Perm{\operatorname{Perm}}
+\def\ptstab{\operatorname{PtStab}} 
+\def\rad{\operatorname{rad}}
+\DeclareMathOperator{\range}{range}
+\def\rank{\operatorname{rank}}
+\def\res{\operatorname{res}}
+\def\setstab{\operatorname{SetStab}}
+\def\sign{{\operatorname{sign}}}
+\newcommand{\SL}{\operatorname{SL}}
+\def\Span{\operatorname{Span}}
+\def\Spec{\operatorname{Spec}}
+\def\Stab{\operatorname{Stab}} 
+\DeclareMathOperator{\Supp}{Supp}
+\def\Syl{\operatorname{Syl}}
+\def\Tor{\operatorname{Tor}}
+\def\trace{\operatorname{trace}}
+\def\uSpec{\operatorname{\underline{Spec}}}
+
+\newcommand{\Ob}{\mathrm{Ob}}
+\newcommand{\Set}{\mathbf{Set}}
+\newcommand{\Grp}{\mathbf{Grp}}
+\newcommand{\Ab}{\mathbf{Ab}}
+\newcommand{\Sgrp}{\mathbf{Sgrp}}
+\newcommand{\Ring}{\mathbf{Ring}} 
+\newcommand{\Fld}{\mathbf{Fld}}
+\newcommand{\cRing}{\mathbf{cRing}}
+\newcommand{\Mod}[1]{#1-\mathbf{Mod}} 
+\newcommand{\Cx}[1]{#1-\mathbf{Comp}} 
+\newcommand{\vs}[1]{#1-\mathbf{vect}}
+\newcommand{\Vs}[1]{#1-\mathbf{Vect}}
+\newcommand{\vsp}[1]{#1-\mathbf{vect}^+} 
+\newcommand{\Top}{\mathbf{Top}} 
+\newcommand{\Setp}{\mathbf{Set}_*} 
+\newcommand{\Alg}[1]{#1-\mathbf{Alg}} 
+\newcommand{\cAlg}[1]{#1-\mathbf{cAlg}} 
+\newcommand{\PO}{\mathbf{PO}}
+\newcommand{\Cont}{\mathrm{Cont}}
+\newcommand{\MaT}[1]{\mathbf{Mat}_{#1}}
+\newcommand{\Rep}[2]{\mathbf{Rep}_{#1}(#2)}
+
+\def\l{\lambda}
+\def\lx{\lambda_x}
+\newcommand{\a}{\alpha}
+\def\b{\beta}
+\def\d{\delta}
+\def\e{\varepsilon}
+\def\g{\gamma}
+\def\t{\theta}
+\def\s{\sigma}
+\def\z{\zeta}
+\def\vp{\varphi}
+
+
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\G}{\mathbb{G}}
+\newcommand{\H}{\mathbb{H}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\J}{\mathbb{J}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\L}{\mathbb{L}} 
+\newcommand{\M}{\mathbb{M}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\O}{\mathbb{O}}
+\newcommand{\P}{\mathbb{P}}
+\newcommand{\Q}{\mathbb{Q}} 
+\newcommand{\R}{\mathbb{R}} 
+\newcommand{\S}{\mathbb{S}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\U}{\mathbb{U}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\W}{\mathbb{W}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\Y}{\mathbb{Y}}
+\newcommand{\Z}{\mathbb{Z}} 
+\newcommand{\ON}{\mathbb{ON}}
+
+\def\cA{\mathcal A} 
+\def\cB{\mathcal B} 
+\def\cC{\mathcal C} 
+\def\cD{\mathcal D} 
+\def\cE{\mathcal E} 
+\def\cF{\mathcal F} 
+\def\cG{\mathcal G} 
+\def\cH{\mathcal H} 
+\def\cI{\mathcal I} 
+\def\cJ{\mathcal J} 
+\def\cK{\mathcal K} 
+\def\cL{\mathcal L}
+\def\cM{\mathcal M} 
+\def\cN{\mathcal N} 
+\def\cO{\mathcal O} 
+\def\cP{\mathcal P} 
+\def\cQ{\mathcal Q} 
+\def\cR{\mathcal R} 
+\def\cS{\mathcal S} 
+\def\cT{\mathcal T} 
+\def\cU{\mathcal U} 
+\def\cV{\mathcal V} 
+\def\cW{\mathcal W} 
+\def\cX{\mathcal X} 
+\def\cY{\mathcal Y} 
+\def\cZ{\mathcal Z} 
+
+\newcommand{\fa}{{\mathfrak a}} 
+\newcommand{\fb}{{\mathfrak b}} 
+\newcommand{\fc}{{\mathfrak c}} 
+\newcommand{\fd}{{\mathfrak d}} 
+\newcommand{\fe}{{\mathfrak e}}
+\newcommand{\fm}{{\mathfrak m}} 
+\newcommand{\fp}{{\mathfrak p}} 
+\newcommand{\fq}{{\mathfrak q}} 
+\newcommand{\fK}{{\mathfrak K}} 
+\newcommand{\fR}{{\mathfrak R}} 
+
+\def\sA{\mathscr A} 
+\def\sB{\mathscr B} 
+\def\sC{\mathscr C} 
+\def\sD{\mathscr D} 
+\def\sE{\mathscr E} 
+\def\sF{\mathscr F} 
+\def\sG{\mathscr G} 
+\def\sH{\mathscr H} 
+\def\sI{\mathscr I} 
+\def\sJ{\mathscr J} 
+\def\sK{\mathscr K} 
+\def\sL{\mathscr L}
+\def\sM{\mathscr M}
+\def\sN{\mathscr N}
+\def\sO{\mathscr O}
+\def\sP{\mathscr P}
+\def\sQ{\mathscr Q}
+\def\sR{\mathscr R}
+\def\sS{\mathscr S}
+\def\sT{\mathscr T}
+\def\sU{\mathscr U}
+\def\sV{\mathscr V}
+\def\sW{\mathscr W}
+\def\sX{\mathscr X}
+\def\sY{\mathscr Y}
+\def\sZ{\mathscr Z}
+
+\def\tS{\tilde{S}}
+
+\def\sdp{\rtimes}
+\newcommand{\tensor}{\otimes} 
+\newcommand{\igen}[1]{\langle #1 \rangle} 
+\def\nsg{\unlhd} 
+\def\kval{{k-\mathrm{valued}}} 
+\def\kalg{{k-\mathrm{alg}}}
+\newcommand\GG[2]{\Gal(#1/#2)}
+
+\newcommand{\MF}[3]{\Mat_{#1\times #2}(#3)}
+\newcommand{\vectwo}[2]{\begin{bmatrix} #1 \\ #2 \end{bmatrix}} 
+\newcommand{\vecthree}[3]{\begin{bmatrix} #1 \\ #2 \\ #3\end{bmatrix}} 
+\def\ob{{\mathfrak{ob}} }
+
+\def\qed{\square}
+\def\sse{\subseteq}
+\def\ss{\subset} 
+\def\ssne{\subsetneq}
+\def\sm{\setminus}
+\def\inv{^{-1}} 
+\newcommand{\es}{\emptyset} 
+\newcommand{\Zm}[1]{\Z/({#1})} 
+\def\ov#1{\overline{#1}} 
+\def\xdots{x_1, \dots, x_n} 
+\def\adots{a_1, \dots, a_n} 
+\def\bdots{b_1, \dots, b_n} 
+\def\udots{u_1, \dots, u_n} 
+\newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
+\def\th{^{th}} 
+\def\htpy{\simeq_{\mathrm{htpc}}} 
+
+\def\textand{ \, \text{and} \, } 
+\def\textor{ \, \text{or} \, } 
+\def\textfor{ \, \text{for} \, } 
+\def\textfa{ \, \text{for all} \, } 
+\def\textst{ \, \text{such that} \, } 
+\def\textin{ \, \text{in} \, } 
+\def\fg{ \, \text{finitely generated} \, }
+\newcommand{\op}{\mathrm{op}}
+
+\newcommand{\xra}[1]{\xrightarrow{#1}} 
+\newcommand{\xora}[1]{\xtwoheadrightarrow{#1}} 
+\newcommand{\xira}[1]{\xhookrightarrow{#1}} 
+\newcommand{\xla}[1]{\xleftarrow{#1}} 
+\def\lra{\longrightarrow}
+\def\into{\hookrightarrow}
+\def\onto{\twoheadrightarrow}
+
+\newcommand{\vv}[1]{\mathbf{#1}}
+\newcommand{\lm}[2]{{#1}\,\l + {#2}\,\mu} 
+\renewcommand{\v}{\vv{v}}
+\renewcommand{\u}{\vv{u}}
+\newcommand{\w}{\vv{w}}
+\newcommand{\x}{\vv{x}}
+\renewcommand{\k}{\vv{k}}
+\newcommand{\0}{\vv{0}}
+\newcommand{\1}{\vv{1}}
+\newcommand{\vecs}[2]{#1_1,#1_2,\dots,#1_{#2}}
+\newcommand{\us}[1][n]{\vecs{\u}{#1}}
+\newcommand{\vs}[1][n]{\vecs{\v}{#1}}
+\newcommand{\ws}[1][n]{\vecs{\w}{#1}}
+\newcommand{\vps}[1][n']{\vecs{\v'}{#1}}
+\newcommand{\ls}[1][n]{\vecs{\l}{#1}}
+\newcommand{\mus}[1][n]{\vecs{\mu}{#1}} 
+\newcommand{\lps}[1][n]{\vecs{\l'}{#1}}
+\def\td{\tilde{\delta}}
+\def\oo{\overline{\omega}}
+\def\ctJ{\tilde{\mathcal J}}
+\def\tPhi{\tilde{\Phi}}
+\def\te{\tilde{e}}
+\def\M{\operatorname{M}}
+\newcommand{\homotopic}{\simeq}
+\newcommand{\homeq}{\cong}
+\newcommand{\iso}{\approx}
+\newcommand{\dual}{\vee} 
+\DeclarePairedDelimiter{\abs}{|}{|}
+\newcommand{\bv}{{\bar{v}}}
+\newcommand{\bu}{{\bar{u}}}
+\newcommand{\bw}{{\bar{w}}}
+\newcommand{\by}{{\bar{y}}}
+\newcommand{\ba}{{\bar{a}}}
+\newcommand{\bb}{{\bar{b}}}
+\newcommand{\bx}{{\bar{x}}}
+\DeclarePairedDelimiterX\setof[2]{\{}{\}}{#1\,|\,#2}
+\newcommand{\vx}{\underline{x}}
+\renewcommand{mod}[1]{\text{(mod }{#1})}
+\newcommand{\Slv}[3]{\sum_{{#2}=1}^{{#3}} {#1}_{{#2}} \v_{{#2}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="part-commutative-algebra-i.html" class="internal"><span class="codenumber">I</span> <span class="title">Commutative Algebra</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="ch-finiteness-conditions.html" class="internal"><span class="codenumber">1</span> <span class="title">Finiteness Conditions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-gen-mod.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Generated Modules</span></a></div></li>
+<li><div class="toc-item"><a href="sec-algebras.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Algebras</span></a></div></li>
+<li><div class="toc-item"><a href="sec-alg-mod-finite.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Algebra and Module Finite</span></a></div></li>
+<li><div class="toc-item"><a href="sec-integral-extensions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Integral Extensions</span></a></div></li>
+<li><div class="toc-item"><a href="sec-ses.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Short Exact Sequences</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-inv-rings-1.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Invariant Rings: Application I</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-graded-rings.html" class="internal"><span class="codenumber">2</span> <span class="title">Graded Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-graded-rings.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Graded Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finite-conditions-graded-algebras.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Finiteness Conditions for Graded Algebras</span></a></div></li>
+<li><div class="toc-item"><a href="sec-inv-rings-2.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Invariant Rings: Application II</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-prime-ideals.html" class="internal"><span class="codenumber">3</span> <span class="title">Prime Ideals</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-prime-maximal-ideals.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prime and Maximal Ideals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-spectrum.html" class="internal"><span class="codenumber">3.2</span> <span class="title">The Spectrum of a Ring</span></a></div></li>
+<li><div class="toc-item"><a href="sec-prime-avoidance.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Prime Avoidance</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-affine-varieties.html" class="internal"><span class="codenumber">4</span> <span class="title">Affine Varieties</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-varieties.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Varieties</span></a></div></li>
+<li><div class="toc-item"><a href="sec-coordinate-ring.html" class="internal"><span class="codenumber">4.2</span> <span class="title">The Coordinate Ring of a Variety</span></a></div></li>
+<li><div class="toc-item"><a href="sec-nullstell.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Nullstellensatz</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-local-rings.html" class="internal"><span class="codenumber">5</span> <span class="title">Local Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-local-rings.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Local Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-localization.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Localization</span></a></div></li>
+<li><div class="toc-item"><a href="sec-nak.html" class="internal"><span class="codenumber">5.3</span> <span class="title">NAK</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-decomposing-ideals.html" class="internal"><span class="codenumber">6</span> <span class="title">Decomposing Ideals</span></a></div>
+<ul class="structural">
+<li class="active"><div class="toc-item"><a href="sec-min-support.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Minimal Primes and Support</span></a></div></li>
+<li><div class="toc-item"><a href="sec-ass-primes.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Associated Primes</span></a></div></li>
+<li><div class="toc-item"><a href="sec-primary-decomp.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primary Decomposition</span></a></div></li>
+<li><div class="toc-item"><a href="sec-krull-intersection.html" class="internal"><span class="codenumber">6.4</span> <span class="title">The Krull Intersection Theorem</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-global-dim-theory.html" class="internal"><span class="codenumber">7</span> <span class="title">Global Dimension Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-dim-height.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Dimension and Height</span></a></div></li>
+<li><div class="toc-item"><a href="sec-over-up-down.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Over, Up, and Down</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noether-normalizations.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Noether Normalizations</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-local-dim-theory.html" class="internal"><span class="codenumber">8</span> <span class="title">Local Dimension Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-height-generators.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Height and Number of Generators</span></a></div></li>
+<li><div class="toc-item"><a href="sec-sops.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Systems of Parameters</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-min-support"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">6.1</span> <span class="title">Minimal Primes and Support</span>
+</h2>
+<blockquote class="blockquote" id="blockquote-21">
+<div class="para" id="p-476">“”</div> <cite class="attribution">―</cite>
+</blockquote>
+<article class="definition definition-like" id="defn-minimal-prime"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1</span><span class="period">.</span><span class="space"> </span><span class="title">Minimal Prime.</span>
+</h3> <div class="para" id="p-477">Let <span class="process-math">\(I\)</span> be an ideal in a ring <span class="process-math">\(R\text{.}\)</span> A prime <span class="process-math">\(P\)</span> is a <em class="emphasis">minimal prime</em> of <span class="process-math">\(I\)</span> if <span class="process-math">\(P\)</span> is minimal in <span class="process-math">\(V(I)\)</span>[^1]. A <em class="emphasis">minimal prime</em> of <span class="process-math">\(R\)</span> is a minimal element in <span class="process-math">\(\Spec(R)\)</span>[^2].</div></article><article class="definition definition-like" id="defn-minimal-prime-1"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2</span><span class="period">.</span><span class="space"> </span><span class="title">Minimal Prime.</span>
+</h3> <div class="para" id="p-478">Let <span class="process-math">\(I\)</span> be an ideal in a ring <span class="process-math">\(R\text{.}\)</span> A <em class="emphasis">minimal prime</em> of <span class="process-math">\(I\)</span> is a minimal element (with respect to containment) in <span class="process-math">\(V(I)\text{.}\)</span> More precisely, <span class="process-math">\(P\)</span> is a minimal prime of <span class="process-math">\(I\)</span> if the following hold: - <span class="process-math">\(P\)</span> is a prime ideal, - <span class="process-math">\(P \supseteq I\text{,}\)</span> and - if <span class="process-math">\(Q\)</span> is also a prime ideal and <span class="process-math">\(I \subseteq Q \subseteq P\text{,}\)</span> then <span class="process-math">\(Q = P\text{.}\)</span>
+</div> <div class="para" id="p-479">The set of minimal primes of <span class="process-math">\(I\)</span> is denoted $(I</div></article><article class="definition definition-like" id="defn-nilradical"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.3</span><span class="period">.</span><span class="space"> </span><span class="title">Nilradical.</span>
+</h3> <div class="para" id="p-480">The nilpotent elements of a ring <span class="process-math">\(R\)</span> are exactly the elements in every minimal prime of <span class="process-math">\(R\text{.}\)</span> The radical of <span class="process-math">\((0)\)</span> is often called the <em class="emphasis">nilradical</em> of <span class="process-math">\(R\text{,}\)</span> denoted <span class="process-math">\(\mathcal{N}(R)\text{.}\)</span>
+</div></article><article class="example example-like" id="ex-minimal-primes-and-radical-ideals"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.4</span><span class="period">.</span><span class="space"> </span><span class="title">Minimal Primes and Radical Ideals.</span>
+</h3>
+<div class="para" id="p-481">If <span class="process-math">\(P\)</span> is prime, then <span class="process-math">\(\Min(P)=\{P\}\)</span>[^1]. Also, since <span class="process-math">\(V(I)=V(\sqrt{I})\)</span>[^2], we have <span class="process-math">\(\Min(I)=\Min(\sqrt{I})\text{.}\)</span>
+</div></article><article class="example example-like" id="ex-minimal-primes-of-x2xy"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.5</span><span class="period">.</span><span class="space"> </span><span class="title">Minimal Primes of <span class="process-math">\((x^2,xy)\)</span>.</span>
+</h3>
+<div class="para" id="p-482">Let <span class="process-math">\(k\)</span> be a field and <span class="process-math">\(R = k[x,y]\text{.}\)</span> Every prime containing <span class="process-math">\(I = (x^2, xy)\)</span> must contain <span class="process-math">\(x^2\text{,}\)</span> and thus <span class="process-math">\(x\text{.}\)</span> On the other hand, <span class="process-math">\((x)\)</span> is a prime ideal containing <span class="process-math">\(I\text{.}\)</span> Therefore, <span class="process-math">\(I\)</span> has a unique minimal prime, and <span class="process-math">\(\Min(I) = \{ (x) \}\)</span>[^1].</div></article><article class="example example-like" id="ex-nilradical-of-x2xy"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.6</span><span class="period">.</span><span class="space"> </span><span class="title">Nilradical of <span class="process-math">\((x^2,xy)\)</span>.</span>
+</h3>
+<div class="para" id="p-483">Let <span class="process-math">\(k\)</span> be a field. The radical of the ideal <span class="process-math">\(I = (x^2, xy)\)</span> in the ring <span class="process-math">\(R = k[x,y]\)</span>[^2] is <span class="process-math">\(\sqrt{I} = (x).\)</span>[^1] We saw before that <span class="process-math">\(\Min(I) = \{ (x) \}\)</span>[^3]. The nilradical of <span class="process-math">\(R = k[x,y]/(x^2,xy)\)</span> corresponds to the radical of <span class="process-math">\((x^2,xy)\)</span> is <span class="process-math">\(k[x,y]\text{,}\)</span> so it is the ideal <span class="process-math">\((x)/(x^2,xy)\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-finite-minimal-primes"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.7</span><span class="period">.</span><span class="space"> </span><span class="title">Finite Minimal Primes.</span>
+</h3>
+<div class="para" id="p-484">Over a noetherian ring <span class="process-math">\(R\text{,}\)</span> every ideal <span class="process-math">\(I\)</span> has finitely many minimal primes, and thus <span class="process-math">\(\sqrt{I}\)</span>[^1] is a finite intersection of primes.</div></article><article class="hiddenproof" id="proof-62"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-62"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-62"><article class="hiddenproof"><div class="para logical" id="p-485">
+<div class="para">Let <span class="process-math">\(S=\{ \text{ideals} \ I \subseteq R \ | \ \Min(I) \ \text{is infinite} \}\text{,}\)</span> and suppose, to obtain a contradiction, that <span class="process-math">\(S\neq \es\text{.}\)</span> Since <span class="process-math">\(R\)</span> is noetherian, <span class="process-math">\(S\)</span> has a maximal element <span class="process-math">\(J\)</span>[^2]. If <span class="process-math">\(J\)</span> was a prime ideal, then <span class="process-math">\(\Min(J) = \{ J \}\)</span> would be finite,[^3] by , so <span class="process-math">\(J\)</span> is not prime. However, <span class="process-math">\(\Min(J)=\Min(\sqrt{J})\text{,}\)</span>[^4] and thus <span class="process-math">\(\sqrt{J} \supseteq J\)</span> is also in <span class="process-math">\(S\text{,}\)</span> so we conclude that <span class="process-math">\(J\)</span> is radical. Since <span class="process-math">\(J\)</span> is not prime, we can find some <span class="process-math">\(a, b \notin J\)</span> with <span class="process-math">\(ab \in J\text{.}\)</span> Then <span class="process-math">\(J \subsetneq J + (a) \subseteq \sqrt{J + (a)}\)</span> and <span class="process-math">\(J \subsetneq \sqrt{J + (b)}\text{.}\)</span> Since <span class="process-math">\(J\)</span> is maximal in <span class="process-math">\(S\text{,}\)</span>[^5] we conclude that <span class="process-math">\(\sqrt{J + (a)}\)</span> and <span class="process-math">\(\sqrt{J + (b)}\)</span> have finitely many minimal primes, so we can write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sqrt{J + (a)} = P_1 \cap \cdots \cap P_t \textrm{ and } \sqrt{J + (b)} = P_{t+1} \cap \cdots \cap P_s
+\end{equation*}
+</div>
+<div class="para">for some prime ideals <span class="process-math">\(P_i\)</span>[^6].</div>
+</div> <div class="para logical" id="p-486">
+<div class="para">Let <span class="process-math">\(f \in \sqrt{J + (a)} \cap \sqrt{J + (b)}\text{.}\)</span> Some sufficiently high power of <span class="process-math">\(f\)</span> is in both <span class="process-math">\(J + (a)\)</span> and <span class="process-math">\(J + (b)\text{,}\)</span>[^7] so there exist <span class="process-math">\(n, m \geq 1\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^n \in J + (a) \quad \textrm{ and } \quad f^m \in J + (b).
+\end{equation*}
+</div>
+<div class="para">Thus</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^{n+m} \in (J + (a))(J + (b)) \subseteq J^2 + J(a) + J(b) + (\underset{\in J}{ab}) \subseteq J.
+\end{equation*}
+</div>
+<div class="para">Therefore, <span class="process-math">\(f \in \sqrt{J} = J\text{.}\)</span> This shows that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J = \sqrt{J + (a)} \cap \sqrt{J + (b)} = P_1\cap \cdots \cap P_t \cap P_{t+1} \cap \cdots \cap P_s.
+\end{equation*}
+</div>
+<div class="para">By [[Mathematics/Commutative Algebra/Results/Lemma - Intersection of Primes are Min Primes|Lemma]], we see that <span class="process-math">\(\Min(J)\)</span> must be a subset of <span class="process-math">\(\{P_1,\dots,P_s\}\text{,}\)</span> so it is finite.</div>
+</div></article></div>
+<article class="lemma theorem-like" id="lem-min-primes-intersection-all-important"><h3 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.8</span><span class="period">.</span><span class="space"> </span><span class="title">Min Primes Intersection All Important.</span>
+</h3>
+<div class="para" id="p-487">If <span class="process-math">\(\Min(I) = \{ P_1, \ldots, P_n \}\)</span>[^1], no <span class="process-math">\(P_i\)</span> can be deleted in the intersection <span class="process-math">\(P_1 \cap \cdots \cap P_n\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-63"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-63"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-63"><article class="hiddenproof"><div class="para logical" id="p-488">
+<div class="para">Suppose that we can delete <span class="process-math">\(P_i\text{,}\)</span> meaning that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bigcap_{j=1}^n P_j = \bigcap_{j \neq i} P_j.
+\end{equation*}
+</div>
+<div class="para">Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_i \supseteq \bigcap_{j=1}^n P_j = \bigcap_{j \neq i} P_j \supseteq \prod_{j \neq i} P_j.
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(P_i\)</span> is prime, this implies that <span class="process-math">\(P_i \supseteq P_j\)</span> for some <span class="process-math">\(j \neq i\text{,}\)</span> but this contradicts the assumption that the primes are incomparable.</div>
+</div></article></div>
+<article class="lemma theorem-like" id="lem-intersection-of-primes-are-min-primes"><h3 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.9</span><span class="period">.</span><span class="space"> </span><span class="title">Intersection of Primes are Min Primes.</span>
+</h3>
+<div class="para" id="p-489">Let <span class="process-math">\(I\)</span> be an ideal in <span class="process-math">\(R\text{.}\)</span> If <span class="process-math">\(I = P_1 \cap \cdots \cap P_n\)</span> where each <span class="process-math">\(P_i\)</span> is prime and <span class="process-math">\(P_i \not\subseteq P_j\)</span> for each <span class="process-math">\(i \neq j\text{,}\)</span> then <span class="process-math">\(\Min(I)=\{ P_1, \ldots, P_n\}\)</span>[^1]. Moreover, <span class="process-math">\(I\)</span> must be radical.</div></article><article class="hiddenproof" id="proof-64"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-64"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-64"><article class="hiddenproof"><div class="para" id="p-490">If <span class="process-math">\(Q\)</span> is a prime containing <span class="process-math">\(I\text{,}\)</span> then <span class="process-math">\(Q \supseteq (P_1 \cap \cdots \cap P_n)\text{.}\)</span> We claim that <span class="process-math">\(Q\)</span> must contain one of the <span class="process-math">\(P_i\text{.}\)</span> Indeed, if <span class="process-math">\(Q \not\supseteq P_i\)</span> for all <span class="process-math">\(i\text{,}\)</span> then there are elements <span class="process-math">\(f_i \in P_i\)</span> such that <span class="process-math">\(f_i \notin Q\text{,}\)</span> so their product satisfies <span class="process-math">\(f_1 \cdots f_n \in (P_1 \cap \cdots \cap P_n)\)</span> but <span class="process-math">\(f_1 \cdots f_n \notin Q\text{.}\)</span> This is a contradiction, so indeed any prime containing <span class="process-math">\(I\)</span> must contain some <span class="process-math">\(P_i\text{.}\)</span> Therefore, any minimal prime of <span class="process-math">\(I\)</span> must be one of the <span class="process-math">\(P_i\text{.}\)</span> Since we assumed that the <span class="process-math">\(P_i\)</span> are incomparable, these are exactly all the minimal primes of <span class="process-math">\(I.\)</span> By assumption, <span class="process-math">\(I\)</span> coincides with the intersection of its minimal primes, which is <span class="process-math">\(\sqrt{I}\)</span> by [[Mathematics/Commutative Algebra/Results/Theorem - Spectrum Analogue of Strong Nullstellensatz|Theorem]]. Therefore, <span class="process-math">\(I = \sqrt{I}\text{.}\)</span>
+</div></article></div>
+<article class="example example-like" id="ex-ideal-is-finite-intersection-of-primes-iff-i-is-radical"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.10</span><span class="period">.</span><span class="space"> </span><span class="title">Ideal is Finite Intersection of Primes iff I is Radical.</span>
+</h3>
+<div class="para" id="p-491">If <span class="process-math">\(I = P_1 \cap \cdots \cap P_n\)</span> for some primes <span class="process-math">\(P_i\text{,}\)</span> we can always delete unnecessary components until no component can be deleted. Therefore, <span class="process-math">\(\Min(I) \subseteq \{ P_1, \ldots, P_n \}\)</span>[^1].</div> <div class="para" id="p-492">As a consequence of [[Mathematics/Commutative Algebra/Results/Lemma - Min Primes Intersection All Important|Lemma]] and [[Mathematics/Commutative Algebra/Results/Lemma - Intersection of Primes are Min Primes|Lemma]], if <span class="process-math">\(I\)</span> is a radical ideal, there is a unique way to write <span class="process-math">\(I\)</span> as a finite intersection of incomparable prime ideals. Moreover, [[Mathematics/Commutative Algebra/Results/Lemma - Intersection of Primes are Min Primes|Lemma]], [[Mathematics/Commutative Algebra/Results/Theorem - Finite Minimal Primes|Theorem]], and [[Mathematics/Commutative Algebra/Results/Theorem - Spectrum Analogue of Strong Nullstellensatz|Spectrum Analogue]] also imply that an ideal <span class="process-math">\(I\)</span> is equal to a finite intersection of primes if and only if <span class="process-math">\(I\)</span> is radical.</div></article><article class="definition definition-like" id="defn-support"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.11</span><span class="period">.</span><span class="space"> </span><span class="title">Support.</span>
+</h3> <div class="para logical" id="p-493">
+<div class="para">If <span class="process-math">\(M\)</span> is an <span class="process-math">\(R\)</span>-module, the <em class="emphasis">support</em> of <span class="process-math">\(M\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Supp(M) :=  \{ P \in \Spec(R) \ | \ M_P \neq 0\}.
+\end{equation*}
+</div>
+</div></article><article class="theorem theorem-like" id="thm-support-and-annihilator"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.12</span><span class="period">.</span><span class="space"> </span><span class="title">Supp(M) = Ann(M).</span>
+</h3>
+<div class="para logical" id="p-494">
+<div class="para">Given <span class="process-math">\(M\)</span> a finitely generated <span class="process-math">\(R\)</span>-module over a ring <span class="process-math">\(R\text{,}\)</span>[^1]</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Supp(M)=V(\ann_R(M)).
+\end{equation*}
+</div>
+<div class="para">In particular, <span class="process-math">\(\Supp(R/I)=V(I)\text{.}\)</span>
+</div>
+</div></article><article class="hiddenproof" id="proof-65"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-65"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-65"><article class="hiddenproof"><div class="para logical" id="p-495">
+<div class="para">Let <span class="process-math">\(M= R m_i + \cdots + R m_n\text{.}\)</span>[^2] We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ann_R(M)=\bigcap_{i=1}^n \ann_R(m_i),
+\end{equation*}
+</div>
+<div class="para">so by [[Mathematics/Commutative Algebra/Results/Proposition - Properties of V|Proposition]],</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V(\ann_R(M))=\bigcup_{i=1}^n V( \ann_R(m_i)).
+\end{equation*}
+</div>
+<div class="para">Notice that we need finiteness here. Also, we claim that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Supp(M) = \bigcup_{i=1}^n \Supp(R m_i).
+\end{equation*}
+</div>
+<div class="para">To show <span class="process-math">\((\supseteq)\text{,}\)</span> notice that <span class="process-math">\((R m_i)_P \subseteq M_P\text{,}\)</span> so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P \in \Supp(R m_i) \implies 0 \neq (R m_i)_P \subseteq M_P \implies P \in \Supp(M).
+\end{equation*}
+</div>
+<div class="para">On the other hand, the images of <span class="process-math">\(m_1, \ldots, m_n\)</span> in <span class="process-math">\(M_P\)</span> generate <span class="process-math">\(M_P\)</span> for each <span class="process-math">\(P\text{,}\)</span> and thus <span class="process-math">\(P \in \Supp(M)\)</span> if and only if <span class="process-math">\(P \in \Supp(R m_i)\)</span> for some <span class="process-math">\(m_i\text{.}\)</span> Thus, we can reduce the equality <span class="process-math">\(\Supp(M)=V(\ann_R(M))\)</span> to the case of a cyclic module <span class="process-math">\(R m\text{.}\)</span> By [[Mathematics/Commutative Algebra/Results/Lemma - Zero in Localization|Lemma]], <span class="process-math">\(\frac{m}{1}=0\)</span> in <span class="process-math">\(M_P\)</span> if and only if <span class="process-math">\((R\setminus P) \cap \ann_R (m) \neq \varnothing\text{,}\)</span> which is equivalent to <span class="process-math">\(\ann_R (m) \not\subseteq P\text{.}\)</span>
+</div>
+</div></article></div>
+<article class="example example-like" id="ex-specific-direct-sum-and-support"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.13</span><span class="period">.</span><span class="space"> </span><span class="title">Specific Direct Sum and Support.</span>
+</h3>
+<div class="para logical" id="p-496">
+<div class="para">Let <span class="process-math">\(k\)</span> be a field, and <span class="process-math">\(R=k[x]\text{.}\)</span> Take</div>
+<div class="displaymath process-math">
+\begin{equation*}
+M=R_x / R = \bigoplus_{i&gt;0} k \cdot x^{-i}.
+\end{equation*}
+</div>
+<div class="para">With this <span class="process-math">\(k\)</span>-vector space structure, the action is given by multiplication in the obvious way, then killing any nonnegative degree terms.</div>
+</div> <div class="para" id="p-497">Any element of <span class="process-math">\(M\)</span> is killed by a large power of <span class="process-math">\(x\text{,}\)</span> so <span class="process-math">\(W^{-1}M=0\)</span> whenever <span class="process-math">\(W\)</span> is a multiplicatively closed subset of <span class="process-math">\(R\)</span> with <span class="process-math">\(W \ni x\text{.}\)</span> Therefore, if <span class="process-math">\(P \in \Supp(M)\text{,}\)</span> then <span class="process-math">\(x \in P\text{,}\)</span> and thus <span class="process-math">\(\Supp(M) \subseteq \{ (x)\}\text{.}\)</span> We will soon see, in , that the support of a nonzero module is nonempty, and thus <span class="process-math">\(\Supp(M) = \{(x)\}\text{.}\)</span>
+</div> <div class="para logical" id="p-498">
+<div class="para">On the other hand, the annihilator of the class of <span class="process-math">\(x^{-n}\)</span> is <span class="process-math">\(x^n\text{,}\)</span> so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ann_R(M) \subseteq \bigcap_{n \geqslant 1}(x^n) = 0.
+\end{equation*}
+</div>
+<div class="para">In particular, <span class="process-math">\(V(\ann_R(M)) = \Spec(R)\text{,}\)</span> while <span class="process-math">\(\Supp(M) = \{ (x) \} \neq \Spec(R)\text{.}\)</span>
+</div>
+</div></article><article class="example example-like" id="ex-support-of-direct-sum-in-cx"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.14</span><span class="period">.</span><span class="space"> </span><span class="title">Support of Direct Sum in <span class="process-math">\(\C[x]\)</span>.</span>
+</h3>
+<div class="para logical" id="p-499">
+<div class="para">Let <span class="process-math">\(R=\C[x]\text{,}\)</span> and <span class="process-math">\(M= \displaystyle\bigoplus_{n\in \Z} R/(x-n)\text{.}\)</span> First, note that <span class="process-math">\(M_\fp = \displaystyle\bigoplus_{n\in \Z} (R/(x-n))_{\fp}\text{,}\)</span> so</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Supp(M)= \bigcup_{n\in \Z} \Supp(R/(x-n))= \bigcup_{n\in \Z} V((x-n))=\{(x-n) \ | \ n \in \Z\}.
+\end{equation*}
+</div>
+<div class="para">On the other hand,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ann_R(M)=\bigcap_{n\in \Z} \ann_R(R/(x-n)) = \bigcap_{n\in \Z} (x-n) = 0.
+\end{equation*}
+</div>
+<div class="para">Note that in this example the support is not even closed.</div>
+</div></article><article class="lemma theorem-like" id="lem-ses-support"><h3 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.15</span><span class="period">.</span><span class="space"> </span><span class="title">SES Support.</span>
+</h3>
+<div class="para logical" id="p-500">
+<div class="para">Let <span class="process-math">\(R\)</span> be a ring, <span class="process-math">\(L,M,N\)</span> be modules. If</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;L@&gt;&gt;&gt;M@&gt;&gt;&gt;N@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is exact, then <span class="process-math">\(\Supp(L) \cup \Supp(N) = \Supp(M)\)</span>[^1].</div>
+</div></article><article class="hiddenproof" id="proof-66"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-66"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-66"><article class="hiddenproof"><div class="para logical" id="p-501">
+<div class="para">localization is exact[^2], so for any <span class="process-math">\(P\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;L_{p}@&gt;&gt;&gt;M_{p}@&gt;&gt;&gt;N_{p}@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is exact. If <span class="process-math">\(P \in \Supp(L) \cup \Supp(N)\text{,}\)</span> then <span class="process-math">\(L_P\)</span> or <span class="process-math">\(N_P\)</span> is nonzero, so <span class="process-math">\(M_P\)</span> must be nonzero as well. On the other hand, if <span class="process-math">\(P \notin \Supp(L) \cup \Supp(N)\text{,}\)</span> then <span class="process-math">\(L_P = N_P =0\text{,}\)</span> so <span class="process-math">\(M_P=0\text{.}\)</span>
+</div>
+</div></article></div>
+<article class="example example-like" id="ex-supports-preserve-containment"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.16</span><span class="period">.</span><span class="space"> </span><span class="title">Support’s Preserve Containment.</span>
+</h3>
+<div class="para" id="p-502">As a corollary of this [[Mathematics/Commutative Algebra/Results/Lemma - SES Support|Lemma]], given modules <span class="process-math">\(L \subseteq M\text{,}\)</span> <span class="process-math">\(\Supp(L) \subseteq \Supp (M)\text{.}\)</span>
+</div></article><article class="lemma theorem-like" id="lem-nonzero-element-localizes"><h3 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.17</span><span class="period">.</span><span class="space"> </span><span class="title">Nonzero Element Localizes.</span>
+</h3>
+<div class="para" id="p-503">Let <span class="process-math">\(R\)</span> be a ring, <span class="process-math">\(M\)</span> an <span class="process-math">\(R\)</span>-module, and <span class="process-math">\(m\in M\text{.}\)</span> The following are equivalent: (a) <span class="process-math">\(m=0\)</span> in <span class="process-math">\(M\text{.}\)</span> (b) <span class="process-math">\(\frac{m}{1}=0\)</span> in <span class="process-math">\(M_P\)</span> for all <span class="process-math">\(P \in \Spec(R)\)</span>[^1]. (c) <span class="process-math">\(\frac{m}{1}=0\)</span> in <span class="process-math">\(M_P\)</span> for all <span class="process-math">\(P \in \mSpec(R)\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-67"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-67"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-67"><article class="hiddenproof"><div class="para" id="p-504">The implications <span class="process-math">\(1) \Rightarrow 2) \Rightarrow 3)\)</span> are clear. To show <span class="process-math">\(3) \Rightarrow 1)\text{,}\)</span> we prove the contrapositive. Given <span class="process-math">\(m \neq 0\text{,}\)</span> its annihilator is a proper ideal, which must be contained in a maximal ideal[^2]. In particular, <span class="process-math">\(V(\ann_R m)=\Supp(Rm)\)</span>[^3] contains a maximal ideal, say <span class="process-math">\(P\text{,}\)</span> so <span class="process-math">\(\frac{m}{1} \neq 0\)</span> in <span class="process-math">\(M_P\text{.}\)</span>
+</div></article></div>
+<article class="corollary theorem-like" id="cor-support-of-nonzero-module-nonempty"><h3 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">6.18</span><span class="period">.</span><span class="space"> </span><span class="title">Support of Nonzero Module Nonempty.</span>
+</h3>
+<div class="para" id="p-505">Let <span class="process-math">\(R\)</span> be a ring, <span class="process-math">\(M\)</span> an <span class="process-math">\(R\)</span>-module, and <span class="process-math">\(m\in M\text{.}\)</span> The following are equivalent: (a) <span class="process-math">\(M=0\text{.}\)</span> (b) <span class="process-math">\(M_P=0\)</span> in <span class="process-math">\(M_P\)</span> for all <span class="process-math">\(P \in \Spec(R)\)</span>[^1]. (c) <span class="process-math">\(M_P=0\)</span> in <span class="process-math">\(M_P\)</span> for all <span class="process-math">\(P \in \mSpec(R)\text{.}\)</span>[^2]</div></article><article class="hiddenproof" id="proof-68"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-68"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-68"><article class="hiddenproof"><div class="para" id="p-506">The implications <span class="process-math">\(\Rightarrow\)</span> are clear. To show <span class="process-math">\(3) \Rightarrow 1)\text{,}\)</span> we show the contrapositive. If <span class="process-math">\(m\neq 0\text{,}\)</span> consider <span class="process-math">\(Rm \subseteq M\text{.}\)</span> By [[Mathematics/Commutative Algebra/Results/Lemma - Nonzero Element Localizes|Lemma]], there is a maximal ideal in <span class="process-math">\(\Supp(Rm)\text{,}\)</span> and by [[Mathematics/Commutative Algebra/Results/Lemma - SES Support|Lemma]] applied to the inclusion <span class="process-math">\(Rm \subseteq M\text{,}\)</span> this maximal ideal is in <span class="process-math">\(\Supp(M)\)</span> as well.</div></article></div></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="ch-decomposing-ideals.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-ass-primes.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>
