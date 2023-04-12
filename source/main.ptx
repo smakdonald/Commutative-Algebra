@@ -7831,6 +7831,12 @@
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
 
+      <appendix xml:id="appendix-list-definitions">
+        <title>List of Definitions</title>
+      
+        <list-of elements="definition" divisions="chapter" empty="yes"/>
+      </appendix>
+
       <colophon>
         <p> This book was authored in <pretext />. </p>
       </colophon>
