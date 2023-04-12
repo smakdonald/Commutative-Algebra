@@ -13,27 +13,20 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Now, if <span class="process-math">\(a \in Q\)</span> is nonzero, we have <span class="process-math">\(a^n\in Q^n \subseteq Q^{(n)} = Q^{(m)}\)</span> for all <span class="process-math">\(m\text{,}\)</span> so</div>
+<div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\bigcap_{m \geqslant 1} Q^{(m)} = \bigcap_{m \geqslant n} Q^{(m)} = Q^{(n)}.
+\ht(I) = \min\{\ht(P) \mid P\in \Min(I)\}
 \end{equation*}
 </div>
-<div class="para">Notice that <span class="process-math">\(Q^n \neq 0\)</span> because <span class="process-math">\(R\)</span> is a domain, and so <span class="process-math">\(Q^{(n)} \supseteq Q^n\)</span> is also nonzero. So</div>
+<div class="para">and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\bigcap_{m \geqslant 1} Q^{(m)} = Q^{(n)} \neq 0.
+\dim(R/I) = \max\{\dim(R/P) \mid P \in \Min(I)\}.
 \end{equation*}
 </div>
-<div class="para">On the other hand, <span class="process-math">\(Q^{(m)} = Q^m R_Q \cap R\)</span> for all <span class="process-math">\(m\text{,}\)</span> and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\bigcap_{m \geqslant 1} Q^{(m)} R_Q \subseteq \bigcap_{m \geqslant 1} Q^m R_{Q} = \bigcap_{m \geqslant 1} (Q R_{Q})^m = 0
-\end{equation*}
+<div class="para">Therefore, it suffices to show the equality for prime ideals, since if <span class="process-math">\(P \in \Min(I)\)</span> attains <span class="process-math">\(\ht(I)\text{,}\)</span> which is the minimal value of <span class="process-math">\(\ht(Q)\)</span> for <span class="process-math">\(Q \in \Min(I)\text{,}\)</span> then it also attains the maximal value of <span class="process-math">\(\dim(R/Q)\)</span> for <span class="process-math">\(Q \in \Min(I)\text{.}\)</span> Now, take a saturated chain of primes <span class="process-math">\(C\)</span> from <span class="process-math">\(0\)</span> to <span class="process-math">\(P\text{,}\)</span> and a saturated chain <span class="process-math">\(C'\)</span> from <span class="process-math">\(P\)</span> to a maximal ideal <span class="process-math">\(\fm\text{.}\)</span> Since <span class="process-math">\(R\)</span> is catenary, <span class="process-math">\(C\)</span> has length <span class="process-math">\(\ht(P)\text{.}\)</span> Moreover, <span class="process-math">\(C'\)</span> has length <span class="process-math">\(\dim(R/P)\)</span> by , and <span class="process-math">\(C|C'\)</span> has length <span class="process-math">\(\dim(R)\)</span> by .</div>
 </div>
-<div class="para">by . Since <span class="process-math">\(R\)</span> is a domain, the contraction of <span class="process-math">\((0)\)</span> in <span class="process-math">\(R_Q\)</span> back in <span class="process-math">\(R\)</span> is <span class="process-math">\((0)\text{.}\)</span> This is the contradiction we seek. So no such <span class="process-math">\(Q\)</span> exists, so that <span class="process-math">\(R\)</span> has dimension <span class="process-math">\(1\text{,}\)</span> and in the original ring, all the minimal primes over <span class="process-math">\(f\)</span> must have height at most <span class="process-math">\(1\text{.}\)</span>
-</div>
-</div>
-<span class="incontext"><a href="sec-height-generators.html#p-787" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-noether-normalizations.html#p-787" class="internal">in-context</a></span>
 </body>
 </html>

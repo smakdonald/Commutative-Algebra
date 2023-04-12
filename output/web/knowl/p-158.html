@@ -13,13 +13,15 @@
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">(5)<span class="process-math">\(\Rightarrow\)</span>(1): Given an ascending chain of ideals</div>
+<div class="para">Suppose <span class="process-math">\(R\)</span> is a commutative ring. Then <span class="process-math">\(R\)</span> is called a <em class="emphasis">noetherian ring</em> if <span class="process-math">\(R\)</span> satisfies the ascending chain condition on ideals - i.e., for every chain of ideals of <span class="process-math">\(R\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots
+I_1 \subseteq I_2  \subseteq I_3 \subseteq \cdots
 \end{equation*}
 </div>
-<div class="para">let <span class="process-math">\(I=\bigcup_{n\in \N} I_n\text{.}\)</span> In general, the union of two ideals might fail to be an ideal, but the union of a chain of ideals is an ideal (exercise). By assumption, the ideal <span class="process-math">\(I\)</span> is finitely generated, say <span class="process-math">\(I=(a_1,\dots,a_t)\text{.}\)</span> Now since each <span class="process-math">\(a_i\)</span> is in <span class="process-math">\(I\text{,}\)</span> it must be in some <span class="process-math">\(I_{n_i}\text{,}\)</span> by definition. Thus for any <span class="process-math">\(N \geqslant \max n_i\text{,}\)</span> we have <span class="process-math">\(a_1, \ldots, a_t \in I_N\text{.}\)</span> But then <span class="process-math">\(I_N=I\text{,}\)</span> and thus <span class="process-math">\(I_n = I_{n+1}\)</span> for all <span class="process-math">\(n \geqslant N\text{.}\)</span> Thus the original chain stabilizes, and <span class="process-math">\(R\)</span> is noetherian.</div>
+<div class="para">there exists a positive integer <span class="process-math">\(n\)</span> such that <span class="process-math">\(I_n = I_{n+1} = I_{n+2} = \cdots=I_{n+k}\)</span> for all <span class="process-math">\(k\geq 0\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="sec-noetherian.html#p-158" class="internal">in-context</a></span>
 </body>

@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>List of Results</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Commutative Algebra">
+<meta property="book:author" content="Sam Macdonald">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra</span></a></h1>
+<p class="byline">Sam Macdonald</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="appendix-list-definitions.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="backmatter.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="colophon-2.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\ann{\operatorname{ann}}
+\newcommand{\Ass}{\operatorname{Ass}}
+\def\Aut{\operatorname{Aut}}
+\def\can{{\mathrm {can}}}
+\def\char{\operatorname{char}}
+\def\cp{\operatorname{CharPoly}}
+\def\codim{\operatorname{codim}} 
+\def\coker{\operatorname{coker}}
+\DeclareMathOperator*{\colim}{colim} 
+\def\cont{\operatorname{cont}} 
+\def\diam{\operatorname{diam}} 
+\def\dm{\operatorname{dim}} 
+\DeclareMathOperator{\edim}{embdim} 
+\def\End{\operatorname{End}} 
+\def\eval{\operatorname{eval}} 
+\def\Ext{\operatorname{Ext}} 
+\def\Frac{\operatorname{Frac}}
+\def\Fun{\operatorname{Fun}}
+\def\Gal{\operatorname{Gal}}
+\def\gcd{\operatorname{gcd}}
+\newcommand{\GL}{\operatorname{GL}} 
+\newcommand{\ht}{\operatorname{height}} 
+\def\Hom{\operatorname{Hom}} 
+\def\id{\operatorname{id}} 
+\def\im{\operatorname{im}} 
+\def\Inn{\operatorname{Inn}}
+\def\ker{\operatorname{ker}}
+\def\lcm{\operatorname{lcm}} 
+\def\Mat{\operatorname{Mat}}
+\newcommand{\Min}{\operatorname{Min}}
+\def\mp{\operatorname{MinPoly}}
+\def\mSpec{\operatorname{mSpec}}
+\def\MSpec{\operatorname{MSpec}}
+\def\null{\operatorname{Nul}}
+\DeclareMathOperator{\ns}{nullspace}
+\newcommand{\opp}{\operatorname{opp}}
+\def\Orb{\operatorname{Orb}} 
+\def\Out{\operatorname{Out}}
+\def\Perm{\operatorname{Perm}}
+\def\ptstab{\operatorname{PtStab}} 
+\def\rad{\operatorname{rad}}
+\DeclareMathOperator{\range}{range}
+\def\rank{\operatorname{rank}}
+\def\res{\operatorname{res}}
+\def\setstab{\operatorname{SetStab}}
+\def\sign{{\operatorname{sign}}}
+\newcommand{\SL}{\operatorname{SL}}
+\def\Span{\operatorname{Span}}
+\def\Spec{\operatorname{Spec}}
+\def\Stab{\operatorname{Stab}} 
+\DeclareMathOperator{\Supp}{Supp}
+\def\Syl{\operatorname{Syl}}
+\def\Tor{\operatorname{Tor}}
+\def\trace{\operatorname{trace}}
+\def\uSpec{\operatorname{\underline{Spec}}}
+
+\newcommand{\Ob}{\mathrm{Ob}}
+\newcommand{\Set}{\mathbf{Set}}
+\newcommand{\Grp}{\mathbf{Grp}}
+\newcommand{\Ab}{\mathbf{Ab}}
+\newcommand{\Sgrp}{\mathbf{Sgrp}}
+\newcommand{\Ring}{\mathbf{Ring}} 
+\newcommand{\Fld}{\mathbf{Fld}}
+\newcommand{\cRing}{\mathbf{cRing}}
+\newcommand{\Mod}[1]{#1-\mathbf{Mod}} 
+\newcommand{\Cx}[1]{#1-\mathbf{Comp}} 
+\newcommand{\vs}[1]{#1-\mathbf{vect}}
+\newcommand{\Vs}[1]{#1-\mathbf{Vect}}
+\newcommand{\vsp}[1]{#1-\mathbf{vect}^+} 
+\newcommand{\Top}{\mathbf{Top}} 
+\newcommand{\Setp}{\mathbf{Set}_*} 
+\newcommand{\Alg}[1]{#1-\mathbf{Alg}} 
+\newcommand{\cAlg}[1]{#1-\mathbf{cAlg}} 
+\newcommand{\PO}{\mathbf{PO}}
+\newcommand{\Cont}{\mathrm{Cont}}
+\newcommand{\MaT}[1]{\mathbf{Mat}_{#1}}
+\newcommand{\Rep}[2]{\mathbf{Rep}_{#1}(#2)}
+
+\def\l{\lambda}
+\def\lx{\lambda_x}
+\newcommand{\a}{\alpha}
+\def\b{\beta}
+\def\d{\delta}
+\def\e{\varepsilon}
+\def\g{\gamma}
+\def\t{\theta}
+\def\s{\sigma}
+\def\z{\zeta}
+\def\vp{\varphi}
+
+
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\G}{\mathbb{G}}
+\newcommand{\H}{\mathbb{H}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\J}{\mathbb{J}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\L}{\mathbb{L}} 
+\newcommand{\M}{\mathbb{M}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\O}{\mathbb{O}}
+\newcommand{\P}{\mathbb{P}}
+\newcommand{\Q}{\mathbb{Q}} 
+\newcommand{\R}{\mathbb{R}} 
+\newcommand{\S}{\mathbb{S}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\U}{\mathbb{U}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\W}{\mathbb{W}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\Y}{\mathbb{Y}}
+\newcommand{\Z}{\mathbb{Z}} 
+\newcommand{\ON}{\mathbb{ON}}
+
+\def\cA{\mathcal A} 
+\def\cB{\mathcal B} 
+\def\cC{\mathcal C} 
+\def\cD{\mathcal D} 
+\def\cE{\mathcal E} 
+\def\cF{\mathcal F} 
+\def\cG{\mathcal G} 
+\def\cH{\mathcal H} 
+\def\cI{\mathcal I} 
+\def\cJ{\mathcal J} 
+\def\cK{\mathcal K} 
+\def\cL{\mathcal L}
+\def\cM{\mathcal M} 
+\def\cN{\mathcal N} 
+\def\cO{\mathcal O} 
+\def\cP{\mathcal P} 
+\def\cQ{\mathcal Q} 
+\def\cR{\mathcal R} 
+\def\cS{\mathcal S} 
+\def\cT{\mathcal T} 
+\def\cU{\mathcal U} 
+\def\cV{\mathcal V} 
+\def\cW{\mathcal W} 
+\def\cX{\mathcal X} 
+\def\cY{\mathcal Y} 
+\def\cZ{\mathcal Z} 
+
+\newcommand{\fa}{{\mathfrak a}} 
+\newcommand{\fb}{{\mathfrak b}} 
+\newcommand{\fc}{{\mathfrak c}} 
+\newcommand{\fd}{{\mathfrak d}} 
+\newcommand{\fe}{{\mathfrak e}}
+\newcommand{\fm}{{\mathfrak m}} 
+\newcommand{\fp}{{\mathfrak p}} 
+\newcommand{\fq}{{\mathfrak q}} 
+\newcommand{\fK}{{\mathfrak K}} 
+\newcommand{\fR}{{\mathfrak R}} 
+
+\def\sA{\mathscr A} 
+\def\sB{\mathscr B} 
+\def\sC{\mathscr C} 
+\def\sD{\mathscr D} 
+\def\sE{\mathscr E} 
+\def\sF{\mathscr F} 
+\def\sG{\mathscr G} 
+\def\sH{\mathscr H} 
+\def\sI{\mathscr I} 
+\def\sJ{\mathscr J} 
+\def\sK{\mathscr K} 
+\def\sL{\mathscr L}
+\def\sM{\mathscr M}
+\def\sN{\mathscr N}
+\def\sO{\mathscr O}
+\def\sP{\mathscr P}
+\def\sQ{\mathscr Q}
+\def\sR{\mathscr R}
+\def\sS{\mathscr S}
+\def\sT{\mathscr T}
+\def\sU{\mathscr U}
+\def\sV{\mathscr V}
+\def\sW{\mathscr W}
+\def\sX{\mathscr X}
+\def\sY{\mathscr Y}
+\def\sZ{\mathscr Z}
+
+\def\tS{\tilde{S}}
+
+\def\sdp{\rtimes}
+\newcommand{\tensor}{\otimes} 
+\newcommand{\igen}[1]{\langle #1 \rangle} 
+\def\nsg{\unlhd} 
+\def\kval{{k-\mathrm{valued}}} 
+\def\kalg{{k-\mathrm{alg}}}
+\newcommand\GG[2]{\Gal(#1/#2)}
+
+\newcommand{\MF}[3]{\Mat_{#1\times #2}(#3)}
+\newcommand{\vectwo}[2]{\begin{bmatrix} #1 \\ #2 \end{bmatrix}} 
+\newcommand{\vecthree}[3]{\begin{bmatrix} #1 \\ #2 \\ #3\end{bmatrix}} 
+\def\ob{{\mathfrak{ob}} }
+
+\def\qed{\square}
+\def\sse{\subseteq}
+\def\ss{\subset} 
+\def\ssne{\subsetneq}
+\def\sm{\setminus}
+\def\inv{^{-1}} 
+\newcommand{\es}{\emptyset} 
+\newcommand{\Zm}[1]{\Z/({#1})} 
+\def\ov#1{\overline{#1}} 
+\def\xdots{x_1, \dots, x_n} 
+\def\adots{a_1, \dots, a_n} 
+\def\bdots{b_1, \dots, b_n} 
+\def\udots{u_1, \dots, u_n} 
+\newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
+\def\th{^{th}} 
+\def\htpy{\simeq_{\mathrm{htpc}}} 
+
+\def\textand{ \, \text{and} \, } 
+\def\textor{ \, \text{or} \, } 
+\def\textfor{ \, \text{for} \, } 
+\def\textfa{ \, \text{for all} \, } 
+\def\textst{ \, \text{such that} \, } 
+\def\textin{ \, \text{in} \, } 
+\def\fg{ \, \text{finitely generated} \, }
+\newcommand{\op}{\mathrm{op}}
+
+\newcommand{\xra}[1]{\xrightarrow{#1}} 
+\newcommand{\xora}[1]{\xtwoheadrightarrow{#1}} 
+\newcommand{\xira}[1]{\xhookrightarrow{#1}} 
+\newcommand{\xla}[1]{\xleftarrow{#1}} 
+\def\lra{\longrightarrow}
+\def\into{\hookrightarrow}
+\def\onto{\twoheadrightarrow}
+
+\newcommand{\vv}[1]{\mathbf{#1}}
+\newcommand{\lm}[2]{{#1}\,\l + {#2}\,\mu} 
+\renewcommand{\v}{\vv{v}}
+\renewcommand{\u}{\vv{u}}
+\newcommand{\w}{\vv{w}}
+\newcommand{\x}{\vv{x}}
+\renewcommand{\k}{\vv{k}}
+\newcommand{\0}{\vv{0}}
+\newcommand{\1}{\vv{1}}
+\newcommand{\vecs}[2]{#1_1,#1_2,\dots,#1_{#2}}
+\newcommand{\us}[1][n]{\vecs{\u}{#1}}
+\newcommand{\vs}[1][n]{\vecs{\v}{#1}}
+\newcommand{\ws}[1][n]{\vecs{\w}{#1}}
+\newcommand{\vps}[1][n']{\vecs{\v'}{#1}}
+\newcommand{\ls}[1][n]{\vecs{\l}{#1}}
+\newcommand{\mus}[1][n]{\vecs{\mu}{#1}} 
+\newcommand{\lps}[1][n]{\vecs{\l'}{#1}}
+\def\td{\tilde{\delta}}
+\def\oo{\overline{\omega}}
+\def\ctJ{\tilde{\mathcal J}}
+\def\tPhi{\tilde{\Phi}}
+\def\te{\tilde{e}}
+\def\M{\operatorname{M}}
+\newcommand{\homotopic}{\simeq}
+\newcommand{\homeq}{\cong}
+\newcommand{\iso}{\approx}
+\newcommand{\dual}{\vee} 
+\DeclarePairedDelimiter{\abs}{|}{|}
+\newcommand{\bv}{{\bar{v}}}
+\newcommand{\bu}{{\bar{u}}}
+\newcommand{\bw}{{\bar{w}}}
+\newcommand{\by}{{\bar{y}}}
+\newcommand{\ba}{{\bar{a}}}
+\newcommand{\bb}{{\bar{b}}}
+\newcommand{\bx}{{\bar{x}}}
+\DeclarePairedDelimiterX\setof[2]{\{}{\}}{#1\,|\,#2}
+\newcommand{\vx}{\underline{x}}
+\renewcommand{mod}[1]{\text{(mod }{#1})}
+\newcommand{\Slv}[3]{\sum_{{#2}=1}^{{#3}} {#1}_{{#2}} \v_{{#2}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
+<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="part-commutative-algebra-i.html" class="internal"><span class="codenumber">I</span> <span class="title">Commutative Algebra</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="ch-finiteness-conditions.html" class="internal"><span class="codenumber">1</span> <span class="title">Finiteness Conditions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-gen-mod.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Generated Modules</span></a></div></li>
+<li><div class="toc-item"><a href="sec-algebras.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Algebras</span></a></div></li>
+<li><div class="toc-item"><a href="sec-alg-mod-finite.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Algebra and Module Finite</span></a></div></li>
+<li><div class="toc-item"><a href="sec-integral-extensions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Integral Extensions</span></a></div></li>
+<li><div class="toc-item"><a href="sec-ses.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Short Exact Sequences</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-rings" class="internal"><span class="title">Noetherian Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-modules" class="internal"><span class="title">Noetherian Modules</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-hilbert" class="internal"><span class="title">Hilbert's Basis Theorem</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-inv-rings-1.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Invariant Rings: Application I</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-graded-rings.html" class="internal"><span class="codenumber">2</span> <span class="title">Graded Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-graded-rings.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Graded Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-finite-conditions-graded-algebras.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Finiteness Conditions for Graded Algebras</span></a></div></li>
+<li><div class="toc-item"><a href="sec-inv-rings-2.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Invariant Rings: Application II</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-prime-ideals.html" class="internal"><span class="codenumber">3</span> <span class="title">Prime Ideals</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-prime-maximal-ideals.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prime and Maximal Ideals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-spectrum.html" class="internal"><span class="codenumber">3.2</span> <span class="title">The Spectrum of a Ring</span></a></div></li>
+<li><div class="toc-item"><a href="sec-prime-avoidance.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Prime Avoidance</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-affine-varieties.html" class="internal"><span class="codenumber">4</span> <span class="title">Affine Varieties</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-varieties.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Varieties</span></a></div></li>
+<li><div class="toc-item"><a href="sec-coordinate-ring.html" class="internal"><span class="codenumber">4.2</span> <span class="title">The Coordinate Ring of a Variety</span></a></div></li>
+<li><div class="toc-item"><a href="sec-nullstell.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Nullstellensatz</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-local-rings.html" class="internal"><span class="codenumber">5</span> <span class="title">Local Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-local-rings.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Local Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-localization.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Localization</span></a></div></li>
+<li><div class="toc-item"><a href="sec-nak.html" class="internal"><span class="codenumber">5.3</span> <span class="title">NAK</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-decomposing-ideals.html" class="internal"><span class="codenumber">6</span> <span class="title">Decomposing Ideals</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-min-support.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Minimal Primes and Support</span></a></div></li>
+<li><div class="toc-item"><a href="sec-ass-primes.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Associated Primes</span></a></div></li>
+<li><div class="toc-item"><a href="sec-primary-decomp.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primary Decomposition</span></a></div></li>
+<li><div class="toc-item"><a href="sec-krull-intersection.html" class="internal"><span class="codenumber">6.4</span> <span class="title">The Krull Intersection Theorem</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-global-dim-theory.html" class="internal"><span class="codenumber">7</span> <span class="title">Global Dimension Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-dim-height.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Dimension and Height</span></a></div></li>
+<li><div class="toc-item"><a href="sec-over-up-down.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Over, Up, and Down</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noether-normalizations.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Noether Normalizations</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-local-dim-theory.html" class="internal"><span class="codenumber">8</span> <span class="title">Local Dimension Theory</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-height-generators.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Height and Number of Generators</span></a></div></li>
+<li><div class="toc-item"><a href="sec-sops.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Systems of Parameters</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sec-getting-started.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Getting Started</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="appendix-list-results.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Results</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="appendix" id="appendix-list-results"><h2 class="heading">
+<span class="type">Appendix</span> <span class="codenumber">C</span> <span class="title">List of Results</span>
+</h2>
+<h5 class="heading hide-type" title="Section 1.1: Generated Modules">
+<span class="codenumber">1.1</span><span class="space"> </span><span class="title">Generated Modules</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-generated-module-equivalencies.html" title="Lemma 1.7: Generated Module Equivalencies">Lemma 1.7</a> Generated Module Equivalencies</div>
+<h5 class="heading hide-type" title="Section 1.2: Algebras">
+<span class="codenumber">1.2</span><span class="space"> </span><span class="title">Algebras</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-generated-algebra-equivalencies.html" title="Lemma 1.18: Generated Algebra Equivalencies">Lemma 1.18</a> Generated Algebra Equivalencies</div>
+<h5 class="heading hide-type" title="Section 1.3: Algebra and Module Finite">
+<span class="codenumber">1.3</span><span class="space"> </span><span class="title">Algebra and Module Finite</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-subsets-of-generating-sets.html" title="Lemma 1.28: Subsets of Generating Sets">Lemma 1.28</a> Subsets of Generating Sets</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-mod-finite-and-algebra-finite-expressions.html" title="Lemma 1.29: Mod Finite and Algebra Finite Expressions">Lemma 1.29</a> Mod Finite and Algebra Finite Expressions</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-module-finite-implies-algebra-finite.html" title="Lemma 1.31: Module Finite Implies Algebra Finite">Lemma 1.31</a> Module Finite Implies Algebra Finite</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-compositions-preserve-module-finite.html" title="Lemma 1.33: Compositions Preserve Module Finite">Lemma 1.33</a> Compositions Preserve Module Finite</div>
+<h5 class="heading hide-type" title="Section 1.4: Integral Extensions">
+<span class="codenumber">1.4</span><span class="space"> </span><span class="title">Integral Extensions</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-f.g.-by-intl-modfin.html" title="Proposition 1.48: F.G.-by-Intl-Modfin">Proposition 1.48</a> F.G.-by-Intl-Modfin</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-determinantal-technique.html" title="Lemma 1.50: Determinantal Technique">Lemma 1.50</a> Determinantal Technique</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-module-finite-implies-integral.html" title="Theorem 1.51: Module Finite Implies Integral">Theorem 1.51</a> Module Finite Implies Integral</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-mod-fin-iff-integral-and-alg-fin.html" title="Corollary 1.52: Mod Fin iff Integral and Alg Fin">Corollary 1.52</a> Mod Fin iff Integral and Alg Fin</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-extensions-gen-by-integral-elements-are-integral.html" title="Corollary 1.53: Extensions Gen by Integral Elements are Integral">Corollary 1.53</a> Extensions Gen by Integral Elements are Integral</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-integral-elements-form-subring.html" title="Corollary 1.54: Integral Elements form Subring">Corollary 1.54</a> Integral Elements form Subring</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-int-ext-domains-field.html" title="Theorem 1.58: Int Ext Domains Field">Theorem 1.58</a> Int Ext Domains Field</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-zariskis-lemma.html" title="Theorem 1.59: Zariski's Lemma">Theorem 1.59</a> Zariski's Lemma</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-alg-fin-ext-of-alg-closed-field.html" title="Corollary 1.60: Alg-Fin Ext of Alg Closed Field">Corollary 1.60</a> Alg-Fin Ext of Alg Closed Field</div>
+<h5 class="heading hide-type" title="Section 1.5: Short Exact Sequences">
+<span class="codenumber">1.5</span><span class="space"> </span><span class="title">Short Exact Sequences</span>
+</h5>
+<h5 class="heading hide-type" title="Section 1.6: Noetherian Rings">
+<span class="codenumber">1.6</span><span class="space"> </span><span class="title">Noetherian Rings</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-equivalent-noetherian-ring-definitions.html" title="Proposition 1.67: Equivalent Noetherian Ring Definitions">Proposition 1.67</a> Equivalent Noetherian Ring Definitions</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-quotient-noetherian.html" title="Lemma 1.71: Quotient Noetherian">Lemma 1.71</a> Quotient Noetherian</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-equivalent-definitions-for-noetherian-module.html" title="Proposition 1.73: Equivalent Definitions for Noetherian Module">Proposition 1.73</a> Equivalent Definitions for Noetherian Module</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-noetherianity-in-exact-sequences.html" title="Lemma 1.76: Noetherianity in Exact Sequences">Lemma 1.76</a> Noetherianity in Exact Sequences</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-direct-sums-are-noetherian.html" title="Corollary 1.77: Direct Sums are Noetherian">Corollary 1.77</a> Direct Sums are Noetherian</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-module-powers-are-noetherian.html" title="Corollary 1.78: Module Powers are Noetherian">Corollary 1.78</a> Module Powers are Noetherian</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-submodule-of-f.g.-module-f.g..html" title="Proposition 1.79: Submodule of F.G. Module F.G">Proposition 1.79</a> Submodule of F.G. Module F.G</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/hilbert-basis-theorem.html" title="Theorem 1.81: Hilbert's Basis Theorem">Theorem 1.81</a> Hilbert's Basis Theorem</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-f.g.-algebras-over-noeth-rings-are-noeth.html" title="Corollary 1.83: F.G. Algebras over Noeth Rings are Noeth">Corollary 1.83</a> F.G. Algebras over Noeth Rings are Noeth</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-artin-tate-lemma.html" title="Theorem 1.85: Artin-Tate Lemma">Theorem 1.85</a> Artin-Tate Lemma</div>
+<h5 class="heading hide-type" title="Section 1.7: Invariant Rings: Application I">
+<span class="codenumber">1.7</span><span class="space"> </span><span class="title">Invariant Rings: Application I</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-group-ring-and-automorphisms-mod-fin.html" title="Proposition 1.91: Group Ring and Automorphisms Mod-Fin">Proposition 1.91</a> Group Ring and Automorphisms Mod-Fin</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-noethers-finiteness-theorem.html" title="Theorem 1.92: Noether's Finiteness Theorem">Theorem 1.92</a> Noether's Finiteness Theorem</div>
+<h5 class="heading hide-type" title="Section 2.1: Graded Rings">
+<span class="codenumber">2.1</span><span class="space"> </span><span class="title">Graded Rings</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-graded-ring-properties.html" title="Lemma 2.3: Graded Ring Properties">Lemma 2.3</a> Graded Ring Properties</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-equivalent-homogeneous-ideal-definitions.html" title="Lemma 2.8: Equivalent Homogeneous Ideal Definitions">Lemma 2.8</a> Equivalent Homogeneous Ideal Definitions</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-quotients-of-graded-rings.html" title="Lemma 2.10: Quotients of Graded Rings">Lemma 2.10</a> Quotients of Graded Rings</div>
+<h5 class="heading hide-type" title="Section 2.2: Finiteness Conditions for Graded Algebras">
+<span class="codenumber">2.2</span><span class="space"> </span><span class="title">Finiteness Conditions for Graded Algebras</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-graded-f.g.-algebra.html" title="Proposition 2.18: Graded F.G. Algebra">Proposition 2.18</a> Graded F.G. Algebra</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-characterization-of-noetherian-graded-rings.html" title="Corollary 2.19: Characterization of Noetherian Graded Rings">Corollary 2.19</a> Characterization of Noetherian Graded Rings</div>
+<h5 class="heading hide-type" title="Section 2.3: Invariant Rings: Application II">
+<span class="codenumber">2.3</span><span class="space"> </span><span class="title">Invariant Rings: Application II</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-direct-summand-of-ideals-contract.html" title="Lemma 2.26: Direct Summand of Ideals Contract">Lemma 2.26</a> Direct Summand of Ideals Contract</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-direct-summand-noetherian.html" title="Proposition 2.27: Direct Summand Noetherian">Proposition 2.27</a> Direct Summand Noetherian</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-k-linear-action-and-direct-summand.html" title="Proposition 2.29: K-Linear Action and Direct Summand">Proposition 2.29</a> K-Linear Action and Direct Summand</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-hilberts-finiteness-theorem-for-invariants.html" title="Theorem 2.31: Hilbert's Finiteness Theorem for Invariants">Theorem 2.31</a> Hilbert's Finiteness Theorem for Invariants</div>
+<h5 class="heading hide-type" title="Section 3.1: Prime and Maximal Ideals">
+<span class="codenumber">3.1</span><span class="space"> </span><span class="title">Prime and Maximal Ideals</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-prime-maximal-domain-field.html" title="Theorem 3.8: Prime, Maximal, Domain, Field">Theorem 3.8</a> Prime, Maximal, Domain, Field</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-every-ideal-contained-in-a-maximal-ideal.html" title="Theorem 3.9: Every Ideal Contained in a Maximal Ideal">Theorem 3.9</a> Every Ideal Contained in a Maximal Ideal</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-zorns-lemma.html" title="Theorem 3.10: Zorn's Lemma">Theorem 3.10</a> Zorn's Lemma</div>
+<h5 class="heading hide-type" title="Section 3.2: The Spectrum of a Ring">
+<span class="codenumber">3.2</span><span class="space"> </span><span class="title">The Spectrum of a Ring</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-properties-of-v.html" title="Proposition 3.13: Properties of V">Proposition 3.13</a> Properties of V</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-radical-ideal-is-an-ideal.html" title="Proposition 3.17: Radical Ideal is an Ideal">Proposition 3.17</a> Radical Ideal is an Ideal</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-v-and-radical-ideals.html" title="Lemma 3.20: V and Radical Ideals">Lemma 3.20</a> V and Radical Ideals</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-preimage-of-prime-is-prime.html" title="Lemma 3.21: Preimage of Prime is Prime">Lemma 3.21</a> Preimage of Prime is Prime</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-every-prime-contains-minimal-prime.html" title="Lemma 3.26: Every Prime Contains Minimal Prime">Lemma 3.26</a> Every Prime Contains Minimal Prime</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-spec-strong-nullstellensatz.html" title="Lemma 3.28: Spec Strong Nullstellensatz">Lemma 3.28</a> Spec Strong Nullstellensatz</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-spectrum-analogue-of-strong-nullstellensatz.html" title="Theorem 3.29: Spectrum Analogue of Strong Nullstellensatz">Theorem 3.29</a> Spectrum Analogue of Strong Nullstellensatz</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-vivj-iff-radicals-are-equal.html" title="Corollary 3.31: V(I)=V(J) iff Radicals are Equal">Corollary 3.31</a> V(I)=V(J) iff Radicals are Equal</div>
+<h5 class="heading hide-type" title="Section 3.3: Prime Avoidance">
+<span class="codenumber">3.3</span><span class="space"> </span><span class="title">Prime Avoidance</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-prime-avoidance.html" title="Lemma 3.34: Prime Avoidance">Lemma 3.34</a> Prime Avoidance</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-stronger-prime-avoidance.html" title="Theorem 3.35: Stronger Prime Avoidance">Theorem 3.35</a> Stronger Prime Avoidance</div>
+<h5 class="heading hide-type" title="Section 4.1: Varieties">
+<span class="codenumber">4.1</span><span class="space"> </span><span class="title">Varieties</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-properties-of-z.html" title="Proposition 4.8: Properties of Z">Proposition 4.8</a> Properties of Z</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-properties-of-z-topology.html" title="Proposition 4.10: Properties of Z Topology">Proposition 4.10</a> Properties of Z Topology</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-properties-of-vanishing-set.html" title="Theorem 4.17: Properties of Vanishing Set">Theorem 4.17</a> Properties of Vanishing Set</div>
+<h5 class="heading hide-type" title="Section 4.2: The Coordinate Ring of a Variety">
+<span class="codenumber">4.2</span><span class="space"> </span><span class="title">The Coordinate Ring of a Variety</span>
+</h5>
+<h5 class="heading hide-type" title="Section 4.3: Nullstellensatz">
+<span class="codenumber">4.3</span><span class="space"> </span><span class="title">Nullstellensatz</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-nullstellensatz-lemma-1.html" title="Lemma 4.27: Nullstellensatz Lemma 1">Lemma 4.27</a> Nullstellensatz Lemma 1</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-nullstellensatz.html" title="Corollary 4.29: Nullstellensatz">Corollary 4.29</a> Nullstellensatz</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-weak-nullstellensatz.html" title="Theorem 4.30: Weak Nullstellensatz">Theorem 4.30</a> Weak Nullstellensatz</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-strong-nullstellensatz.html" title="Theorem 4.33: Strong Nullstellensatz">Theorem 4.33</a> Strong Nullstellensatz</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-ord-pres-bij.html" title="Corollary 4.35: Ord-Pres-Bij">Corollary 4.35</a> Ord-Pres-Bij</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-irreducible-variety-and-prime-vanishing-set.html" title="Lemma 4.36: Irreducible Variety and Prime Vanishing Set">Lemma 4.36</a> Irreducible Variety and Prime Vanishing Set</div>
+<h5 class="heading hide-type" title="Section 5.1: Local Rings">
+<span class="codenumber">5.1</span><span class="space"> </span><span class="title">Local Rings</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-local-if-nonunits-form-an-ideal.html" title="Lemma 5.3: Local if Nonunits Form an Ideal">Lemma 5.3</a> Local if Nonunits Form an Ideal</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-characteristic-in-local-rings.html" title="Proposition 5.9: Characteristic in Local Rings">Proposition 5.9</a> Characteristic in Local Rings</div>
+<h5 class="heading hide-type" title="Section 5.2: Localization">
+<span class="codenumber">5.2</span><span class="space"> </span><span class="title">Localization</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-ump-of-localizations.html" title="Proposition 5.20: UMP of Localizations">Proposition 5.20</a> UMP of Localizations</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-localization-ideals.html" title="Lemma 5.26: Localization Ideals">Lemma 5.26</a> Localization Ideals</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-map-on-spec-localization-prime.html" title="Corollary 5.27: Map on Spec Localization Prime">Corollary 5.27</a> Map on Spec Localization Prime</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-zero-in-localization.html" title="Lemma 5.36: Zero in Localization">Lemma 5.36</a> Zero in Localization</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-localization-is-exact.html" title="Theorem 5.39: Localization is Exact">Theorem 5.39</a> Localization is Exact</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-localization-commutes-with-finite-intersections.html" title="Lemma 5.42: Localization Commutes with Finite Intersections">Lemma 5.42</a> Localization Commutes with Finite Intersections</div>
+<h5 class="heading hide-type" title="Section 5.3: NAK">
+<span class="codenumber">5.3</span><span class="space"> </span><span class="title">NAK</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-nak-1.html" title="Proposition 5.44: NAK 1">Proposition 5.44</a> NAK 1</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-nak-2.html" title="Theorem 5.45: NAK 2">Theorem 5.45</a> NAK 2</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-nak-3.html" title="Theorem 5.46: NAK 3">Theorem 5.46</a> NAK 3</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-nak-4.html" title="Theorem 5.47: NAK 4">Theorem 5.47</a> NAK 4</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-min-gen-sets-have-same-cardinality.html" title="Lemma 5.50: Min Gen Sets have Same Cardinality">Lemma 5.50</a> Min Gen Sets have Same Cardinality</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-gnak-1.html" title="Proposition 5.53: GNAK1">Proposition 5.53</a> GNAK1</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-graded-rings-and-generators.html" title="Proposition 5.55: Graded Rings and Generators">Proposition 5.55</a> Graded Rings and Generators</div>
+<h5 class="heading hide-type" title="Section 6.1: Minimal Primes and Support">
+<span class="codenumber">6.1</span><span class="space"> </span><span class="title">Minimal Primes and Support</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-finite-minimal-primes.html" title="Theorem 6.7: Finite Minimal Primes">Theorem 6.7</a> Finite Minimal Primes</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-min-primes-intersection-all-important.html" title="Lemma 6.8: Min Primes Intersection All Important">Lemma 6.8</a> Min Primes Intersection All Important</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-intersection-of-primes-are-min-primes.html" title="Lemma 6.9: Intersection of Primes are Min Primes">Lemma 6.9</a> Intersection of Primes are Min Primes</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-support-and-annihilator.html" title="Theorem 6.12: Supp(M) = Ann(M)">Theorem 6.12</a> Supp(M) = Ann(M)</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-ses-support.html" title="Lemma 6.15: SES Support">Lemma 6.15</a> SES Support</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-nonzero-element-localizes.html" title="Lemma 6.17: Nonzero Element Localizes">Lemma 6.17</a> Nonzero Element Localizes</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-support-of-nonzero-module-nonempty.html" title="Corollary 6.18: Support of Nonzero Module Nonempty">Corollary 6.18</a> Support of Nonzero Module Nonempty</div>
+<h5 class="heading hide-type" title="Section 6.2: Associated Primes">
+<span class="codenumber">6.2</span><span class="space"> </span><span class="title">Associated Primes</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-associated-primes-and-localization.html" title="Lemma 6.22: Associated Primes and Localization">Lemma 6.22</a> Associated Primes and Localization</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-associated-primes-and-quotients.html" title="Lemma 6.23: Associated Primes and Quotients">Lemma 6.23</a> Associated Primes and Quotients</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-graded-primes.html" title="Lemma 6.25: Graded Primes">Lemma 6.25</a> Graded Primes</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-every-ann-contained-in-ass-prime.html" title="Lemma 6.27: Every Ann Contained in Ass Prime">Lemma 6.27</a> Every Ann Contained in Ass Prime</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-associated-primes-nonzero.html" title="Theorem 6.28: Associated Primes Nonzero">Theorem 6.28</a> Associated Primes Nonzero</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-associated-primes-and-ses.html" title="Lemma 6.29: Associated Primes and SES">Lemma 6.29</a> Associated Primes and SES</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-ass-direct-sum.html" title="Corollary 6.32: Ass Direct Sum">Corollary 6.32</a> Ass Direct Sum</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-filtration.html" title="Theorem 6.34: Filtration">Theorem 6.34</a> Filtration</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-ass-finite.html" title="Corollary 6.35: Ass Finite">Corollary 6.35</a> Ass Finite</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-support-and-associated-primes.html" title="Theorem 6.38: Support and Associated Primes">Theorem 6.38</a> Support and Associated Primes</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-min-contained-in-ass.html" title="Theorem 6.39: Min Contained in Ass">Theorem 6.39</a> Min Contained in Ass</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-ideal-of-zerodivisors.html" title="Theorem 6.41: Ideal of Zerodivisors">Theorem 6.41</a> Ideal of Zerodivisors</div>
+<h5 class="heading hide-type" title="Section 6.3: Primary Decomposition">
+<span class="codenumber">6.3</span><span class="space"> </span><span class="title">Primary Decomposition</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-fundamental-theorem-of-arithmetic.html" title="Theorem 6.43: Fundamental Theorem of Arithmetic">Theorem 6.43</a> Fundamental Theorem of Arithmetic</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-radical-of-primary-ideal-is-prime.html" title="Lemma 6.47: Radical of Primary Ideal is Prime">Lemma 6.47</a> Radical of Primary Ideal is Prime</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-characterization-of-primary-ideals.html" title="Theorem 6.54: Characterization of Primary Ideals">Theorem 6.54</a> Characterization of Primary Ideals</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-radical-max-implies-primary.html" title="Lemma 6.55: Radical Max Implies Primary">Lemma 6.55</a> Radical Max Implies Primary</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-contraction-of-primary-ideals-is-primary.html" title="Lemma 6.58: Contraction of Primary Ideals is Primary">Lemma 6.58</a> Contraction of Primary Ideals is Primary</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-ass-intersection.html" title="Lemma 6.59: Ass Intersection">Lemma 6.59</a> Ass Intersection</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-intersections-primary.html" title="Corollary 6.60: Intersections Primary">Corollary 6.60</a> Intersections Primary</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-lasker-1905-noether-1921.html" title="Theorem 6.65: Lasker, 1905, Noether, 1921">Theorem 6.65</a> Lasker, 1905, Noether, 1921</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-1st-uniqueness-theorem-for-primary-decompositions.html" title="Theorem 6.67: 1st Uniqueness Theorem for Primary Decompositions">Theorem 6.67</a> 1st Uniqueness Theorem for Primary Decompositions</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-2nd-uniqueness-theorem-for-primary-decompositions.html" title="Theorem 6.68: 2nd Uniqueness Theorem for Primary Decompositions">Theorem 6.68</a> 2nd Uniqueness Theorem for Primary Decompositions</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/prop-characterizations-of-symbolic-powers.html" title="Proposition 6.73: Characterizations of Symbolic Powers">Proposition 6.73</a> Characterizations of Symbolic Powers</div>
+<h5 class="heading hide-type" title="Section 6.4: The Krull Intersection Theorem">
+<span class="codenumber">6.4</span><span class="space"> </span><span class="title">The Krull Intersection Theorem</span>
+</h5>
+<h5 class="heading hide-type" title="Section 7.1: Dimension and Height">
+<span class="codenumber">7.1</span><span class="space"> </span><span class="title">Dimension and Height</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-ufd-height-1.html" title="Lemma 7.8: UFD height 1">Lemma 7.8</a> UFD height 1</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-properties-of-dimension-and-height.html" title="Lemma 7.11: Properties of Dimension and Height">Lemma 7.11</a> Properties of Dimension and Height</div>
+<h5 class="heading hide-type" title="Section 7.2: Over, Up, and Down">
+<span class="codenumber">7.2</span><span class="space"> </span><span class="title">Over, Up, and Down</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-primes-contracting-to-p-fiber-ring.html" title="Lemma 7.22: Primes Contracting to p Fiber Ring">Lemma 7.22</a> Primes Contracting to p Fiber Ring</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-image-criterion.html" title="Lemma 7.23: Image Criterion">Lemma 7.23</a> Image Criterion</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-direct-summand-and-surj-spec-map.html" title="Corollary 7.26: Direct Summand and Surj Spec Map">Corollary 7.26</a> Direct Summand and Surj Spec Map</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-extension-contraction-lemma-for-int.-ext..html" title="Lemma 7.30: Extension-Contraction Lemma for Int. Ext.">Lemma 7.30</a> Extension-Contraction Lemma for Int. Ext.</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-lying-over.html" title="Theorem 7.31: Lying Over">Theorem 7.31</a> Lying Over</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-integral-extension-maximal-contracts-to-maximal.html" title="Lemma 7.36: Integral Extension Maximal Contracts to Maximal">Lemma 7.36</a> Integral Extension Maximal Contracts to Maximal</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-integral-preserved-by-localization.html" title="Lemma 7.37: Integral Preserved by Localization">Lemma 7.37</a> Integral Preserved by Localization</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-incomparability.html" title="Theorem 7.38: Incomparability">Theorem 7.38</a> Incomparability</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-finite-contractions-in-int-noeth-alg.html" title="Corollary 7.39: Finite Contractions in Int Noeth Alg">Corollary 7.39</a> Finite Contractions in Int Noeth Alg</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-integral-dim-inequality.html" title="Corollary 7.40: Integral Dim Inequality">Corollary 7.40</a> Integral Dim Inequality</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-going-up.html" title="Theorem 7.41: Going Up">Theorem 7.41</a> Going Up</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-integral-dim-equality.html" title="Corollary 7.42: Integral Dim Equality">Corollary 7.42</a> Integral Dim Equality</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-lemma-minimal-polynomial.html" title="Lemma 7.43: Lemma Minimal Polynomial">Lemma 7.43</a> Lemma Minimal Polynomial</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-going-down.html" title="Theorem 7.44: Going Down">Theorem 7.44</a> Going Down</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-height-in-normal-domains.html" title="Corollary 7.45: Height in Normal Domains">Corollary 7.45</a> Height in Normal Domains</div>
+<h5 class="heading hide-type" title="Section 7.3: Noether Normalizations">
+<span class="codenumber">7.3</span><span class="space"> </span><span class="title">Noether Normalizations</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-making-a-pure-power-leading-term.html" title="Lemma 7.46: Making a Pure-Power Leading Term">Lemma 7.46</a> Making a Pure-Power Leading Term</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-making-a-pure-power-leading-term-graded-version.html" title="Lemma 7.47: Making a Pure-Power Leading Term (Graded Version)">Lemma 7.47</a> Making a Pure-Power Leading Term (Graded Version)</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-noether-normalization.html" title="Theorem 7.48: Noether Normalization">Theorem 7.48</a> Noether Normalization</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-graded-noether-normalization.html" title="Theorem 7.50: Graded Noether Normalization">Theorem 7.50</a> Graded Noether Normalization</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-noether-normalization-height-and-dimension.html" title="Theorem 7.52: Noether Normalization Height and Dimension">Theorem 7.52</a> Noether Normalization Height and Dimension</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-dimension-of-polynomial-ring.html" title="Corollary 7.53: Dimension of Polynomial Ring">Corollary 7.53</a> Dimension of Polynomial Ring</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-dimension-of-algebra.html" title="Corollary 7.54: Dimension of Algebra">Corollary 7.54</a> Dimension of Algebra</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-f.g.-algebra-catenary-domain.html" title="Corollary 7.55: F.G. Algebra Catenary Domain">Corollary 7.55</a> F.G. Algebra Catenary Domain</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-transcendence-basis-well-defined-1.html" title="Lemma 7.57: Transcendence Basis Well-Defined 1">Lemma 7.57</a> Transcendence Basis Well-Defined 1</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-transcendence-basis-well-defined-2.html" title="Lemma 7.58: Transcendence Basis Well-Defined 2">Lemma 7.58</a> Transcendence Basis Well-Defined 2</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-dimension-in-f.g.-domain.html" title="Corollary 7.59: Dimension in F.G. Domain">Corollary 7.59</a> Dimension in F.G. Domain</div>
+<h5 class="heading hide-type" title="Section 8.1: Height and Number of Generators">
+<span class="codenumber">8.1</span><span class="space"> </span><span class="title">Height and Number of Generators</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-krulls-principal-ideal-theorem.html" title="Theorem 8.1: Krull's Principal Ideal Theorem">Theorem 8.1</a> Krull's Principal Ideal Theorem</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/lem-proper-containment-of-ideals-in-noetherian-ring.html" title="Lemma 8.3: Proper Containment of Ideals in Noetherian Ring">Lemma 8.3</a> Proper Containment of Ideals in Noetherian Ring</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-krulls-height-theorem.html" title="Theorem 8.4: Krull's Height Theorem">Theorem 8.4</a> Krull's Height Theorem</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-ideals-in-noeth-rings-have-finite-height.html" title="Corollary 8.9: Ideals in Noeth Rings have Finite Height">Corollary 8.9</a> Ideals in Noeth Rings have Finite Height</div>
+<h5 class="heading hide-type" title="Section 8.2: Systems of Parameters">
+<span class="codenumber">8.2</span><span class="space"> </span><span class="title">Systems of Parameters</span>
+</h5>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-existence-of-sops.html" title="Theorem 8.13: Existence of SOPs">Theorem 8.13</a> Existence of SOPs</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/cor-dim-embdim.html" title="Corollary 8.14: Dim &lt;= EmbDim">Corollary 8.14</a> Dim &lt;= EmbDim</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/thm-sop-stuff-theorem.html" title="Theorem 8.17: SOP Stuff Theorem">Theorem 8.17</a> SOP Stuff Theorem</div>
+<h5 class="heading hide-type" title="Section A.1: Getting Started">
+<span class="codenumber">A.1</span><span class="space"> </span><span class="title">Getting Started</span>
+</h5></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="appendix-list-definitions.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="colophon-2.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

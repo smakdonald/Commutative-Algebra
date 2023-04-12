@@ -543,8 +543,12 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div></li>
+<li>
+<div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="sec-getting-started.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Getting Started</span></a></div></li></ul>
+</li>
 <li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-results.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Results</span></a></div></li>
 <li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
@@ -553,13 +557,13 @@ window.MathJax = {
 <span class="type">Section</span> <span class="codenumber">1.7</span> <span class="title">Invariant Rings: Application I</span>
 </h2>
 <blockquote class="blockquote" id="blockquote-8">
-<div class="para" id="p-209">“No taxation without representation!”</div> <cite class="attribution">―James Otis</cite>
+<div class="para" id="p-222">“No taxation without representation!”</div> <cite class="attribution">―James Otis</cite>
 </blockquote>
-<div class="para" id="p-210">Historically, commutative algebra has roots in classical questions of algebraic and geometric flavors, including the following natural question:</div>
+<div class="para" id="p-223">Historically, commutative algebra has roots in classical questions of algebraic and geometric flavors, including the following natural question:</div>
 <article class="question example-like" id="question"><h3 class="heading">
-<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.85</span><span class="period">.</span>
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.86</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-211">Given a (finite) set of symmetries, consider the collection of polynomial functions that are fixed by all of those symmetries. Can we describe all the fixed polynomials in terms of finitely many of them?</div></article><div class="para logical" id="p-212">
+<div class="para" id="p-224">Given a (finite) set of symmetries, consider the collection of polynomial functions that are fixed by all of those symmetries. Can we describe all the fixed polynomials in terms of finitely many of them?</div></article><div class="para logical" id="p-225">
 <div class="para">To make this precise, let <span class="process-math">\(G\)</span> be a group acting on a ring <span class="process-math">\(R\text{.}\)</span> The main case we have in mind is when <span class="process-math">\(R=k[x_1,\dots,x_d]\)</span> and <span class="process-math">\(k\)</span> is a field; we let <span class="process-math">\(G\)</span> act trivially on <span class="process-math">\(k\text{,}\)</span> and the action respects the sum and product in the ring:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -581,12 +585,12 @@ r+s=g \cdot r + g \cdot s = g \cdot (r+s) \quad \text{and}\quad r s = (g \cdot r
 <div class="para">since each <span class="process-math">\(g\)</span> is a homomorphism. Note also that if <span class="process-math">\(G=\langle g_1,\dots,g_t\rangle\text{,}\)</span> then <span class="process-math">\(r\in R^G\)</span> if and only if <span class="process-math">\(g_i(r)=r\)</span> for <span class="process-math">\(i=1,\dots,t.\)</span> The question above can now be rephrased as follows:</div>
 </div>
 <article class="question example-like" id="question-1"><h3 class="heading">
-<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.86</span><span class="period">.</span>
+<span class="type">Question</span><span class="space"> </span><span class="codenumber">1.87</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-213">Given a finite group <span class="process-math">\(G\)</span> acting on <span class="process-math">\(R=k[x_1,\dots,x_d]\text{,}\)</span> is <span class="process-math">\(R^G\)</span> a finitely generated <span class="process-math">\(k\)</span>-algebra?</div></article><div class="para" id="p-214">Note that <span class="process-math">\(R^G\)</span> is a <span class="process-math">\(k\)</span>-subalgebra of <span class="process-math">\(R\text{.}\)</span> Even though <span class="process-math">\(R\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra, this does not guarantee a priori that <span class="process-math">\(R^G\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra --- recall \Cref{inf gen subalg} <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code>, where we saw a subalgebra of a finitely generated algebra which is nevertheless not finitely generated.</div>
+<div class="para" id="p-226">Given a finite group <span class="process-math">\(G\)</span> acting on <span class="process-math">\(R=k[x_1,\dots,x_d]\text{,}\)</span> is <span class="process-math">\(R^G\)</span> a finitely generated <span class="process-math">\(k\)</span>-algebra?</div></article><div class="para" id="p-227">Note that <span class="process-math">\(R^G\)</span> is a <span class="process-math">\(k\)</span>-subalgebra of <span class="process-math">\(R\text{.}\)</span> Even though <span class="process-math">\(R\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra, this does not guarantee a priori that <span class="process-math">\(R^G\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra --- recall \Cref{inf gen subalg} <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code>, where we saw a subalgebra of a finitely generated algebra which is nevertheless not finitely generated.</div>
 <article class="example example-like" id="ex-root-of-unity-invariants"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.87</span><span class="period">.</span><span class="space"> </span><span class="title">Root of Unity Invariants.</span>
-</h3> <div class="para logical" id="p-215">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.88</span><span class="period">.</span><span class="space"> </span><span class="title">Root of Unity Invariants.</span>
+</h3> <div class="para logical" id="p-228">
 <div class="para">Consider the group with two elements <span class="process-math">\(G=\{e,g\}\text{.}\)</span> To define an action of <span class="process-math">\(G\)</span> on <span class="process-math">\(R=k[x]\text{,}\)</span> we need only to define <span class="process-math">\(g \cdot x\text{,}\)</span> since <span class="process-math">\(e\)</span> is the identity and <span class="process-math">\(g\)</span> acts linearly. Consider the action of <span class="process-math">\(G\)</span> on <span class="process-math">\(R=k[x]\)</span> given by <span class="process-math">\(g \cdot x = -x\text{,}\)</span> so <span class="process-math">\(g \cdot f(x) = f(-x)\text{.}\)</span> Suppose that the characteristic of <span class="process-math">\(k\)</span> is not 2, so <span class="process-math">\(-1 \neq 1\text{.}\)</span> Write <span class="process-math">\(f= a_n x^n + a_{n-1} x^{n-1} + \cdots + a_0\text{.}\)</span> We have <span class="process-math">\(g \cdot x^i=(-x)^i = (-1)^i x^i\text{,}\)</span> so</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -601,8 +605,8 @@ R^G = k[x^2].
 </div>
 <div class="para">In particular, <span class="process-math">\(R^G\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra.</div>
 </div></article><article class="example example-like" id="ex-veronese-subring"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.88</span><span class="period">.</span><span class="space"> </span><span class="title">Veronese Subring.</span>
-</h3> <div class="para logical" id="p-216">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.89</span><span class="period">.</span><span class="space"> </span><span class="title">Veronese Subring.</span>
+</h3> <div class="para logical" id="p-229">
 <div class="para">Generalize the last example as follows: let <span class="process-math">\(k\)</span> be a field with a primitive <span class="process-math">\(d\)</span>th root of unity <span class="process-math">\(\zeta\text{,}\)</span> and let <span class="process-math">\(G= \langle g \rangle \cong C_d\)</span> act on <span class="process-math">\(R = k[x_1,\dots,x_n]\)</span> via <span class="process-math">\(g \cdot x_i = \zeta x_i\)</span> for all <span class="process-math">\(i\text{.}\)</span> Then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -612,23 +616,23 @@ R^G = \{ f \in R \ | \ \text{every term of $f$ has degree a multiple of $d$}\} =
 <div class="para">This what is known as the Veronese subring of <span class="process-math">\(R\)</span> of degree <span class="process-math">\(d\text{.}\)</span>
 </div>
 </div></article><article class="example example-like" id="ex-standard-rep-of-sn"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.89</span><span class="period">.</span><span class="space"> </span><span class="title">Standard Representation of the Symmetric Group.</span>
-</h3> <div class="para" id="p-217">Let <span class="process-math">\(S_n\)</span> be the symmetric group on <span class="process-math">\(n\)</span> letters acting on <span class="process-math">\(R=k[x_1,\dots,x_n]\)</span> via <span class="process-math">\(\sigma(x_i)=x_{\sigma(i)}\text{.}\)</span> For example, if <span class="process-math">\(n=3\text{,}\)</span> then <span class="process-math">\(f=x_1^2+x_2^2+x_3^2\)</span> is invariant, while <span class="process-math">\(g=x_1^2+x_1x_2+x_2^2+x_3^2\)</span> is not, since swapping 1 with 3 gives a different polynomial.</div> <div class="para logical" id="p-218">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.90</span><span class="period">.</span><span class="space"> </span><span class="title">Standard Representation of the Symmetric Group.</span>
+</h3> <div class="para" id="p-230">Let <span class="process-math">\(S_n\)</span> be the symmetric group on <span class="process-math">\(n\)</span> letters acting on <span class="process-math">\(R=k[x_1,\dots,x_n]\)</span> via <span class="process-math">\(\sigma(x_i)=x_{\sigma(i)}\text{.}\)</span> For example, if <span class="process-math">\(n=3\text{,}\)</span> then <span class="process-math">\(f=x_1^2+x_2^2+x_3^2\)</span> is invariant, while <span class="process-math">\(g=x_1^2+x_1x_2+x_2^2+x_3^2\)</span> is not, since swapping 1 with 3 gives a different polynomial.</div> <div class="para logical" id="p-231">
 <div class="para">You may recall the Fundamental Theorem of Symmetric Polynomials says that every element of <span class="process-math">\(R^{S_n}\)</span> can be written as polynomial expression in the elementary symmetric polynomials</div>
-<div class="displaymath process-math" id="md-3">
+<div class="displaymath process-math" id="md-2">
 \begin{align*}
 e_1 \amp = x_1+\dots +x_n\\
 e_2  \amp =\sum x_i x_j\\
 \vdots\\
-e_n  \amp =x_1x_2\cdots x_n.
+e_n \amp =x_1x_2\cdots x_n.
 \end{align*}
 </div>
 <div class="para">More precisely, <span class="process-math">\(R^{S_n} = k[e_1, \ldots, e_n]\text{.}\)</span> For example, <span class="process-math">\(f\)</span> above is <span class="process-math">\(e_1^2-2 e_2\text{.}\)</span> In fact, any symmetric polynomial can be written like so in a  way, so <span class="process-math">\(R^{S_n}\)</span> is a free <span class="process-math">\(k\)</span>-algebra. So even though we have infinitely many invariant polynomials, we can understand them in terms of only finitely many of them, which are <em class="emphasis">fundamental</em> invariants.</div>
 </div></article><article class="proposition theorem-like" id="prop-group-ring-and-automorphisms-mod-fin"><h3 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.90</span><span class="period">.</span><span class="space"> </span><span class="title">Group Ring and Automorphisms Mod-Fin.</span>
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.91</span><span class="period">.</span><span class="space"> </span><span class="title">Group Ring and Automorphisms Mod-Fin.</span>
 </h3>
-<div class="para" id="p-219">Let <span class="process-math">\(k\)</span> be a field, <span class="process-math">\(R\)</span> be a finitely generated <span class="process-math">\(k\)</span>-algebra, and <span class="process-math">\(G\)</span> a finite group of automorphisms of <span class="process-math">\(R\)</span> that fix <span class="process-math">\(k\text{.}\)</span> Then <span class="process-math">\(R^G \subseteq R\)</span> is module-finite.</div></article><article class="hiddenproof" id="proof-24"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-24"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-24"><article class="hiddenproof"><div class="para" id="p-220">By , integral and algebra-finite implies module-finite, so we will show that <span class="process-math">\(R\)</span> is algebra-finite and integral over <span class="process-math">\(R^G\text{.}\)</span>
-</div> <div class="para" id="p-221">First, since <span class="process-math">\(k\subseteq R^G\)</span> and <span class="process-math">\(R\)</span> is generated finitely generated <span class="process-math">\(k\)</span>-algebra, it is generated by the same finite set as an <span class="process-math">\(R^G\)</span>-algebra as well. Thus <span class="process-math">\(R^G \subseteq R\)</span> is algebra-finite.</div> <div class="para logical" id="p-222">
+<div class="para" id="p-232">Let <span class="process-math">\(k\)</span> be a field, <span class="process-math">\(R\)</span> be a finitely generated <span class="process-math">\(k\)</span>-algebra, and <span class="process-math">\(G\)</span> a finite group of automorphisms of <span class="process-math">\(R\)</span> that fix <span class="process-math">\(k\text{.}\)</span> Then <span class="process-math">\(R^G \subseteq R\)</span> is module-finite.</div></article><article class="hiddenproof" id="proof-24"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-24"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-24"><article class="hiddenproof"><div class="para" id="p-233">By , integral and algebra-finite implies module-finite, so we will show that <span class="process-math">\(R\)</span> is algebra-finite and integral over <span class="process-math">\(R^G\text{.}\)</span>
+</div> <div class="para" id="p-234">First, since <span class="process-math">\(k\subseteq R^G\)</span> and <span class="process-math">\(R\)</span> is generated finitely generated <span class="process-math">\(k\)</span>-algebra, it is generated by the same finite set as an <span class="process-math">\(R^G\)</span>-algebra as well. Thus <span class="process-math">\(R^G \subseteq R\)</span> is algebra-finite.</div> <div class="para logical" id="p-235">
 <div class="para">To show that <span class="process-math">\(R^G \subseteq R\)</span> is integral, let us first extend the action of <span class="process-math">\(G\)</span> on <span class="process-math">\(R\)</span> to <span class="process-math">\(R[t]\)</span> trivially, meaning that we will let <span class="process-math">\(G\)</span> fix <span class="process-math">\(t\text{.}\)</span> Given <span class="process-math">\(r\in R\text{,}\)</span> consider the polynomial</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -652,9 +656,9 @@ g (a_nt^n + \cdots + a_0) = a_nt^n + \cdots + a_0 \implies (g \cdot a_n)t^n + \c
 </div>
 </div></article></div>
 <article class="theorem theorem-like" id="thm-noethers-finiteness-theorem"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.91</span><span class="period">.</span><span class="space"> </span><span class="title">Noether's Finiteness Theorem.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.92</span><span class="period">.</span><span class="space"> </span><span class="title">Noether's Finiteness Theorem.</span>
 </h3>
-<div class="para" id="p-223">Let <span class="process-math">\(k\)</span> be a field, <span class="process-math">\(R\)</span> be a polynomial ring over <span class="process-math">\(k\text{,}\)</span> and <span class="process-math">\(G\)</span> be a finite group acting <span class="process-math">\(k\)</span>-linearly on <span class="process-math">\(R\text{.}\)</span> Then <span class="process-math">\(R^G\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra.</div></article><article class="hiddenproof" id="proof-25"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-25"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-25"><article class="hiddenproof"><div class="para" id="p-224">Observe that <span class="process-math">\(k \subseteq R^G \subseteq R\text{,}\)</span> that <span class="process-math">\(k\)</span> is noetherian, <span class="process-math">\(k\subseteq R\)</span> is algebra-finite, and <span class="process-math">\(R^G\subseteq R\)</span> is module-finite. The desired result is now a corollary of the <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Artin-Tate Lemma|Artin-Tate Lemma]].</div></article></div></section></div>
+<div class="para" id="p-236">Let <span class="process-math">\(k\)</span> be a field, <span class="process-math">\(R\)</span> be a polynomial ring over <span class="process-math">\(k\text{,}\)</span> and <span class="process-math">\(G\)</span> be a finite group acting <span class="process-math">\(k\)</span>-linearly on <span class="process-math">\(R\text{.}\)</span> Then <span class="process-math">\(R^G\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra.</div></article><article class="hiddenproof" id="proof-25"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-25"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-25"><article class="hiddenproof"><div class="para" id="p-237">Observe that <span class="process-math">\(k \subseteq R^G \subseteq R\text{,}\)</span> that <span class="process-math">\(k\)</span> is noetherian, <span class="process-math">\(k\subseteq R\)</span> is algebra-finite, and <span class="process-math">\(R^G\subseteq R\)</span> is module-finite. The desired result is now a corollary of the <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Artin-Tate Lemma|Artin-Tate Lemma]].</div></article></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-noetherian.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-graded-rings.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

@@ -13,15 +13,21 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">For a field <span class="process-math">\(k\text{,}\)</span> the ring <span class="process-math">\(R = k[x_1,x_2,\dots]/(x_1^2,x_2^2,\dots)\)</span> is not noetherian, as</div>
+<div class="para">Let's get back to our motivating example in <span class="process-math">\(\mathbb{Z}[\sqrt{-5}]\text{,}\)</span> where some elements can be written as products of irreducible elements in more than one way. For example, we saw that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(x_1) \subsetneq (x_1,x_2) \subsetneq (x_1,x_2,x_3) \subsetneq \cdots
+6 = 2 \cdot 3 = (1 + \sqrt{-5}) (1 - \sqrt{-5}).
 \end{equation*}
 </div>
-<div class="para">is an infinite ascending chain, so <span class="process-math">\(R\)</span> is not noetherian. However, <span class="process-math">\(\sqrt{(0)} = (x_1,x_2,\dots)\)</span> is a maximal ideal, and hence <span class="process-math">\((x_1,x_2,\dots)\)</span> is the unique minimal prime of <span class="process-math">\(R\text{,}\)</span> which is also maximal. Therefore, <span class="process-math">\(\dim(R) = 0\text{.}\)</span>
+<div class="para">So <span class="process-math">\((6) = (2) \cap (3)\text{,}\)</span> but while <span class="process-math">\((2)\)</span> is primary, <span class="process-math">\((3)\)</span> is not. In fact, <span class="process-math">\((3)\)</span> has two distinct minimal primes, and the following is a minimal primary decomposition for <span class="process-math">\((6)\text{:}\)</span>
 </div>
+<div class="displaymath process-math">
+\begin{equation*}
+(6) = (2) \cap (3, 1+\sqrt{-5}) \cap (3, 1 - \sqrt{-5}).
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-dim-height.html#p-663" class="internal">in-context</a></span>
+<div class="para">In fact, all of these come components are minimal, and so this primary decomposition is unique. Primary decomposition saves the day!</div>
+</div>
+<span class="incontext"><a href="sec-primary-decomp.html#p-663" class="internal">in-context</a></span>
 </body>
 </html>

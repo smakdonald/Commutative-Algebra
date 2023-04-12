@@ -12,7 +12,18 @@
 </head>
 <body class="ignore-math">
 <h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">Any system of polynomial equations in finitely many variables can be written in terms of finitely many equations.</div>
+<div class="para logical">
+<div class="para">We will do induction on <span class="process-math">\(n\text{.}\)</span> The case <span class="process-math">\(n=1\)</span> is a tautology. For <span class="process-math">\(n&gt;1\text{,}\)</span> consider the short exact sequence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/lem-noetherianity-in-exact-sequences.html">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;M^{n-1}@&gt;&gt;&gt;M^{n}@&gt;g&gt;&gt;M@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">
+<a href="" class="xref" data-knowl="./knowl/lem-noetherianity-in-exact-sequences.html" title="Lemma 1.76: Noetherianity in Exact Sequences">Lemma 1.76</a> and the inductive hypothesis give the desired conclusion.</div>
+</div>
 <span class="incontext"><a href="sec-noetherian.html#p-196" class="internal">in-context</a></span>
 </body>
 </html>

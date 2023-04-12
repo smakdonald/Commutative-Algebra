@@ -13,15 +13,20 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(S= R b_1 + \cdots + R b_n\text{.}\)</span> We can write</div>
+<div class="para">The ring <span class="process-math">\(\Z_{(2)}[x]\)</span> is a domain that is not equidimensional. On the one hand, the maximal ideal <span class="process-math">\((2,x)\)</span> has height at least two, which we see from the chain</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x b_i = \left(\sum_{k=1}^t a_k s_k \right) b_i = \sum_j a_{ij} b_j
+(0) \subsetneq (x) \subseteq (x,2).
 \end{equation*}
 </div>
-<div class="para">with <span class="process-math">\(a_{ij}\in I\text{.}\)</span> We can write these equations in the form <span class="process-math">\(x v = Av\text{,}\)</span> where <span class="process-math">\(v=(b_1,\dots,b_u)\text{,}\)</span> and <span class="process-math">\(A=[a_{ij}]\text{.}\)</span> By the determinantal trick, , we have <span class="process-math">\(\det(xI-A)v=0\text{.}\)</span> Since we can assume <span class="process-math">\(b_1=1\text{,}\)</span> we have <span class="process-math">\(\det(xI-A)=0\text{.}\)</span> The fact that this is the type of equation we want follows from the monomial expansion of the determinant: any monomial is a product of <span class="process-math">\(n\)</span> terms where some of them are copies of <span class="process-math">\(x\text{,}\)</span> and the rest are elements of <span class="process-math">\(I\text{.}\)</span> Since this is a product of <span class="process-math">\(n\)</span> terms, a term in <span class="process-math">\(x^i\)</span> has a coefficient coming from a product of <span class="process-math">\(n-i\)</span> elements of <span class="process-math">\(I\text{.}\)</span>
+<div class="para">Thus <span class="process-math">\(\dim(R) \geqslant 2\text{.}\)</span> On the other hand, we will show later that the prime ideal <span class="process-math">\(P = (2x-1)\)</span> has height 1, and it is maximal since <span class="process-math">\(R/P \cong \Q\text{.}\)</span> Therefore, <span class="process-math">\(\dim(R/P)=0\text{,}\)</span> and thus</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dim(R/P)+ \ht(P)=1
+\end{equation*}
 </div>
+<div class="para">whereas <span class="process-math">\(\dim R \geqslant 2\text{.}\)</span> %In fact, <span class="process-math">\(\dim R=2\text{,}\)</span> but I won't justify this.</div>
 </div>
-<span class="incontext"><a href="sec-over-up-down.html#p-705" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-dim-height.html#p-705" class="internal">in-context</a></span>
 </body>
 </html>

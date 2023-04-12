@@ -12,7 +12,27 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">“”</div>
-<span class="incontext"><a href="sec-graded-rings.html#p-225" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">To make this precise, let <span class="process-math">\(G\)</span> be a group acting on a ring <span class="process-math">\(R\text{.}\)</span> The main case we have in mind is when <span class="process-math">\(R=k[x_1,\dots,x_d]\)</span> and <span class="process-math">\(k\)</span> is a field; we let <span class="process-math">\(G\)</span> act trivially on <span class="process-math">\(k\text{,}\)</span> and the action respects the sum and product in the ring:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g \cdot \left( \sum_{a} c_{a} x_1^{a_1} \cdots x_d^{a_d} \right) = \sum_{a} c_{a} (g \cdot x_1)^{a_1} \cdots (g \cdot x_d)^{a_d}.
+\end{equation*}
+</div>
+<div class="para">We are interested in the set of elements that are {\bf invariant}\index{invariant}\index{<span class="process-math">\(R^G\)</span>} under the action,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R^G : = \{ r \in R \ | \ g(r) = r \ \text{for all} \ g\in G\}.
+\end{equation*}
+</div>
+<div class="para">Note that <span class="process-math">\(R^G\)</span> is a subring of <span class="process-math">\(R\text{.}\)</span> Indeed, given <span class="process-math">\(r,s\in R^G\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r+s=g \cdot r + g \cdot s = g \cdot (r+s) \quad \text{and}\quad r s = (g \cdot r) (g \cdot s) = g \cdot (rs) \qquad \text{for all} \ g\in G,
+\end{equation*}
+</div>
+<div class="para">since each <span class="process-math">\(g\)</span> is a homomorphism. Note also that if <span class="process-math">\(G=\langle g_1,\dots,g_t\rangle\text{,}\)</span> then <span class="process-math">\(r\in R^G\)</span> if and only if <span class="process-math">\(g_i(r)=r\)</span> for <span class="process-math">\(i=1,\dots,t.\)</span> The question above can now be rephrased as follows:</div>
+</div>
+<span class="incontext"><a href="sec-inv-rings-1.html#p-225" class="internal">in-context</a></span>
 </body>
 </html>

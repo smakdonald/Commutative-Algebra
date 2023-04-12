@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<section class="paragraphs"><h3 class="heading"><span class="title">Macaulay2.</span></h3> <div class="para">Polynomial rings in Macaulay2 are graded with the standard grading by default. To define a different grading, we give Macaulay2 a list with the grading of each of the variables:</div>
+<pre class="code-block tex2jax_ignore">i1 : R = ZZ/101[a,b,c,Degrees=&gt;{{1,2},{2,1},{1,0}}];
+</pre>
+<div class="para">We can check whether an element of <span class="process-math">\(R\)</span> <code class="code-inline tex2jax_ignore">isHomogeneous</code>, and the function <code class="code-inline tex2jax_ignore">degree</code> applied to an element of <span class="process-math">\(R\)</span> returns the least upper bound of the degrees of its monomials:</div>
+<pre class="code-block tex2jax_ignore">i2 : degree (a+b)
+o2 = {2, 2}
+o2 : List
+
+i3 : isHomogeneous(a+b)
+o3 = false
+</pre></section><span class="incontext"><a href="sec-graded-rings.html#paragraphs-3" class="internal">in-context</a></span>
+</body>
+</html>
