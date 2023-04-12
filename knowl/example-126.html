@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.14</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
+</h3> <div class="para logical">
+<div class="para">Let <span class="process-math">\(k\)</span> be an infinite field and <span class="process-math">\(R = k[t^3,t^4,t^5]\text{.}\)</span> We have shown that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\displaystyle R\cong \frac{k[x,y,z]}{(x^3-yz,y^2-xz,z^2-x^2y)},
+\end{equation*}
+</div>
+<div class="para">and that <span class="process-math">\(R\)</span> is the coordinate ring of the curve</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X = \{ (t^3,t^4,t^5) \ | t\in k\}.
+\end{equation*}
+</div>
+<div class="para">As <span class="process-math">\(X\)</span> is a curve (meaning it is parameterized by a single parameter), we should expect the dimension of the variety <span class="process-math">\(X\text{,}\)</span> and equivalently of the ring <span class="process-math">\(R\text{,}\)</span> to be <span class="process-math">\(1\text{.}\)</span> Let’s prove this.</div>
+</div> <div class="para">On the one hand, <span class="process-math">\(R\)</span> is a domain, so <span class="process-math">\((0)\)</span> is the unique minimal prime. To show that <span class="process-math">\(\dim(R) = 1\text{,}\)</span> we need to show that any nonzero prime ideal is maximal.</div> <div class="para">Set <span class="process-math">\(S = k[t^3]\subseteq R\text{.}\)</span> We note that <span class="process-math">\(t^3\)</span> does not satisfy any algebraic relation over <span class="process-math">\(k\text{,}\)</span> so <span class="process-math">\(S\)</span> is isomorphic to a polynomial ring in one variable, where that one variable corresponds to <span class="process-math">\(t^3\text{.}\)</span> Moreover, note that the inclusion <span class="process-math">\(S \subseteq R\)</span> is integral, since <span class="process-math">\(t^4\)</span> satisfies the monic polynomial <span class="process-math">\((T^4)^3- (t^3)^4=0\)</span> and <span class="process-math">\(t^5\)</span> satisfies the monic polynomial <span class="process-math">\((T^5)^3 - (t^3)^5=0\text{.}\)</span> Polynomial rings in one variable have dimension <span class="process-math">\(1\text{,}\)</span> so <span class="process-math">\(\dim(S) = 1\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">Let <span class="process-math">\(P \in \Spec(R)\)</span> be nonzero. Note first that <span class="process-math">\(P \cap S \neq 0\text{,}\)</span> since if <span class="process-math">\(f \in P\text{,}\)</span> then there is some nonzero multiple of <span class="process-math">\(f\)</span> in <span class="process-math">\(S\)</span> by . Since <span class="process-math">\(\dim(S)=1\text{,}\)</span> <span class="process-math">\(P \cap S\)</span> is maximal. The inclusion</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{S}{P \cap S} \hookrightarrow \frac{R}{P}
+\end{equation*}
+</div>
+<div class="para">is integral: a dependence relation for any representative yields a dependence relation. Since <span class="process-math">\(\frac{S}{P \cap S}\)</span> is a field, <span class="process-math">\(\frac{R}{P}\)</span> is a domain, and the inclusion is integral, by  we can conclude that <span class="process-math">\(R/P\)</span> is a field, so <span class="process-math">\(P\)</span> is a maximal ideal. This shows that every nonzero prime in <span class="process-math">\(R\)</span> is maximal, and thus <span class="process-math">\(\dim(R) = 1\text{.}\)</span>
+</div>
+</div></article><span class="incontext"><a href="sec-dim-height.html#example-126" class="internal">in-context</a></span>
+</body>
+</html>
