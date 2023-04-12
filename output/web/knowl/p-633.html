@@ -13,15 +13,16 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(R = k[x_{11},x_{21},x_{22}, x_{31}, x_{32}, x_{33},\ldots]\)</span> be a polynomial ring in infinitely many variables, which we are thinking of as arranged in an infinite triangle. <span class="process-math">\(R\)</span> is clearly infinite-dimensional and not noetherian. Let</div>
+<div class="para">To check this, we just need to see that each of the ideals <span class="process-math">\((x^2,xy,y^2)\)</span> and <span class="process-math">\((x^2,y)\)</span> are primary. Observe that each has radical <span class="process-math">\(\fm=(x,y)\text{,}\)</span> which is maximal, so these ideals are both primary. In fact, our ideal <span class="process-math">\(I\)</span> has infinitely many minimal primary decompositions: given any <span class="process-math">\(n \geqslant 1\text{,}\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-W = R \setminus \big((x_{11}) \cup (x_{21},x_{22}) \cup (x_{31},x_{32},x_{33})  \cup \cdots \big) = \bigcap_{n \geqslant 1} \big(R \setminus (x_{n1},\dots,x_{nn})\big)
+I = (x) \cap (x^2, xy, y^n)
 \end{equation*}
 </div>
-<div class="para">and <span class="process-math">\(S=W^{-1}R\text{.}\)</span> Note that <span class="process-math">\(W\)</span> is an intersection of multiplicatively closed subsets, so this is a valid localization of <span class="process-math">\(R\text{.}\)</span>
+<div class="para">is an irredundant primary decomposition. One thing all of these have in common is the radicals of the primary components: they are always <span class="process-math">\((x)\)</span> and <span class="process-math">\((x,y)\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="sec-dim-height.html#p-633" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-primary-decomp.html#p-633" class="internal">in-context</a></span>
 </body>
 </html>

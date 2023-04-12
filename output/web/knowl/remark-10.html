@@ -12,8 +12,60 @@
 </head>
 <body class="ignore-math">
 <article class="remark remark-like"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.50</span><span class="period">.</span>
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.62</span><span class="period">.</span>
 </h3>
-<div class="para">An element <span class="process-math">\(r \in R\)</span> is integral over <span class="process-math">\(A\)</span> if and only if <span class="process-math">\(r\)</span> is integral over the subring <span class="process-math">\(\varphi(A)\subseteq R\text{,}\)</span> so we might as well assume that <span class="process-math">\(\varphi\)</span> is injective.</div></article><span class="incontext"><a href="sec-integral-extensions.html#remark-10" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">The sequence</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;M@&gt;f&gt;&gt;N
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is exact if and only if <span class="process-math">\(f\)</span> is injective. Similarly,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+M@&gt;f&gt;&gt;N@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is exact if and only if <span class="process-math">\(f\)</span> is surjective. As a consequence, we see that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;M@&gt;f&gt;&gt;N@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is exact if and only if <span class="process-math">\(f\)</span> is an isomorphism. Moreover,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;A@&gt;f&gt;&gt;B@&gt;g&gt;&gt;C@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is a short exact sequence if and only if</div>
+<div class="displaymath process-math">
+\begin{align*}
+\text{is injective} \amp  \text{is surjective} \amp  
+\end{align*}
+</div>
+<div class="para">So when this is indeed a short exact sequence, we can identify <span class="process-math">\(A\)</span> with its image <span class="process-math">\(f(A)\text{,}\)</span> which makes <span class="process-math">\(A = \ker g\text{.}\)</span> Moreover, since <span class="process-math">\(g\)</span> is surjective, by the First Isomorphism Theorem we conclude that <span class="process-math">\(C \cong B/A\text{,}\)</span> so we might abuse notation and identify <span class="process-math">\(C\)</span> with <span class="process-math">\(B/A\text{.}\)</span> In particular, note that <span class="process-math">\(C = \coker f\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">In summary, any short exact sequence encodes an inclusion and its cokernel, or equivalently a surjection an its kernel. To give a short exact sequence</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;A@&gt;&gt;&gt;B@&gt;&gt;&gt;C@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is the same as giving an inclusion of modules <span class="process-math">\(A \subseteq B\)</span> and the corresponding quotient module <span class="process-math">\(B/A\text{.}\)</span>
+</div>
+</div></article><span class="incontext"><a href="sec-ses.html#remark-10" class="internal">in-context</a></span>
 </body>
 </html>

@@ -12,27 +12,8 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical"><ol class="decimal">
-<li><div class="para">When <span class="process-math">\(R\)</span> is a field, this is a basic linear algebra fact. We will deduce the case of a general ring from the field case. The ring <span class="process-math">\(R\)</span> is a <span class="process-math">\(\Z\)</span>-algebra,[^2] so we can write <span class="process-math">\(R\)</span> as a quotient of some polynomial ring <span class="process-math">\(\Z[X]\text{.}\)</span>[^3] Let <span class="process-math">\(\psi:\Z[X]\to R\)</span> be a surjection, <span class="process-math">\(a_{ij}\in \Z[X]\)</span> be such that <span class="process-math">\(\psi(a_{ij})=b_{ij},\)</span> and let <span class="process-math">\(A=[a_{ij}]\text{.}\)</span> Note that<div class="displaymath process-math">
-\begin{equation*}
-\psi(\mathrm{adj}(A)_{ij})=\mathrm{adj}(B)_{ij} \quad \textrm{ and } \quad \psi((\mathrm{adj}(A) A)_{ij}) = (\mathrm{adj}(B) B)_{ij},
-\end{equation*}
-</div>since <span class="process-math">\(\psi\)</span> is a homomorphism, and the entries are the same polynomial functions of the entries of the matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> respectively. Thus, it suffices to establish<div class="displaymath process-math">
-\begin{equation*}
-\mathrm{adj}(B) B = \det(B) I_{n\times n}
-\end{equation*}
-</div>in the case when <span class="process-math">\(R=\Z[X]\text{,}\)</span> and we can do this entry by entry. Now, <span class="process-math">\(R=\Z[X]\)</span> is an integral domain, hence a subring of a field (its fraction field). Since both sides of the equation<div class="displaymath process-math">
-\begin{equation*}
-\left( \mathrm{adj}(B) B \right)_{ij} = \left( \det(B) I_{n\times n}\right)_{ij}
-\end{equation*}
-</div>live in <span class="process-math">\(R\)</span> and are equal in the fraction field (by linear algebra) they are equal in <span class="process-math">\(R\text{.}\)</span> This holds for all <span class="process-math">\(i, j\text{,}\)</span> and thus 1) holds.</div></li>
-<li><div class="para">By assumption, we have <span class="process-math">\((r I_{n\times n} - B) v=0\text{,}\)</span> so by part 1)<div class="displaymath process-math">
-\begin{equation*}
-\det(r I_{n\times n} - B) v=\mathrm{adj}(r I_{n\times n} - B) (r I_{n\times n} - B) v = 0.
-\end{equation*}
+<div class="para">Consider the <span class="process-math">\(\Z\)</span>-algebra <span class="process-math">\(R = \Z[\sqrt{2}] = \{ a + b \sqrt{2} \mid a, b \in \Z \}\text{.}\)</span> The element <span class="process-math">\(\sqrt{2}\)</span> is integral over <span class="process-math">\(\Z.\)</span>
 </div>
-</div></li>
-</ol></div>
 <span class="incontext"><a href="sec-integral-extensions.html#p-93" class="internal">in-context</a></span>
 </body>
 </html>

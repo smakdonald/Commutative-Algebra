@@ -13,21 +13,20 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(R\)</span> be a ring. (a) A prime has height zero if and only if it is a minimal prime of <span class="process-math">\(R\text{.}\)</span> (b) An ideal has height zero if and only if it is contained in a minimal prime of <span class="process-math">\(R\text{.}\)</span> In particular, in a domain, every nonzero ideal has positive height. (c) <span class="process-math">\(\dim(R) = \sup \{ \dim(R/P) \mid P \in \Spec(R) \} = \sup\{ \dim(R/P) \mid P \in \Min(R) \}\)</span>[^1]. (d) <span class="process-math">\(\dim(R) = \sup \{ \ht(P) \mid P \in \Spec(R) \}=\sup\{ \mathrm{height}(Q) \mid Q \in \mSpec(R) \}\text{.}\)</span> (e) If <span class="process-math">\(I\)</span> is an ideal, then <span class="process-math">\(\dim(R/I) = \sup \{ n \mid \exists P_0 \subsetneq P_1 \subsetneq \cdots \subsetneq P_n, P_i \in V(I) \}\text{.}\)</span> (f) If <span class="process-math">\(P\)</span> is prime,</div>
+<div class="para">If <span class="process-math">\(I\)</span> is an ideal in a noetherian ring <span class="process-math">\(R\text{,}\)</span> then the minimal components in any irredundant primary decomposition of <span class="process-math">\(I\)</span> are unique. More precisely, if</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\dim(R/P) + \ht(P) \leqslant \dim(R).
+I = Q_1 \cap \cdots \cap Q_t
 \end{equation*}
 </div>
-<div class="para">(g) If <span class="process-math">\(I\)</span> is an ideal,</div>
+<div class="para">is an irredundant primary decomposition, and <span class="process-math">\(\sqrt{Q_i} \in \Min(I)\text{,}\)</span> then <span class="process-math">\(Q_i\)</span> is given by the formula</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\dim(R/I) + \ht(I) \leqslant \dim(R).
+Q_i = I R_{\sqrt{Q_i}} \cap R,
 \end{equation*}
 </div>
-<div class="para">(h) If <span class="process-math">\(W\)</span> is a multiplicative set, then <span class="process-math">\(\dim(W^{-1}R) \leqslant \dim(R)\)</span>[^2]. (i) If <span class="process-math">\(P\)</span> is prime, then <span class="process-math">\(\ht(P)=\dim(R_P)\text{.}\)</span> (j) If <span class="process-math">\(P \subseteq Q\)</span> are primes, then <span class="process-math">\(\dim(R_Q/ P R_Q)\)</span> is the supremum of the lengths of saturated chains of primes in <span class="process-math">\(R\)</span> of the form <span class="process-math">\(P = P_0 \subsetneq P_1 \subsetneq \cdots \subsetneq P_n = Q\text{.}\)</span>
+<div class="para">which does not depend on our choice of irredundant decomposition.</div>
 </div>
-</div>
-<span class="incontext"><a href="sec-dim-height.html#p-636" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-primary-decomp.html#p-636" class="internal">in-context</a></span>
 </body>
 </html>

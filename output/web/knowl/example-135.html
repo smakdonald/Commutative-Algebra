@@ -12,15 +12,8 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.61</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
-</h3> <div class="para">Let us use our dimension theorems to give two different proofs that over any field <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(\displaystyle R=k[x,y,z]/(y^2-xz)\)</span> has dimension 2.</div> <div class="para">First, we claim that <span class="process-math">\(A = k[x,z]\)</span> is a Noether normalization of <span class="process-math">\(R\text{.}\)</span> First, note that <span class="process-math">\(x\)</span> and <span class="process-math">\(z\)</span> are algebraically independent over <span class="process-math">\(k\text{.}\)</span> Moreover, <span class="process-math">\(R = A[y]\)</span> and <span class="process-math">\(y\)</span> satisfies the monic polynomial <span class="process-math">\(t^2-xz \in A[t]\text{,}\)</span> so <span class="process-math">\(A \subseteq R = A[y]\)</span> is integral, and thus module-finite by . Therefore, <span class="process-math">\(\dim(R) = 2\text{.}\)</span>
-</div> <div class="para logical">
-<div class="para">Alternatively, one can show that <span class="process-math">\(y^2-xz\)</span> is irreducible, e.g., by thinking of it as a polynomial in <span class="process-math">\(y\)</span> and applying Eisenstein’s criterion. Then <span class="process-math">\((y^2-xz)\)</span> is a prime of height one, so by  the dimension of <span class="process-math">\(R\)</span> is</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\dim(R) = \dim(k[x,y,z])-\ht((y^2-xz))=3-1=2.
-\end{equation*}
-</div>
-</div></article><span class="incontext"><a href="sec-noether-normalizations.html#example-135" class="internal">in-context</a></span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.8</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
+</h3> <div class="para">Let <span class="process-math">\(R=k[x,xy,xy^2,\dots] \subseteq k[x,y]\text{.}\)</span> For all <span class="process-math">\(a \geqslant 1\text{,}\)</span> <span class="process-math">\(xy^a \notin (x)\text{,}\)</span> since <span class="process-math">\(y^a\notin R\text{,}\)</span> but <span class="process-math">\((xy^a)^2 = x \cdot x y^{2a}\in (x)\text{.}\)</span> Then <span class="process-math">\((x)\)</span> is not prime in <span class="process-math">\(R\text{,}\)</span> and moreover <span class="process-math">\(\fm=(x,xy,xy^2,\dots) \subseteq \sqrt{(x)}\text{.}\)</span> Since <span class="process-math">\(\fm\)</span> is a maximal ideal, we have equality, so <span class="process-math">\(\Min{(x)}=\{\fm\}\text{.}\)</span> However, <span class="process-math">\(\p=(xy,xy^2, xy^3,\dots) = (y) k[x,y] \cap R\)</span> is prime, and the chain <span class="process-math">\((0) \subsetneq \p \subsetneq \fm\)</span> shows that <span class="process-math">\(\ht(\fm)&gt;1\text{.}\)</span>
+</div></article><span class="incontext"><a href="sec-height-generators.html#example-135" class="internal">in-context</a></span>
 </body>
 </html>

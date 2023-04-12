@@ -66,7 +66,7 @@ window.MathJax = {
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra:</span> <span class="subtitle">An example to get you started</span></a></h1>
+<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra</span></a></h1>
 <p class="byline">Sam Macdonald</p>
 </div>
 <div id="searchresultsplaceholder" style="display: none">
@@ -471,7 +471,14 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-alg-mod-finite.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Algebra and Module Finite</span></a></div></li>
 <li><div class="toc-item"><a href="sec-integral-extensions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Integral Extensions</span></a></div></li>
 <li class="active"><div class="toc-item"><a href="sec-ses.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Short Exact Sequences</span></a></div></li>
-<li><div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-rings" class="internal"><span class="title">Noetherian Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-modules" class="internal"><span class="title">Noetherian Modules</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-hilbert" class="internal"><span class="title">Hilbert's Basis Theorem</span></a></div></li>
+</ul>
+</li>
 <li><div class="toc-item"><a href="sec-inv-rings-1.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Invariant Rings: Application I</span></a></div></li>
 </ul>
 </li>
@@ -533,20 +540,25 @@ window.MathJax = {
 </li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-ses"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.5</span> <span class="title">Short Exact Sequences</span>
 </h2>
 <blockquote class="blockquote" id="blockquote-5">
-<div class="para" id="p-117">“Impressive claims are made far more impressive by making them exact.”</div> <cite class="attribution">―Claude C. Hopkins</cite>
+<div class="para" id="p-140">“Impressive claims are made far more impressive by making them exact.”</div> <cite class="attribution">―Claude C. Hopkins</cite>
 </blockquote>
-<article class="remark remark-like" id="remark-13"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.67</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-118">Homological techniques play a central role in commutative algebra. Ideally, our study of commutative algebra would start with a semester long course on homological algebra; but we are not assuming any homological algebra background, and thus we need to introduce some elementary homological algebra tools.</div></article><article class="definition definition-like" id="defn-exact-sequence"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.68</span><span class="period">.</span><span class="space"> </span><span class="title">Exact Sequence.</span>
-</h3> <div class="para logical" id="p-119">
+<div class="para" id="p-141">Homological techniques play a central role in commutative algebra. Ideally, our study of commutative algebra would start with a semester long course on homological algebra; but we are not assuming any homological algebra background, and thus we need to introduce some elementary homological algebra tools.</div>
+<article class="definition definition-like" id="defn-exact-sequence"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.60</span><span class="period">.</span><span class="space"> </span><span class="title">Exact Sequence.</span>
+</h3> <div class="para logical" id="p-142">
 <div class="para">An <em class="emphasis">exact sequence</em> of <span class="process-math">\(R\)</span>-modules] is a sequence</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -555,11 +567,11 @@ window.MathJax = {
 \end{CD}
 \end{equation*}
 </div>
-<div class="para">of <span class="process-math">\(R\)</span>-modules] and <span class="process-math">\(R\)</span>-module homomorphisms such that <span class="process-math">\(\im f_n = \ker f_{n+1}\)</span>[^1] for all <span class="process-math">\(n\text{.}\)</span>
+<div class="para">of <span class="process-math">\(R\)</span>-modules] and <span class="process-math">\(R\)</span>-module homomorphisms such that <span class="process-math">\(\im f_n = \ker f_{n+1}\)</span> for all <span class="process-math">\(n\text{.}\)</span>
 </div>
-</div></article><article class="example example-like" id="example-26"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.69</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
-</h3> <div class="para logical" id="p-120">
+</div></article><article class="example example-like" id="ex-ses"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.61</span><span class="period">.</span><span class="space"> </span><span class="title">Short Exaxt Sequence Example.</span>
+</h3> <div class="para logical" id="p-143">
 <div class="para">Let <span class="process-math">\(R = k[x]/(x^2)\text{,}\)</span> where <span class="process-math">\(k\)</span> is any field. The <span class="process-math">\(R \xrightarrow{\, x\,} R\)</span> has image and kernel <span class="process-math">\((x)\text{,}\)</span> so the following is an exact sequence:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -568,10 +580,10 @@ window.MathJax = {
 \end{CD}
 \end{equation*}
 </div>
-</div></article><article class="remark remark-like" id="remark-14"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.70</span><span class="period">.</span>
+</div></article><article class="remark remark-like" id="remark-10"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.62</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-121">
+<div class="para logical" id="p-144">
 <div class="para">The sequence</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -604,9 +616,15 @@ M@&gt;f&gt;&gt;N@&gt;&gt;&gt;0
 \end{CD}
 \end{equation*}
 </div>
-<div class="para">is a short exact sequence if and only if - <span class="process-math">\(f\)</span> is injective - <span class="process-math">\(g\)</span> is surjective - <span class="process-math">\(\im f=\ker g\)</span> So when this is indeed a short exact sequence, we can identify <span class="process-math">\(A\)</span> with its image <span class="process-math">\(f(A)\text{,}\)</span> which makes <span class="process-math">\(A = \ker g\text{.}\)</span> Moreover, since <span class="process-math">\(g\)</span> is surjective, by the First Isomorphism Theorem we conclude that <span class="process-math">\(C \cong B/A\text{,}\)</span> so we might abuse notation and identify <span class="process-math">\(C\)</span> with <span class="process-math">\(B/A\text{.}\)</span> In particular, note that <span class="process-math">\(C = \coker f\text{.}\)</span>
+<div class="para">is a short exact sequence if and only if</div>
+<div class="displaymath process-math" id="md-2">
+\begin{align*}
+\text{is injective} \amp  \text{is surjective} \amp  
+\end{align*}
 </div>
-</div> <div class="para logical" id="p-122">
+<div class="para">So when this is indeed a short exact sequence, we can identify <span class="process-math">\(A\)</span> with its image <span class="process-math">\(f(A)\text{,}\)</span> which makes <span class="process-math">\(A = \ker g\text{.}\)</span> Moreover, since <span class="process-math">\(g\)</span> is surjective, by the First Isomorphism Theorem we conclude that <span class="process-math">\(C \cong B/A\text{,}\)</span> so we might abuse notation and identify <span class="process-math">\(C\)</span> with <span class="process-math">\(B/A\text{.}\)</span> In particular, note that <span class="process-math">\(C = \coker f\text{.}\)</span>
+</div>
+</div> <div class="para logical" id="p-145">
 <div class="para">In summary, any short exact sequence encodes an inclusion and its cokernel, or equivalently a surjection an its kernel. To give a short exact sequence</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -617,9 +635,9 @@ M@&gt;f&gt;&gt;N@&gt;&gt;&gt;0
 </div>
 <div class="para">is the same as giving an inclusion of modules <span class="process-math">\(A \subseteq B\)</span> and the corresponding quotient module <span class="process-math">\(B/A\text{.}\)</span>
 </div>
-</div></article><article class="example example-like" id="example-27"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.71</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
-</h3> <div class="para logical" id="p-123">
+</div></article><article class="example example-like" id="ex-ses-zmods"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.63</span><span class="period">.</span><span class="space"> </span><span class="title">SES of <span class="process-math">\(\Z\)</span>-modules.</span>
+</h3> <div class="para logical" id="p-146">
 <div class="para">The following is a short exact sequence of <span class="process-math">\(\Z\)</span>-modules:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -630,10 +648,10 @@ M@&gt;f&gt;&gt;N@&gt;&gt;&gt;0
 </div>
 <div class="para">Indeed, multiplication by <span class="process-math">\(2\)</span> on <span class="process-math">\(\Z\)</span> is injective, and its cokernel is <span class="process-math">\(\Zm 2\text{.}\)</span> Another way to look at this is to notice that the kernel of the canonical projection map <span class="process-math">\(\Z \to \Zm 2\)</span> is the ideal generated by <span class="process-math">\(2\text{,}\)</span> which is a free <span class="process-math">\(\Z\)</span>-module with <span class="process-math">\(1\)</span> generator. The map <span class="process-math">\(\Z \xrightarrow{\, 2 \,} \Z\)</span> corresponds to the inclusion of that module in <span class="process-math">\(\Z\text{.}\)</span>
 </div>
-</div></article><article class="remark remark-like" id="remark-15"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.72</span><span class="period">.</span>
+</div></article><article class="remark remark-like" id="remark-11"><h3 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.64</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-124">
+<div class="para logical" id="p-147">
 <div class="para">Suppose that</div>
 <div class="displaymath process-math">
 \begin{equation*}

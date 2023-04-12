@@ -13,15 +13,26 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Suppose <span class="process-math">\(X\)</span> is a subvariety of <span class="process-math">\(\mathbb{A}^m_k\)</span> and <span class="process-math">\(Y\)</span> is a subvariety of <span class="process-math">\(\mathbb{A}^n_l\text{.}\)</span> A {} or {} or {} from <span class="process-math">\(X\)</span> to <span class="process-math">\(Y\)</span> is a function <span class="process-math">\(\phi: X \to Y\)</span> defined coordinatewise by polynomials <span class="process-math">\(g_1, \dots, g_n\in k[x_1, \dots, x_m]\text{,}\)</span> that is</div>
+<div class="para">Now suppose that the statement holds for some <span class="process-math">\(n-1 \geq 2\text{,}\)</span> and consider ideals <span class="process-math">\(I_1, \ldots, I_{n}\)</span> with <span class="process-math">\(I_i\)</span> prime for all <span class="process-math">\(i \geq3\)</span> such that <span class="process-math">\(J \notin I_i\)</span> for any <span class="process-math">\(i\text{.}\)</span> By induction hypothesis, for each <span class="process-math">\(i\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\phi(a_1, \dots, a_m) = (g_1(a_1, \dots, a_m), \dots, g_n(a_1, \dots, a_m)) \text{ for all } \bf{a} \in X.
+J \notin \bigcup_{j \neq i} I_j,
 \end{equation*}
 </div>
-<div class="para">A morphism of varieties <span class="process-math">\(\phi: X \to Y\)</span> is an {} if there is some morphism of varieties <span class="process-math">\(\phi: Y \to X\)</span> such that <span class="process-math">\(\phi\circ \psi = \id_Y\)</span> and <span class="process-math">\(\psi \circ \phi = \id_X\text{.}\)</span>
+<div class="para">so we can find elements <span class="process-math">\(a_i\)</span> such that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_i \notin \bigcup_{j\neq i} I_j \textrm{ and } a_i \in J.
+\end{equation*}
 </div>
+<div class="para">If some <span class="process-math">\(a_i\notin I_i\text{,}\)</span> we are done, so let's assume that <span class="process-math">\(a_i\in I_i\)</span> for each <span class="process-math">\(i\text{.}\)</span> Consider</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a :=  a_n + a_1 \cdots a_{n-1} \in J.
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-coordinate-ring.html#p-347" class="internal">in-context</a></span>
+<div class="para">Notice that <span class="process-math">\(a_1\cdots a_{n-1}=a_i(a_1\cdots \widehat{a_i} \cdots a_{n-1})\in I_i\text{.}\)</span> If <span class="process-math">\(a\in I_i\)</span> for <span class="process-math">\(i&lt;n\text{,}\)</span> then we also have <span class="process-math">\(a_n\in I_i\text{,}\)</span> a contradiction. If <span class="process-math">\(a\in I_n\text{,}\)</span> then we also have <span class="process-math">\(a_1\cdots a_{n-1} = a - a_n \in I_n\text{,}\)</span> since <span class="process-math">\(a_n\in I_n\text{.}\)</span> Since <span class="process-math">\(n&gt;2\text{,}\)</span> our assumption is that <span class="process-math">\(I_n\)</span> is prime, so one of <span class="process-math">\(a_1,\dots,a_{n-1}\in I_n\text{,}\)</span> which is a contradiction. So <span class="process-math">\(a \notin I_i\)</span> for all <span class="process-math">\(i\text{,}\)</span> and thus <span class="process-math">\(a\)</span> is the element we were searching for.</div>
+</div>
+<span class="incontext"><a href="sec-prime-avoidance.html#p-347" class="internal">in-context</a></span>
 </body>
 </html>

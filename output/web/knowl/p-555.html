@@ -12,21 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">Let <span class="process-math">\(R\)</span> be noetherian and <span class="process-math">\(M\)</span> be an <span class="process-math">\(R\)</span>-module.[^1]</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\Supp(M) \,\, = \displaystyle\bigcup_{P \in \Ass(M)} V(P).
-\end{equation*}
-</div>
-<div class="para">##### <em class="emphasis">Proof.</em> Let <span class="process-math">\(P \in \Ass_R(M)\text{,}\)</span> and fix <span class="process-math">\(m \in M\)</span> such that <span class="process-math">\(P = \ann_R(m)\text{.}\)</span> Let <span class="process-math">\(Q \in V(P)\text{.}\)</span> By [[Mathematics/Commutative Algebra/Results/Proposition - Supp(M) = Ann(M)|Proposition]], <span class="process-math">\(Q \in \Supp(R/P)\text{.}\)</span> Since <span class="process-math">\(0 \to R/P \xrightarrow{m} M\)</span> is exact and localization is exact[^2], <span class="process-math">\(0 \to (R/P)_Q \to M_{Q}\)</span> is also exact. Since <span class="process-math">\((R/P)_Q \neq 0\text{,}\)</span> we must also have <span class="process-math">\(M_{Q} \neq 0\text{,}\)</span> and thus <span class="process-math">\(Q \in \Supp(M)\text{.}\)</span> This shows <span class="process-math">\(\Supp(M) \, \supseteq \displaystyle\bigcup_{P \in \Ass(M)} V(P)\text{.}\)</span> Now let <span class="process-math">\(Q\)</span> be a prime ideal and suppose that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-Q \notin \bigcup_{P\in \Ass(M)} V(P).
-\end{equation*}
-</div>
-<div class="para">In particular, <span class="process-math">\(Q\)</span> does not contain any associated prime of <span class="process-math">\(M\text{.}\)</span> Then there is no associated prime of <span class="process-math">\(M\)</span> that does not intersect <span class="process-math">\(R \setminus Q\text{,}\)</span> so <span class="process-math">\(\Ass_{R_{Q}}(M_{Q})=\varnothing\)</span>[^3]. By [[Mathematics/Commutative Algebra/Results/Lemma - Nonzero Element Localizes|Lemma]], <span class="process-math">\(M_{Q}=0\text{.}\)</span>
-</div>
+<div class="para">The set of ideals <span class="process-math">\(S := \{ \ann_R(m) \ | \ m\in M, m \neq0\}\)</span> is nonempty, and any element in <span class="process-math">\(S\)</span> is contained in a maximal element. Note in fact that any element in <span class="process-math">\(S\)</span> must be contained in a maximal element of <span class="process-math">\(S\text{.}\)</span> Let <span class="process-math">\(I=\ann(m)\)</span> be any maximal element, and let <span class="process-math">\(rs\in I\text{,}\)</span> <span class="process-math">\(s\notin I\text{.}\)</span> We always have <span class="process-math">\(\ann(sm)\supseteq \ann(m)\text{,}\)</span> and equality holds by the maximality of <span class="process-math">\(\ann(m)\)</span> in <span class="process-math">\(S\text{.}\)</span> Then <span class="process-math">\(r(sm)=(rs)m=0\text{,}\)</span> so <span class="process-math">\(r\in \ann(sm)=\ann(m)=I\text{.}\)</span> We conclude that <span class="process-math">\(I\)</span> is prime, and therefore it is an associated prime of <span class="process-math">\(M\text{.}\)</span>
 </div>
 <span class="incontext"><a href="sec-ass-primes.html#p-555" class="internal">in-context</a></span>
 </body>

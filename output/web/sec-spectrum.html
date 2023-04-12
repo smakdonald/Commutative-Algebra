@@ -66,7 +66,7 @@ window.MathJax = {
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra:</span> <span class="subtitle">An example to get you started</span></a></h1>
+<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra</span></a></h1>
 <p class="byline">Sam Macdonald</p>
 </div>
 <div id="searchresultsplaceholder" style="display: none">
@@ -471,7 +471,14 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-alg-mod-finite.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Algebra and Module Finite</span></a></div></li>
 <li><div class="toc-item"><a href="sec-integral-extensions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Integral Extensions</span></a></div></li>
 <li><div class="toc-item"><a href="sec-ses.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Short Exact Sequences</span></a></div></li>
-<li><div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-rings" class="internal"><span class="title">Noetherian Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-modules" class="internal"><span class="title">Noetherian Modules</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-hilbert" class="internal"><span class="title">Hilbert's Basis Theorem</span></a></div></li>
+</ul>
+</li>
 <li><div class="toc-item"><a href="sec-inv-rings-1.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Invariant Rings: Application I</span></a></div></li>
 </ul>
 </li>
@@ -533,21 +540,28 @@ window.MathJax = {
 </li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-spectrum"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">3.2</span> <span class="title">The Spectrum of a Ring</span>
 </h2>
 <blockquote class="blockquote" id="blockquote-13">
-<div class="para" id="p-271">“”</div> <cite class="attribution">―</cite>
+<div class="para" id="p-302">“What is life but a spectrum and what is music but life itself.”</div> <cite class="attribution">―Billy Cobham</cite>
 </blockquote>
 <article class="definition definition-like" id="defn-prime-spectrum"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.11</span><span class="period">.</span><span class="space"> </span><span class="title">Prime Spectrum.</span>
-</h3> <div class="para" id="p-272">Let <span class="process-math">\(R\)</span> be a ring. The <em class="emphasis">prime spectrum</em> of <span class="process-math">\(R\text{,}\)</span> denoted <span class="process-math">\(\Spec(R)\text{,}\)</span> is the set of prime ideals of <span class="process-math">\(R\text{.}\)</span> The set of maximal ideals of <span class="process-math">\(R\)</span> is denoted <span class="process-math">\(\mSpec(R)\text{.}\)</span>
+</h3> <div class="para" id="p-303">Let <span class="process-math">\(R\)</span> be a ring. The <em class="emphasis">prime spectrum</em> of <span class="process-math">\(R\text{,}\)</span> denoted <span class="process-math">\(\Spec(R)\text{,}\)</span> is the set of prime ideals of <span class="process-math">\(R\text{.}\)</span> The set of maximal ideals of <span class="process-math">\(R\)</span> is denoted <span class="process-math">\(\mSpec(R)\text{.}\)</span>
 </div></article><article class="definition definition-like" id="defn-vi"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.12</span><span class="period">.</span><span class="space"> </span><span class="title">V(I).</span>
-</h3> <div class="para logical" id="p-273">
-<div class="para">For a ring <span class="process-math">\(R\)</span> and an ideal <span class="process-math">\(I\text{,}\)</span> we set[^1]</div>
+</h3> <div class="para logical" id="p-304">
+<div class="para">For a ring <span class="process-math">\(R\)</span> and an ideal <span class="process-math">\(I\text{,}\)</span> we set</div>
 <div class="displaymath process-math">
 \begin{equation*}
 V(I) :=  \{ P \in \Spec(R) \ \mid \ I \sse P\}.
@@ -556,16 +570,17 @@ V(I) :=  \{ P \in \Spec(R) \ \mid \ I \sse P\}.
 </div></article><article class="proposition theorem-like" id="prop-properties-of-v"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">3.13</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of V.</span>
 </h3>
-<div class="para" id="p-274">Let <span class="process-math">\(R\)</span> be a ring, and <span class="process-math">\(I_{\lambda},J\)</span> be ideals, not necessarily proper. (a) <span class="process-math">\(V(R) = \varnothing\)</span> and <span class="process-math">\(V(0) = \Spec(R)\)</span>[^1]. (b) If <span class="process-math">\(I \subseteq J\text{,}\)</span> then <span class="process-math">\(V(J)\subseteq V(I)\text{.}\)</span> (c) <span class="process-math">\(V(I) \cup V(J) = V(I \cap J)=V(IJ)\text{.}\)</span> (d) <span class="process-math">\(\bigcap_{\lambda} V(I_{\lambda}) =V(\sum_{\lambda} I_{\lambda})\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-37"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-37"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-37"><article class="hiddenproof"><div class="para" id="p-275">Both <span class="process-math">\((a)\)</span> and <span class="process-math">\((b)\)</span> are straightforward, so we just prove <span class="process-math">\((c)\text{.}\)</span>
-</div> <div class="para" id="p-276">To see <span class="process-math">\(V(I)\cup V(J) \subseteq V(I \cap J)\text{,}\)</span> just observe that if <span class="process-math">\(I \sse P\)</span> or <span class="process-math">\(J \sse P\text{,}\)</span> then <span class="process-math">\(I \cap J \sse P\text{.}\)</span>[^2]</div> <div class="para" id="p-277">Since <span class="process-math">\(IJ \subseteq I \cap J\text{,}\)</span>[^3] we have <span class="process-math">\(V(I \cap J) \subseteq V(IJ)\)</span>[^4]. To show <span class="process-math">\(V(IJ) \subseteq V(I) \cup V(J)\text{,}\)</span> if <span class="process-math">\(P\)</span> is a prime and <span class="process-math">\(P \notin V(I) \cup V(J)\text{,}\)</span> then <span class="process-math">\(P \not\supseteq I, P \not\supseteq J\text{.}\)</span> Thus we can find <span class="process-math">\(f \in I\text{,}\)</span> and <span class="process-math">\(g \in J\)</span> such that <span class="process-math">\(f, g \notin P\text{.}\)</span> Since <span class="process-math">\(P\)</span> is prime, <span class="process-math">\(fg \notin P\text{,}\)</span> while also <span class="process-math">\(fg \in IJ\text{.}\)</span> Therefore, <span class="process-math">\(P \nsubseteq IJ\text{.}\)</span>
-</div> <div class="para" id="p-278">To show <span class="process-math">\((d)\text{,}\)</span> since ideals are closed for sums, if <span class="process-math">\(P \supseteq I_\lambda\)</span> for all <span class="process-math">\(\lambda\text{,}\)</span> then <span class="process-math">\(P \supseteq \sum_{\lambda} I_{\lambda}\text{.}\)</span> Moreover, if <span class="process-math">\(P \supseteq \sum_{\lambda} I_{\lambda}\text{,}\)</span> then in particular <span class="process-math">\(P \supseteq I_\lambda\text{.}\)</span>
+<div class="para" id="p-305">Let <span class="process-math">\(R\)</span> be a ring, and <span class="process-math">\(I_{\lambda},J\)</span> be ideals, not necessarily proper. (a) <span class="process-math">\(V(R) = \varnothing\)</span> and <span class="process-math">\(V(0) = \Spec(R)\text{.}\)</span> (b) If <span class="process-math">\(I \subseteq J\text{,}\)</span> then <span class="process-math">\(V(J)\subseteq V(I)\text{.}\)</span> (c) <span class="process-math">\(V(I) \cup V(J) = V(I \cap J)=V(IJ)\text{.}\)</span> (d) <span class="process-math">\(\bigcap_{\lambda} V(I_{\lambda}) =V(\sum_{\lambda} I_{\lambda})\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-37"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-37"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-37"><article class="hiddenproof"><div class="para" id="p-306">Both <span class="process-math">\((a)\)</span> and <span class="process-math">\((b)\)</span> are straightforward, so we just prove <span class="process-math">\((c)\text{.}\)</span>
+</div> <div class="para" id="p-307">To see <span class="process-math">\(V(I)\cup V(J) \subseteq V(I \cap J)\text{,}\)</span> just observe that if <span class="process-math">\(I \sse P\)</span> or <span class="process-math">\(J \sse P\text{,}\)</span> then <span class="process-math">\(I \cap J \sse P\text{.}\)</span>
+</div> <div class="para" id="p-308">Since <span class="process-math">\(IJ \subseteq I \cap J\text{,}\)</span> we have <span class="process-math">\(V(I \cap J) \subseteq V(IJ)\text{.}\)</span> To show <span class="process-math">\(V(IJ) \subseteq V(I) \cup V(J)\text{,}\)</span> if <span class="process-math">\(P\)</span> is a prime and <span class="process-math">\(P \notin V(I) \cup V(J)\text{,}\)</span> then <span class="process-math">\(P \not\supseteq I, P \not\supseteq J\text{.}\)</span> Thus we can find <span class="process-math">\(f \in I\text{,}\)</span> and <span class="process-math">\(g \in J\)</span> such that <span class="process-math">\(f, g \notin P\text{.}\)</span> Since <span class="process-math">\(P\)</span> is prime, <span class="process-math">\(fg \notin P\text{,}\)</span> while also <span class="process-math">\(fg \in IJ\text{.}\)</span> Therefore, <span class="process-math">\(P \nsubseteq IJ\text{.}\)</span>
+</div> <div class="para" id="p-309">To show <span class="process-math">\((d)\text{,}\)</span> since ideals are closed for sums, if <span class="process-math">\(P \supseteq I_\lambda\)</span> for all <span class="process-math">\(\lambda\text{,}\)</span> then <span class="process-math">\(P \supseteq \sum_{\lambda} I_{\lambda}\text{.}\)</span> Moreover, if <span class="process-math">\(P \supseteq \sum_{\lambda} I_{\lambda}\text{,}\)</span> then in particular <span class="process-math">\(P \supseteq I_\lambda\text{.}\)</span>
 </div></article></div>
 <article class="example example-like" id="ex-poset-structure-of-spec"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.14</span><span class="period">.</span><span class="space"> </span><span class="title">Poset Structure of Spec.</span>
 </h3>
-<div class="para logical" id="p-279">
-<div class="para">Note that <span class="process-math">\(\Spec(R)\)</span>[^1] is also a poset under inclusion. Show that the poset structure of <span class="process-math">\(\Spec(R)\)</span> can be recovered from the topology as follows:</div>
+<div class="para logical" id="p-310">
+<div class="para">Note that <span class="process-math">\(\Spec(R)\)</span> is also a poset under inclusion. Show that the poset structure of <span class="process-math">\(\Spec(R)\)</span> can be recovered from the topology as follows:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 P \subseteq Q \quad \Leftrightarrow \quad Q \in \overline{\{ P \}}.
@@ -574,15 +589,15 @@ P \subseteq Q \quad \Leftrightarrow \quad Q \in \overline{\{ P \}}.
 </div></article><article class="example example-like" id="ex-spectrum-of-z"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.15</span><span class="period">.</span><span class="space"> </span><span class="title">Spectrum of Z.</span>
 </h3>
-<div class="para" id="p-280">The spectrum of <span class="process-math">\(\mathbb{Z}\)</span> is, as a poset:</div>
+<div class="para" id="p-311">The spectrum of <span class="process-math">\(\mathbb{Z}\)</span> is, as a poset:</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">
-<div class="para" id="p-281">#empty</div> <div class="para" id="p-282">The closed sets are of the form <span class="process-math">\(V((n))\text{,}\)</span> which are the whole space when <span class="process-math">\(n=0\text{,}\)</span> the empty set when <span class="process-math">\(n=1\text{,}\)</span> and any finite union of things in the top row. Any closed set that contains <span class="process-math">\((0)\)</span> must be all of <span class="process-math">\(\Spec(\Z)\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-9" id="solution-9"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-9"><div class="solution solution-like">
+<div class="para" id="p-312">#empty</div> <div class="para" id="p-313">The closed sets are of the form <span class="process-math">\(V((n))\text{,}\)</span> which are the whole space when <span class="process-math">\(n=0\text{,}\)</span> the empty set when <span class="process-math">\(n=1\text{,}\)</span> and any finite union of things in the top row. Any closed set that contains <span class="process-math">\((0)\)</span> must be all of <span class="process-math">\(\Spec(\Z)\text{.}\)</span>
 </div>
 </div></div>
 </div></article><article class="definition definition-like" id="defn-radical-ideal"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.16</span><span class="period">.</span><span class="space"> </span><span class="title">Radical Ideal.</span>
-</h3> <div class="para logical" id="p-283">
+</h3> <div class="para logical" id="p-314">
 <div class="para">The <em class="emphasis">radical</em> of an ideal <span class="process-math">\(I\)</span> in a ring <span class="process-math">\(R\)</span> is the ideal</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -594,8 +609,8 @@ P \subseteq Q \quad \Leftrightarrow \quad Q \in \overline{\{ P \}}.
 </div></article><article class="proposition theorem-like" id="prop-radical-ideal-is-an-ideal"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">3.17</span><span class="period">.</span><span class="space"> </span><span class="title">Radical Ideal is an Ideal.</span>
 </h3>
-<div class="para logical" id="p-284">
-<div class="para">To see that <span class="process-math">\(\sqrt{I}\)</span>[^1] is an ideal, note that if <span class="process-math">\(f^m, g^n \in I\text{,}\)</span> then</div>
+<div class="para logical" id="p-315">
+<div class="para">To see that <span class="process-math">\(\sqrt{I}\)</span> is an ideal, note that if <span class="process-math">\(f^m, g^n \in I\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \begin{aligned} (f+g)^{m+n-1} &amp;= \sum_{i=0}^{m+n-1} \binom{m+n-1}{i} f^i g^{m+n-1-i} \\
@@ -608,27 +623,28 @@ P \subseteq Q \quad \Leftrightarrow \quad Q \in \overline{\{ P \}}.
 </div>
 </div></article><article class="definition definition-like" id="defn-reduced-ring"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.18</span><span class="period">.</span><span class="space"> </span><span class="title">Reduced Ring.</span>
-</h3> <div class="para" id="p-285">A ring <span class="process-math">\(R\)</span> is <em class="emphasis">reduced</em> if it has no nonzero nilpotents.</div></article><article class="example example-like" id="ex-ideal-radical-iff-ri-reduced"><h3 class="heading">
+</h3> <div class="para" id="p-316">A ring <span class="process-math">\(R\)</span> is <em class="emphasis">reduced</em> if it has no nonzero nilpotents.</div></article><article class="example example-like" id="ex-ideal-radical-iff-ri-reduced"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.19</span><span class="period">.</span><span class="space"> </span><span class="title">Ideal Radical iff R/I Reduced.</span>
 </h3>
-<div class="para" id="p-286">An ideal <span class="process-math">\(I\)</span> in <span class="process-math">\(R\)</span> is radical if and only if <span class="process-math">\(R/I\)</span> is reduced.</div></article><article class="lemma theorem-like" id="lem-v-and-radical-ideals"><h3 class="heading">
+<div class="para" id="p-317">An ideal <span class="process-math">\(I\)</span> in <span class="process-math">\(R\)</span> is radical if and only if <span class="process-math">\(R/I\)</span> is reduced.</div></article><article class="lemma theorem-like" id="lem-v-and-radical-ideals"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.20</span><span class="period">.</span><span class="space"> </span><span class="title">V and Radical Ideals.</span>
 </h3>
-<div class="para" id="p-287">Let <span class="process-math">\(R\)</span> be a ring. For any ideal <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(V(I)=V(\sqrt{I})\)</span>[^1].</div></article><article class="hiddenproof" id="proof-38"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-38"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-38"><article class="hiddenproof"><div class="para" id="p-288">The containment <span class="process-math">\(I \subseteq \sqrt{I}\)</span> is immediate from the definition of radical[^2], and thus we have <span class="process-math">\(V(I) \subseteq V(\sqrt{I})\)</span>[^3]. Now let <span class="process-math">\(P \supseteq I\)</span> be a prime ideal, and let <span class="process-math">\(f \in \sqrt{I}\text{.}\)</span> By definition, there exists some <span class="process-math">\(n\)</span> such that <span class="process-math">\(f^n \in I \subseteq P\text{,}\)</span> but since <span class="process-math">\(P\)</span> is prime, we conclude that <span class="process-math">\(f \in P\text{.}\)</span> Therefore, <span class="process-math">\(V(\sqrt{I}) \subseteq V(I)\text{,}\)</span> and we are done.</div></article></div>
+<div class="para" id="p-318">Let <span class="process-math">\(R\)</span> be a ring. For any ideal <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(V(I)=V(\sqrt{I})\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-38"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-38"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-38"><article class="hiddenproof"><div class="para" id="p-319">The containment <span class="process-math">\(I \subseteq \sqrt{I}\)</span> is immediate from the definition of radical, and thus we have <span class="process-math">\(V(I) \subseteq V(\sqrt{I})\text{.}\)</span> Now let <span class="process-math">\(P \supseteq I\)</span> be a prime ideal, and let <span class="process-math">\(f \in \sqrt{I}\text{.}\)</span> By definition, there exists some <span class="process-math">\(n\)</span> such that <span class="process-math">\(f^n \in I \subseteq P\text{,}\)</span> but since <span class="process-math">\(P\)</span> is prime, we conclude that <span class="process-math">\(f \in P\text{.}\)</span> Therefore, <span class="process-math">\(V(\sqrt{I}) \subseteq V(I)\text{,}\)</span> and we are done.</div></article></div>
 <article class="lemma theorem-like" id="lem-preimage-of-prime-is-prime"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.21</span><span class="period">.</span><span class="space"> </span><span class="title">Preimage of Prime is Prime.</span>
 </h3>
-<div class="para" id="p-289">Let <span class="process-math">\(R \xrightarrow{\varphi} S\)</span> be a ring homomorphism and <span class="process-math">\(P \subset S\)</span> be prime. Then <span class="process-math">\(P \cap R\)</span>[^1] is also prime.</div></article><article class="hiddenproof" id="proof-39"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-39"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-39"><article class="hiddenproof"><div class="para" id="p-290">Let <span class="process-math">\(P\)</span> be a prime ideal in <span class="process-math">\(S\text{.}\)</span> Given elements <span class="process-math">\(f, g \in R\)</span> such that <span class="process-math">\(fg \in P \cap R\text{,}\)</span> then <span class="process-math">\(\varphi(f)\varphi(g)=\varphi(fg) \in P\text{,}\)</span> and since <span class="process-math">\(P\)</span> is prime, we conclude that <span class="process-math">\(\varphi(f) \in P\)</span> or <span class="process-math">\(\varphi(g) \in P\text{.}\)</span> Therefore, <span class="process-math">\(f \in P \cap R\)</span> or <span class="process-math">\(g \in P \cap R\text{.}\)</span>
+<div class="para" id="p-320">Let <span class="process-math">\(R \xrightarrow{\varphi} S\)</span> be a ring homomorphism and <span class="process-math">\(P \subset S\)</span> be prime. Then <span class="process-math">\(P \cap R\)</span> is also prime.</div></article><article class="hiddenproof" id="proof-39"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-39"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-39"><article class="hiddenproof"><div class="para" id="p-321">Let <span class="process-math">\(P\)</span> be a prime ideal in <span class="process-math">\(S\text{.}\)</span> Given elements <span class="process-math">\(f, g \in R\)</span> such that <span class="process-math">\(fg \in P \cap R\text{,}\)</span> then <span class="process-math">\(\varphi(f)\varphi(g)=\varphi(fg) \in P\text{,}\)</span> and since <span class="process-math">\(P\)</span> is prime, we conclude that <span class="process-math">\(\varphi(f) \in P\)</span> or <span class="process-math">\(\varphi(g) \in P\text{.}\)</span> Therefore, <span class="process-math">\(f \in P \cap R\)</span> or <span class="process-math">\(g \in P \cap R\text{.}\)</span>
 </div></article></div>
 <article class="definition definition-like" id="defn-induced-map-on-spec"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.22</span><span class="period">.</span><span class="space"> </span><span class="title">Induced Map on <span class="process-math">\(\Spec\)</span>.</span>
-</h3> <div class="para" id="p-291">Each ring homomorphism <span class="process-math">\(\varphi\!: R\to S\)</span> induces a map on spectra <span class="process-math">\(\varphi^*\!:\Spec(S)\to\Spec(R)\)</span> given by <span class="process-math">\(\varphi^*(P)=\varphi^{-1}(P) = P \cap R\text{.}\)</span>
+</h3> <div class="para" id="p-322">Each ring homomorphism <span class="process-math">\(\varphi\!: R\to S\)</span> induces a map on spectra <span class="process-math">\(\varphi^*\!:\Spec(S)\to\Spec(R)\)</span> given by <span class="process-math">\(\varphi^*(P)=\varphi^{-1}(P) = P \cap R\text{.}\)</span>
 </div></article><article class="example example-like" id="ex-induced-map-on-spec-continuous"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.23</span><span class="period">.</span><span class="space"> </span><span class="title">Induced Map on Spec Continuous.</span>
 </h3>
-<div class="para" id="p-292">The induced map on spectra is not only an order-preserving map, but also it is continuous:</div>
+<div class="para" id="p-323">The induced map on spectra is not only an order-preserving map, but also it is continuous:</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like"><div class="para logical" id="p-293">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like"><div class="para logical" id="p-324">
 <div class="para">if <span class="process-math">\(U\subseteq \Spec(R)\)</span> is open, we have <span class="process-math">\(U=\Spec(R) \setminus V(I)\)</span> for some ideal <span class="process-math">\(I\text{;}\)</span> then for a prime <span class="process-math">\(Q\)</span> of <span class="process-math">\(S\text{,}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -640,35 +656,36 @@ Q \in (\varphi^*)^{-1}(U) \quad \Longleftrightarrow \quad Q \cap R \not\supseteq
 </div></div></div>
 </div></article><article class="definition definition-like" id="defn-minimal-prime-2"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.24</span><span class="period">.</span><span class="space"> </span><span class="title">Minimal Prime.</span>
-</h3> <div class="para" id="p-294">Let <span class="process-math">\(I\)</span> be an ideal in a ring <span class="process-math">\(R\text{.}\)</span> A prime <span class="process-math">\(P\)</span> is a <em class="emphasis">minimal prime</em> of <span class="process-math">\(I\)</span> if <span class="process-math">\(P\)</span> is minimal in <span class="process-math">\(V(I)\)</span>[^1]. A <em class="emphasis">minimal prime</em> of <span class="process-math">\(R\)</span> is a minimal element in <span class="process-math">\(\Spec(R)\)</span>[^2].</div></article><article class="definition definition-like" id="defn-minimal-prime-3"><h3 class="heading">
+</h3> <div class="para" id="p-325">Let <span class="process-math">\(I\)</span> be an ideal in a ring <span class="process-math">\(R\text{.}\)</span> A prime <span class="process-math">\(P\)</span> is a <em class="emphasis">minimal prime</em> of <span class="process-math">\(I\)</span> if <span class="process-math">\(P\)</span> is minimal in <span class="process-math">\(V(I)\text{.}\)</span> A <em class="emphasis">minimal prime</em> of <span class="process-math">\(R\)</span> is a minimal element in <span class="process-math">\(\Spec(R)\text{.}\)</span>
+</div></article><article class="definition definition-like" id="defn-minimal-prime-3"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.25</span><span class="period">.</span><span class="space"> </span><span class="title">Minimal Prime.</span>
-</h3> <div class="para" id="p-295">Let <span class="process-math">\(I\)</span> be an ideal in a ring <span class="process-math">\(R\text{.}\)</span> A <em class="emphasis">minimal prime</em> of <span class="process-math">\(I\)</span> is a minimal element (with respect to containment) in <span class="process-math">\(V(I)\text{.}\)</span> More precisely, <span class="process-math">\(P\)</span> is a minimal prime of <span class="process-math">\(I\)</span> if the following hold: - <span class="process-math">\(P\)</span> is a prime ideal, - <span class="process-math">\(P \supseteq I\text{,}\)</span> and - if <span class="process-math">\(Q\)</span> is also a prime ideal and <span class="process-math">\(I \subseteq Q \subseteq P\text{,}\)</span> then <span class="process-math">\(Q = P\text{.}\)</span>
-</div> <div class="para" id="p-296">The set of minimal primes of <span class="process-math">\(I\)</span> is denoted <span class="process-math">\(\Min(I)\text{.}\)</span>
+</h3> <div class="para" id="p-326">Let <span class="process-math">\(I\)</span> be an ideal in a ring <span class="process-math">\(R\text{.}\)</span> A <em class="emphasis">minimal prime</em> of <span class="process-math">\(I\)</span> is a minimal element (with respect to containment) in <span class="process-math">\(V(I)\text{.}\)</span> More precisely, <span class="process-math">\(P\)</span> is a minimal prime of <span class="process-math">\(I\)</span> if the following hold: - <span class="process-math">\(P\)</span> is a prime ideal, - <span class="process-math">\(P \supseteq I\text{,}\)</span> and - if <span class="process-math">\(Q\)</span> is also a prime ideal and <span class="process-math">\(I \subseteq Q \subseteq P\text{,}\)</span> then <span class="process-math">\(Q = P\text{.}\)</span>
+</div> <div class="para" id="p-327">The set of minimal primes of <span class="process-math">\(I\)</span> is denoted <span class="process-math">\(\Min(I)\text{.}\)</span>
 </div></article><article class="lemma theorem-like" id="lem-every-prime-contains-minimal-prime"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.26</span><span class="period">.</span><span class="space"> </span><span class="title">Every Prime Contains Minimal Prime.</span>
 </h3>
-<div class="para" id="p-297">Let <span class="process-math">\(R\)</span> be a ring, and <span class="process-math">\(I\)</span> an ideal. Every prime <span class="process-math">\(P\)</span> that contains <span class="process-math">\(I\)</span> contains a minimal prime of <span class="process-math">\(I\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-40"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-40"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-40"><article class="hiddenproof"><div class="para logical" id="p-298">
+<div class="para" id="p-328">Let <span class="process-math">\(R\)</span> be a ring, and <span class="process-math">\(I\)</span> an ideal. Every prime <span class="process-math">\(P\)</span> that contains <span class="process-math">\(I\)</span> contains a minimal prime of <span class="process-math">\(I\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-40"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-40"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-40"><article class="hiddenproof"><div class="para logical" id="p-329">
 <div class="para">Fix an ideal <span class="process-math">\(I\)</span> and a prime <span class="process-math">\(P \supseteq I\text{,}\)</span> and consider the set</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 S = \lbrace Q \in V(I) \mid P \supseteq Q \rbrace,
 \end{equation*}
 </div>
-<div class="para">which is partially ordered with <span class="process-math">\(\supseteq\text{.}\)</span> On the one hand, <span class="process-math">\(P \in S\text{,}\)</span> so <span class="process-math">\(S\)</span> is nonempty. On the other hand, given any chain <span class="process-math">\(\{ Q_i \}_i\)</span> in <span class="process-math">\(S\text{,}\)</span> <span class="process-math">\(Q := \bigcap_i Q_i\)</span> is a prime ideal in <span class="process-math">\(R\)</span> ( #prove !). Moreover, <span class="process-math">\(Q\)</span> contains <span class="process-math">\(I\text{,}\)</span> since every <span class="process-math">\(Q_i\)</span> contain <span class="process-math">\(I\text{,}\)</span> and <span class="process-math">\(Q\)</span> is contained in <span class="process-math">\(P\text{,}\)</span> since every <span class="process-math">\(P_i \subseteq Q\text{.}\)</span> Therefore, <span class="process-math">\(Q \in S\text{,}\)</span> and Zorn’s Lemma applies to <span class="process-math">\(S\text{.}\)</span> By [[Mathematics/Foundations/Results/Theorem - Zorn’s Lemma]], <span class="process-math">\(S\)</span> contains a maximal element for <span class="process-math">\(\supseteq\text{,}\)</span> say <span class="process-math">\(Q\text{.}\)</span>
+<div class="para">which is partially ordered with <span class="process-math">\(\supseteq\text{.}\)</span> On the one hand, <span class="process-math">\(P \in S\text{,}\)</span> so <span class="process-math">\(S\)</span> is nonempty. On the other hand, given any chain <span class="process-math">\(\{ Q_i \}_i\)</span> in <span class="process-math">\(S\text{,}\)</span> <span class="process-math">\(Q := \bigcap_i Q_i\)</span> is a prime ideal in <span class="process-math">\(R\)</span> ( #prove !). Moreover, <span class="process-math">\(Q\)</span> contains <span class="process-math">\(I\text{,}\)</span> since every <span class="process-math">\(Q_i\)</span> contain <span class="process-math">\(I\text{,}\)</span> and <span class="process-math">\(Q\)</span> is contained in <span class="process-math">\(P\text{,}\)</span> since every <span class="process-math">\(P_i \subseteq Q\text{.}\)</span> Therefore, <span class="process-math">\(Q \in S\text{,}\)</span> and Zorn's Lemma applies to <span class="process-math">\(S\text{.}\)</span> By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Foundations/Results/Theorem - Zorn's Lemma]], <span class="process-math">\(S\)</span> contains a maximal element for <span class="process-math">\(\supseteq\text{,}\)</span> say <span class="process-math">\(Q\text{.}\)</span>
 </div>
-</div> <div class="para" id="p-299">Notice that <span class="process-math">\(Q\)</span> is equivalently a minimal element for <span class="process-math">\(\subseteq\text{.}\)</span> Now if <span class="process-math">\(Q'\)</span> is a prime ideal with <span class="process-math">\(I \subseteq Q' \subseteq Q\text{,}\)</span> then <span class="process-math">\(Q' \subseteq Q \subseteq P\text{,}\)</span> and thus <span class="process-math">\(Q' \in S\text{.}\)</span> Therefore, we must have <span class="process-math">\(Q' = Q\text{,}\)</span> by maximality of <span class="process-math">\(Q\)</span> with respect to <span class="process-math">\(\supseteq\text{.}\)</span> We conclude that <span class="process-math">\(Q\)</span> is a minimal prime of <span class="process-math">\(I\text{,}\)</span> and by definition <span class="process-math">\(Q\)</span> is contained in <span class="process-math">\(P\text{.}\)</span>
+</div> <div class="para" id="p-330">Notice that <span class="process-math">\(Q\)</span> is equivalently a minimal element for <span class="process-math">\(\subseteq\text{.}\)</span> Now if <span class="process-math">\(Q'\)</span> is a prime ideal with <span class="process-math">\(I \subseteq Q' \subseteq Q\text{,}\)</span> then <span class="process-math">\(Q' \subseteq Q \subseteq P\text{,}\)</span> and thus <span class="process-math">\(Q' \in S\text{.}\)</span> Therefore, we must have <span class="process-math">\(Q' = Q\text{,}\)</span> by maximality of <span class="process-math">\(Q\)</span> with respect to <span class="process-math">\(\supseteq\text{.}\)</span> We conclude that <span class="process-math">\(Q\)</span> is a minimal prime of <span class="process-math">\(I\text{,}\)</span> and by definition <span class="process-math">\(Q\)</span> is contained in <span class="process-math">\(P\text{.}\)</span>
 </div></article></div>
 <article class="definition definition-like" id="defn-multiplicatively-closed-set"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.27</span><span class="period">.</span><span class="space"> </span><span class="title">Multiplicatively Closed Set.</span>
-</h3> <div class="para" id="p-300">Suppose <span class="process-math">\(R\)</span> is a commutative ring and <span class="process-math">\(S \subseteq R\)</span> is a subset such that 1. <span class="process-math">\(1 \in S\text{,}\)</span> 2. <span class="process-math">\(S\)</span> is closed under multiplication (i.e., if <span class="process-math">\(x,y \in S\text{,}\)</span> then <span class="process-math">\(xy \in S\)</span>), and 3. <span class="process-math">\(S\)</span> does not contain <span class="process-math">\(0\)</span> nor any zerodivisors. Such a subset <span class="process-math">\(S\)</span> is called a <em class="emphasis">multiplicatively closed subset of non zero divisors</em> of <span class="process-math">\(R\text{.}\)</span>
+</h3> <div class="para" id="p-331">Suppose <span class="process-math">\(R\)</span> is a commutative ring and <span class="process-math">\(S \subseteq R\)</span> is a subset such that 1. <span class="process-math">\(1 \in S\text{,}\)</span> 2. <span class="process-math">\(S\)</span> is closed under multiplication (i.e., if <span class="process-math">\(x,y \in S\text{,}\)</span> then <span class="process-math">\(xy \in S\)</span>), and 3. <span class="process-math">\(S\)</span> does not contain <span class="process-math">\(0\)</span> nor any zerodivisors. Such a subset <span class="process-math">\(S\)</span> is called a <em class="emphasis">multiplicatively closed subset of non zero divisors</em> of <span class="process-math">\(R\text{.}\)</span>
 </div></article><article class="lemma theorem-like" id="lem-spec-strong-nullstellensatz"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.28</span><span class="period">.</span><span class="space"> </span><span class="title">Spec Strong Nullstellensatz.</span>
 </h3>
-<div class="para" id="p-301">Let <span class="process-math">\(R\)</span> be a ring, <span class="process-math">\(I\)</span> an ideal, and <span class="process-math">\(W\)</span> a multiplicatively closed subset. If <span class="process-math">\(W \cap I = \es\text{,}\)</span> then there is a prime ideal <span class="process-math">\(P\)</span> with <span class="process-math">\(P \supseteq I\)</span> and <span class="process-math">\(P \cap W= \es\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-41"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-41"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-41"><article class="hiddenproof"><div class="para logical" id="p-302">
-<div class="para">Consider the family of ideals <span class="process-math">\(\mathcal{F} := \{ J \ | \ J \supseteq I, J \cap W=\varnothing\}\)</span> ordered with inclusion. This is nonempty, since it contains <span class="process-math">\(I\text{,}\)</span> and any chain <span class="process-math">\(J_1 \subseteq J_2 \subseteq \cdots\)</span> has an upper bound <span class="process-math">\(\cup_i J_i\text{.}\)</span> Therefore, <span class="process-math">\(\mathcal{F}\)</span> has some maximal element <span class="process-math">\(\A\)</span> by a basic application of [[Mathematics/Foundations/Results/Theorem - Zorn’s Lemma|Zorn’s Lemma]]. We claim <span class="process-math">\(\A\)</span> is prime. Suppose <span class="process-math">\(f,g\notin \A\text{.}\)</span> By maximality, <span class="process-math">\(\A+(f)\)</span> and <span class="process-math">\(\A+(g)\)</span> both have nonempty intersection with <span class="process-math">\(W\text{,}\)</span> so there exist <span class="process-math">\(r_1f+a_1\text{,}\)</span> <span class="process-math">\(r_2 g+a_2 \in W\text{,}\)</span> with <span class="process-math">\(a_1,a_2\in \A\text{.}\)</span> If <span class="process-math">\(fg\in \A\text{,}\)</span> then</div>
-<div class="displaymath process-math">
+<div class="para" id="p-332">Let <span class="process-math">\(R\)</span> be a ring, <span class="process-math">\(I\)</span> an ideal, and <span class="process-math">\(W\)</span> a multiplicatively closed subset. If <span class="process-math">\(W \cap I = \es\text{,}\)</span> then there is a prime ideal <span class="process-math">\(P\)</span> with <span class="process-math">\(P \supseteq I\)</span> and <span class="process-math">\(P \cap W= \es\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-41"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-41"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-41"><article class="hiddenproof"><div class="para logical" id="p-333">
+<div class="para">Consider the family of ideals <span class="process-math">\(\mathcal{F} := \{ J \ | \ J \supseteq I, J \cap W=\varnothing\}\)</span> ordered with inclusion. This is nonempty, since it contains <span class="process-math">\(I\text{,}\)</span> and any chain <span class="process-math">\(J_1 \subseteq J_2 \subseteq \cdots\)</span> has an upper bound <span class="process-math">\(\cup_i J_i\text{.}\)</span> Therefore, <span class="process-math">\(\mathcal{F}\)</span> has some maximal element <span class="process-math">\(\A\)</span> by a basic application of <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Foundations/Results/Theorem - Zorn's Lemma|Zorn's Lemma]]. We claim <span class="process-math">\(\A\)</span> is prime. Suppose <span class="process-math">\(f,g\notin \A\text{.}\)</span> By maximality, <span class="process-math">\(\A+(f)\)</span> and <span class="process-math">\(\A+(g)\)</span> both have nonempty intersection with <span class="process-math">\(W\text{,}\)</span> so there exist <span class="process-math">\(r_1f+a_1\text{,}\)</span> <span class="process-math">\(r_2 g+a_2 \in W\text{,}\)</span> with <span class="process-math">\(a_1,a_2\in \A\text{.}\)</span> If <span class="process-math">\(fg\in \A\text{,}\)</span> then</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \underset{\in W}{(r_1f+a_1)}\underset{\in W}{(r_2g+a_2)} = r_1 r_2 fg + r_1 f \underset{\in \mathbb{A}}{a_2} + r_2 g \underset{\in \mathbb{A}}{a_1} + \underset{\in \mathbb{A}}{a_1 a_2} \in W \cap \A,
 \end{equation*}
@@ -677,14 +694,15 @@ S = \lbrace Q \in V(I) \mid P \supseteq Q \rbrace,
 <article class="theorem theorem-like" id="thm-spectrum-analogue-of-strong-nullstellensatz"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.29</span><span class="period">.</span><span class="space"> </span><span class="title">Spectrum Analogue of Strong Nullstellensatz.</span>
 </h3>
-<div class="para logical" id="p-303">
-<div class="para">Let <span class="process-math">\(R\)</span> be a ring, and <span class="process-math">\(I\)</span> be an ideal. For <span class="process-math">\(f\in R\text{,}\)</span>[^1]</div>
+<div class="para logical" id="p-334">
+<div class="para">Let <span class="process-math">\(R\)</span> be a ring, and <span class="process-math">\(I\)</span> be an ideal. For <span class="process-math">\(f\in R\text{,}\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
 V(I) \subseteq V(f) \Longleftrightarrow f\in \sqrt{I}.
 \end{equation*}
 </div>
-<div class="para">Moreover[^2]</div>
+<div class="para">Moreover</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sqrt{I} = \bigcap_{P \in V(I)} P = \bigcap_{P \in \Min(I)} P.
@@ -698,7 +716,7 @@ V(I) \subseteq V(f) \Longleftrightarrow f\in P \ \text{for all} \ P \in V(I)  \L
 </div>
 <div class="para">Now we will show that <span class="process-math">\(\displaystyle\bigcap_{P \in V(I)} P = \sqrt{I}\text{:}\)</span>
 </div>
-</div> <div class="para logical" id="p-304">
+</div> <div class="para logical" id="p-335">
 <div class="para">
 <span class="process-math">\((\supseteq)\text{:}\)</span> It suffices to show that <span class="process-math">\(P \supseteq I\)</span> implies <span class="process-math">\(P \supseteq \sqrt{I}\text{,}\)</span> and indeed</div>
 <div class="displaymath process-math">
@@ -706,10 +724,10 @@ V(I) \subseteq V(f) \Longleftrightarrow f\in P \ \text{for all} \ P \in V(I)  \L
 f \in \sqrt{I} \implies f^n\in I \subseteq P \implies f\in P.
 \end{equation*}
 </div>
-</div> <div class="para" id="p-305">
-<span class="process-math">\((\subseteq)\text{:}\)</span> If <span class="process-math">\(f\notin \sqrt{I}\text{,}\)</span> consider the multiplicatively closed set <span class="process-math">\(W=\{1,f,f^2,f^3,\ldots\}\text{.}\)</span> We have <span class="process-math">\(W\cap I=\varnothing\)</span> by hypothesis. There is a prime <span class="process-math">\(P\)</span> in <span class="process-math">\(V(I)\)</span> that does not intersect <span class="process-math">\(W\text{,}\)</span>[^3] and hence <span class="process-math">\(P\)</span> does not contain <span class="process-math">\(f.\)</span>
-</div> <div class="para logical" id="p-306">
-<div class="para">Finally, <span class="process-math">\(\Min(I) \subseteq V(I)\text{,}\)</span> and since every prime in <span class="process-math">\(V(I)\)</span> contains a minimal prime of <span class="process-math">\(I\)</span>[^4], we conclude that</div>
+</div> <div class="para" id="p-336">
+<span class="process-math">\((\subseteq)\text{:}\)</span> If <span class="process-math">\(f\notin \sqrt{I}\text{,}\)</span> consider the multiplicatively closed set <span class="process-math">\(W=\{1,f,f^2,f^3,\ldots\}\text{.}\)</span> We have <span class="process-math">\(W\cap I=\varnothing\)</span> by hypothesis. There is a prime <span class="process-math">\(P\)</span> in <span class="process-math">\(V(I)\)</span> that does not intersect <span class="process-math">\(W\text{,}\)</span> and hence <span class="process-math">\(P\)</span> does not contain <span class="process-math">\(f.\)</span>
+</div> <div class="para logical" id="p-337">
+<div class="para">Finally, <span class="process-math">\(\Min(I) \subseteq V(I)\text{,}\)</span> and since every prime in <span class="process-math">\(V(I)\)</span> contains a minimal prime of <span class="process-math">\(I\text{,}\)</span> we conclude that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \bigcap_{P \in V(I)} P = \bigcap_{P \in \Min(I)} P.
@@ -718,34 +736,34 @@ f \in \sqrt{I} \implies f^n\in I \subseteq P \implies f\in P.
 </div></article><article class="example example-like" id="ex-radical-of-x2-is-x"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.30</span><span class="period">.</span><span class="space"> </span><span class="title">Radical of <span class="process-math">\((x^2)\)</span> is <span class="process-math">\((x)\)</span>.</span>
 </h3>
-<div class="para" id="p-307">Let <span class="process-math">\(k\)</span> be a field, <span class="process-math">\(R = k[x]\)</span>[^1], and <span class="process-math">\(I = (x^2)\text{.}\)</span> On the one hand, it is immediate form the definition that <span class="process-math">\(x \in \sqrt{I}\text{,}\)</span>[^2] and thus <span class="process-math">\((x) \subseteq \sqrt{I}\text{.}\)</span> On the other hand, <span class="process-math">\((x)\)</span> is a prime ideal that contains <span class="process-math">\(I\text{,}\)</span> and thus by [[Mathematics/Commutative Algebra/Results/Theorem - Spectrum Analogue of Strong Nullstellensatz|Theorem]] we must have <span class="process-math">\(\sqrt{I} = (x)\text{.}\)</span>
+<div class="para" id="p-338">Let <span class="process-math">\(k\)</span> be a field, <span class="process-math">\(R = k[x]\text{,}\)</span> and <span class="process-math">\(I = (x^2)\text{.}\)</span> On the one hand, it is immediate form the definition that <span class="process-math">\(x \in \sqrt{I}\text{,}\)</span> and thus <span class="process-math">\((x) \subseteq \sqrt{I}\text{.}\)</span> On the other hand, <span class="process-math">\((x)\)</span> is a prime ideal that contains <span class="process-math">\(I\text{,}\)</span> and thus by <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Spectrum Analogue of Strong Nullstellensatz|Theorem]] we must have <span class="process-math">\(\sqrt{I} = (x)\text{.}\)</span>
 </div></article><article class="corollary theorem-like" id="cor-vivj-iff-radicals-are-equal"><h3 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">3.31</span><span class="period">.</span><span class="space"> </span><span class="title">V(I)=V(J) iff Radicals are Equal.</span>
 </h3>
-<div class="para logical" id="p-308">
-<div class="para">Let <span class="process-math">\(R\)</span> a ring. There is an order-reversing bijection[^1]</div>
+<div class="para logical" id="p-339">
+<div class="para">Let <span class="process-math">\(R\)</span> a ring. There is an order-reversing bijection</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \{ \text{closed subsets of } \Spec(R) \}\longleftrightarrow\{\text{radical ideals } I\subseteq R\}
 \end{equation*}
 </div>
-<div class="para">In particular, for two ideals <span class="process-math">\(I\)</span> and <span class="process-math">\(J\text{,}\)</span> we have <span class="process-math">\(V(I)=V(J)\)</span>[^2] if and only if <span class="process-math">\(\sqrt{I}=\sqrt{J}\text{.}\)</span>
+<div class="para">In particular, for two ideals <span class="process-math">\(I\)</span> and <span class="process-math">\(J\text{,}\)</span> we have <span class="process-math">\(V(I)=V(J)\)</span> if and only if <span class="process-math">\(\sqrt{I}=\sqrt{J}\text{.}\)</span>
 </div>
-</div></article><article class="hiddenproof" id="proof-42"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-42"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-42"><article class="hiddenproof"><div class="para logical" id="p-309">
-<div class="para">The closed sets of <span class="process-math">\(\Spec(R)\)</span> are precisely the sets of the form <span class="process-math">\(V(I)\)</span> for some ideal <span class="process-math">\(I\text{.}\)</span>[^3] As <span class="process-math">\(V(I) = V(\sqrt{I})\)</span>[^4] the closed sets of <span class="process-math">\(\Spec(R)\)</span> are given by <span class="process-math">\(V(I)\)</span> where <span class="process-math">\(I\)</span> ranges over all radical ideals. We showed in [[Mathematics/Commutative Algebra/Results/Proposition - Properties of V|Proposition]] that the map</div>
-<div class="displaymath process-math">
+</div></article><article class="hiddenproof" id="proof-42"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-42"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-42"><article class="hiddenproof"><div class="para logical" id="p-340">
+<div class="para">The closed sets of <span class="process-math">\(\Spec(R)\)</span> are precisely the sets of the form <span class="process-math">\(V(I)\)</span> for some ideal <span class="process-math">\(I\text{.}\)</span> As <span class="process-math">\(V(I) = V(\sqrt{I})\)</span> the closed sets of <span class="process-math">\(\Spec(R)\)</span> are given by <span class="process-math">\(V(I)\)</span> where <span class="process-math">\(I\)</span> ranges over all radical ideals. We showed in <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Proposition - Properties of V|Proposition]] that the map</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ">
 \begin{equation*}
 V: \{\text{radical ideals } I\subseteq R\} \longrightarrow \{ \text{closed subsets of } \Spec(R) \}
 \end{equation*}
 </div>
-<div class="para">is order-reversing. Finally, suppose that <span class="process-math">\(I\)</span> and <span class="process-math">\(J\)</span> are ideals such that <span class="process-math">\(V(I) = V(J)\text{.}\)</span> By [[Mathematics/Commutative Algebra/Results/Theorem - Spectrum Analogue of Strong Nullstellensatz|Theorem]],</div>
-<div class="displaymath process-math">
+<div class="para">is order-reversing. Finally, suppose that <span class="process-math">\(I\)</span> and <span class="process-math">\(J\)</span> are ideals such that <span class="process-math">\(V(I) = V(J)\text{.}\)</span> By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Spectrum Analogue of Strong Nullstellensatz|Theorem]],</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ">
 \begin{equation*}
 \sqrt{I} = \bigcap_{P \in V(I)} P = \bigcap_{P \in V(J)} P = \sqrt{J}.
 \end{equation*}
 </div>
-<div class="para">Conversely, suppose that <span class="process-math">\(\sqrt{I} = \sqrt{J}\text{.}\)</span> Given a prime <span class="process-math">\(P \in V(I)\text{,}\)</span> we also have <span class="process-math">\(P \in V(\sqrt{I})\)</span>[^5], and thus</div>
-<div class="displaymath process-math">
+<div class="para">Conversely, suppose that <span class="process-math">\(\sqrt{I} = \sqrt{J}\text{.}\)</span> Given a prime <span class="process-math">\(P \in V(I)\text{,}\)</span> we also have <span class="process-math">\(P \in V(\sqrt{I})\text{,}\)</span> and thus</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ">
 \begin{equation*}
 P \supseteq \sqrt{I} = \sqrt{J} \supseteq J,
 \end{equation*}
@@ -756,7 +774,7 @@ P \supseteq \sqrt{I} = \sqrt{J} \supseteq J,
 <article class="example example-like" id="ex-properties-of-radical-ideals"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.32</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Radical Ideals.</span>
 </h3>
-<div class="para" id="p-310">Let <span class="process-math">\(I\)</span> and <span class="process-math">\(J\)</span> be ideals in a ring <span class="process-math">\(R\text{.}\)</span> (a) Show that <span class="process-math">\(\sqrt{\sqrt{I}} = \sqrt{I}\text{.}\)</span> (b) Show that if <span class="process-math">\(I \subseteq J\text{,}\)</span> then <span class="process-math">\(\sqrt{I} \subseteq \sqrt{J}\text{.}\)</span> (c) Show that <span class="process-math">\(\sqrt{I \cap J} = \sqrt{I} \cap \sqrt{J}\text{.}\)</span> (d) Show that <span class="process-math">\(\sqrt{I^n} = \sqrt{I}\)</span> for all <span class="process-math">\(n \geqslant 1\text{.}\)</span> (e) Show that if <span class="process-math">\(P\)</span> is a prime ideal, then <span class="process-math">\(\sqrt{P^n} = P\)</span> for all <span class="process-math">\(n \geqslant 1\text{.}\)</span>
+<div class="para" id="p-341">Let <span class="process-math">\(I\)</span> and <span class="process-math">\(J\)</span> be ideals in a ring <span class="process-math">\(R\text{.}\)</span> (a) Show that <span class="process-math">\(\sqrt{\sqrt{I}} = \sqrt{I}\text{.}\)</span> (b) Show that if <span class="process-math">\(I \subseteq J\text{,}\)</span> then <span class="process-math">\(\sqrt{I} \subseteq \sqrt{J}\text{.}\)</span> (c) Show that <span class="process-math">\(\sqrt{I \cap J} = \sqrt{I} \cap \sqrt{J}\text{.}\)</span> (d) Show that <span class="process-math">\(\sqrt{I^n} = \sqrt{I}\)</span> for all <span class="process-math">\(n \geqslant 1\text{.}\)</span> (e) Show that if <span class="process-math">\(P\)</span> is a prime ideal, then <span class="process-math">\(\sqrt{P^n} = P\)</span> for all <span class="process-math">\(n \geqslant 1\text{.}\)</span>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-prime-maximal-ideals.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-prime-avoidance.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

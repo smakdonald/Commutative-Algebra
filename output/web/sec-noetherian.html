@@ -66,7 +66,7 @@ window.MathJax = {
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra:</span> <span class="subtitle">An example to get you started</span></a></h1>
+<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra</span></a></h1>
 <p class="byline">Sam Macdonald</p>
 </div>
 <div id="searchresultsplaceholder" style="display: none">
@@ -471,7 +471,14 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-alg-mod-finite.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Algebra and Module Finite</span></a></div></li>
 <li><div class="toc-item"><a href="sec-integral-extensions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Integral Extensions</span></a></div></li>
 <li><div class="toc-item"><a href="sec-ses.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Short Exact Sequences</span></a></div></li>
-<li class="active"><div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div></li>
+<li class="active">
+<div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-rings" class="internal"><span class="title">Noetherian Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-modules" class="internal"><span class="title">Noetherian Modules</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-hilbert" class="internal"><span class="title">Hilbert's Basis Theorem</span></a></div></li>
+</ul>
+</li>
 <li><div class="toc-item"><a href="sec-inv-rings-1.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Invariant Rings: Application I</span></a></div></li>
 </ul>
 </li>
@@ -533,20 +540,27 @@ window.MathJax = {
 </li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-noetherian"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span>
 </h2>
-<blockquote class="blockquote" id="blockquote-6">
-<div class="para" id="p-125">“It is worth ascending unexiting heights if for nothing else than to see the big ones from nearer their own level.”</div> <cite class="attribution">―Nan Shepherd</cite>
-</blockquote>
-<article class="remark remark-like" id="remark-16"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.73</span><span class="period">.</span>
+<section class="introduction" id="introduction-2"><blockquote class="blockquote" id="blockquote-6">
+<div class="para" id="p-148">“It is worth ascending unexiting heights if for nothing else than to see the big ones from nearer their own level.”</div> <cite class="attribution">―Nan Shepherd</cite>
+</blockquote></section><section class="subsection" id="subsec-noetherian-rings"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Noetherian Rings</span>
 </h3>
-<div class="para" id="p-126">Most rings that commutative algebraists naturally want to study are noetherian. Noetherian rings are named after Emmy Noether, who is in many ways the mother of modern commutative algebra.</div></article><article class="definition definition-like" id="defn-noetherian-ring"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.74</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherian Ring.</span>
-</h3> <div class="para logical" id="p-127">
+<div class="para" id="p-149">Most rings that commutative algebraists naturally want to study are noetherian. Noetherian rings are named after Emmy Noether, who is in many ways the mother of modern commutative algebra.</div>
+<article class="definition definition-like" id="defn-noetherian-ring"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.65</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherian Ring.</span>
+</h4> <div class="para logical" id="p-150">
 <div class="para">Suppose <span class="process-math">\(R\)</span> is a commutative ring. Then <span class="process-math">\(R\)</span> is called a <em class="emphasis">noetherian ring</em> if <span class="process-math">\(R\)</span> satisfies the ascending chain condition on ideals - i.e., for every chain of ideals of <span class="process-math">\(R\)</span>
 </div>
 <div class="displaymath process-math">
@@ -556,19 +570,19 @@ I_1 \subseteq I_2  \subseteq I_3 \subseteq \cdots
 </div>
 <div class="para">there exists a positive integer <span class="process-math">\(n\)</span> such that <span class="process-math">\(I_n = I_{n+1} = I_{n+2} = \cdots=I_{n+k}\)</span> for all <span class="process-math">\(k\geq 0\text{.}\)</span>
 </div>
-</div></article><article class="proposition theorem-like" id="prop-equivalent-noetherian-ring-definitions"><h3 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.75</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalent Noetherian Ring Definitions.</span>
-</h3>
-<div class="para" id="p-128">Let <span class="process-math">\(R\)</span> be a ring. The following are equivalent:</div> <div class="para logical" id="p-129"><ol class="decimal">
-<li id="li-16"><div class="para" id="p-derived-li-16">
+</div></article><article class="proposition theorem-like" id="prop-equivalent-noetherian-ring-definitions"><h4 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.66</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalent Noetherian Ring Definitions.</span>
+</h4>
+<div class="para" id="p-151">Let <span class="process-math">\(R\)</span> be a ring. The following are equivalent:</div> <div class="para logical" id="p-152"><ol class="decimal">
+<li id="li-25"><div class="para" id="p-derived-li-25">
 <span class="process-math">\(R\)</span> is a noetherian ring.</div></li>
-<li id="li-17"><div class="para" id="p-derived-li-17">Every nonempty family of ideals has a maximal element (under <span class="process-math">\(\subseteq\)</span>).</div></li>
-<li id="li-18"><div class="para" id="p-derived-li-18">Every ascending chain of finitely generated ideals of <span class="process-math">\(R\)</span> stabilizes.</div></li>
-<li id="li-19"><div class="para" id="p-derived-li-19">Given any generating set <span class="process-math">\(S\)</span> for an ideal <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(I\)</span> is generated by a finite subset of <span class="process-math">\(S\text{.}\)</span>
+<li id="li-26"><div class="para" id="p-derived-li-26">Every nonempty family of ideals has a maximal element (under <span class="process-math">\(\subseteq\)</span>).</div></li>
+<li id="li-27"><div class="para" id="p-derived-li-27">Every ascending chain of finitely generated ideals of <span class="process-math">\(R\)</span> stabilizes.</div></li>
+<li id="li-28"><div class="para" id="p-derived-li-28">Given any generating set <span class="process-math">\(S\)</span> for an ideal <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(I\)</span> is generated by a finite subset of <span class="process-math">\(S\text{.}\)</span>
 </div></li>
-<li id="li-20"><div class="para" id="p-derived-li-20">Every ideal of <span class="process-math">\(R\)</span> is finitely generated.</div></li>
-</ol></div></article><article class="hiddenproof" id="proof-15"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-15"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-15"><article class="hiddenproof"><div class="para" id="p-130">(a)<span class="process-math">\(\Rightarrow\)</span>(b): Suppose there is a nonempty family of ideals with no maximal element.[^1] This means that we can keep inductively choosing larger ideals from this family to obtain an infinite properly ascending chain, so <span class="process-math">\(R\)</span> is not noetherian.</div> <div class="para" id="p-131">(b)<span class="process-math">\(\Rightarrow\)</span>(a): An ascending chain of ideals is a family of ideals, and the maximal ideal in the family indicates where our chain stabilizes.</div> <div class="para" id="p-132">(a)<span class="process-math">\(\Rightarrow\)</span>(c): Contained within the definition of a noetherian ring.</div> <div class="para" id="p-133">(c)<span class="process-math">\(\Rightarrow\)</span>(d): Suppose that there is an ideal <span class="process-math">\(I\)</span> and a generating set <span class="process-math">\(S\)</span> for <span class="process-math">\(I\)</span> such that no finite subset of <span class="process-math">\(S\)</span> generates <span class="process-math">\(I\text{.}\)</span>[^2] So for any finite <span class="process-math">\(S'\subseteq S\)</span> we have <span class="process-math">\((S') \subsetneq (S) =I\text{,}\)</span> so there is some <span class="process-math">\(s \in S \setminus (S').\)</span> Thus, <span class="process-math">\((S') \subsetneq (S' \cup \{s\})\text{.}\)</span> Inductively, we can continue this process to obtain an infinite proper chain of finitely generated ideals, so (c) does not hold.</div> <div class="para" id="p-134">(d)<span class="process-math">\(\Rightarrow\)</span>(e): This is the definition of being finitely generated.</div> <div class="para logical" id="p-135">
-<div class="para">(e)<span class="process-math">\(\Rightarrow\)</span>(a): Given an ascending chain of ideals</div>
+<li id="li-29"><div class="para" id="p-derived-li-29">Every ideal of <span class="process-math">\(R\)</span> is finitely generated.</div></li>
+</ol></div></article><article class="hiddenproof" id="proof-15"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-15"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-15"><article class="hiddenproof"><div class="para" id="p-153">(1)<span class="process-math">\(\Rightarrow\)</span>(2): Suppose there is a nonempty family of ideals with no maximal element. This means that we can keep inductively choosing larger ideals from this family to obtain an infinite properly ascending chain, so <span class="process-math">\(R\)</span> is not noetherian.</div> <div class="para" id="p-154">(2)<span class="process-math">\(\Rightarrow\)</span>(1): An ascending chain of ideals is a family of ideals, and the maximal ideal in the family indicates where our chain stabilizes.</div> <div class="para" id="p-155">(1)<span class="process-math">\(\Rightarrow\)</span>(3): Contained within the definition of a noetherian ring.</div> <div class="para" id="p-156">(3)<span class="process-math">\(\Rightarrow\)</span>(4): Suppose that there is an ideal <span class="process-math">\(I\)</span> and a generating set <span class="process-math">\(S\)</span> for <span class="process-math">\(I\)</span> such that no finite subset of <span class="process-math">\(S\)</span> generates <span class="process-math">\(I\text{.}\)</span> So for any finite <span class="process-math">\(S'\subseteq S\)</span> we have <span class="process-math">\((S') \subsetneq (S) =I\text{,}\)</span> so there is some <span class="process-math">\(s \in S \setminus (S').\)</span> Thus, <span class="process-math">\((S') \subsetneq (S' \cup \{s\})\text{.}\)</span> Inductively, we can continue this process to obtain an infinite proper chain of finitely generated ideals, so (c) does not hold.</div> <div class="para" id="p-157">(4)<span class="process-math">\(\Rightarrow\)</span>(5): This is the definition of being finitely generated.</div> <div class="para logical" id="p-158">
+<div class="para">(5)<span class="process-math">\(\Rightarrow\)</span>(1): Given an ascending chain of ideals</div>
 <div class="displaymath process-math">
 \begin{equation*}
 I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots
@@ -576,10 +590,10 @@ I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots
 </div>
 <div class="para">let <span class="process-math">\(I=\bigcup_{n\in \N} I_n\text{.}\)</span> In general, the union of two ideals might fail to be an ideal, but the union of a chain of ideals is an ideal (exercise). By assumption, the ideal <span class="process-math">\(I\)</span> is finitely generated, say <span class="process-math">\(I=(a_1,\dots,a_t)\text{.}\)</span> Now since each <span class="process-math">\(a_i\)</span> is in <span class="process-math">\(I\text{,}\)</span> it must be in some <span class="process-math">\(I_{n_i}\text{,}\)</span> by definition. Thus for any <span class="process-math">\(N \geqslant \max n_i\text{,}\)</span> we have <span class="process-math">\(a_1, \ldots, a_t \in I_N\text{.}\)</span> But then <span class="process-math">\(I_N=I\text{,}\)</span> and thus <span class="process-math">\(I_n = I_{n+1}\)</span> for all <span class="process-math">\(n \geqslant N\text{.}\)</span> Thus the original chain stabilizes, and <span class="process-math">\(R\)</span> is noetherian.</div>
 </div></article></div>
-<article class="remark remark-like" id="remark-17"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.76</span><span class="period">.</span>
-</h3>
-<div class="para logical" id="p-136">
+<article class="remark remark-like" id="remark-12"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.67</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-159">
 <div class="para">When we say that every non-empty family of ideals has a maximal element, that maximal element does not have to be unique in any way. An ideal <span class="process-math">\(I\)</span> is maximal in the family <span class="process-math">\(\mathcal{F}\)</span> if <span class="process-math">\(I \subseteq J\)</span> for some <span class="process-math">\(J \in \mathcal{F}\)</span> implies <span class="process-math">\(I = J\text{.}\)</span> However, we might have many incomparable maximal elements in <span class="process-math">\(\mathcal{F}\text{.}\)</span> For example, every element in the family of ideals in <span class="process-math">\(\mathbb{Z}\)</span> given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -587,65 +601,59 @@ I_1 \subseteq I_2 \subseteq I_3 \subseteq \cdots
 \end{equation*}
 </div>
 <div class="para">is maximal.</div>
-</div></article><article class="remark remark-like" id="remark-18"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.77</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-137">If <span class="process-math">\(R\)</span> is a noetherian ring and <span class="process-math">\(S\)</span> is a non-empty set of ideals in <span class="process-math">\(R\text{,}\)</span> not only does <span class="process-math">\(S\)</span> have a maximal element, but every element in <span class="process-math">\(S\)</span> must be contained in a maximal element of <span class="process-math">\(S\text{.}\)</span> Given an element <span class="process-math">\(I \in S\text{,}\)</span> the subset <span class="process-math">\(T\)</span> of <span class="process-math">\(S\)</span> of ideals in <span class="process-math">\(S\)</span> that contain <span class="process-math">\(I\)</span> is nonempty, and must then contain a maximal element <span class="process-math">\(J\)</span> by . If <span class="process-math">\(J \subseteq L\)</span> for some <span class="process-math">\(L \in S\text{,}\)</span> then <span class="process-math">\(I \subseteq L\text{,}\)</span> so <span class="process-math">\(L \in T\text{,}\)</span> and thus by maximality of <span class="process-math">\(J\)</span> in <span class="process-math">\(T\text{,}\)</span> we must <span class="process-math">\(J = L\text{.}\)</span> This proves that <span class="process-math">\(J\)</span> is in fact a maximal element in <span class="process-math">\(S\text{,}\)</span> and by construction it contains <span class="process-math">\(I\text{.}\)</span>
-</div></article><article class="example example-like" id="ex-fields-are-noetherian"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.78</span><span class="period">.</span><span class="space"> </span><span class="title">Fields are Noetherian.</span>
-</h3>
-<div class="para" id="p-138">If <span class="process-math">\(R=k\)</span> is a field, the only ideals in <span class="process-math">\(k\)</span> are <span class="process-math">\((0)\)</span> and <span class="process-math">\((1)=k\text{,}\)</span> so <span class="process-math">\(k\)</span> is a noetherian ring.</div></article><article class="example example-like" id="ex-pids-are-noetherian"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.79</span><span class="period">.</span><span class="space"> </span><span class="title">PIDs are Noetherian.</span>
-</h3>
-<div class="para" id="p-139">
-<span class="process-math">\(\mathbb{Z}\)</span> is a noetherian ring, since all ideals are principal. More generally, if <span class="process-math">\(R\)</span> is a PID, then <span class="process-math">\(R\)</span> is noetherian. Indeed, every ideal is finitely generated!</div></article><article class="example example-like" id="ex-polynomial-in-infinite-variables-not-noetherian"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.80</span><span class="period">.</span><span class="space"> </span><span class="title">Polynomial in Infinite Variables Not Noetherian.</span>
-</h3>
-<div class="para" id="p-140">A ring that is not noetherian is a polynomial ring in infinitely many variables over a field <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(R = k[x_1, x_2, \ldots]\text{:}\)</span>
+</div></article><article class="remark remark-like" id="remark-13"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.68</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-160">If <span class="process-math">\(R\)</span> is a noetherian ring and <span class="process-math">\(S\)</span> is a non-empty set of ideals in <span class="process-math">\(R\text{,}\)</span> not only does <span class="process-math">\(S\)</span> have a maximal element, but every element in <span class="process-math">\(S\)</span> must be contained in a maximal element of <span class="process-math">\(S\text{.}\)</span> Given an element <span class="process-math">\(I \in S\text{,}\)</span> the subset <span class="process-math">\(T\)</span> of <span class="process-math">\(S\)</span> of ideals in <span class="process-math">\(S\)</span> that contain <span class="process-math">\(I\)</span> is nonempty, and must then contain a maximal element <span class="process-math">\(J\)</span> by . If <span class="process-math">\(J \subseteq L\)</span> for some <span class="process-math">\(L \in S\text{,}\)</span> then <span class="process-math">\(I \subseteq L\text{,}\)</span> so <span class="process-math">\(L \in T\text{,}\)</span> and thus by maximality of <span class="process-math">\(J\)</span> in <span class="process-math">\(T\text{,}\)</span> we must <span class="process-math">\(J = L\text{.}\)</span> This proves that <span class="process-math">\(J\)</span> is in fact a maximal element in <span class="process-math">\(S\text{,}\)</span> and by construction it contains <span class="process-math">\(I\text{.}\)</span>
+</div></article><article class="example example-like" id="ex-noetherian-examples"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.69</span><span class="period">.</span><span class="space"> </span><span class="title">Fields are Noetherian.</span>
+</h4>
+<div class="para logical" id="p-161"><ol class="decimal">
+<li id="li-30"><div class="para" id="p-162">If <span class="process-math">\(R=k\)</span> is a field, the only ideals in <span class="process-math">\(k\)</span> are <span class="process-math">\((0)\)</span> and <span class="process-math">\((1)=k\text{,}\)</span> so <span class="process-math">\(k\)</span> is a noetherian ring.</div></li>
+<li id="li-31"><div class="para" id="p-163">
+<span class="process-math">\(\mathbb{Z}\)</span> is a noetherian ring, since all ideals are principal. More generally, if <span class="process-math">\(R\)</span> is a PID, then <span class="process-math">\(R\)</span> is noetherian. Indeed, every ideal is finitely generated!</div></li>
+<li id="li-32"><div class="para logical" id="p-164">
+<div class="para">As a special case of the previous example, consider the ring of germs of complex analytic functions near $0$, \index{$\CC\{z\}$}</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\CC\{z\} := \{ f(z) \in \CC\llbracket z \rrbracket  \ | \ f \text{ is analytic on a neighborhood of }z=0\}.
+\end{equation*}
 </div>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like"><div class="para logical" id="p-141">
-<div class="para">the ascending chain of ideals</div>
+<div class="para">This ring is a PID: every ideal is of the form <span class="process-math">\((z^n)\text{,}\)</span> since any <span class="process-math">\(f\in \CC\{z\}\)</span> can be written as <span class="process-math">\(z^n g(z)\)</span> for some <span class="process-math">\(g(z)\neq 0\text{,}\)</span> and any such <span class="process-math">\(g(z)\)</span> is a unit in <span class="process-math">\(\CC\{z\}\text{.}\)</span>
+</div>
+</div></li>
+<li id="li-33"><div class="para logical" id="p-165">
+<div class="para">A ring that is not noetherian is a polynomial ring in infinitely many variables over a field <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(R = k[x_1, x_2, \ldots]\text{:}\)</span> the ascending chain of ideals</div>
 <div class="displaymath process-math">
 \begin{equation*}
 (x_1)\subseteq (x_1,x_2) \subseteq (x_1,x_2,x_3) \subseteq \cdots
 \end{equation*}
 </div>
 <div class="para">does not stabilize.</div>
-</div></div></div>
-</div></article><article class="example example-like" id="ex-fractional-exponents-of-variable-not-noetherian"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.81</span><span class="period">.</span><span class="space"> </span><span class="title">Fractional Exponents of Variable Not Noetherian.</span>
-</h3>
-<div class="para" id="p-142">The ring <span class="process-math">\(R=k[x,x^{1/2},x^{1/3},x^{1/4},x^{1/5},\dots]\)</span> is not noetherian.</div>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like"><div class="para logical" id="p-143">
-<div class="para">A nice ascending chain of ideals is</div>
+</div></li>
+<li id="li-34"><div class="para logical" id="p-166">
+<div class="para">The ring <span class="process-math">\(R=k[x,x^{1/2},x^{1/3},x^{1/4},x^{1/5},\dots]\)</span> is not noetherian. A nice ascending chain of ideals is</div>
 <div class="displaymath process-math">
 \begin{equation*}
 (x) \subsetneq (x^{1/2}) \subsetneq (x^{1/3})\subsetneq (x^{1/4}) \subsetneq \cdots.
 \end{equation*}
 </div>
-</div></div></div>
-</div></article><article class="example example-like" id="ex-continuous-real-valued-functions-not-noetherian"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.82</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous Real Valued Functions Not Noetherian.</span>
-</h3>
-<div class="para" id="p-144">The ring of continuous real-valued functions <span class="process-math">\(\mathcal{C}(\R,\R)\)</span> is not noetherian.</div>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like"><div class="para logical" id="p-145">
-<div class="para">The chain of ideals</div>
+</div></li>
+<li id="li-35"><div class="para logical" id="p-167">
+<div class="para">The ring of continuous real-valued functions <span class="process-math">\(\mathcal{C}(\R,\R)\)</span> is not noetherian. The chain of ideals</div>
 <div class="displaymath process-math">
 \begin{equation*}
 I_{n}=\{ f(x) \in \mathcal{C}(\R,\R) \ | \ f|_{[-1/n,1/n]}\equiv 0 \}
 \end{equation*}
 </div>
-<div class="para">is increasing and proper. The same construction shows that the ring of infinitely differentiable real functions <span class="process-math">\(\mathcal{C}^{\infty}(\R,\R)\)</span> is not noetherian: properness of the chain follows from, e.g., Urysohn’s lemma (though it’s not too hard to find functions distinguishing the ideals in the chain). Note that if we asked for analytic functions instead of infinitely-differentiable functions, every element of the chain would be the zero ideal!</div>
-</div></div></div>
-</div></article><article class="lemma theorem-like" id="lem-quotient-noetherian"><h3 class="heading">
-<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">1.83</span><span class="period">.</span><span class="space"> </span><span class="title">Quotient Noetherian.</span>
-</h3>
-<div class="para" id="p-146">Let <span class="process-math">\(R\)</span> be a ring and <span class="process-math">\(I\)</span> an ideal in <span class="process-math">\(R\text{.}\)</span> If <span class="process-math">\(R\)</span> is noetherian, then so is <span class="process-math">\(R/I\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-16"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-16"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-16"><article class="hiddenproof"><div class="para logical" id="p-147">
-<div class="para">There is an order preserving bijection[^1]</div>
+<div class="para">is increasing and proper. The same construction shows that the ring of infinitely differentiable real functions <span class="process-math">\(\mathcal{C}^{\infty}(\R,\R)\)</span> is not noetherian: properness of the chain follows from, e.g., Urysohn's lemma (though it's not too hard to find functions distinguishing the ideals in the chain). Note that if we asked for analytic functions instead of infinitely-differentiable functions, every element of the chain would be the zero ideal!</div>
+</div></li>
+</ol></div></article><article class="lemma theorem-like" id="lem-quotient-noetherian"><h4 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">1.70</span><span class="period">.</span><span class="space"> </span><span class="title">Quotient Noetherian.</span>
+</h4>
+<div class="para" id="p-168">Let <span class="process-math">\(R\)</span> be a ring and <span class="process-math">\(I\)</span> an ideal in <span class="process-math">\(R\text{.}\)</span> If <span class="process-math">\(R\)</span> is noetherian, then so is <span class="process-math">\(R/I\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-16"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-16"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-16"><article class="hiddenproof"><div class="para logical" id="p-169">
+<div class="para">There is an order preserving bijection</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \{ \text{ideals of } R \text{ that contain } I \} \longleftrightarrow \{\text{ideals of }R/I\}
@@ -653,23 +661,24 @@ I_{n}=\{ f(x) \in \mathcal{C}(\R,\R) \ | \ f|_{[-1/n,1/n]}\equiv 0 \}
 </div>
 <div class="para">that sends the ideal <span class="process-math">\(J \supseteq I\)</span> to <span class="process-math">\(J/I\text{;}\)</span> its inverse is the map that sends each ideal in <span class="process-math">\(R/I\)</span> to its preimage. Given this bijection, chains of ideals in <span class="process-math">\(R/I\)</span> come from chains of ideals in <span class="process-math">\(R\)</span> that contain <span class="process-math">\(J\text{.}\)</span> This implies that if <span class="process-math">\(R\)</span> is noetherian, then <span class="process-math">\(R/I\)</span> is noetherian as well.</div>
 </div></article></div>
-<article class="remark remark-like" id="remark-19"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.84</span><span class="period">.</span>
+<div class="para" id="p-170">This gives us many more examples of noetherian rings, by simply taking quotients of the examples above. We will soon show that any polynomial ring over a noetherian ring is also noetherian; as a consequence, we obtain that any quotient of a polynomial ring over a field is noetherian. This is the content of Hilbert's Basis Theorem.</div>
+<div class="para" id="p-171">But first, we need to talk about noetherian modules.</div></section><section class="subsection" id="subsec-noetherian-modules"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Noetherian Modules</span>
 </h3>
-<div class="para" id="p-148">This gives us many more examples of noetherian rings, by simply taking quotients of the examples above. We will soon show that any polynomial ring over a noetherian ring is also noetherian; as a consequence, we obtain that any quotient of a polynomial ring over a field is noetherian. This is the content of Hilbert’s Basis Theorem.</div></article><article class="definition definition-like" id="defn-noetherian-module"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.85</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherian Module.</span>
-</h3> <div class="para" id="p-149">An <span class="process-math">\(R\)</span>-module <span class="process-math">\(M\)</span> is <em class="emphasis">noetherian</em> if every ascending chain of submodules of <span class="process-math">\(M\)</span> eventually stabilizes.</div></article><article class="proposition theorem-like" id="prop-equivalent-definitions-for-noetherian-module"><h3 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.86</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalent Definitions for Noetherian Module.</span>
-</h3>
-<div class="para" id="p-150">Let <span class="process-math">\(M\)</span> be an <span class="process-math">\(R\)</span>-module. The following are equivalent: (a) <span class="process-math">\(M\)</span> is a noetherian module. (b) Every nonempty family of submodules has a maximal element. (c) Every ascending chain of finitely generated submodules of <span class="process-math">\(M\)</span> eventually stabilizes. (d) Given any generating set <span class="process-math">\(S\)</span> for a submodule <span class="process-math">\(N\text{,}\)</span> the submodule <span class="process-math">\(N\)</span> is generated by a finite subset of <span class="process-math">\(S\text{.}\)</span> (e) Every submodule of <span class="process-math">\(M\)</span> is finitely generated. In particular, a noetherian module must be finitely generated.</div></article><article class="example example-like" id="ex-noetherian-ring-iff-noetherian-module-over-itself"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.87</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherian Ring iff Noetherian Module over Itself.</span>
-</h3>
-<div class="para" id="p-151">A ring <span class="process-math">\(R\)</span> is a noetherian ring if and only if <span class="process-math">\(R\)</span> is noetherian as a module over itself.</div></article><article class="example example-like" id="ex-noeth-ring-not-noeth-mod-over-subring"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.88</span><span class="period">.</span><span class="space"> </span><span class="title">Noeth Ring Not Noeth Mod over Subring.</span>
-</h3>
-<div class="para" id="p-152">A noetherian ring need not be a noetherian module over a subring.</div>
+<article class="definition definition-like" id="defn-noetherian-module"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.71</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherian Module.</span>
+</h4> <div class="para" id="p-172">An <span class="process-math">\(R\)</span>-module <span class="process-math">\(M\)</span> is <em class="emphasis">noetherian</em> if every ascending chain of submodules of <span class="process-math">\(M\)</span> eventually stabilizes.</div></article><article class="proposition theorem-like" id="prop-equivalent-definitions-for-noetherian-module"><h4 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.72</span><span class="period">.</span><span class="space"> </span><span class="title">Equivalent Definitions for Noetherian Module.</span>
+</h4>
+<div class="para" id="p-173">Let <span class="process-math">\(M\)</span> be an <span class="process-math">\(R\)</span>-module. The following are equivalent: (a) <span class="process-math">\(M\)</span> is a noetherian module. (b) Every nonempty family of submodules has a maximal element. (c) Every ascending chain of finitely generated submodules of <span class="process-math">\(M\)</span> eventually stabilizes. (d) Given any generating set <span class="process-math">\(S\)</span> for a submodule <span class="process-math">\(N\text{,}\)</span> the submodule <span class="process-math">\(N\)</span> is generated by a finite subset of <span class="process-math">\(S\text{.}\)</span> (e) Every submodule of <span class="process-math">\(M\)</span> is finitely generated. In particular, a noetherian module must be finitely generated.</div></article><article class="example example-like" id="ex-noetherian-ring-iff-noetherian-module-over-itself"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.73</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherian Ring iff Noetherian Module over Itself.</span>
+</h4>
+<div class="para" id="p-174">A ring <span class="process-math">\(R\)</span> is a noetherian ring if and only if <span class="process-math">\(R\)</span> is noetherian as a module over itself.</div></article><article class="example example-like" id="ex-noeth-ring-not-noeth-mod-over-subring"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.74</span><span class="period">.</span><span class="space"> </span><span class="title">Noeth Ring Not Noeth Mod over Subring.</span>
+</h4>
+<div class="para" id="p-175">A noetherian ring need not be a noetherian module over a subring.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like"><div class="para logical" id="p-153">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like"><div class="para logical" id="p-176">
 <div class="para">For example, consider <span class="process-math">\(\Z\subseteq \Q\text{.}\)</span> These are both noetherian rings but <span class="process-math">\(\Q\)</span> is not a noetherian <span class="process-math">\(\Z\)</span>-module; for example, the following is an ascending chain of submodules which does not stabilize:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -677,10 +686,10 @@ I_{n}=\{ f(x) \in \mathcal{C}(\R,\R) \ | \ f|_{[-1/n,1/n]}\equiv 0 \}
 \end{equation*}
 </div>
 </div></div></div>
-</div></article><article class="lemma theorem-like" id="lem-noetherianity-in-exact-sequences"><h3 class="heading">
-<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">1.89</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherianity in Exact Sequences.</span>
-</h3>
-<div class="para logical" id="p-154">
+</div></article><article class="lemma theorem-like" id="lem-noetherianity-in-exact-sequences"><h4 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">1.75</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherianity in Exact Sequences.</span>
+</h4>
+<div class="para logical" id="p-177">
 <div class="para">In an exact sequence of modules</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -691,7 +700,7 @@ I_{n}=\{ f(x) \in \mathcal{C}(\R,\R) \ | \ f|_{[-1/n,1/n]}\equiv 0 \}
 </div>
 <div class="para">
 <span class="process-math">\(B\)</span> is noetherian if and only if <span class="process-math">\(A\)</span> and <span class="process-math">\(C\)</span> are noetherian.</div>
-</div></article><article class="hiddenproof" id="proof-17"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-17"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-17"><article class="hiddenproof"><div class="para" id="p-155">Assume <span class="process-math">\(B\)</span> is noetherian. Since <span class="process-math">\(A\)</span> is a submodule of <span class="process-math">\(B\text{,}\)</span> and its submodules are also submodules of <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(A\)</span> is noetherian. Moreover, any submodule of <span class="process-math">\(B/A\)</span> is of the form <span class="process-math">\(D/A\)</span> for some submodule <span class="process-math">\(D \supseteq A\)</span> of <span class="process-math">\(B\text{.}\)</span> Since every submodule of <span class="process-math">\(B\)</span> is finitely generated, every submodule of <span class="process-math">\(C\)</span> is also finitely generated. Therefore, <span class="process-math">\(C\)</span> is noetherian.</div> <div class="para logical" id="p-156">
+</div></article><article class="hiddenproof" id="proof-17"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-17"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-17"><article class="hiddenproof"><div class="para" id="p-178">Assume <span class="process-math">\(B\)</span> is noetherian. Since <span class="process-math">\(A\)</span> is a submodule of <span class="process-math">\(B\text{,}\)</span> and its submodules are also submodules of <span class="process-math">\(B\text{,}\)</span> <span class="process-math">\(A\)</span> is noetherian. Moreover, any submodule of <span class="process-math">\(B/A\)</span> is of the form <span class="process-math">\(D/A\)</span> for some submodule <span class="process-math">\(D \supseteq A\)</span> of <span class="process-math">\(B\text{.}\)</span> Since every submodule of <span class="process-math">\(B\)</span> is finitely generated, every submodule of <span class="process-math">\(C\)</span> is also finitely generated. Therefore, <span class="process-math">\(C\)</span> is noetherian.</div> <div class="para logical" id="p-179">
 <div class="para">Conversely, assume that <span class="process-math">\(A\)</span> and <span class="process-math">\(C\)</span> are noetherian, and let</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -724,12 +733,12 @@ x-y \in M_{n+1} \cap A = M_n \cap A.
 </div>
 <div class="para">Then <span class="process-math">\(x-y \in M_n\text{,}\)</span> and since <span class="process-math">\(y \in M_n\text{,}\)</span> we must have <span class="process-math">\(x \in M_n\)</span> as well.</div>
 </div></article></div>
-<article class="corollary theorem-like" id="cor-direct-sums-are-noetherian"><h3 class="heading">
-<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">1.90</span><span class="period">.</span><span class="space"> </span><span class="title">Direct Sums are Noetherian.</span>
-</h3>
-<div class="para" id="p-157">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are noetherian <span class="process-math">\(R\)</span>-modules, then <span class="process-math">\(A \oplus B\)</span>[^1] is a noetherian <span class="process-math">\(R\)</span>-module.</div></article><article class="hiddenproof" id="proof-18"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-18"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-18"><article class="hiddenproof"><div class="para logical" id="p-158">
-<div class="para">Apply the previous [[Mathematics/Commutative Algebra/Results/Lemma - Noetherianity in Exact Sequences|lemma]] to the short exact sequence</div>
-<div class="displaymath process-math">
+<article class="corollary theorem-like" id="cor-direct-sums-are-noetherian"><h4 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">1.76</span><span class="period">.</span><span class="space"> </span><span class="title">Direct Sums are Noetherian.</span>
+</h4>
+<div class="para" id="p-180">If <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are noetherian <span class="process-math">\(R\)</span>-modules, then <span class="process-math">\(A \oplus B\)</span> is a noetherian <span class="process-math">\(R\)</span>-module.</div></article><article class="hiddenproof" id="proof-18"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-18"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-18"><article class="hiddenproof"><div class="para logical" id="p-181">
+<div class="para">Apply the previous <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code>  <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Noetherianity in Exact Sequences|lemma]] to the short exact sequence</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ">
 \begin{equation*}
 \begin{CD}
 0@&gt;&gt;&gt;A@&gt;&gt;&gt;A\oplus B@&gt;&gt;&gt;B@&gt;&gt;&gt;0
@@ -737,82 +746,96 @@ x-y \in M_{n+1} \cap A = M_n \cap A.
 \end{equation*}
 </div>
 </div></article></div>
-<article class="corollary theorem-like" id="cor-module-powers-are-noetherian"><h3 class="heading">
-<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">1.91</span><span class="period">.</span><span class="space"> </span><span class="title">Module Powers are Noetherian.</span>
-</h3>
-<div class="para" id="p-159">A module <span class="process-math">\(M\)</span> is noetherian if and only if <span class="process-math">\(M^n\)</span> is noetherian for some <span class="process-math">\(n\text{.}\)</span> In particular, if <span class="process-math">\(R\)</span> is a noetherian ring then <span class="process-math">\(R^n\)</span> is a noetherian module.</div></article><article class="hiddenproof" id="proof-19"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-19"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-19"><article class="hiddenproof"><div class="para logical" id="p-160">
+<article class="corollary theorem-like" id="cor-module-powers-are-noetherian"><h4 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">1.77</span><span class="period">.</span><span class="space"> </span><span class="title">Module Powers are Noetherian.</span>
+</h4>
+<div class="para" id="p-182">A module <span class="process-math">\(M\)</span> is noetherian if and only if <span class="process-math">\(M^n\)</span> is noetherian for some <span class="process-math">\(n\text{.}\)</span> In particular, if <span class="process-math">\(R\)</span> is a noetherian ring then <span class="process-math">\(R^n\)</span> is a noetherian module.</div></article><article class="hiddenproof" id="proof-19"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-19"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-19"><article class="hiddenproof"><div class="para logical" id="p-183">
 <div class="para">We will do induction on <span class="process-math">\(n\text{.}\)</span> The case <span class="process-math">\(n=1\)</span> is a tautology. For <span class="process-math">\(n&gt;1\text{,}\)</span> consider the short exact sequence</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \begin{CD}
 0@&gt;&gt;&gt;M^{n-1}@&gt;&gt;&gt;M^{n}@&gt;g&gt;&gt;M@&gt;&gt;&gt;0
 \end{CD}
 \end{equation*}
 </div>
-<div class="para">[[Mathematics/Commutative Algebra/Results/Lemma - Noetherianity in Exact Sequences|Lemma]] and the inductive hypothesis give the desired conclusion.</div>
+<div class="para">
+<code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Noetherianity in Exact Sequences|Lemma]] and the inductive hypothesis give the desired conclusion.</div>
 </div></article></div>
-<article class="proposition theorem-like" id="prop-submodule-of-f.g.-module-f.g."><h3 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.92</span><span class="period">.</span><span class="space"> </span><span class="title">Submodule of F.G. Module F.G..</span>
-</h3>
-<div class="para" id="p-161">Let <span class="process-math">\(R\)</span> be a noetherian ring. Given an <span class="process-math">\(R\)</span>-module <span class="process-math">\(M\text{,}\)</span> <span class="process-math">\(M\)</span> is a noetherian <span class="process-math">\(R\)</span>-module if and only if <span class="process-math">\(M\)</span> is finitely generated. Consequently, any submodule of a finitely generated <span class="process-math">\(R\)</span>-module is also finitely generated.</div></article><article class="hiddenproof" id="proof-20"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-20"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-20"><article class="hiddenproof"><div class="para" id="p-162">If <span class="process-math">\(M\)</span> is noetherian, <span class="process-math">\(M\)</span> is finitely generated[^1], and so are all of its submodules.</div> <div class="para" id="p-163">Now let <span class="process-math">\(R\)</span> be noetherian and <span class="process-math">\(M\)</span> be a finitely generated <span class="process-math">\(R\)</span>-module. Then <span class="process-math">\(M\)</span> is isomorphic to a quotient of <span class="process-math">\(R^n\)</span> for some <span class="process-math">\(n\)</span>[^2], which is noetherian by [[Mathematics/Commutative Algebra/Results/Corollary - Module Powers are Noetherian|Corollary]] and [[Mathematics/Commutative Algebra/Results/Lemma - Quotient Noetherian|Lemma]].</div></article></div>
-<article class="example example-like" id="ex-noetherian-required-for-noetherian-f.g."><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.93</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherian Required for Noetherian F.G..</span>
-</h3>
-<div class="para" id="p-164">If <span class="process-math">\(R\)</span> is a non-noetherian ring and <span class="process-math">\(M\)</span> is a finitely generated <span class="process-math">\(R\)</span>-module, <span class="process-math">\(M\)</span> might not be noetherian.</div>
+<article class="proposition theorem-like" id="prop-submodule-of-f.g.-module-f.g."><h4 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.78</span><span class="period">.</span><span class="space"> </span><span class="title">Submodule of F.G. Module F.G..</span>
+</h4>
+<div class="para" id="p-184">Let <span class="process-math">\(R\)</span> be a noetherian ring. Given an <span class="process-math">\(R\)</span>-module <span class="process-math">\(M\text{,}\)</span> <span class="process-math">\(M\)</span> is a noetherian <span class="process-math">\(R\)</span>-module if and only if <span class="process-math">\(M\)</span> is finitely generated. Consequently, any submodule of a finitely generated <span class="process-math">\(R\)</span>-module is also finitely generated.</div></article><article class="hiddenproof" id="proof-20"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-20"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-20"><article class="hiddenproof"><div class="para" id="p-185">If <span class="process-math">\(M\)</span> is noetherian, <span class="process-math">\(M\)</span> is finitely generated, and so are all of its submodules.</div> <div class="para" id="p-186">Now let <span class="process-math">\(R\)</span> be noetherian and <span class="process-math">\(M\)</span> be a finitely generated <span class="process-math">\(R\)</span>-module. Then <span class="process-math">\(M\)</span> is isomorphic to a quotient of <span class="process-math">\(R^n\)</span> for some <span class="process-math">\(n\text{,}\)</span> which is noetherian by <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Corollary - Module Powers are Noetherian|Corollary]] and <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Quotient Noetherian|Lemma]].</div></article></div>
+<article class="example example-like" id="ex-noetherian-required-for-noetherian-f.g."><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.79</span><span class="period">.</span><span class="space"> </span><span class="title">Noetherian Required for Noetherian F.G..</span>
+</h4>
+<div class="para" id="p-187">If <span class="process-math">\(R\)</span> is a non-noetherian ring and <span class="process-math">\(M\)</span> is a finitely generated <span class="process-math">\(R\)</span>-module, <span class="process-math">\(M\)</span> might not be noetherian.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><div class="para" id="p-165">For a dramatic example, note that <span class="process-math">\(R\)</span> itself is a finitely generated <span class="process-math">\(R\)</span>-module, but not noetherian.</div></div></div>
-</div></article><article class="remark remark-like" id="remark-20"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.94</span><span class="period">.</span>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-8"><div class="solution solution-like"><div class="para" id="p-188">For a dramatic example, note that <span class="process-math">\(R\)</span> itself is a finitely generated <span class="process-math">\(R\)</span>-module, but not noetherian.</div></div></div>
+</div></article></section><section class="subsection" id="subsec-hilbert"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber"></span> <span class="title">Hilbert's Basis Theorem</span>
 </h3>
-<div class="para" id="p-166">Now we are ready to prove Hilbert’s Basis Theorem. David Hilbert was a big influence in the early years of commutative algebra, in many different ways. Emmy Noether’s early work in algebra was in part inspired by some of his work, and he later invited her to join the Göttingen Math Department — many of her amazing contributions to algebra happened during her time in Göttingen. Unfortunately, some of the faculty opposed a woman joining the department, and for her first two years in Göttingen, Noether did not have an official position nor was she paid. Hilbert’s contributions also include three of the most fundamental results in commutative algebra — Hilbert’s Basis Theorem, the Hilbert Syzygy Theorem, and Hilbert’s Nullstellensatz.</div></article><article class="theorem theorem-like" id="thm-hilberts-basis-theorem"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.95</span><span class="period">.</span><span class="space"> </span><span class="title">Hilbert’s Basis Theorem.</span>
-</h3>
-<div class="para" id="p-167">If <span class="process-math">\(R\)</span> is a noetherian ring, then the polynomial rings <span class="process-math">\(R[x_1,\dots,x_d]\)</span> and <span class="process-math">\(R[[ x_1,\dots,x_d]]\)</span> are noetherian for any <span class="process-math">\(d \geqslant 1\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-21"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-21"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-21"><article class="hiddenproof"><div class="para" id="p-168">We will give the proof for polynomial rings, and at the end we will indicate what the difference is in the argument for the power series ring case. First, note that by induction on <span class="process-math">\(d\text{,}\)</span> we can reduce to the case <span class="process-math">\(d=1\text{.}\)</span>
-</div> <div class="para logical" id="p-169">
+<div class="para" id="p-189">Now we are ready to prove Hilbert's Basis Theorem. David Hilbert was a big influence in the early years of commutative algebra, in many different ways. Emmy Noether's early work in algebra was in part inspired by some of his work, and he later invited her to join the Göttingen Math Department — many of her amazing contributions to algebra happened during her time in Göttingen. Unfortunately, some of the faculty opposed a woman joining the department, and for her first two years in Göttingen, Noether did not have an official position nor was she paid. Hilbert's contributions also include three of the most fundamental results in commutative algebra — Hilbert's Basis Theorem, the Hilbert Syzygy Theorem, and Hilbert's Nullstellensatz.</div>
+<article class="theorem theorem-like" id="hilbert-basis-theorem"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.80</span><span class="period">.</span><span class="space"> </span><span class="title">Hilbert's Basis Theorem.</span>
+</h4>
+<div class="para" id="p-190">If <span class="process-math">\(R\)</span> is a noetherian ring, then the polynomial rings <span class="process-math">\(R[x_1,\dots,x_d]\)</span> and <span class="process-math">\(R[[ x_1,\dots,x_d]]\)</span> are noetherian for any <span class="process-math">\(d \geqslant 1\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-21"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-21"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-21"><article class="hiddenproof"><div class="para" id="p-191">We will give the proof for polynomial rings, and at the end we will indicate what the difference is in the argument for the power series ring case. First, note that by induction on <span class="process-math">\(d\text{,}\)</span> we can reduce to the case <span class="process-math">\(d=1\text{.}\)</span>
+</div> <div class="para logical" id="p-192">
 <div class="para">Given an ideal <span class="process-math">\(I\subseteq R[x]\text{,}\)</span> consider the set of leading coefficients of all polynomials in <span class="process-math">\(I\text{,}\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 J :=  \{ a \in R \ \mid  \ \textrm{there is some } a x^n + \text{lower order terms (with respect to }x) \in I\}.
 \end{equation*}
 </div>
-<div class="para">By the [[Mathematics/Commutative Algebra/Results/Exercise - Hilbert Basis Lemma|Hilbert Basis Lemma]], we see that this is an ideal of <span class="process-math">\(R\text{.}\)</span> Since <span class="process-math">\(R\)</span> is noetherian, <span class="process-math">\(J\)</span> is finitely generated[^2], so let <span class="process-math">\(J = (a_1,\dots,a_t)\text{.}\)</span> Pick <span class="process-math">\(f_1,\dots,f_t\in R[x]\)</span> such that the leading coefficient of <span class="process-math">\(f_i\)</span> is <span class="process-math">\(a_i\text{,}\)</span> and set <span class="process-math">\(N=\displaystyle\max_i \{\deg{f_i} \}\text{.}\)</span>
+<div class="para">By the <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Exercise - Hilbert Basis Lemma|Hilbert Basis Lemma]], we see that this is an ideal of <span class="process-math">\(R\text{.}\)</span> Since <span class="process-math">\(R\)</span> is noetherian, <span class="process-math">\(J\)</span> is finitely generated, so let <span class="process-math">\(J = (a_1,\dots,a_t)\text{.}\)</span> Pick <span class="process-math">\(f_1,\dots,f_t\in R[x]\)</span> such that the leading coefficient of <span class="process-math">\(f_i\)</span> is <span class="process-math">\(a_i\text{,}\)</span> and set <span class="process-math">\(N=\displaystyle\max_i \{\deg{f_i} \}\text{.}\)</span>
 </div>
-</div> <div class="para logical" id="p-170">
+</div> <div class="para logical" id="p-193">
 <div class="para">Let <span class="process-math">\(f \in I\text{.}\)</span> The leading coefficient of <span class="process-math">\(f\)</span> is an <span class="process-math">\(R\)</span>-linear combination of <span class="process-math">\(a_1, \ldots, a_t\text{.}\)</span> If <span class="process-math">\(f\)</span> has degree greater than <span class="process-math">\(N\text{,}\)</span> then we can cancel off the leading term of <span class="process-math">\(f\)</span> by subtracting a suitable combination of the <span class="process-math">\(f_i\text{.}\)</span> Therefore, any <span class="process-math">\(f \in I\)</span> can be written as <span class="process-math">\(f = g+ h\)</span> for some <span class="process-math">\(h \in (f_1, \ldots, f_t)\)</span> and <span class="process-math">\(g \in I\)</span> with degree at most <span class="process-math">\(N\text{.}\)</span> In particular, note that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 g \in I \cap \frac{R + Rx + \cdots + R x^N}.
 \end{equation*}
 </div>
-<div class="para">Since <span class="process-math">\(I \cap (R + Rx + \cdots + R x^N)\)</span> is a submodule of the finitely generated free <span class="process-math">\(R\)</span>-module <span class="process-math">\(R + Rx + \cdots + R x^N\text{,}\)</span> it must also be finitely generated as an <span class="process-math">\(R\)</span>-module[^3]. Given such a generating set, say <span class="process-math">\(I \cap (R + Rx + \cdots + Rx^N) = (f_{t+1}, \ldots, f_s)\text{,}\)</span> we can write any element <span class="process-math">\(f \in I\)</span> as an <span class="process-math">\(R[x]\)</span>-linear combination of these generators <span class="process-math">\(f_{t+1}, \ldots, f_s\)</span> and the original <span class="process-math">\(f_{1}, \ldots, f_t\text{.}\)</span> Therefore, <span class="process-math">\(I = (f_1, \ldots, f_t, f_{t+1}, \ldots, f_s)\)</span> is finitely generated as an ideal in <span class="process-math">\(R[x]\text{,}\)</span> and <span class="process-math">\(R[x]\)</span> is a noetherian ring.</div>
-</div> <div class="para" id="p-171">In the power series case, take <span class="process-math">\(J\)</span> to be the set of coefficients of lowest degree terms.</div></article></div>
-<article class="remark remark-like" id="remark-21"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.96</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-172">We can rephrase [[Mathematics/Commutative Algebra/Results/Theorem - Hilbert’s Basis Theorem|Hilbert’s Basis Theorem]] in a way that can be better understood by those with high school algebra (as opposed to abstract algebra) knowledge:</div> <blockquote class="blockquote" id="blockquote-7"><div class="para" id="p-173">Any system of polynomial equations in finitely many variables can be written in terms of finitely many equations.</div></blockquote></article><article class="corollary theorem-like" id="cor-f.g.-algebras-over-noeth-rings-are-noeth"><h3 class="heading">
-<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">1.97</span><span class="period">.</span><span class="space"> </span><span class="title">F.G. Algebras over Noeth Rings are Noeth.</span>
-</h3>
-<div class="para" id="p-174">If <span class="process-math">\(R\)</span> is a noetherian ring, then any finitely generated <span class="process-math">\(R\)</span>-algebra is noetherian. In particular, any finitely generated algebra over a field is noetherian.</div></article><article class="hiddenproof" id="proof-22"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-22"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-22"><article class="hiddenproof"><div class="para" id="p-175">Any finitely generated <span class="process-math">\(R\)</span>-algebra is isomorphic to a quotient of a polynomial ring over <span class="process-math">\(R\)</span> in finitely many variables[^1]; polynomial rings over noetherian rings are noetherian by the [[Mathematics/Commutative Algebra/Results/Theorem - Hilbert’s Basis Theorem|Hilbert’s Basis Theorem]], and quotients of noetherian rings are noetherian.</div></article></div>
-<article class="remark remark-like" id="remark-22"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.98</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-176">The converse to this statement is false: there are lots of noetherian rings that are not finitely generated algebras over a field. For example, <span class="process-math">\(\C\{z\}\)</span> is not algebra-finite over <span class="process-math">\(\C\text{.}\)</span> We will see more examples of these when we talk about local rings.</div></article><article class="theorem theorem-like" id="thm-artin-tate-lemma"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.99</span><span class="period">.</span><span class="space"> </span><span class="title">Artin-Tate Lemma.</span>
-</h3>
-<div class="para" id="p-177">Let <span class="process-math">\(A\subseteq B \subseteq C\)</span> be rings. Assume that - <span class="process-math">\(A\)</span> is noetherian, - <span class="process-math">\(C\)</span> is module-finite over <span class="process-math">\(B\text{,}\)</span> and - <span class="process-math">\(C\)</span> is algebra-finite over <span class="process-math">\(A\text{.}\)</span> Then, <span class="process-math">\(B\)</span> is algebra-finite over <span class="process-math">\(A\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-23"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-23"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-23"><article class="hiddenproof"><div class="para logical" id="p-178">
-<div class="para">Let <span class="process-math">\(C=A[f_1,\dots,f_r]\)</span> and <span class="process-math">\(C=B g_1 + \cdots + B g_s\)</span>[^1]. Then,</div>
-<div class="displaymath process-math">
+<div class="para">Since <span class="process-math">\(I \cap (R + Rx + \cdots + R x^N)\)</span> is a submodule of the finitely generated free <span class="process-math">\(R\)</span>-module <span class="process-math">\(R + Rx + \cdots + R x^N\text{,}\)</span> it must also be finitely generated as an <span class="process-math">\(R\)</span>-module. Given such a generating set, say <span class="process-math">\(I \cap (R + Rx + \cdots + Rx^N) = (f_{t+1}, \ldots, f_s)\text{,}\)</span> we can write any element <span class="process-math">\(f \in I\)</span> as an <span class="process-math">\(R[x]\)</span>-linear combination of these generators <span class="process-math">\(f_{t+1}, \ldots, f_s\)</span> and the original <span class="process-math">\(f_{1}, \ldots, f_t\text{.}\)</span> Therefore, <span class="process-math">\(I = (f_1, \ldots, f_t, f_{t+1}, \ldots, f_s)\)</span> is finitely generated as an ideal in <span class="process-math">\(R[x]\text{,}\)</span> and <span class="process-math">\(R[x]\)</span> is a noetherian ring.</div>
+</div> <div class="para" id="p-194">In the power series case, take <span class="process-math">\(J\)</span> to be the set of coefficients of lowest degree terms.</div></article></div>
+<article class="remark remark-like" id="remark-14"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.81</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-195">We can rephrase <a href="" class="xref" data-knowl="./knowl/hilbert-basis-theorem.html" title="Theorem 1.80: Hilbert's Basis Theorem">Hilbert's Basis Theorem</a> in a way that can be better understood by those with high school algebra (as opposed to abstract algebra) knowledge:</div> <blockquote class="blockquote" id="blockquote-7"><div class="para" id="p-196">Any system of polynomial equations in finitely many variables can be written in terms of finitely many equations.</div></blockquote></article><div class="para" id="p-197">Finally, note that a standard corollary of the Hilbert Basis Theorem is that finitely generated algebras over noetherian rings are also noetherian.</div>
+<article class="corollary theorem-like" id="cor-f.g.-algebras-over-noeth-rings-are-noeth"><h4 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">1.82</span><span class="period">.</span><span class="space"> </span><span class="title">F.G. Algebras over Noeth Rings are Noeth.</span>
+</h4>
+<div class="para" id="p-198">If <span class="process-math">\(R\)</span> is a noetherian ring, then any finitely generated <span class="process-math">\(R\)</span>-algebra is noetherian. In particular, any finitely generated algebra over a field is noetherian.</div></article><article class="hiddenproof" id="proof-22"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-22"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-22"><article class="hiddenproof"><div class="para" id="p-199">Any finitely generated <span class="process-math">\(R\)</span>-algebra is isomorphic to a quotient of a polynomial ring over <span class="process-math">\(R\)</span> in finitely many variables; polynomial rings over noetherian rings are noetherian by the <a href="" class="xref" data-knowl="./knowl/hilbert-basis-theorem.html" title="Theorem 1.80: Hilbert's Basis Theorem">Hilbert's Basis Theorem</a>, and quotients of noetherian rings are noetherian.</div></article></div>
+<article class="remark remark-like" id="remark-15"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.83</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-200">The converse to this statement is false: there are lots of noetherian rings that are not finitely generated algebras over a field. For example, <span class="process-math">\(\C\{z\}\)</span> is not algebra-finite over <span class="process-math">\(\C\text{.}\)</span> We will see more examples of these when we talk about local rings.</div></article><div class="para" id="p-201">Finally, we can now prove a technical sounding result that puts together all our finiteness conditions in a useful way.</div>
+<article class="theorem theorem-like" id="thm-artin-tate-lemma"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.84</span><span class="period">.</span><span class="space"> </span><span class="title">Artin-Tate Lemma.</span>
+</h4>
+<div class="para logical" id="p-202">
+<div class="para">Let <span class="process-math">\(A\subseteq B \subseteq C\)</span> be rings. Assume that</div>
+<ul class="disc">
+<li id="li-36"><div class="para" id="p-203">
+<span class="process-math">\(A\)</span> is noetherian,</div></li>
+<li id="li-37"><div class="para" id="p-204">
+<span class="process-math">\(C\)</span> is module-finite over <span class="process-math">\(B\text{,}\)</span> and</div></li>
+<li id="li-38"><div class="para" id="p-205">
+<span class="process-math">\(C\)</span> is algebra-finite over <span class="process-math">\(A\text{.}\)</span> Then, <span class="process-math">\(B\)</span> is algebra-finite over <span class="process-math">\(A\text{.}\)</span>
+</div></li>
+</ul>
+</div></article><article class="hiddenproof" id="proof-23"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-23"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-23"><article class="hiddenproof"><div class="para logical" id="p-206">
+<div class="para">Let <span class="process-math">\(C=A[f_1,\dots,f_r]\)</span> and <span class="process-math">\(C=B g_1 + \cdots + B g_s\text{.}\)</span> Then,</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 f_i = \sum_j b_{ij} g_j \quad \text{and} \quad g_i g_j = \sum_k b_{ijk} g_k
 \end{equation*}
 </div>
-<div class="para">for some <span class="process-math">\(b_{ij}, b_{ijk}\in B\text{.}\)</span> Let <span class="process-math">\(B_0 = A[\{b_{ij}, b_{ijk}\}] \subseteq B\text{.}\)</span> This is a finitely generated <span class="process-math">\(A\)</span>-algebra; by this [[Mathematics/Commutative Algebra/Results/Corollary - F.G. Algebras over Noeth Rings and Noeth|Corollary]], since <span class="process-math">\(A\)</span> is noetherian, so is <span class="process-math">\(B_0\text{.}\)</span>
+<div class="para">for some <span class="process-math">\(b_{ij}, b_{ijk}\in B\text{.}\)</span> Let <span class="process-math">\(B_0 = A[\{b_{ij}, b_{ijk}\}] \subseteq B\text{.}\)</span> This is a finitely generated <span class="process-math">\(A\)</span>-algebra; by this <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Corollary - F.G. Algebras over Noeth Rings and Noeth|Corollary]], since <span class="process-math">\(A\)</span> is noetherian, so is <span class="process-math">\(B_0\text{.}\)</span>
 </div>
-</div> <div class="para" id="p-179">We claim that <span class="process-math">\(C=B_0 \, g_1 + \cdots + B_0 g_s\text{.}\)</span> Given an element <span class="process-math">\(c\in C\text{,}\)</span> write <span class="process-math">\(c\)</span> as a polynomial expression in <span class="process-math">\(f_1, \ldots, f_r\text{.}\)</span> Since the <span class="process-math">\(f_i\)</span> are linear combinations of the <span class="process-math">\(g_i\)</span> with coefficients in the <span class="process-math">\(b_{ij},\)</span> we have <span class="process-math">\(c\in A[\{b_{ij}\}][g_1,\dots,g_s]\text{.}\)</span> Then using the equations for <span class="process-math">\(g_i g_j\)</span> repeatedly, we can rewrite <span class="process-math">\(c\)</span> as a linear combination of the <span class="process-math">\(g_i\)</span> with coefficients in <span class="process-math">\(B_0\text{.}\)</span>
-</div> <div class="para" id="p-180">Since <span class="process-math">\(B_0\)</span> is noetherian and <span class="process-math">\(C\)</span> is a finitely generated <span class="process-math">\(B_0\)</span>-module, <span class="process-math">\(C\)</span> is a noetherian <span class="process-math">\(B_0\)</span>-module, by [[Mathematics/Commutative Algebra/Results/Proposition - Submodule of F.G. Module F.G.|Proposition]]. Since <span class="process-math">\(B\subseteq C\text{,}\)</span> then <span class="process-math">\(B\)</span> is also a finitely generated <span class="process-math">\(B_0\)</span>-module[^3]. In particular, <span class="process-math">\(B_0 \subseteq B\)</span> is algebra-finite. Since <span class="process-math">\(A \subseteq B_0\)</span> is algebra-finite, we conclude that <span class="process-math">\(A \subseteq B\)</span> is algebra-finite, as required[^2].</div></article></div></section></div>
+</div> <div class="para" id="p-207">We claim that <span class="process-math">\(C=B_0 \, g_1 + \cdots + B_0 g_s\text{.}\)</span> Given an element <span class="process-math">\(c\in C\text{,}\)</span> write <span class="process-math">\(c\)</span> as a polynomial expression in <span class="process-math">\(f_1, \ldots, f_r\text{.}\)</span> Since the <span class="process-math">\(f_i\)</span> are linear combinations of the <span class="process-math">\(g_i\)</span> with coefficients in the <span class="process-math">\(b_{ij},\)</span> we have <span class="process-math">\(c\in A[\{b_{ij}\}][g_1,\dots,g_s]\text{.}\)</span> Then using the equations for <span class="process-math">\(g_i g_j\)</span> repeatedly, we can rewrite <span class="process-math">\(c\)</span> as a linear combination of the <span class="process-math">\(g_i\)</span> with coefficients in <span class="process-math">\(B_0\text{.}\)</span>
+</div> <div class="para" id="p-208">Since <span class="process-math">\(B_0\)</span> is noetherian and <span class="process-math">\(C\)</span> is a finitely generated <span class="process-math">\(B_0\)</span>-module, <span class="process-math">\(C\)</span> is a noetherian <span class="process-math">\(B_0\)</span>-module, by <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Proposition - Submodule of F.G. Module F.G.|Proposition]]. Since <span class="process-math">\(B\subseteq C\text{,}\)</span> then <span class="process-math">\(B\)</span> is also a finitely generated <span class="process-math">\(B_0\)</span>-module. In particular, <span class="process-math">\(B_0 \subseteq B\)</span> is algebra-finite. Since <span class="process-math">\(A \subseteq B_0\)</span> is algebra-finite, we conclude that <span class="process-math">\(A \subseteq B\)</span> is algebra-finite, as required.</div></article></div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-ses.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-inv-rings-1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

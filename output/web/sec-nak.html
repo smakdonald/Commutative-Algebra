@@ -66,7 +66,7 @@ window.MathJax = {
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra:</span> <span class="subtitle">An example to get you started</span></a></h1>
+<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra</span></a></h1>
 <p class="byline">Sam Macdonald</p>
 </div>
 <div id="searchresultsplaceholder" style="display: none">
@@ -471,7 +471,14 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-alg-mod-finite.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Algebra and Module Finite</span></a></div></li>
 <li><div class="toc-item"><a href="sec-integral-extensions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Integral Extensions</span></a></div></li>
 <li><div class="toc-item"><a href="sec-ses.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Short Exact Sequences</span></a></div></li>
-<li><div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-rings" class="internal"><span class="title">Noetherian Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-modules" class="internal"><span class="title">Noetherian Modules</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-hilbert" class="internal"><span class="title">Hilbert's Basis Theorem</span></a></div></li>
+</ul>
+</li>
 <li><div class="toc-item"><a href="sec-inv-rings-1.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Invariant Rings: Application I</span></a></div></li>
 </ul>
 </li>
@@ -533,78 +540,86 @@ window.MathJax = {
 </li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-nak"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5.3</span> <span class="title">NAK</span>
 </h2>
 <blockquote class="blockquote" id="blockquote-20">
-<div class="para" id="p-454">“”</div> <cite class="attribution">―</cite>
+<div class="para" id="p-485">“The fundamental result of commutative algebra, and its power and elegance are second to none.”</div> <cite class="attribution">―Jürgen Herzog, on NAK</cite>
 </blockquote>
-<article class="remark remark-like" id="remark-44"><h3 class="heading">
+<article class="remark remark-like" id="remark-37"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.43</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-455">We will now show a very simple but extremely useful result known as Nakayama’s Lemma. Nakayama himself claimed that this should be attributed to Krull and Azumaya, but it’s not clear which of the three actually had the commutative ring statement first. So some authors (e.g., Matsumura) prefer to refer to it as NAK. There are actually a range of statements, rather than just one, that go under the banner of Nakayama’s Lemma a.k.a. NAK.</div></article><article class="proposition theorem-like" id="prop-nak-1"><h3 class="heading">
+<div class="para" id="p-486">We will now show a very simple but extremely useful result known as Nakayama's Lemma. Nakayama himself claimed that this should be attributed to Krull and Azumaya, but it's not clear which of the three actually had the commutative ring statement first. So some authors (e.g., Matsumura) prefer to refer to it as NAK. There are actually a range of statements, rather than just one, that go under the banner of Nakayama's Lemma a.k.a. NAK.</div></article><article class="proposition theorem-like" id="prop-nak-1"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.44</span><span class="period">.</span><span class="space"> </span><span class="title">NAK 1.</span>
 </h3>
-<div class="para" id="p-456">Let <span class="process-math">\(R\)</span> be a ring, <span class="process-math">\(I\)</span> an ideal, and <span class="process-math">\(M\)</span> a finitely generated <span class="process-math">\(R\)</span>-module. If <span class="process-math">\(IM = M\text{,}\)</span> then: (a) there is an element <span class="process-math">\(r\in 1 + I\)</span> such that <span class="process-math">\(rM=0\text{,}\)</span> and (b) there is an element <span class="process-math">\(a\in I\)</span> such that <span class="process-math">\(am=m\)</span> for all <span class="process-math">\(m\in M\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-55"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-55"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-55"><article class="hiddenproof"><div class="para logical" id="p-457">
+<div class="para" id="p-487">Let <span class="process-math">\(R\)</span> be a ring, <span class="process-math">\(I\)</span> an ideal, and <span class="process-math">\(M\)</span> a finitely generated <span class="process-math">\(R\)</span>-module. If <span class="process-math">\(IM = M\text{,}\)</span> then: (a) there is an element <span class="process-math">\(r\in 1 + I\)</span> such that <span class="process-math">\(rM=0\text{,}\)</span> and (b) there is an element <span class="process-math">\(a\in I\)</span> such that <span class="process-math">\(am=m\)</span> for all <span class="process-math">\(m\in M\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-55"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-55"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-55"><article class="hiddenproof"><div class="para logical" id="p-488">
 <div class="para">Let <span class="process-math">\(M = R m_1 + \cdots + R m_s\text{.}\)</span> By assumption, we have equations</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 m_1 = a_{11} m_1 + \cdots + a_{1s} m_s \ , \ \dots \ , \ m_s = a_{s1} m_1 + \cdots + a_{ss} m_s,
 \end{equation*}
 </div>
-<div class="para">with <span class="process-math">\(a_{ij}\in I\text{.}\)</span> Setting <span class="process-math">\(A=[a_{ij}]\)</span> and <span class="process-math">\(v=[m_i]\text{,}\)</span> we have a matrix equation <span class="process-math">\(Av=v\text{.}\)</span> By~the [[Mathematics/Commutative Algebra/Results/Lemma - Determinantal Technique|Determinantal Technique]], the element <span class="process-math">\(\det(I_{s \times s} - A) \in R\)</span> kills each <span class="process-math">\(m_i\text{,}\)</span> and hence it kills <span class="process-math">\(M\text{.}\)</span> Since <span class="process-math">\(\det(I_{s \times s}-A)\equiv \det(I_{s \times s}) \equiv 1 (\!\pmod I)\text{,}\)</span> this determinant is the element <span class="process-math">\(r\)</span> we seek for the first statement. For the latter statement, set <span class="process-math">\(a=1-r\text{,}\)</span> which is in <span class="process-math">\(I\)</span> and satisfies <span class="process-math">\(am=m-rm=m\)</span> for all <span class="process-math">\(m\in M\text{.}\)</span>
+<div class="para">with <span class="process-math">\(a_{ij}\in I\text{.}\)</span> Setting <span class="process-math">\(A=[a_{ij}]\)</span> and <span class="process-math">\(v=[m_i]\text{,}\)</span> we have a matrix equation <span class="process-math">\(Av=v\text{.}\)</span> By the <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Determinantal Technique|Determinantal Technique]], the element <span class="process-math">\(\det(I_{s \times s} - A) \in R\)</span> kills each <span class="process-math">\(m_i\text{,}\)</span> and hence it kills <span class="process-math">\(M\text{.}\)</span> Since <span class="process-math">\(\det(I_{s \times s}-A)\equiv \det(I_{s \times s}) \equiv 1 (\!\pmod I)\text{,}\)</span> this determinant is the element <span class="process-math">\(r\)</span> we seek for the first statement. For the latter statement, set <span class="process-math">\(a=1-r\text{,}\)</span> which is in <span class="process-math">\(I\)</span> and satisfies <span class="process-math">\(am=m-rm=m\)</span> for all <span class="process-math">\(m\in M\text{.}\)</span>
 </div>
 </div></article></div>
 <article class="theorem theorem-like" id="thm-nak-2"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.45</span><span class="period">.</span><span class="space"> </span><span class="title">NAK 2.</span>
 </h3>
-<div class="para" id="p-458">Let <span class="process-math">\((R,\fm,k)\)</span> be a local ring, and <span class="process-math">\(M\)</span> be a finitely generated module. If <span class="process-math">\(M=\fm M\text{,}\)</span> then <span class="process-math">\(M=0\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-56"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-56"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-56"><article class="hiddenproof"><div class="para" id="p-459">By [[Mathematics/Commutative Algebra/Results/Proposition - NAK 1|NAK1]], there exists an element <span class="process-math">\(r\in 1+\fm\)</span> that annihilates <span class="process-math">\(M\)</span>[^1]. Notice that <span class="process-math">\(1 \notin \fm\text{,}\)</span> so any such <span class="process-math">\(r\)</span> must be outside of <span class="process-math">\(\fm\text{,}\)</span> and thus a unit. Multiplying by its inverse, we conclude that <span class="process-math">\(1\)</span> annihilates <span class="process-math">\(M\text{,}\)</span> or equivalently, that <span class="process-math">\(M=0\text{.}\)</span>
+<div class="para" id="p-489">Let <span class="process-math">\((R,\fm,k)\)</span> be a local ring, and <span class="process-math">\(M\)</span> be a finitely generated module. If <span class="process-math">\(M=\fm M\text{,}\)</span> then <span class="process-math">\(M=0\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-56"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-56"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-56"><article class="hiddenproof"><div class="para" id="p-490">By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Proposition - NAK 1|NAK1]], there exists an element <span class="process-math">\(r\in 1+\fm\)</span> that annihilates <span class="process-math">\(M\text{.}\)</span> Notice that <span class="process-math">\(1 \notin \fm\text{,}\)</span> so any such <span class="process-math">\(r\)</span> must be outside of <span class="process-math">\(\fm\text{,}\)</span> and thus a unit. Multiplying by its inverse, we conclude that <span class="process-math">\(1\)</span> annihilates <span class="process-math">\(M\text{,}\)</span> or equivalently, that <span class="process-math">\(M=0\text{.}\)</span>
 </div></article></div>
 <article class="theorem theorem-like" id="thm-nak-3"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.46</span><span class="period">.</span><span class="space"> </span><span class="title">NAK 3.</span>
 </h3>
-<div class="para" id="p-460">Let <span class="process-math">\((R,\fm,k)\)</span> be a local ring, and <span class="process-math">\(M\)</span> be a finitely generated module, and <span class="process-math">\(N\)</span> a submodule of <span class="process-math">\(M\text{.}\)</span> If <span class="process-math">\(M = N + \fm M\text{,}\)</span> then <span class="process-math">\(M = N\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-57"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-57"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-57"><article class="hiddenproof"><div class="para logical" id="p-461">
+<div class="para" id="p-491">Let <span class="process-math">\((R,\fm,k)\)</span> be a local ring, and <span class="process-math">\(M\)</span> be a finitely generated module, and <span class="process-math">\(N\)</span> a submodule of <span class="process-math">\(M\text{.}\)</span> If <span class="process-math">\(M = N + \fm M\text{,}\)</span> then <span class="process-math">\(M = N\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-57"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-57"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-57"><article class="hiddenproof"><div class="para logical" id="p-492">
 <div class="para">By taking the quotient by <span class="process-math">\(N\text{,}\)</span> we see that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 M/N = (N + \fm M)/N = \fm \left( M/N\right).
 \end{equation*}
 </div>
-<div class="para">By [[Mathematics/Commutative Algebra/Results/Theorem - NAK 2|NAK2]], <span class="process-math">\(M = N\text{.}\)</span>
+<div class="para">By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - NAK 2|NAK2]], <span class="process-math">\(M = N\text{.}\)</span>
 </div>
 </div></article></div>
 <article class="theorem theorem-like" id="thm-nak-4"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.47</span><span class="period">.</span><span class="space"> </span><span class="title">NAK 4.</span>
 </h3>
-<div class="para logical" id="p-462">
-<div class="para">Let <span class="process-math">\((R,\fm,k)\)</span> be a local ring, and <span class="process-math">\(M\)</span> be a finitely generated module. For <span class="process-math">\(m_1,\dots,m_s\in M\text{,}\)</span>[^1]</div>
+<div class="para logical" id="p-493">
+<div class="para">Let <span class="process-math">\((R,\fm,k)\)</span> be a local ring, and <span class="process-math">\(M\)</span> be a finitely generated module. For <span class="process-math">\(m_1,\dots,m_s\in M\text{,}\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
 m_1,\dots, m_s \text{ generate } M \Longleftrightarrow \overline{m_1},\dots,\overline{m_s} \text{ generate } M/\fm M.
 \end{equation*}
 </div>
-<div class="para">Thus, any generating set for <span class="process-math">\(M\)</span> consists of at least <span class="process-math">\(\dim_k (M/\fm M)\)</span>[^2] elements.</div>
-</div></article><article class="hiddenproof" id="proof-58"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-58"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-58"><article class="hiddenproof"><div class="para" id="p-463">The implication <span class="process-math">\((\implies)\)</span> is clear.[^3] If <span class="process-math">\(m_1,\dots, m_s \in M\)</span> are such that <span class="process-math">\(\overline{m_1},\dots,\overline{m_s}\)</span> generate <span class="process-math">\(M/\fm M\text{,}\)</span> consider <span class="process-math">\(N= R m_1 + \dots + R m_s \subseteq M\text{.}\)</span> Since <span class="process-math">\(M/\fm M\)</span> is generated by the image of <span class="process-math">\(N,\)</span> we have <span class="process-math">\(M= N + \fm M\text{.}\)</span> By [[Mathematics/Commutative Algebra/Results/Theorem - NAK 2|NAK2]], <span class="process-math">\(M=N\text{.}\)</span>
+<div class="para">Thus, any generating set for <span class="process-math">\(M\)</span> consists of at least <span class="process-math">\(\dim_k (M/\fm M)\)</span> elements.</div>
+</div></article><article class="hiddenproof" id="proof-58"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-58"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-58"><article class="hiddenproof"><div class="para" id="p-494">The implication <span class="process-math">\((\implies)\)</span> is clear. If <span class="process-math">\(m_1,\dots, m_s \in M\)</span> are such that <span class="process-math">\(\overline{m_1},\dots,\overline{m_s}\)</span> generate <span class="process-math">\(M/\fm M\text{,}\)</span> consider <span class="process-math">\(N= R m_1 + \dots + R m_s \subseteq M\text{.}\)</span> Since <span class="process-math">\(M/\fm M\)</span> is generated by the image of <span class="process-math">\(N,\)</span> we have <span class="process-math">\(M= N + \fm M\text{.}\)</span> By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - NAK 2|NAK2]], <span class="process-math">\(M=N\text{.}\)</span>
 </div></article></div>
-<article class="remark remark-like" id="remark-45"><h3 class="heading">
+<article class="remark remark-like" id="remark-38"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.48</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-464">Since <span class="process-math">\(R/\fm\)</span> is a field, <span class="process-math">\(M/\fm M\)</span> is a vector space over the field <span class="process-math">\(R/\fm\text{.}\)</span>
+<div class="para" id="p-495">Since <span class="process-math">\(R/\fm\)</span> is a field, <span class="process-math">\(M/\fm M\)</span> is a vector space over the field <span class="process-math">\(R/\fm\text{.}\)</span>
 </div></article><article class="definition definition-like" id="defn-minimal-generators"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.49</span><span class="period">.</span><span class="space"> </span><span class="title">Minimal Generators.</span>
-</h3> <div class="para" id="p-465">Let <span class="process-math">\((R,\fm)\)</span> be a local ring, and <span class="process-math">\(M\)</span> a finitely generated module. A set of elements <span class="process-math">\(\{m_1,\dots,m_t\}\)</span> is a <em class="emphasis">minimal generating set</em> of <span class="process-math">\(M\)</span> if the images of <span class="process-math">\(m_1,\dots,m_t\)</span> form a basis for the <span class="process-math">\(R/\fm\)</span> vector space <span class="process-math">\(M/\fm M\text{.}\)</span>
+</h3> <div class="para" id="p-496">Let <span class="process-math">\((R,\fm)\)</span> be a local ring, and <span class="process-math">\(M\)</span> a finitely generated module. A set of elements <span class="process-math">\(\{m_1,\dots,m_t\}\)</span> is a <em class="emphasis">minimal generating set</em> of <span class="process-math">\(M\)</span> if the images of <span class="process-math">\(m_1,\dots,m_t\)</span> form a basis for the <span class="process-math">\(R/\fm\)</span> vector space <span class="process-math">\(M/\fm M\text{.}\)</span>
 </div></article><article class="lemma theorem-like" id="lem-min-gen-sets-have-same-cardinality"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.50</span><span class="period">.</span><span class="space"> </span><span class="title">Min Gen Sets have Same Cardinality.</span>
 </h3>
-<div class="para" id="p-466">Let <span class="process-math">\((R,\fm,k)\)</span> be a local ring and <span class="process-math">\(M\)</span> be a finitely generated module. Any generating set for <span class="process-math">\(M\)</span> contains a minimal generating set, and every minimal generating set has the same cardinality.</div></article><article class="hiddenproof" id="proof-59"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-59"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-59"><article class="hiddenproof"><div class="para" id="p-467">As a consequence of basic facts about basis for vector spaces</div></article></div>
+<div class="para" id="p-497">Let <span class="process-math">\((R,\fm,k)\)</span> be a local ring and <span class="process-math">\(M\)</span> be a finitely generated module. Any generating set for <span class="process-math">\(M\)</span> contains a minimal generating set, and every minimal generating set has the same cardinality.</div></article><article class="hiddenproof" id="proof-59"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-59"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-59"><article class="hiddenproof"><div class="para" id="p-498">As a consequence of basic facts about basis for vector spaces</div></article></div>
 <article class="definition definition-like" id="defn-minimal-number-of-generators"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.51</span><span class="period">.</span><span class="space"> </span><span class="title">Minimal Number of Generators.</span>
-</h3> <div class="para logical" id="p-468">
+</h3> <div class="para logical" id="p-499">
 <div class="para">Let <span class="process-math">\((R,\fm)\)</span> be a local ring and <span class="process-math">\(N\)</span> an <span class="process-math">\(R\)</span>-module. The <em class="emphasis">minimal number of generators</em> of <span class="process-math">\(M\)</span> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -615,7 +630,7 @@ m_1,\dots, m_s \text{ generate } M \Longleftrightarrow \overline{m_1},\dots,\ove
 </div>
 </div></article><article class="definition definition-like" id="defn-minimal-number-of-generators-graded"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.52</span><span class="period">.</span><span class="space"> </span><span class="title">Minimal Number of Generators (Graded).</span>
-</h3> <div class="para logical" id="p-469">
+</h3> <div class="para logical" id="p-500">
 <div class="para">Let <span class="process-math">\(R\)</span> be an <span class="process-math">\(\N\)</span>-graded ring with <span class="process-math">\(R_0\)</span> a field, and <span class="process-math">\(M\)</span> a finitely generated <span class="process-math">\(\Z\)</span>-graded <span class="process-math">\(R\)</span>-module. The <em class="emphasis">minimal number of generators</em> of <span class="process-math">\(M\)</span> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -625,21 +640,21 @@ m_1,\dots, m_s \text{ generate } M \Longleftrightarrow \overline{m_1},\dots,\ove
 </div></article><article class="proposition theorem-like" id="prop-gnak-1"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.53</span><span class="period">.</span><span class="space"> </span><span class="title">GNAK1.</span>
 </h3>
-<div class="para" id="p-470">Let <span class="process-math">\(R\)</span> be an <span class="process-math">\(\N\)</span>-graded ring, and <span class="process-math">\(M\)</span> a <span class="process-math">\(\Z\)</span>-graded module such that <span class="process-math">\(M_{&lt;a}=0\)</span> for some <span class="process-math">\(a\text{.}\)</span> If <span class="process-math">\(M= (R_+) M\text{,}\)</span> then <span class="process-math">\(M=0\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-60"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-60"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-60"><article class="hiddenproof"><div class="para" id="p-471">If <span class="process-math">\(M \neq 0\text{,}\)</span> then <span class="process-math">\(M\)</span> has a nonzero homogeneous element. Suppose <span class="process-math">\(M_a \neq 0\text{.}\)</span> On the one hand, the homogeneous elements in <span class="process-math">\(M\)</span> live in degrees at least <span class="process-math">\(a\text{,}\)</span> but <span class="process-math">\((R_+)M\)</span> lives in degrees strictly bigger than <span class="process-math">\(a\text{.}\)</span> Thus <span class="process-math">\((R_+)M \neq M\text{.}\)</span>
+<div class="para" id="p-501">Let <span class="process-math">\(R\)</span> be an <span class="process-math">\(\N\)</span>-graded ring, and <span class="process-math">\(M\)</span> a <span class="process-math">\(\Z\)</span>-graded module such that <span class="process-math">\(M_{&lt;a}=0\)</span> for some <span class="process-math">\(a\text{.}\)</span> If <span class="process-math">\(M= (R_+) M\text{,}\)</span> then <span class="process-math">\(M=0\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-60"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-60"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-60"><article class="hiddenproof"><div class="para" id="p-502">If <span class="process-math">\(M \neq 0\text{,}\)</span> then <span class="process-math">\(M\)</span> has a nonzero homogeneous element. Suppose <span class="process-math">\(M_a \neq 0\text{.}\)</span> On the one hand, the homogeneous elements in <span class="process-math">\(M\)</span> live in degrees at least <span class="process-math">\(a\text{,}\)</span> but <span class="process-math">\((R_+)M\)</span> lives in degrees strictly bigger than <span class="process-math">\(a\text{.}\)</span> Thus <span class="process-math">\((R_+)M \neq M\text{.}\)</span>
 </div></article></div>
-<article class="remark remark-like" id="remark-46"><h3 class="heading">
+<article class="remark remark-like" id="remark-39"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.54</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-472">If <span class="process-math">\(M\)</span> is finitely generated, then it can be generated by finitely many homogeneous elements, the homogeneous components of some finite generating set. If <span class="process-math">\(a\)</span> is the smallest degree of a homogeneous element in a homogeneous generating set, since <span class="process-math">\(R\)</span> lives only in positive degrees we must have <span class="process-math">\(M \subseteq R M_{\geqslant a} \subseteq M_{\geqslant a}\text{,}\)</span> so <span class="process-math">\(M_{&lt;a} = 0\text{.}\)</span>
+<div class="para" id="p-503">If <span class="process-math">\(M\)</span> is finitely generated, then it can be generated by finitely many homogeneous elements, the homogeneous components of some finite generating set. If <span class="process-math">\(a\)</span> is the smallest degree of a homogeneous element in a homogeneous generating set, since <span class="process-math">\(R\)</span> lives only in positive degrees we must have <span class="process-math">\(M \subseteq R M_{\geqslant a} \subseteq M_{\geqslant a}\text{,}\)</span> so <span class="process-math">\(M_{&lt;a} = 0\text{.}\)</span>
 </div></article><article class="proposition theorem-like" id="prop-graded-rings-and-generators"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.55</span><span class="period">.</span><span class="space"> </span><span class="title">Graded Rings and Generators.</span>
 </h3>
-<div class="para" id="p-473">Let <span class="process-math">\(R\)</span> be an <span class="process-math">\(\N\)</span>-graded ring, with <span class="process-math">\(R_0\)</span> a field, and <span class="process-math">\(M\)</span> a <span class="process-math">\(\Z\)</span>-graded module such that <span class="process-math">\(M_{&lt;a}=0\)</span> for some degree <span class="process-math">\(a\text{.}\)</span> A set of elements of <span class="process-math">\(M\)</span> generates <span class="process-math">\(M\)</span> if and only if their images in <span class="process-math">\(M/(R_+)M\)</span> span <span class="process-math">\(M/(R_+)M\)</span> as a vector space over <span class="process-math">\(R_0\text{.}\)</span> Since <span class="process-math">\(M\)</span> and <span class="process-math">\((R_+)M\)</span> are graded, <span class="process-math">\(M/(R_+)M\)</span> admits a basis of homogeneous elements.</div></article><article class="hiddenproof" id="proof-61"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-61"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-61"><article class="hiddenproof"><div class="para" id="p-474">Just as above, we obtain the following:</div></article></div>
-<article class="remark remark-like" id="remark-47"><h3 class="heading">
+<div class="para" id="p-504">Let <span class="process-math">\(R\)</span> be an <span class="process-math">\(\N\)</span>-graded ring, with <span class="process-math">\(R_0\)</span> a field, and <span class="process-math">\(M\)</span> a <span class="process-math">\(\Z\)</span>-graded module such that <span class="process-math">\(M_{&lt;a}=0\)</span> for some degree <span class="process-math">\(a\text{.}\)</span> A set of elements of <span class="process-math">\(M\)</span> generates <span class="process-math">\(M\)</span> if and only if their images in <span class="process-math">\(M/(R_+)M\)</span> span <span class="process-math">\(M/(R_+)M\)</span> as a vector space over <span class="process-math">\(R_0\text{.}\)</span> Since <span class="process-math">\(M\)</span> and <span class="process-math">\((R_+)M\)</span> are graded, <span class="process-math">\(M/(R_+)M\)</span> admits a basis of homogeneous elements.</div></article><article class="hiddenproof" id="proof-61"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-61"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-61"><article class="hiddenproof"><div class="para" id="p-505">Just as above, we obtain the following:</div></article></div>
+<article class="remark remark-like" id="remark-40"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.56</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-475">Note that we can use [[Mathematics/Commutative Algebra/Results/Proposition - GNAK1|NAK]] to prove that certain modules are finitely generated in the graded case; in the local case, we cannot.</div></article></section></div>
+<div class="para" id="p-506">Note that we can use <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Proposition - GNAK1|NAK]] to prove that certain modules are finitely generated in the graded case; in the local case, we cannot.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-localization.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-decomposing-ideals.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

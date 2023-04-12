@@ -12,34 +12,8 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">
-<span class="process-math">\((2) \iff (3)\text{:}\)</span> First, note that the associated primes of <span class="process-math">\(R/Q\)</span> are the associated primes of the ideal <span class="process-math">\(Q\text{,}\)</span> while the minimal primes of <span class="process-math">\(R/Q\)</span> are the minimal primes of <span class="process-math">\(Q\text{.}\)</span> By [[Mathematics/Commutative Algebra/Results/Theorem - Zerodivisors Associated Primes|Theorem]],</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\bigcup_{P \in \Ass(Q)} P \, = \, \mathcal{Z}(R/Q).
-\end{equation*}
+<div class="para">It remains to show that <span class="process-math">\(I\)</span> is an ideal in <span class="process-math">\(R\text{.}\)</span> Since <span class="process-math">\(X\)</span> is a subset of <span class="process-math">\(\Spec(R)\text{,}\)</span> we have <span class="process-math">\(R \setminus X \subseteq \bigcup_{\fp \in X} \fp^c\text{,}\)</span> where <span class="process-math">\(\fp^c\)</span> denotes the complement of <span class="process-math">\(\fp\)</span> in <span class="process-math">\(R\text{.}\)</span> Taking the intersection of both sides with <span class="process-math">\(X\text{,}\)</span> we have <span class="process-math">\(X \subseteq \bigcup_{\fp \in X} \fp^c \cap X\text{.}\)</span> Since <span class="process-math">\(\fp^c \cap X\)</span> is closed under finite intersection and contains the empty set, it is a closed set of <span class="process-math">\(\Spec(R)\text{.}\)</span> Hence, we can apply the prime avoidance lemma to get <span class="process-math">\(I = \bigcap_{\fp \in X} \fp \subseteq \bigcap_{\fp \in X} \fp^c \cap X = \emptyset\text{.}\)</span> Thus, <span class="process-math">\(I\)</span> is an ideal in <span class="process-math">\(R\text{.}\)</span>
 </div>
-<div class="para">Every minimal prime of <span class="process-math">\(Q\)</span> is associated to <span class="process-math">\(Q\text{,}\)</span>[^4] so</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\bigcap_{P \in \Min(Q)} P = \bigcap_{P \in \Ass(Q)} P.
-\end{equation*}
-</div>
-<div class="para">Finally, every nilpotent element is always a zerodivisor. Putting all these together, we always have the following:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\bigcup_{P \in \Ass(Q)} P \, = \, \mathcal{Z}(R/Q) \, \supseteq  \{ r \in R \mid r + Q \in \mathcal{N}(R/Q) \} \, = \bigcap_{P \in \Min(Q)} P = \bigcap_{P \in \Ass(Q)} P.
-\end{equation*}
-</div>
-<div class="para">On the one hand, (2) says that the set of zerodivisors on <span class="process-math">\(R/Q\)</span> coincides with the elements in the nilradical of <span class="process-math">\(R/Q\text{;}\)</span> thus (2) is the statement that we have equality throughout. So (2) holds if and only if</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\bigcup_{P \in \Ass(Q)} P \, = \bigcap_{P \in \Ass(Q)} P.
-\end{equation*}
-</div>
-<div class="para">The rest of the proof is elementary set theory: the intersection and union of a collection of sets agree if and only if there is only one set. More precisely, we have equality above if and only if there is only one associated prime.</div>
-</div>
-<span class="incontext"><a href="sec-primary-decomp.html#p-580" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-ass-primes.html#p-580" class="internal">in-context</a></span>
 </body>
 </html>

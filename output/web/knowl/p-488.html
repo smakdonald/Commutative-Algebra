@@ -13,20 +13,15 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Suppose that we can delete <span class="process-math">\(P_i\text{,}\)</span> meaning that</div>
-<div class="displaymath process-math">
+<div class="para">Let <span class="process-math">\(M = R m_1 + \cdots + R m_s\text{.}\)</span> By assumption, we have equations</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-\bigcap_{j=1}^n P_j = \bigcap_{j \neq i} P_j.
+m_1 = a_{11} m_1 + \cdots + a_{1s} m_s \ , \ \dots \ , \ m_s = a_{s1} m_1 + \cdots + a_{ss} m_s,
 \end{equation*}
 </div>
-<div class="para">Then</div>
-<div class="displaymath process-math">
-\begin{equation*}
-P_i \supseteq \bigcap_{j=1}^n P_j = \bigcap_{j \neq i} P_j \supseteq \prod_{j \neq i} P_j.
-\end{equation*}
+<div class="para">with <span class="process-math">\(a_{ij}\in I\text{.}\)</span> Setting <span class="process-math">\(A=[a_{ij}]\)</span> and <span class="process-math">\(v=[m_i]\text{,}\)</span> we have a matrix equation <span class="process-math">\(Av=v\text{.}\)</span> By the <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Determinantal Technique|Determinantal Technique]], the element <span class="process-math">\(\det(I_{s \times s} - A) \in R\)</span> kills each <span class="process-math">\(m_i\text{,}\)</span> and hence it kills <span class="process-math">\(M\text{.}\)</span> Since <span class="process-math">\(\det(I_{s \times s}-A)\equiv \det(I_{s \times s}) \equiv 1 (\!\pmod I)\text{,}\)</span> this determinant is the element <span class="process-math">\(r\)</span> we seek for the first statement. For the latter statement, set <span class="process-math">\(a=1-r\text{,}\)</span> which is in <span class="process-math">\(I\)</span> and satisfies <span class="process-math">\(am=m-rm=m\)</span> for all <span class="process-math">\(m\in M\text{.}\)</span>
 </div>
-<div class="para">Since <span class="process-math">\(P_i\)</span> is prime, this implies that <span class="process-math">\(P_i \supseteq P_j\)</span> for some <span class="process-math">\(j \neq i\text{,}\)</span> but this contradicts the assumption that the primes are incomparable.</div>
 </div>
-<span class="incontext"><a href="sec-min-support.html#p-488" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-nak.html#p-488" class="internal">in-context</a></span>
 </body>
 </html>

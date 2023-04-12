@@ -12,16 +12,9 @@
 </head>
 <body class="ignore-math">
 <article class="remark remark-like"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">7.1</span><span class="period">.</span>
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">8.2</span><span class="period">.</span>
 </h3>
-<div class="para">We will now spend a while discussing the notion of dimension of a ring and dimension of a variety. To motivate the definition, let’s first think in terms of varieties.</div> <div class="para">We take our inspiration from the fundamental setting of dimension theory: vector spaces. The notion of basis doesn’t make sense for varieties (What does it mean to span? Where is zero?), but one relevant thing we do have for both vector spaces and for varieties is subobjects.</div> <div class="para logical">
-<div class="para">One way to characterize the dimension of a vector space <span class="process-math">\(V\)</span> is the the largest number <span class="process-math">\(d\)</span> such that there is a proper chain of subspaces</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\{0\} = V_0 \subsetneq V_1 \subsetneq V_2 \subsetneq \cdots \subsetneq V_d = V.
-\end{equation*}
-</div>
-<div class="para">We can try something similar for varieties, but for a reducible variety, this is not a very good notion. For example, for a union of <span class="process-math">\(m\)</span> points, we can cook up a chain of <span class="process-math">\(m\)</span> proper subvarieties by adding one more point each time, but a point should be zero-dimensional by any reasonable measure. So, if we want this approach to work, we should stick to chains of irreducible subvarieties.</div>
-</div></article><span class="incontext"><a href="sec-dim-height.html#remark-56" class="internal">in-context</a></span>
+<div class="para">Note that this is stronger than the statement that the height of <span class="process-math">\((f)\)</span> is at most one: that would only mean that some minimal prime of <span class="process-math">\((f)\)</span> has height at most one. #### Let <span class="process-math">\(R = k[x,xy,xy^2,\ldots] \subseteq k[x,y]\text{.}\)</span> Note that <span class="process-math">\((x)\)</span> is not prime: for <span class="process-math">\(a&gt;0\text{,}\)</span> <span class="process-math">\(xy^a \notin (x)\text{,}\)</span> since <span class="process-math">\(y^a\notin R\text{,}\)</span> but <span class="process-math">\((xy^a)^2 = x \cdot x y^{2a} \in (x)\text{.}\)</span> Thus, <span class="process-math">\(\fm = (x,xy,xy^2,\dots) \subseteq \sqrt{(x)}\text{,}\)</span> and since <span class="process-math">\(\fm\)</span> is a maximal ideal, we have equality, so <span class="process-math">\(\Min{(x)} = \{ \fm \}\text{.}\)</span> However, the ideal <span class="process-math">\(P = (xy,xy^2, xy^3,\dots) = (y) k[x,y] \cap R\)</span> is prime, and the chain <span class="process-math">\((0) \subsetneq P \subsetneq \fm\)</span> shows that <span class="process-math">\(\ht(\fm)&gt;1\text{.}\)</span>
+</div></article><span class="incontext"><a href="sec-height-generators.html#remark-56" class="internal">in-context</a></span>
 </body>
 </html>

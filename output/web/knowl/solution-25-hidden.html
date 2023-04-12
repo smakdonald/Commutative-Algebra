@@ -10,10 +10,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><div class="solution solution-like">
-<div class="para">Let <span class="process-math">\(X\)</span> be a subset of <span class="process-math">\(\Spec(R)\text{.}\)</span> We construct an <span class="process-math">\(R\)</span>-module <span class="process-math">\(M\)</span> such that <span class="process-math">\(\Ass(M) = X\text{.}\)</span>
-</div> <div class="para">Let <span class="process-math">\(I = \bigcap_{\fp \in X} \fp\)</span> and consider the <span class="process-math">\(R\)</span>-module <span class="process-math">\(M = R/I\text{.}\)</span> Then for any prime ideal <span class="process-math">\(\fp \in \Spec(R)\text{,}\)</span> we have <span class="process-math">\(\fp \in \Ass(M)\)</span> if and only if <span class="process-math">\(\fp \supseteq I\text{.}\)</span> Thus, we have <span class="process-math">\(\Ass(M) = { \fp \in \Spec(R) \mid \fp \supseteq I }\text{.}\)</span>
-</div> <div class="para">It remains to show that <span class="process-math">\(I\)</span> is an ideal in <span class="process-math">\(R\text{.}\)</span> Since <span class="process-math">\(X\)</span> is a subset of <span class="process-math">\(\Spec(R)\text{,}\)</span> we have <span class="process-math">\(R \setminus X \subseteq \bigcup_{\fp \in X} \fp^c\text{,}\)</span> where <span class="process-math">\(\fp^c\)</span> denotes the complement of <span class="process-math">\(\fp\)</span> in <span class="process-math">\(R\text{.}\)</span> Taking the intersection of both sides with <span class="process-math">\(X\text{,}\)</span> we have <span class="process-math">\(X \subseteq \bigcup_{\fp \in X} \fp^c \cap X\text{.}\)</span> Since <span class="process-math">\(\fp^c \cap X\)</span> is closed under finite intersection and contains the empty set, it is a closed set of <span class="process-math">\(\Spec(R)\text{.}\)</span> Hence, we can apply the prime avoidance lemma to get <span class="process-math">\(I = \bigcap_{\fp \in X} \fp \subseteq \bigcap_{\fp \in X} \fp^c \cap X = \emptyset\text{.}\)</span> Thus, <span class="process-math">\(I\)</span> is an ideal in <span class="process-math">\(R\text{.}\)</span>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">To check this, we just need to see that each of the ideals <span class="process-math">\((x^2,xy,y^2)\)</span> and <span class="process-math">\((x^2,y)\)</span> are primary. Observe that each has radical <span class="process-math">\(\fm=(x,y)\text{,}\)</span> which is maximal, so these ideals are both primary. In fact, our ideal <span class="process-math">\(I\)</span> has infinitely many minimal primary decompositions: given any <span class="process-math">\(n \geqslant 1\text{,}\)</span>
 </div>
-</div></body>
+<div class="displaymath process-math">
+\begin{equation*}
+I = (x) \cap (x^2, xy, y^n)
+\end{equation*}
+</div>
+<div class="para">is an irredundant primary decomposition. One thing all of these have in common is the radicals of the primary components: they are always <span class="process-math">\((x)\)</span> and <span class="process-math">\((x,y)\text{.}\)</span>
+</div>
+</div></div></body>
 </html>

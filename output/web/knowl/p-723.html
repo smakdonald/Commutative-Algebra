@@ -12,8 +12,15 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">There also exist Noether normalizations for quotients of power series rings over fields: the key change is that after a change of coordinates, one can rewrite any nonzero power series in <span class="process-math">\(k \llbracket x_1,\dots, x_n \Rbracket\)</span> as a series of the form <span class="process-math">\(u (x_n^d + a_{d-1} x_n^{d-1} + \cdots + a_0)\)</span> for a unit <span class="process-math">\(u\)</span> and <span class="process-math">\(a_0,\dots,a_{d-1}\in k \llbracket x_1,\dots,x_{n-1}\Rbracket\text{.}\)</span> This is called . The rest of the proof of the Noether normalization theorem proceeds in essentially the same way. Thus, given <span class="process-math">\(k\llbracket x_1,\dots, x_n \Rbracket / I\text{,}\)</span> we have some module-finite inclusion of another power series ring <span class="process-math">\(k\llbracket z_1,\dots, z_d \Rbracket \subseteq k\llbracket x_1,\dots, x_n \Rbracket/I\text{.}\)</span>
+<div class="para logical">
+<div class="para">If <span class="process-math">\(Q' \in \Spec(S)\)</span> contracts to <span class="process-math">\(P\text{,}\)</span> then <span class="process-math">\(Q' \supseteq P S\text{,}\)</span> so in particular <span class="process-math">\(Q'\)</span> contains some prime <span class="process-math">\(Q\)</span> minimal over <span class="process-math">\(P S\text{.}\)</span> Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P S \subseteq Q \subseteq Q' \implies P \subseteq Q \cap R \subseteq Q' \cap R = P,
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-noether-normalizations.html#p-723" class="internal">in-context</a></span>
+<div class="para">so <span class="process-math">\(Q' \cap R = Q \cap R\text{.}\)</span> By , <span class="process-math">\(Q = Q'\text{.}\)</span> So all the primes contracting to <span class="process-math">\(P\)</span> are in <span class="process-math">\(\Min(P S)\text{,}\)</span> which is a finite set since <span class="process-math">\(R\)</span> is noetherian, by .</div>
+</div>
+<span class="incontext"><a href="sec-over-up-down.html#p-723" class="internal">in-context</a></span>
 </body>
 </html>

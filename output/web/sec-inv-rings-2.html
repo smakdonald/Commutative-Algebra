@@ -66,7 +66,7 @@ window.MathJax = {
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra:</span> <span class="subtitle">An example to get you started</span></a></h1>
+<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra</span></a></h1>
 <p class="byline">Sam Macdonald</p>
 </div>
 <div id="searchresultsplaceholder" style="display: none">
@@ -471,7 +471,14 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-alg-mod-finite.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Algebra and Module Finite</span></a></div></li>
 <li><div class="toc-item"><a href="sec-integral-extensions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Integral Extensions</span></a></div></li>
 <li><div class="toc-item"><a href="sec-ses.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Short Exact Sequences</span></a></div></li>
-<li><div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-rings" class="internal"><span class="title">Noetherian Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-modules" class="internal"><span class="title">Noetherian Modules</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-hilbert" class="internal"><span class="title">Hilbert's Basis Theorem</span></a></div></li>
+</ul>
+</li>
 <li><div class="toc-item"><a href="sec-inv-rings-1.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Invariant Rings: Application I</span></a></div></li>
 </ul>
 </li>
@@ -533,20 +540,27 @@ window.MathJax = {
 </li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-inv-rings-2"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Invariant Rings: Application II</span>
 </h2>
 <blockquote class="blockquote" id="blockquote-11">
-<div class="para" id="p-237">“”</div> <cite class="attribution">―</cite>
+<div class="para" id="p-268">“”</div> <cite class="attribution">―</cite>
 </blockquote>
-<article class="remark remark-like" id="remark-28"><h3 class="heading">
+<article class="remark remark-like" id="remark-21"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.25</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-238">If <span class="process-math">\(R\)</span> is a graded ring, and <span class="process-math">\(G\)</span> is a group acting on <span class="process-math">\(R\)</span> by degree-preserving automorphisms, then <span class="process-math">\(R^G\)</span> is a graded subring of <span class="process-math">\(R\text{,}\)</span> meaning <span class="process-math">\(R^G\)</span> is graded with respect to the same grading monoid. In particular, if <span class="process-math">\(G\)</span> acts <span class="process-math">\(k\)</span>-linearly on a polynomial ring over <span class="process-math">\(k\text{,}\)</span> the invariant ring is <span class="process-math">\(\N\)</span>-graded.</div> <div class="para" id="p-239">Using this perspective, we can now give a different proof of the finite generation of invariant rings that works under different hypotheses. The proof we will discuss now is essentially Hilbert’s proof. To do that, we need another notion that is very useful in commutative algebra.</div></article><article class="definition definition-like" id="defn-direct-summand"><h3 class="heading">
+<div class="para" id="p-269">If <span class="process-math">\(R\)</span> is a graded ring, and <span class="process-math">\(G\)</span> is a group acting on <span class="process-math">\(R\)</span> by degree-preserving automorphisms, then <span class="process-math">\(R^G\)</span> is a graded subring of <span class="process-math">\(R\text{,}\)</span> meaning <span class="process-math">\(R^G\)</span> is graded with respect to the same grading monoid. In particular, if <span class="process-math">\(G\)</span> acts <span class="process-math">\(k\)</span>-linearly on a polynomial ring over <span class="process-math">\(k\text{,}\)</span> the invariant ring is <span class="process-math">\(\N\)</span>-graded.</div> <div class="para" id="p-270">Using this perspective, we can now give a different proof of the finite generation of invariant rings that works under different hypotheses. The proof we will discuss now is essentially Hilbert's proof. To do that, we need another notion that is very useful in commutative algebra.</div></article><article class="definition definition-like" id="defn-direct-summand"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.26</span><span class="period">.</span><span class="space"> </span><span class="title">Direct Summand.</span>
-</h3> <div class="para logical" id="p-240">
+</h3> <div class="para logical" id="p-271">
 <div class="para">Let <span class="process-math">\(\varphi\!:R \to S\)</span> be a ring homomorphism. We say that <span class="process-math">\(R\)</span> is a <em class="emphasis">direct summand</em> of <span class="process-math">\(S\)</span> if the map <span class="process-math">\(\varphi\)</span> <em class="emphasis">splits</em> as a map of <span class="process-math">\(R\)</span>-modules], meaning there is an <span class="process-math">\(R\)</span>-module homomorphism</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -558,20 +572,21 @@ R@&lt;&lt;\rho&lt; S
 </div>
 <div class="para">such that <span class="process-math">\(\rho \varphi\)</span> is the identity on <span class="process-math">\(R\text{.}\)</span>
 </div>
-</div></article><article class="remark remark-like" id="remark-29"><h3 class="heading">
+</div></article><article class="remark remark-like" id="remark-22"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.27</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-241">First, observe that the condition on <span class="process-math">\(\rho\)</span> implies that <span class="process-math">\(\varphi\)</span> must be injective, so we can assume that <span class="process-math">\(R \subseteq S\text{,}\)</span> perhaps after renaming some elements. The condition on <span class="process-math">\(\rho\)</span> is that <span class="process-math">\(\rho|_R\)</span> is the identity and <span class="process-math">\(\rho(rs)= r\rho(s)\)</span> for all <span class="process-math">\(r \in R\)</span> and <span class="process-math">\(s\in S\text{.}\)</span> We call the map <span class="process-math">\(\rho\)</span> the <em class="emphasis">splitting</em> of the inclusion <span class="process-math">\(R \subseteq S\text{.}\)</span> Note that given any <span class="process-math">\(R\)</span>-linear map <span class="process-math">\(\rho\!: S \to R\text{,}\)</span> if <span class="process-math">\(\rho(1)=1\)</span> then <span class="process-math">\(\rho\)</span> is a splitting: indeed, <span class="process-math">\(\rho(r)=\rho(r \cdot 1) = r \rho(1)=r\)</span> for all <span class="process-math">\(r \in R\text{.}\)</span>
-</div></article><article class="remark remark-like" id="remark-30"><h3 class="heading">
+<div class="para" id="p-272">First, observe that the condition on <span class="process-math">\(\rho\)</span> implies that <span class="process-math">\(\varphi\)</span> must be injective, so we can assume that <span class="process-math">\(R \subseteq S\text{,}\)</span> perhaps after renaming some elements. The condition on <span class="process-math">\(\rho\)</span> is that <span class="process-math">\(\rho|_R\)</span> is the identity and <span class="process-math">\(\rho(rs)= r\rho(s)\)</span> for all <span class="process-math">\(r \in R\)</span> and <span class="process-math">\(s\in S\text{.}\)</span> We call the map <span class="process-math">\(\rho\)</span> the <em class="emphasis">splitting</em> of the inclusion <span class="process-math">\(R \subseteq S\text{.}\)</span> Note that given any <span class="process-math">\(R\)</span>-linear map <span class="process-math">\(\rho\!: S \to R\text{,}\)</span> if <span class="process-math">\(\rho(1)=1\)</span> then <span class="process-math">\(\rho\)</span> is a splitting: indeed, <span class="process-math">\(\rho(r)=\rho(r \cdot 1) = r \rho(1)=r\)</span> for all <span class="process-math">\(r \in R\text{.}\)</span>
+</div></article><article class="remark remark-like" id="remark-23"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.28</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-242">The subring <span class="process-math">\(R\)</span> of <span class="process-math">\(S\)</span> is a direct summand of <span class="process-math">\(S\)</span> if and only if there exists an <span class="process-math">\(R\)</span>-submodule of <span class="process-math">\(S\)</span> such that <span class="process-math">\(S = R \oplus M\text{.}\)</span> In the language above, <span class="process-math">\(M = \ker \rho\text{.}\)</span> Conversely, given a direct sum decomposition <span class="process-math">\(S = R \oplus M\text{,}\)</span> the quotient map onto the first component is a splitting.</div></article><article class="definition definition-like" id="defn-expansion-contraction"><h3 class="heading">
+<div class="para" id="p-273">The subring <span class="process-math">\(R\)</span> of <span class="process-math">\(S\)</span> is a direct summand of <span class="process-math">\(S\)</span> if and only if there exists an <span class="process-math">\(R\)</span>-submodule of <span class="process-math">\(S\)</span> such that <span class="process-math">\(S = R \oplus M\text{.}\)</span> In the language above, <span class="process-math">\(M = \ker \rho\text{.}\)</span> Conversely, given a direct sum decomposition <span class="process-math">\(S = R \oplus M\text{,}\)</span> the quotient map onto the first component is a splitting.</div></article><article class="definition definition-like" id="defn-expansion-contraction"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.29</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(Expansion and Contraction\)</span>.</span>
-</h3> <div class="para" id="p-243">Let <span class="process-math">\(\varphi\! : R \to S\)</span> be a ring homomorphism. Given an ideal <span class="process-math">\(I\)</span> in <span class="process-math">\(S\text{,}\)</span> we write <span class="process-math">\(I \cap R\)</span> for the <span class="process-math">\(\defnn{contraction}\)</span> of <span class="process-math">\(R\)</span> back into <span class="process-math">\(R\text{,}\)</span> meaning the preimage of <span class="process-math">\(I\)</span> via <span class="process-math">\(\varphi\text{.}\)</span> In particular, if <span class="process-math">\(R \subseteq S\)</span> is a ring extension, then <span class="process-math">\(I \cap R\)</span> denotes the preimage of <span class="process-math">\(I\)</span> via the inclusion map <span class="process-math">\(R \subseteq S\text{.}\)</span> Given a ring map <span class="process-math">\(R \to S\text{,}\)</span> and an ideal <span class="process-math">\(I\)</span> in <span class="process-math">\(R\text{,}\)</span> the <span class="process-math">\(\defnn{expansion}\)</span> of <span class="process-math">\(I\)</span> in <span class="process-math">\(S\)</span> is the ideal of <span class="process-math">\(S\)</span> generated by the image of <span class="process-math">\(I\)</span> via the given ring map; we naturally denote this by <span class="process-math">\(IS\text{.}\)</span>
+</h3> <div class="para" id="p-274">Let <span class="process-math">\(\varphi\! : R \to S\)</span> be a ring homomorphism. Given an ideal <span class="process-math">\(I\)</span> in <span class="process-math">\(S\text{,}\)</span> we write <span class="process-math">\(I \cap R\)</span> for the <span class="process-math">\(\defnn{contraction}\)</span> of <span class="process-math">\(R\)</span> back into <span class="process-math">\(R\text{,}\)</span> meaning the preimage of <span class="process-math">\(I\)</span> via <span class="process-math">\(\varphi\text{.}\)</span> In particular, if <span class="process-math">\(R \subseteq S\)</span> is a ring extension, then <span class="process-math">\(I \cap R\)</span> denotes the preimage of <span class="process-math">\(I\)</span> via the inclusion map <span class="process-math">\(R \subseteq S\text{.}\)</span> Given a ring map <span class="process-math">\(R \to S\text{,}\)</span> and an ideal <span class="process-math">\(I\)</span> in <span class="process-math">\(R\text{,}\)</span> the <span class="process-math">\(\defnn{expansion}\)</span> of <span class="process-math">\(I\)</span> in <span class="process-math">\(S\)</span> is the ideal of <span class="process-math">\(S\)</span> generated by the image of <span class="process-math">\(I\)</span> via the given ring map; we naturally denote this by <span class="process-math">\(IS\text{.}\)</span>
 </div></article><article class="lemma theorem-like" id="lem-direct-summand-of-ideals-contract"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.30</span><span class="period">.</span><span class="space"> </span><span class="title">Direct Summand of Ideals Contract.</span>
 </h3>
-<div class="para" id="p-244">Let <span class="process-math">\(R\)</span> be a direct summand of <span class="process-math">\(S\text{.}\)</span> Then, for any ideal <span class="process-math">\(I \subseteq R\text{,}\)</span> we have <span class="process-math">\(IS \cap R=I\)</span>[^1].</div></article><article class="hiddenproof" id="proof-31"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-31"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-31"><article class="hiddenproof"><div class="para logical" id="p-245">
+<div class="para" id="p-275">Let <span class="process-math">\(R\)</span> be a direct summand of <span class="process-math">\(S\text{.}\)</span> Then, for any ideal <span class="process-math">\(I \subseteq R\text{,}\)</span> we have <span class="process-math">\(IS \cap R=I\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-31"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-31"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-31"><article class="hiddenproof"><div class="para logical" id="p-276">
 <div class="para">Let <span class="process-math">\(\pi\)</span> be the corresponding splitting. Clearly, <span class="process-math">\(I \subseteq IS \cap R\text{.}\)</span> Conversely, if <span class="process-math">\(r \in IS \cap R\text{,}\)</span> we can write <span class="process-math">\(r = s_1 f_1 + \cdots + s_t f_t\)</span> for some <span class="process-math">\(f_i \in I\text{,}\)</span> <span class="process-math">\(s_i \in S\text{.}\)</span> Applying <span class="process-math">\(\pi\text{,}\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -582,8 +597,8 @@ r = \pi(r) = \pi \left( \sum_{i=1}^t s_i f_i \right) = \sum_{i=1}^t \pi\left( s_
 <article class="proposition theorem-like" id="prop-direct-summand-noetherian"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.31</span><span class="period">.</span><span class="space"> </span><span class="title">Direct Summand Noetherian.</span>
 </h3>
-<div class="para" id="p-246">Let <span class="process-math">\(R\)</span> be a direct summand of <span class="process-math">\(S\text{.}\)</span> If <span class="process-math">\(S\)</span> is noetherian, then so is <span class="process-math">\(R\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-32"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-32"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-32"><article class="hiddenproof"><div class="para logical" id="p-247">
+<div class="para" id="p-277">Let <span class="process-math">\(R\)</span> be a direct summand of <span class="process-math">\(S\text{.}\)</span> If <span class="process-math">\(S\)</span> is noetherian, then so is <span class="process-math">\(R\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-32"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-32"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-32"><article class="hiddenproof"><div class="para logical" id="p-278">
 <div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -599,17 +614,17 @@ I_1 S \subseteq I_2 S \subseteq I_3 S \subseteq \cdots
 </div>
 <div class="para">stabilizes, so there exist <span class="process-math">\(J\text{,}\)</span> <span class="process-math">\(N\)</span> such that <span class="process-math">\(I_n R = J\)</span> for <span class="process-math">\(n \geqslant N\text{.}\)</span> Contracting to <span class="process-math">\(R\text{,}\)</span> we get that <span class="process-math">\(I_n = I_n S \cap R = J \cap R\)</span> for <span class="process-math">\(n\geqslant N\text{,}\)</span> so the original chain also stabilizes.</div>
 </div></article></div>
-<article class="example example-like" id="example-48"><h3 class="heading">
+<article class="example example-like" id="example-40"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.32</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
-</h3> <div class="para logical" id="p-248">
-<div class="para">Notice in general a subring of a noetherian ring does not have to be noetherian. For example, if <span class="process-math">\(k\)</span> is a field, <span class="process-math">\(S = k[x,y]\)</span> is noetherian by [[Mathematics/Commutative Algebra/Results/Theorem - Hilbert’s Basis Theorem|Hilbert’s Basis Theorem]], but we claim that the subring</div>
-<div class="displaymath process-math">
+</h3> <div class="para logical" id="p-279">
+<div class="para">Notice in general a subring of a noetherian ring does not have to be noetherian. For example, if <span class="process-math">\(k\)</span> is a field, <span class="process-math">\(S = k[x,y]\)</span> is noetherian by <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Hilbert's Basis Theorem|Hilbert's Basis Theorem]], but we claim that the subring</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 R = k[xy,xy^2,xy^3,\ldots]
 \end{equation*}
 </div>
 <div class="para">of <span class="process-math">\(S = k[x,y]\)</span> is not noetherian. Indeed,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 (xy) \subseteq (xy,xy^2) \subseteq (xy,xy^2,xy^3) \subseteq \cdots
 \end{equation*}
@@ -619,8 +634,8 @@ R = k[xy,xy^2,xy^3,\ldots]
 </div></article><article class="proposition theorem-like" id="prop-k-linear-action-and-direct-summand"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.33</span><span class="period">.</span><span class="space"> </span><span class="title">K-Linear Action and Direct Summand.</span>
 </h3>
-<div class="para" id="p-249">Let <span class="process-math">\(k\)</span> be a field, and <span class="process-math">\(R\)</span> be a polynomial ring over <span class="process-math">\(k\text{.}\)</span> Let <span class="process-math">\(G\)</span> be a finite group acting <span class="process-math">\(k\)</span>-linearly on <span class="process-math">\(R\text{.}\)</span> Assume that the characteristic of <span class="process-math">\(k\)</span> does not divide <span class="process-math">\(|G|\text{.}\)</span> Then <span class="process-math">\(R^G\)</span> is a direct summand of <span class="process-math">\(R\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-33"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-33"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-33"><article class="hiddenproof"><div class="para logical" id="p-250">
+<div class="para" id="p-280">Let <span class="process-math">\(k\)</span> be a field, and <span class="process-math">\(R\)</span> be a polynomial ring over <span class="process-math">\(k\text{.}\)</span> Let <span class="process-math">\(G\)</span> be a finite group acting <span class="process-math">\(k\)</span>-linearly on <span class="process-math">\(R\text{.}\)</span> Assume that the characteristic of <span class="process-math">\(k\)</span> does not divide <span class="process-math">\(|G|\text{.}\)</span> Then <span class="process-math">\(R^G\)</span> is a direct summand of <span class="process-math">\(R\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-33"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-33"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-33"><article class="hiddenproof"><div class="para logical" id="p-281">
 <div class="para">We consider the map <span class="process-math">\(\rho\!: R \to R^G\)</span> given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -641,18 +656,18 @@ R = k[xy,xy^2,xy^3,\ldots]
 \end{equation*}
 </div>
 </div></article></div>
-<article class="remark remark-like" id="remark-31"><h3 class="heading">
+<article class="remark remark-like" id="remark-24"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.34</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-251">The condition that the characteristic of <span class="process-math">\(k\)</span> does not divide the order of <span class="process-math">\(G\)</span> is trivially satisfied if <span class="process-math">\(k\)</span> has characteristic zero.</div></article><article class="theorem theorem-like" id="thm-hilberts-finiteness-theorem-for-invariants"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.35</span><span class="period">.</span><span class="space"> </span><span class="title">Hilbert’s Finiteness Theorem for Invariants.</span>
+<div class="para" id="p-282">The condition that the characteristic of <span class="process-math">\(k\)</span> does not divide the order of <span class="process-math">\(G\)</span> is trivially satisfied if <span class="process-math">\(k\)</span> has characteristic zero.</div></article><article class="theorem theorem-like" id="thm-hilberts-finiteness-theorem-for-invariants"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.35</span><span class="period">.</span><span class="space"> </span><span class="title">Hilbert's Finiteness Theorem for Invariants.</span>
 </h3>
-<div class="para" id="p-252">Let <span class="process-math">\(k\)</span> be a field, and <span class="process-math">\(R\)</span> be a polynomial ring over <span class="process-math">\(k\text{.}\)</span> Let <span class="process-math">\(G\)</span> be a group acting <span class="process-math">\(k\)</span>-linearly on <span class="process-math">\(R\text{.}\)</span> Assume that <span class="process-math">\(G\)</span> is finite and that the characteristic of <span class="process-math">\(k\)</span> does not divide <span class="process-math">\(|G|\text{,}\)</span> or more generally, that <span class="process-math">\(R^G\)</span> is a direct summand of <span class="process-math">\(R\text{.}\)</span> Then <span class="process-math">\(R^G\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra.</div></article><article class="hiddenproof" id="proof-34"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-34"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-34"><article class="hiddenproof"><div class="para" id="p-253">Since <span class="process-math">\(G\)</span> acts linearly on <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(R^G\)</span> is an <span class="process-math">\(\N\)</span>-graded subring of <span class="process-math">\(R\)</span> with <span class="process-math">\(R_0=k\text{.}\)</span> Since <span class="process-math">\(R^G\)</span> is a direct summand of <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(R^G\)</span> is noetherian by . By our characterization of noetherian graded rings in , <span class="process-math">\(R^G\)</span> is finitely generated over <span class="process-math">\(R_0=k\text{.}\)</span>
+<div class="para" id="p-283">Let <span class="process-math">\(k\)</span> be a field, and <span class="process-math">\(R\)</span> be a polynomial ring over <span class="process-math">\(k\text{.}\)</span> Let <span class="process-math">\(G\)</span> be a group acting <span class="process-math">\(k\)</span>-linearly on <span class="process-math">\(R\text{.}\)</span> Assume that <span class="process-math">\(G\)</span> is finite and that the characteristic of <span class="process-math">\(k\)</span> does not divide <span class="process-math">\(|G|\text{,}\)</span> or more generally, that <span class="process-math">\(R^G\)</span> is a direct summand of <span class="process-math">\(R\text{.}\)</span> Then <span class="process-math">\(R^G\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra.</div></article><article class="hiddenproof" id="proof-34"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-34"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-34"><article class="hiddenproof"><div class="para" id="p-284">Since <span class="process-math">\(G\)</span> acts linearly on <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(R^G\)</span> is an <span class="process-math">\(\N\)</span>-graded subring of <span class="process-math">\(R\)</span> with <span class="process-math">\(R_0=k\text{.}\)</span> Since <span class="process-math">\(R^G\)</span> is a direct summand of <span class="process-math">\(R\text{,}\)</span> <span class="process-math">\(R^G\)</span> is noetherian by . By our characterization of noetherian graded rings in , <span class="process-math">\(R^G\)</span> is finitely generated over <span class="process-math">\(R_0=k\text{.}\)</span>
 </div></article></div>
-<article class="remark remark-like" id="remark-32"><h3 class="heading">
+<article class="remark remark-like" id="remark-25"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.36</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-254">One important thing about this proof is that it applies to many infinite groups. In particular, for any <em class="emphasis">linearly reductive group</em>, including <span class="process-math">\(\mathrm{GL}_n(\C)\text{,}\)</span> <span class="process-math">\(\mathrm{SL}_n(\C)\text{,}\)</span> and <span class="process-math">\((\C^{\times})^n\text{,}\)</span> we can construct a splitting map <span class="process-math">\(\rho\text{.}\)</span>
+<div class="para" id="p-285">One important thing about this proof is that it applies to many infinite groups. In particular, for any <em class="emphasis">linearly reductive group</em>, including <span class="process-math">\(\mathrm{GL}_n(\C)\text{,}\)</span> <span class="process-math">\(\mathrm{SL}_n(\C)\text{,}\)</span> and <span class="process-math">\((\C^{\times})^n\text{,}\)</span> we can construct a splitting map <span class="process-math">\(\rho\text{.}\)</span>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-finite-conditions-graded-algebras.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-prime-ideals.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

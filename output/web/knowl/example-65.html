@@ -12,16 +12,15 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.25</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.37</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
 </h3> <div class="para logical">
-<div class="para">We saw before that</div>
+<div class="para">In <span class="process-math">\(k[x,y,z]\text{,}\)</span> the radical ideal <span class="process-math">\(I = (xy,xz,yz)\)</span> corresponds to the variety <span class="process-math">\(X\)</span> given by the union of the three coordinate axes. Each of these axes is a variety in its own right, corresponding to the ideals <span class="process-math">\((x,y)\text{,}\)</span> <span class="process-math">\((x,z)\)</span> and <span class="process-math">\((y,z)\text{.}\)</span> The three axes are the irreducible components of <span class="process-math">\(X\text{.}\)</span> And indeed, <span class="process-math">\((x,y)\text{,}\)</span> <span class="process-math">\((x,z)\)</span> and <span class="process-math">\((y,z)\)</span> are the three minimal primes over <span class="process-math">\(I\text{,}\)</span> and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-X= \{ (t,t^2,t^3) \ | \ t \in k \}
+(xy,xz,yz) = (x,y) \cap (x,z) \cap (y,z).
 \end{equation*}
 </div>
-<div class="para">is a subvariety of <span class="process-math">\(\mathbb{A}^3_k\text{.}\)</span> Thus its coordinate ring is of the form <span class="process-math">\(k[X] = k[x,y,z]/\cI(X)\text{.}\)</span> To compute <span class="process-math">\(\cI(X)\text{,}\)</span> note that the polynomials <span class="process-math">\(f \in k[x,y,z]\)</span> that vanish at every point of <span class="process-math">\(X\)</span> are precisely the polynomials in the kernel of the map <span class="process-math">\(k[x,y,z] \to k[t]\)</span> given by <span class="process-math">\(x \mapsto t\text{,}\)</span> <span class="process-math">\(y \mapsto t^2\text{,}\)</span> and <span class="process-math">\(z \mapsto t^3\text{.}\)</span> Then one can show that <span class="process-math">\(\cI(X) = (x^2-y,x^3-z)\text{.}\)</span> For an explicit field like <span class="process-math">\(\mathbb{R}\)</span> or <span class="process-math">\(\mathbb{C}\text{,}\)</span> we can also compute this kernel in Macaulay2. Notice, in fact, that <span class="process-math">\(k[X] \cong k[t,t^2,t^3]\text{.}\)</span>
-</div>
-</div></article><span class="incontext"><a href="sec-coordinate-ring.html#example-65" class="internal">in-context</a></span>
+<div class="para"># Local Rings</div>
+</div></article><span class="incontext"><a href="sec-nullstell.html#example-65" class="internal">in-context</a></span>
 </body>
 </html>

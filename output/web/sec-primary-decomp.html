@@ -66,7 +66,7 @@ window.MathJax = {
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
 <a id="logo-link" href=""></a><div class="title-container">
-<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra:</span> <span class="subtitle">An example to get you started</span></a></h1>
+<h1 class="heading"><a href="commutative-algebra.html"><span class="title">Commutative Algebra</span></a></h1>
 <p class="byline">Sam Macdonald</p>
 </div>
 <div id="searchresultsplaceholder" style="display: none">
@@ -471,7 +471,14 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-alg-mod-finite.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Algebra and Module Finite</span></a></div></li>
 <li><div class="toc-item"><a href="sec-integral-extensions.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Integral Extensions</span></a></div></li>
 <li><div class="toc-item"><a href="sec-ses.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Short Exact Sequences</span></a></div></li>
-<li><div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-noetherian.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Noetherian Rings</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-rings" class="internal"><span class="title">Noetherian Rings</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-noetherian-modules" class="internal"><span class="title">Noetherian Modules</span></a></div></li>
+<li><div class="toc-item"><a href="sec-noetherian.html#subsec-hilbert" class="internal"><span class="title">Hilbert's Basis Theorem</span></a></div></li>
+</ul>
+</li>
 <li><div class="toc-item"><a href="sec-inv-rings-1.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Invariant Rings: Application I</span></a></div></li>
 </ul>
 </li>
@@ -533,21 +540,28 @@ window.MathJax = {
 </li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+<li>
+<div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-primary-decomp"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">6.3</span> <span class="title">Primary Decomposition</span>
 </h2>
 <blockquote class="blockquote" id="blockquote-23">
-<div class="para" id="p-561">“”</div> <cite class="attribution">―</cite>
+<div class="para" id="p-592">“”</div> <cite class="attribution">―</cite>
 </blockquote>
-<article class="remark remark-like" id="remark-48"><h3 class="heading">
+<article class="remark remark-like" id="remark-41"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.42</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-562">We refine our decomposition theory once again, and introduce primary decompositions of ideals. One of the fundamental classical results in commutative algebra is the fact that every ideal in any noetherian ring has a primary decomposition. This can be thought of as a generalization of the Fundamental Theorem of Arithmetic:</div></article><article class="theorem theorem-like" id="thm-fundamental-theorem-of-arithmetic"><h3 class="heading">
+<div class="para" id="p-593">We refine our decomposition theory once again, and introduce primary decompositions of ideals. One of the fundamental classical results in commutative algebra is the fact that every ideal in any noetherian ring has a primary decomposition. This can be thought of as a generalization of the Fundamental Theorem of Arithmetic:</div></article><article class="theorem theorem-like" id="thm-fundamental-theorem-of-arithmetic"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.43</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Arithmetic.</span>
 </h3>
-<div class="para logical" id="p-563">
+<div class="para logical" id="p-594">
 <div class="para">Every nonzero integer <span class="process-math">\(n \in \mathbb{Z}\)</span> can be written as a product of primes: there are distinct prime integers <span class="process-math">\(p_1, \ldots, p_n\)</span> and integers <span class="process-math">\(a_1, \ldots, a_n \geqslant 1\)</span> such that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -555,12 +569,12 @@ n = p_1^{a_1} \cdots p_n^{a_n}.
 \end{equation*}
 </div>
 <div class="para">Moreover, such a a product is unique up to sign and the order of the factors.</div>
-</div></article><article class="remark remark-like" id="remark-49"><h3 class="heading">
+</div></article><article class="remark remark-like" id="remark-42"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.44</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-564">We will soon discover that such a product  a primary decomposition, perhaps after some light rewriting. But before we get to the  and the  of primary decomposition, it is worth discussing the . If we wanted to extend the Fundamental Theorem of Arithmetic to other rings, our first attempt might involve irreducible elements. Unfortunately, we don’t have to go far to find rings where we  write elements as a unique product of irreducibles up to multiplying by a unit.</div></article><article class="example example-like" id="example-108"><h3 class="heading">
+<div class="para" id="p-595">We will soon discover that such a product  a primary decomposition, perhaps after some light rewriting. But before we get to the  and the  of primary decomposition, it is worth discussing the . If we wanted to extend the Fundamental Theorem of Arithmetic to other rings, our first attempt might involve irreducible elements. Unfortunately, we don't have to go far to find rings where we  write elements as a unique product of irreducibles up to multiplying by a unit.</div></article><article class="example example-like" id="example-100"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.45</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
-</h3> <div class="para logical" id="p-565">
+</h3> <div class="para logical" id="p-596">
 <div class="para">In <span class="process-math">\(\mathbb{Z}[\sqrt{-5}]\text{,}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -571,8 +585,8 @@ n = p_1^{a_1} \cdots p_n^{a_n}.
 <div class="para">are two  ways to write <span class="process-math">\(6\)</span> as a product of irreducible elements. In fact, we cannot obtain <span class="process-math">\(2\)</span> or <span class="process-math">\(3\)</span> by multiplying <span class="process-math">\(1 + \sqrt{-5}\)</span> or <span class="process-math">\(1 - \sqrt{-5}\)</span> by a unit.</div>
 </div></article><article class="definition definition-like" id="defn-primary-ideal"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.46</span><span class="period">.</span><span class="space"> </span><span class="title">Primary Ideal.</span>
-</h3> <div class="para logical" id="p-566">
-<div class="para">We say that an ideal is <em class="emphasis">primary</em> if [^1]</div>
+</h3> <div class="para logical" id="p-597">
+<div class="para">We say that an ideal is <em class="emphasis">primary</em> if</div>
 <div class="displaymath process-math">
 \begin{equation*}
 xy\in I \implies x\in I \text{ or } y\in \sqrt{I}.
@@ -583,17 +597,17 @@ xy\in I \implies x\in I \text{ or } y\in \sqrt{I}.
 </div></article><article class="lemma theorem-like" id="lem-radical-of-primary-ideal-is-prime"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.47</span><span class="period">.</span><span class="space"> </span><span class="title">Radical of Primary Ideal is Prime.</span>
 </h3>
-<div class="para" id="p-567">The radical of a primary ideal is prime.</div></article><article class="hiddenproof" id="proof-80"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-80"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-80"><article class="hiddenproof"><div class="para" id="p-568">Suppose that <span class="process-math">\(Q\)</span> is primary and <span class="process-math">\(xy \in \sqrt{Q}\text{.}\)</span> Then <span class="process-math">\(x^n y^n\in Q\)</span> for some <span class="process-math">\(n\text{.}\)</span> If <span class="process-math">\(y\notin \sqrt{Q}\text{,}\)</span> then <span class="process-math">\(y^n\notin \sqrt{Q}\text{.}\)</span> Since <span class="process-math">\(Q\)</span> is primary, we must have <span class="process-math">\(x^n\in Q\text{,}\)</span> so <span class="process-math">\(x\in \sqrt{Q}\text{.}\)</span>
+<div class="para" id="p-598">The radical of a primary ideal is prime.</div></article><article class="hiddenproof" id="proof-80"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-80"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-80"><article class="hiddenproof"><div class="para" id="p-599">Suppose that <span class="process-math">\(Q\)</span> is primary and <span class="process-math">\(xy \in \sqrt{Q}\text{.}\)</span> Then <span class="process-math">\(x^n y^n\in Q\)</span> for some <span class="process-math">\(n\text{.}\)</span> If <span class="process-math">\(y\notin \sqrt{Q}\text{,}\)</span> then <span class="process-math">\(y^n\notin \sqrt{Q}\text{.}\)</span> Since <span class="process-math">\(Q\)</span> is primary, we must have <span class="process-math">\(x^n\in Q\text{,}\)</span> so <span class="process-math">\(x\in \sqrt{Q}\text{.}\)</span>
 </div></article></div>
 <article class="example example-like" id="ex-prime-ideals-are-primary"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.48</span><span class="period">.</span><span class="space"> </span><span class="title">Prime Ideals are Primary.</span>
 </h3>
-<div class="para" id="p-569">Any prime ideal is also primary.</div></article><article class="example example-like" id="ex-principal-primary-ideals-in-ufds"><h3 class="heading">
+<div class="para" id="p-600">Any prime ideal is also primary.</div></article><article class="example example-like" id="ex-principal-primary-ideals-in-ufds"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.49</span><span class="period">.</span><span class="space"> </span><span class="title">Principal Primary Ideals in UFDs.</span>
 </h3>
-<div class="para" id="p-570">If <span class="process-math">\(R\)</span> is a UFD, we claim that a principal ideal is primary if and only if it is generated by a power of a prime element.</div>
+<div class="para" id="p-601">If <span class="process-math">\(R\)</span> is a UFD, we claim that a principal ideal is primary if and only if it is generated by a power of a prime element.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-27" id="solution-27"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-27"><div class="solution solution-like"><div class="para logical" id="p-571">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like"><div class="para logical" id="p-602">
 <div class="para">Indeed, if <span class="process-math">\(a=f^n\text{,}\)</span> with <span class="process-math">\(f\)</span> irreducible, then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -606,27 +620,28 @@ xy\in (f^n) \Longleftrightarrow f^n | xy \Longleftrightarrow f^n | x \text{ or }
 </div></article><article class="example example-like" id="ex-primary-ideals-in-z"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.50</span><span class="period">.</span><span class="space"> </span><span class="title">Primary Ideals in <span class="process-math">\(\Z\)</span>.</span>
 </h3>
-<div class="para" id="p-572">The nonzero primary ideals in <span class="process-math">\(\mathbb{Z}\)</span> are of the form <span class="process-math">\((p^n)\)</span> for some prime <span class="process-math">\(p\)</span> and some <span class="process-math">\(n \geqslant 1\text{.}\)</span> This example is a bit misleading, as it suggests that primary ideals are the same as powers of primes. We will soon see that it not the case.</div></article><article class="example example-like" id="ex-y2yzz2-primary-in-rkxyz"><h3 class="heading">
+<div class="para" id="p-603">The nonzero primary ideals in <span class="process-math">\(\mathbb{Z}\)</span> are of the form <span class="process-math">\((p^n)\)</span> for some prime <span class="process-math">\(p\)</span> and some <span class="process-math">\(n \geqslant 1\text{.}\)</span> This example is a bit misleading, as it suggests that primary ideals are the same as powers of primes. We will soon see that it not the case.</div></article><article class="example example-like" id="ex-y2yzz2-primary-in-rkxyz"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.51</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\((y^2,yz,z^2)\)</span> Primary in <span class="process-math">\(R=k[x,y,z]\)</span>.</span>
 </h3>
-<div class="para" id="p-573">In <span class="process-math">\(R=k[x,y,z]\)</span>[^1], the ideal <span class="process-math">\(I=(y^2,yz,z^2)\)</span> is primary.</div>
+<div class="para" id="p-604">In <span class="process-math">\(R=k[x,y,z]\text{,}\)</span> the ideal <span class="process-math">\(I=(y^2,yz,z^2)\)</span> is primary.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-28" id="solution-28"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-28"><div class="solution solution-like"><div class="para" id="p-574">Give <span class="process-math">\(R\)</span> the grading with weights <span class="process-math">\(\deg(y)=\deg(z)=1\)</span> and <span class="process-math">\(\deg(x)=0\text{.}\)</span> If <span class="process-math">\(g\notin \sqrt{I}=(y,z)\text{,}\)</span> then <span class="process-math">\(g\)</span> has a degree zero term. If <span class="process-math">\(f\notin I\text{,}\)</span> then <span class="process-math">\(f\)</span> has a term of degree zero or one. The product <span class="process-math">\(fg\)</span> has a term of degree zero or one, so is not in <span class="process-math">\(I\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-20" id="solution-20"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-20"><div class="solution solution-like"><div class="para" id="p-605">Give <span class="process-math">\(R\)</span> the grading with weights <span class="process-math">\(\deg(y)=\deg(z)=1\)</span> and <span class="process-math">\(\deg(x)=0\text{.}\)</span> If <span class="process-math">\(g\notin \sqrt{I}=(y,z)\text{,}\)</span> then <span class="process-math">\(g\)</span> has a degree zero term. If <span class="process-math">\(f\notin I\text{,}\)</span> then <span class="process-math">\(f\)</span> has a term of degree zero or one. The product <span class="process-math">\(fg\)</span> has a term of degree zero or one, so is not in <span class="process-math">\(I\text{.}\)</span>
 </div></div></div>
 </div></article><article class="example example-like" id="ex-x2xy-not-primary-in-rkxyz"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.52</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\((x^2,xy)\)</span> Not Primary in <span class="process-math">\(R=k[x,y,z]\)</span>.</span>
 </h3>
-<div class="para" id="p-575">In <span class="process-math">\(R=k[x,y,z]\text{,}\)</span> the ideal <span class="process-math">\(Q =(x^2,xy)\)</span> is not primary, even though <span class="process-math">\(\sqrt{Q}=(x)\)</span> is prime.</div>
+<div class="para" id="p-606">In <span class="process-math">\(R=k[x,y,z]\text{,}\)</span> the ideal <span class="process-math">\(Q =(x^2,xy)\)</span> is not primary, even though <span class="process-math">\(\sqrt{Q}=(x)\)</span> is prime.</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-29" id="solution-29"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-29"><div class="solution solution-like"><div class="para" id="p-576">The offending product is <span class="process-math">\(xy\text{:}\)</span> we have <span class="process-math">\(x \notin Q\)</span> and <span class="process-math">\(y \notin \sqrt{Q}\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-21" id="solution-21"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-21"><div class="solution solution-like"><div class="para" id="p-607">The offending product is <span class="process-math">\(xy\text{:}\)</span> we have <span class="process-math">\(x \notin Q\)</span> and <span class="process-math">\(y \notin \sqrt{Q}\text{.}\)</span>
 </div></div></div>
-</div></article><article class="remark remark-like" id="remark-50"><h3 class="heading">
+</div></article><article class="remark remark-like" id="remark-43"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.53</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-577">One thing that can be confusing about primary ideals is that the definition is not symmetric. For <span class="process-math">\(Q\)</span> to be a primary ideal, given a product <span class="process-math">\(xy \in Q\text{,}\)</span> the definition says that if <span class="process-math">\(x \notin Q\text{,}\)</span> then <span class="process-math">\(y \in \sqrt{Q}\text{,}\)</span> and it <em class="emphasis">also</em> says that if <span class="process-math">\(y \notin Q\text{,}\)</span> then <span class="process-math">\(x \in \sqrt{Q}\text{.}\)</span> In , we found that <span class="process-math">\(x \notin Q\)</span> and <span class="process-math">\(y \notin \sqrt{Q}\text{,}\)</span> so <span class="process-math">\(Q\)</span> is not primary. Notice that if we switch the roles of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> we <em class="emphasis">do</em> have <span class="process-math">\(x \in \sqrt{Q}\text{,}\)</span> but that is not sufficient to make <span class="process-math">\(Q\)</span> a primary ideal.</div></article><article class="theorem theorem-like" id="thm-characterization-of-primary-ideals"><h3 class="heading">
+<div class="para" id="p-608">One thing that can be confusing about primary ideals is that the definition is not symmetric. For <span class="process-math">\(Q\)</span> to be a primary ideal, given a product <span class="process-math">\(xy \in Q\text{,}\)</span> the definition says that if <span class="process-math">\(x \notin Q\text{,}\)</span> then <span class="process-math">\(y \in \sqrt{Q}\text{,}\)</span> and it <em class="emphasis">also</em> says that if <span class="process-math">\(y \notin Q\text{,}\)</span> then <span class="process-math">\(x \in \sqrt{Q}\text{.}\)</span> In , we found that <span class="process-math">\(x \notin Q\)</span> and <span class="process-math">\(y \notin \sqrt{Q}\text{,}\)</span> so <span class="process-math">\(Q\)</span> is not primary. Notice that if we switch the roles of <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> we <em class="emphasis">do</em> have <span class="process-math">\(x \in \sqrt{Q}\text{,}\)</span> but that is not sufficient to make <span class="process-math">\(Q\)</span> a primary ideal.</div></article><article class="theorem theorem-like" id="thm-characterization-of-primary-ideals"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.54</span><span class="period">.</span><span class="space"> </span><span class="title">Characterization of Primary Ideals.</span>
 </h3>
-<div class="para" id="p-578">If <span class="process-math">\(R\)</span> is noetherian, the following are equivalent: (a) <span class="process-math">\(Q\)</span> is primary. (b) Every zerodivisor in <span class="process-math">\(R/Q\)</span> is nilpotent on <span class="process-math">\(R/Q\text{.}\)</span> (c) <span class="process-math">\(\Ass(R/Q)\)</span>[^1] is a singleton. (d) <span class="process-math">\(Q\)</span> has exactly one minimal prime, and no embedded primes. (e) <span class="process-math">\(\sqrt{Q} = P\)</span>[^2] is prime and for all <span class="process-math">\(r, w \in R\)</span> with <span class="process-math">\(w \notin P\text{,}\)</span> <span class="process-math">\(rw \in Q \Rightarrow r \in Q\text{.}\)</span> (f) <span class="process-math">\(\sqrt{Q}= P\)</span> is prime, and <span class="process-math">\(Q R_{P} \cap R = Q\)</span>[^3].</div></article><article class="hiddenproof" id="proof-81"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-81"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-81"><article class="hiddenproof"><div class="para logical" id="p-579">
+<div class="para" id="p-609">If <span class="process-math">\(R\)</span> is noetherian, the following are equivalent: (a) <span class="process-math">\(Q\)</span> is primary. (b) Every zerodivisor in <span class="process-math">\(R/Q\)</span> is nilpotent on <span class="process-math">\(R/Q\text{.}\)</span> (c) <span class="process-math">\(\Ass(R/Q)\)</span> is a singleton. (d) <span class="process-math">\(Q\)</span> has exactly one minimal prime, and no embedded primes. (e) <span class="process-math">\(\sqrt{Q} = P\)</span> is prime and for all <span class="process-math">\(r, w \in R\)</span> with <span class="process-math">\(w \notin P\text{,}\)</span> <span class="process-math">\(rw \in Q \Rightarrow r \in Q\text{.}\)</span> (f) <span class="process-math">\(\sqrt{Q}= P\)</span> is prime, and <span class="process-math">\(Q R_{P} \cap R = Q\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-81"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-81"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-81"><article class="hiddenproof"><div class="para logical" id="p-610">
 <div class="para">
 <span class="process-math">\((1) \iff (2)\text{:}\)</span> Saying <span class="process-math">\(y\)</span> is a zerodivisor modulo <span class="process-math">\(Q\)</span> if there is some <span class="process-math">\(x\notin Q\)</span> with <span class="process-math">\(xy\in Q\text{.}\)</span> So the condition that every zerodivisor on <span class="process-math">\(R/Q\)</span> must be nilpotent is equivalent to</div>
 <div class="displaymath process-math">
@@ -635,39 +650,39 @@ xy\in (f^n) \Longleftrightarrow f^n | xy \Longleftrightarrow f^n | x \text{ or }
 \end{equation*}
 </div>
 <div class="para">This is exactly the condition that <span class="process-math">\(Q\)</span> is a primary ideal.</div>
-</div> <div class="para logical" id="p-580">
+</div> <div class="para logical" id="p-611">
 <div class="para">
-<span class="process-math">\((2) \iff (3)\text{:}\)</span> First, note that the associated primes of <span class="process-math">\(R/Q\)</span> are the associated primes of the ideal <span class="process-math">\(Q\text{,}\)</span> while the minimal primes of <span class="process-math">\(R/Q\)</span> are the minimal primes of <span class="process-math">\(Q\text{.}\)</span> By [[Mathematics/Commutative Algebra/Results/Theorem - Zerodivisors Associated Primes|Theorem]],</div>
-<div class="displaymath process-math">
+<span class="process-math">\((2) \iff (3)\text{:}\)</span> First, note that the associated primes of <span class="process-math">\(R/Q\)</span> are the associated primes of the ideal <span class="process-math">\(Q\text{,}\)</span> while the minimal primes of <span class="process-math">\(R/Q\)</span> are the minimal primes of <span class="process-math">\(Q\text{.}\)</span> By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Zerodivisors Associated Primes|Theorem]],</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \bigcup_{P \in \Ass(Q)} P \, = \, \mathcal{Z}(R/Q).
 \end{equation*}
 </div>
-<div class="para">Every minimal prime of <span class="process-math">\(Q\)</span> is associated to <span class="process-math">\(Q\text{,}\)</span>[^4] so</div>
-<div class="displaymath process-math">
+<div class="para">Every minimal prime of <span class="process-math">\(Q\)</span> is associated to <span class="process-math">\(Q\text{,}\)</span> so</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \bigcap_{P \in \Min(Q)} P = \bigcap_{P \in \Ass(Q)} P.
 \end{equation*}
 </div>
 <div class="para">Finally, every nilpotent element is always a zerodivisor. Putting all these together, we always have the following:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \bigcup_{P \in \Ass(Q)} P \, = \, \mathcal{Z}(R/Q) \, \supseteq  \{ r \in R \mid r + Q \in \mathcal{N}(R/Q) \} \, = \bigcap_{P \in \Min(Q)} P = \bigcap_{P \in \Ass(Q)} P.
 \end{equation*}
 </div>
 <div class="para">On the one hand, (2) says that the set of zerodivisors on <span class="process-math">\(R/Q\)</span> coincides with the elements in the nilradical of <span class="process-math">\(R/Q\text{;}\)</span> thus (2) is the statement that we have equality throughout. So (2) holds if and only if</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 \bigcup_{P \in \Ass(Q)} P \, = \bigcap_{P \in \Ass(Q)} P.
 \end{equation*}
 </div>
 <div class="para">The rest of the proof is elementary set theory: the intersection and union of a collection of sets agree if and only if there is only one set. More precisely, we have equality above if and only if there is only one associated prime.</div>
-</div> <div class="para" id="p-581">
-<span class="process-math">\((3) \iff (4)\)</span> is clear, given that every ideal has a minimal prime and minimal primes are always associated, so having a single associated prime means having only one minimal prime and no embedded primes.</div> <div class="para" id="p-582">
-<span class="process-math">\((1) \iff (5)\text{:}\)</span> Given the observation that the radical of a primary ideal is prime, this is just a rewording of the definition.</div> <div class="para logical" id="p-583">
+</div> <div class="para" id="p-612">
+<span class="process-math">\((3) \iff (4)\)</span> is clear, given that every ideal has a minimal prime and minimal primes are always associated, so having a single associated prime means having only one minimal prime and no embedded primes.</div> <div class="para" id="p-613">
+<span class="process-math">\((1) \iff (5)\text{:}\)</span> Given the observation that the radical of a primary ideal is prime, this is just a rewording of the definition.</div> <div class="para logical" id="p-614">
 <div class="para">
-<span class="process-math">\((5) \iff (6)\text{:}\)</span> By [[Mathematics/Commutative Algebra/Results/Lemma - Localization Ideals|Lemma]], we have the following characterization:</div>
-<div class="displaymath process-math">
+<span class="process-math">\((5) \iff (6)\text{:}\)</span> By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Localization Ideals|Lemma]], we have the following characterization:</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
 Q R_P \cap R = \lbrace r \in R \mid sr \in Q \textrm{ for some } s \notin P \rbrace.
 \end{equation*}
@@ -678,30 +693,30 @@ Q R_P \cap R = \lbrace r \in R \mid sr \in Q \textrm{ for some } s \notin P \rbr
 <article class="lemma theorem-like" id="lem-radical-max-implies-primary"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.55</span><span class="period">.</span><span class="space"> </span><span class="title">Radical Max Implies Primary.</span>
 </h3>
-<div class="para" id="p-584">Let <span class="process-math">\(R\)</span> be a noetherian ring and <span class="process-math">\(I\)</span> be an ideal. If <span class="process-math">\(\sqrt{I}=\fm\)</span>[^1] a maximal ideal, then <span class="process-math">\(I\)</span> is a primary ideal.</div></article><article class="hiddenproof" id="proof-82"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-82"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-82"><article class="hiddenproof"><div class="para" id="p-585">By [[Mathematics/Commutative Algebra/Results/Theorem - Support and Associated Primes|Theorem]], <span class="process-math">\(\Ass(R/I)\)</span> is nonempty and contained in <span class="process-math">\(\Supp(R/I)=V(I)=\{\fm\}\text{,}\)</span> so <span class="process-math">\(\Ass(R/I) = \{ \fm \}\text{,}\)</span> and hence by [[Mathematics/Commutative Algebra/Results/Theorem - Characterization of Primary Ideals|Proposition]] <span class="process-math">\(I\)</span> is primary.</div></article></div>
-<article class="remark remark-like" id="remark-51"><h3 class="heading">
+<div class="para" id="p-615">Let <span class="process-math">\(R\)</span> be a noetherian ring and <span class="process-math">\(I\)</span> be an ideal. If <span class="process-math">\(\sqrt{I}=\fm\)</span> a maximal ideal, then <span class="process-math">\(I\)</span> is a primary ideal.</div></article><article class="hiddenproof" id="proof-82"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-82"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-82"><article class="hiddenproof"><div class="para" id="p-616">By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Support and Associated Primes|Theorem]], <span class="process-math">\(\Ass(R/I)\)</span> is nonempty and contained in <span class="process-math">\(\Supp(R/I)=V(I)=\{\fm\}\text{,}\)</span> so <span class="process-math">\(\Ass(R/I) = \{ \fm \}\text{,}\)</span> and hence by <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Characterization of Primary Ideals|Proposition]] <span class="process-math">\(I\)</span> is primary.</div></article></div>
+<article class="remark remark-like" id="remark-44"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.56</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-586">Note that the assumption that <span class="process-math">\(\fm\)</span> is maximal was necessary here. Indeed, having a prime radical does not guarantee an ideal is primary, as we saw [[Mathematics/Commutative Algebra/Results/Exercise - <span class="process-math">\((x2,xy)\)</span> Not Primary in <span class="process-math">\(R=kx,y,z\)</span>|here]]. Moreover, even the powers of a prime ideal may fail to be primary.</div></article><article class="example example-like" id="ex-powers-of-prime-not-primary"><h3 class="heading">
+<div class="para" id="p-617">Note that the assumption that <span class="process-math">\(\fm\)</span> is maximal was necessary here. Indeed, having a prime radical does not guarantee an ideal is primary, as we saw <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Exercise - <span class="process-math">\((x2,xy)\)</span> Not Primary in <span class="process-math">\(R=kx,y,z\)</span>|here]]. Moreover, even the powers of a prime ideal may fail to be primary.</div></article><article class="example example-like" id="ex-powers-of-prime-not-primary"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.57</span><span class="period">.</span><span class="space"> </span><span class="title">Powers of Prime not Primary.</span>
 </h3>
-<div class="para" id="p-587">Fix a field <span class="process-math">\(k\)</span> and an integer <span class="process-math">\(n \geqslant 2\text{,}\)</span> and let <span class="process-math">\(R = k[x,y,z]/(xy-z^n)\text{.}\)</span> Consider the prime ideal <span class="process-math">\(P = (x,z)\)</span> in <span class="process-math">\(R\text{.}\)</span> On the one hand, <span class="process-math">\(xy = z^n \in P^n\text{,}\)</span> while <span class="process-math">\(x \notin P^n\)</span> and <span class="process-math">\(y \notin \sqrt{P^n} = P\text{.}\)</span> Therefore, <span class="process-math">\(P^n\)</span> is not primary, even though its radical is the prime <span class="process-math">\(P\text{.}\)</span>
+<div class="para" id="p-618">Fix a field <span class="process-math">\(k\)</span> and an integer <span class="process-math">\(n \geqslant 2\text{,}\)</span> and let <span class="process-math">\(R = k[x,y,z]/(xy-z^n)\text{.}\)</span> Consider the prime ideal <span class="process-math">\(P = (x,z)\)</span> in <span class="process-math">\(R\text{.}\)</span> On the one hand, <span class="process-math">\(xy = z^n \in P^n\text{,}\)</span> while <span class="process-math">\(x \notin P^n\)</span> and <span class="process-math">\(y \notin \sqrt{P^n} = P\text{.}\)</span> Therefore, <span class="process-math">\(P^n\)</span> is not primary, even though its radical is the prime <span class="process-math">\(P\text{.}\)</span>
 </div></article><article class="lemma theorem-like" id="lem-contraction-of-primary-ideals-is-primary"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.58</span><span class="period">.</span><span class="space"> </span><span class="title">Contraction of Primary Ideals is Primary.</span>
 </h3>
-<div class="para" id="p-588">Let <span class="process-math">\(f:R\to S\)</span> be a ring homomorphism. If <span class="process-math">\(Q\)</span> is a primary ideal in <span class="process-math">\(S\text{,}\)</span> then <span class="process-math">\(Q \cap R\)</span> is a primary ideal in <span class="process-math">\(R\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-83"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-83"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-83"><article class="hiddenproof"><div class="para" id="p-589">if <span class="process-math">\(xy \in Q \cap R\text{,}\)</span> and <span class="process-math">\(x \notin Q \cap R\text{,}\)</span> then <span class="process-math">\(f(x) \notin Q\text{,}\)</span> so <span class="process-math">\(f(y^n) = f(y)^n \in Q\)</span> for some <span class="process-math">\(n\text{.}\)</span> Therefore, <span class="process-math">\(y^n \in Q \cap R\text{,}\)</span> and <span class="process-math">\(Q \cap R\)</span> is indeed primary.</div></article></div>
+<div class="para" id="p-619">Let <span class="process-math">\(f:R\to S\)</span> be a ring homomorphism. If <span class="process-math">\(Q\)</span> is a primary ideal in <span class="process-math">\(S\text{,}\)</span> then <span class="process-math">\(Q \cap R\)</span> is a primary ideal in <span class="process-math">\(R\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-83"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-83"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-83"><article class="hiddenproof"><div class="para" id="p-620">if <span class="process-math">\(xy \in Q \cap R\text{,}\)</span> and <span class="process-math">\(x \notin Q \cap R\text{,}\)</span> then <span class="process-math">\(f(x) \notin Q\text{,}\)</span> so <span class="process-math">\(f(y^n) = f(y)^n \in Q\)</span> for some <span class="process-math">\(n\text{.}\)</span> Therefore, <span class="process-math">\(y^n \in Q \cap R\text{,}\)</span> and <span class="process-math">\(Q \cap R\)</span> is indeed primary.</div></article></div>
 <article class="lemma theorem-like" id="lem-ass-intersection"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">6.59</span><span class="period">.</span><span class="space"> </span><span class="title">Ass Intersection.</span>
 </h3>
-<div class="para logical" id="p-590">
-<div class="para">If <span class="process-math">\(I_1,\dots,I_t\)</span> are ideals, then[^1]</div>
+<div class="para logical" id="p-621">
+<div class="para">If <span class="process-math">\(I_1,\dots,I_t\)</span> are ideals, then</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \Ass \left( R/ \bigcap_{j=1}^t I_j \right) \subseteq \bigcup_{j=i}^t \Ass(R/I_j).
 \end{equation*}
 </div>
-</div></article><article class="hiddenproof" id="proof-84"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-84"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-84"><article class="hiddenproof"><div class="para logical" id="p-591">
+</div></article><article class="hiddenproof" id="proof-84"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-84"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-84"><article class="hiddenproof"><div class="para logical" id="p-622">
 <div class="para">The canonical map <span class="process-math">\(R \to R/I_1 \oplus R/I_2\)</span> sending <span class="process-math">\(r \mapsto (r+I_1, r+I_2)\)</span> has kernel <span class="process-math">\(I_1 \cap I_2\text{,}\)</span> so there is an inclusion <span class="process-math">\(R/(I_1 \cap I_2) \subseteq R/I_1 \oplus R/I_2\text{.}\)</span> Hence, by  and ,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -713,7 +728,7 @@ Q R_P \cap R = \lbrace r \in R \mid sr \in Q \textrm{ for some } s \notin P \rbr
 <article class="corollary theorem-like" id="cor-intersections-primary"><h3 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">6.60</span><span class="period">.</span><span class="space"> </span><span class="title">Intersections Primary.</span>
 </h3>
-<div class="para" id="p-592">A finite intersection of <span class="process-math">\(P\)</span>-primary ideals is <span class="process-math">\(P\)</span>-primary.</div></article><article class="hiddenproof" id="proof-85"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-85"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-85"><article class="hiddenproof"><div class="para logical" id="p-593">
+<div class="para" id="p-623">A finite intersection of <span class="process-math">\(P\)</span>-primary ideals is <span class="process-math">\(P\)</span>-primary.</div></article><article class="hiddenproof" id="proof-85"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-85"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-85"><article class="hiddenproof"><div class="para logical" id="p-624">
 <div class="para">Let <span class="process-math">\(I_1, \ldots, I_t\)</span> be <span class="process-math">\(P\)</span>-primary ideals. Then by ,</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -730,7 +745,7 @@ Q R_P \cap R = \lbrace r \in R \mid sr \in Q \textrm{ for some } s \notin P \rbr
 </div></article></div>
 <article class="definition definition-like" id="defn-primary-decomposition"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.61</span><span class="period">.</span><span class="space"> </span><span class="title">Primary Decomposition.</span>
-</h3> <div class="para logical" id="p-594">
+</h3> <div class="para logical" id="p-625">
 <div class="para">A <em class="emphasis">primary decomposition</em> of an ideal <span class="process-math">\(I\)</span> is an expression of the form</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -743,18 +758,18 @@ I = Q_1 \cap \cdots \cap Q_t
 \sqrt{Q_i} \neq \sqrt{Q_j} \textrm{ for } i\neq j \quad \textrm{ and } \quad Q_i \not\supseteq \displaystyle\bigcap_{j\neq i} Q_j \textrm{ for all } i.
 \end{equation*}
 </div>
-</div></article><article class="remark remark-like" id="remark-52"><h3 class="heading">
+</div></article><article class="remark remark-like" id="remark-45"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.62</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-595">By , the intersection of <span class="process-math">\(P\)</span>-primary ideals is <span class="process-math">\(P\)</span>-primary. Thus we can turn any primary decomposition into an irredundant one by combining the terms with the same radical, then removing redundant terms.</div></article><article class="example example-like" id="primary-decomposition-in-mathbbz"><h3 class="heading">
+<div class="para" id="p-626">By , the intersection of <span class="process-math">\(P\)</span>-primary ideals is <span class="process-math">\(P\)</span>-primary. Thus we can turn any primary decomposition into an irredundant one by combining the terms with the same radical, then removing redundant terms.</div></article><article class="example example-like" id="primary-decomposition-in-mathbbz"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.63</span><span class="period">.</span><span class="space"> </span><span class="title">Primary decomposition in <span class="process-math">\(\mathbb{Z}\)</span>.</span>
-</h3> <div class="para" id="p-596">Given a decomposition of <span class="process-math">\(n \in \mathbb{Z}\)</span> as a product of distinct primes, say <span class="process-math">\(n = p_1^{a_1} \cdots p_k^{a_k}\text{,}\)</span> then the primary decomposition of the ideal <span class="process-math">\((n)\)</span> is <span class="process-math">\((n) = (p_1^{a_1}) \cap \cdots \cap (p_k^{a_k})\text{.}\)</span> However, this example can be deceiving, in that it suggests that primary ideals are just powers of primes; as we saw [[Mathematics/Commutative Algebra/Results/Exercise - Powers of Prime not Primary|here]], powers of primes may fail to be primary! Moreover, an ideal might be primary but not a power of a prime.</div></article><article class="remark remark-like" id="remark-53"><h3 class="heading">
+</h3> <div class="para" id="p-627">Given a decomposition of <span class="process-math">\(n \in \mathbb{Z}\)</span> as a product of distinct primes, say <span class="process-math">\(n = p_1^{a_1} \cdots p_k^{a_k}\text{,}\)</span> then the primary decomposition of the ideal <span class="process-math">\((n)\)</span> is <span class="process-math">\((n) = (p_1^{a_1}) \cap \cdots \cap (p_k^{a_k})\text{.}\)</span> However, this example can be deceiving, in that it suggests that primary ideals are just powers of primes; as we saw <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Exercise - Powers of Prime not Primary|here]], powers of primes may fail to be primary! Moreover, an ideal might be primary but not a power of a prime.</div></article><article class="remark remark-like" id="remark-46"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.64</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-597">The existence of primary decompositions was first shown by Emanuel Lasker (yes, the chess champion!) for polynomial rings and power series rings in 1905, and then extended to any noetherian ring (which were not called that yet at the time) by Emmy Noether in 1921.</div></article><article class="theorem theorem-like" id="thm-lasker-1905-noether-1921"><h3 class="heading">
+<div class="para" id="p-628">The existence of primary decompositions was first shown by Emanuel Lasker (yes, the chess champion!) for polynomial rings and power series rings in 1905, and then extended to any noetherian ring (which were not called that yet at the time) by Emmy Noether in 1921.</div></article><article class="theorem theorem-like" id="thm-lasker-1905-noether-1921"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.65</span><span class="period">.</span><span class="space"> </span><span class="title">Lasker, 1905, Noether, 1921.</span>
 </h3>
-<div class="para" id="p-598">Every ideal in a noetherian ring admits a primary decomposition.</div></article><article class="hiddenproof" id="proof-86"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-86"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-86"><article class="hiddenproof"><div class="para" id="p-599">We will say that an ideal is irreducible  if it cannot be written as a proper intersection of larger ideals. If <span class="process-math">\(R\)</span> is noetherian, we claim that any ideal of <span class="process-math">\(R\)</span> can be expressed as a finite intersection of irreducible ideals. If the set of ideals that are not a finite intersection of irreducibles were nonempty, then by noetherianity there would be an ideal maximal with the property of not being an intersection of irreducible ideals. Such a maximal element must be an intersection of two larger ideals, each of which are finite intersections of irreducibles, giving a contradiction.</div> <div class="para logical" id="p-600">
+<div class="para" id="p-629">Every ideal in a noetherian ring admits a primary decomposition.</div></article><article class="hiddenproof" id="proof-86"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-86"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-86"><article class="hiddenproof"><div class="para" id="p-630">We will say that an ideal is irreducible  if it cannot be written as a proper intersection of larger ideals. If <span class="process-math">\(R\)</span> is noetherian, we claim that any ideal of <span class="process-math">\(R\)</span> can be expressed as a finite intersection of irreducible ideals. If the set of ideals that are not a finite intersection of irreducibles were nonempty, then by noetherianity there would be an ideal maximal with the property of not being an intersection of irreducible ideals. Such a maximal element must be an intersection of two larger ideals, each of which are finite intersections of irreducibles, giving a contradiction.</div> <div class="para logical" id="p-631">
 <div class="para">We claim that every irreducible ideal is primary. If we show this, any decomposition into an intersection of irreducible ideals will be a primary decomposition. To prove the contrapositive, suppose that <span class="process-math">\(Q\)</span> is not primary, and take <span class="process-math">\(xy\in Q\)</span> with <span class="process-math">\(x\notin Q\text{,}\)</span> <span class="process-math">\(y\notin \sqrt{Q}\text{.}\)</span> The ascending chain of ideals</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -790,8 +805,8 @@ b y^{n+1} = ay - qy \in Q \implies b \in (Q : y^{n+1}) = (Q : y^n).
 <article class="example example-like" id="ex-irredundant-decompositions-for-ix2xy"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.66</span><span class="period">.</span><span class="space"> </span><span class="title">Irredundant Decompositions for <span class="process-math">\(I=(x^2,xy)\)</span>.</span>
 </h3>
-<div class="para logical" id="p-601">
-<div class="para">Let <span class="process-math">\(R=k[x,y]\)</span>[^2], where <span class="process-math">\(k\)</span> is a field, and <span class="process-math">\(I=(x^2,xy)\text{.}\)</span> We can write</div>
+<div class="para logical" id="p-632">
+<div class="para">Let <span class="process-math">\(R=k[x,y]\text{,}\)</span> where <span class="process-math">\(k\)</span> is a field, and <span class="process-math">\(I=(x^2,xy)\text{.}\)</span> We can write</div>
 <div class="displaymath process-math">
 \begin{equation*}
 I = (x) \cap (x^2,xy,y^2) = (x) \cap (x^2,y).
@@ -801,8 +816,8 @@ I = (x) \cap (x^2,xy,y^2) = (x) \cap (x^2,y).
 </div>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-30" id="solution-30"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-30"><div class="solution solution-like"><div class="para logical" id="p-602">
-<div class="para">To check this, we just need to see that each of the ideals <span class="process-math">\((x^2,xy,y^2)\)</span> and <span class="process-math">\((x^2,y)\)</span> are primary. Observe that each has radical <span class="process-math">\(\fm=(x,y)\text{,}\)</span> which is maximal, so these ideals are both primary.[^1] In fact, our ideal <span class="process-math">\(I\)</span> has infinitely many minimal primary decompositions: given any <span class="process-math">\(n \geqslant 1\text{,}\)</span>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-22" id="solution-22"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-22"><div class="solution solution-like"><div class="para logical" id="p-633">
+<div class="para">To check this, we just need to see that each of the ideals <span class="process-math">\((x^2,xy,y^2)\)</span> and <span class="process-math">\((x^2,y)\)</span> are primary. Observe that each has radical <span class="process-math">\(\fm=(x,y)\text{,}\)</span> which is maximal, so these ideals are both primary. In fact, our ideal <span class="process-math">\(I\)</span> has infinitely many minimal primary decompositions: given any <span class="process-math">\(n \geqslant 1\text{,}\)</span>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -815,14 +830,14 @@ I = (x) \cap (x^2, xy, y^n)
 </div></article><article class="theorem theorem-like" id="thm-1st-uniqueness-theorem-for-primary-decompositions"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.67</span><span class="period">.</span><span class="space"> </span><span class="title">1st Uniqueness Theorem for Primary Decompositions.</span>
 </h3>
-<div class="para logical" id="p-603">
+<div class="para logical" id="p-634">
 <div class="para">Suppose <span class="process-math">\(I\)</span> is an ideal in a noetherian ring <span class="process-math">\(R\text{.}\)</span> Given any irredundant primary decomposition of <span class="process-math">\(I\text{,}\)</span> say</div>
 <div class="displaymath process-math">
 \begin{equation*}
 I = Q_1 \cap \cdots \cap Q_t,
 \end{equation*}
 </div>
-<div class="para">we have[^1]</div>
+<div class="para">we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \{ \sqrt{Q_1}, \ldots, \sqrt{Q_t}\}=\Ass(I).
@@ -830,7 +845,7 @@ I = Q_1 \cap \cdots \cap Q_t,
 </div>
 <div class="para">In particular, this set is the same for all irredundant primary decompositions of <span class="process-math">\(I\text{.}\)</span>
 </div>
-</div></article><article class="hiddenproof" id="proof-87"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-87"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-87"><article class="hiddenproof"><div class="para logical" id="p-604">
+</div></article><article class="hiddenproof" id="proof-87"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-87"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-87"><article class="hiddenproof"><div class="para logical" id="p-635">
 <div class="para">For any primary decomposition, irredundant or not, by  we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -860,21 +875,21 @@ Q_j x_j \subseteq Q_j \cdot \displaystyle\bigcap_{i\neq j} Q_i \subseteq Q_1 \ca
 <article class="theorem theorem-like" id="thm-2nd-uniqueness-theorem-for-primary-decompositions"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.68</span><span class="period">.</span><span class="space"> </span><span class="title">2nd Uniqueness Theorem for Primary Decompositions.</span>
 </h3>
-<div class="para logical" id="p-605">
+<div class="para logical" id="p-636">
 <div class="para">If <span class="process-math">\(I\)</span> is an ideal in a noetherian ring <span class="process-math">\(R\text{,}\)</span> then the minimal components in any irredundant primary decomposition of <span class="process-math">\(I\)</span> are unique. More precisely, if</div>
 <div class="displaymath process-math">
 \begin{equation*}
 I = Q_1 \cap \cdots \cap Q_t
 \end{equation*}
 </div>
-<div class="para">is an irredundant primary decomposition, and <span class="process-math">\(\sqrt{Q_i} \in \Min(I)\)</span>[^1], then <span class="process-math">\(Q_i\)</span> is given by the formula[^2]</div>
+<div class="para">is an irredundant primary decomposition, and <span class="process-math">\(\sqrt{Q_i} \in \Min(I)\text{,}\)</span> then <span class="process-math">\(Q_i\)</span> is given by the formula</div>
 <div class="displaymath process-math">
 \begin{equation*}
 Q_i = I R_{\sqrt{Q_i}} \cap R,
 \end{equation*}
 </div>
 <div class="para">which does not depend on our choice of irredundant decomposition.</div>
-</div></article><article class="hiddenproof" id="proof-88"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-88"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-88"><article class="hiddenproof"><div class="para logical" id="p-606">
+</div></article><article class="hiddenproof" id="proof-88"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-88"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-88"><article class="hiddenproof"><div class="para logical" id="p-637">
 <div class="para">Let <span class="process-math">\(Q\)</span> be a primary ideal, and let <span class="process-math">\(P\)</span> be any prime. If <span class="process-math">\(Q \subseteq P\text{,}\)</span> then <span class="process-math">\(\sqrt{Q} \subseteq P\text{.}\)</span> Since the associated primes of an ideal localize well, by , <span class="process-math">\(Q_P\)</span> will still have a unique associated prime. Thus, the localization <span class="process-math">\(Q_P\)</span> is either: - the unit ideal, if <span class="process-math">\(Q \not\subseteq P\text{,}\)</span> or - a primary ideal, if <span class="process-math">\(Q \subseteq P\text{.}\)</span> Finite intersections commute with localization, by , so for any prime <span class="process-math">\(P\text{,}\)</span>
 </div>
 <div class="displaymath process-math">
@@ -884,15 +899,15 @@ I_{P} = (Q_1)_{P} \cap \cdots \cap (Q_t)_{P}
 </div>
 <div class="para">is a primary decomposition, although not necessarily irredundant. Fix a minimal prime <span class="process-math">\(P=P_i\)</span> of <span class="process-math">\(I\text{,}\)</span> and let <span class="process-math">\(Q = Q_i\text{.}\)</span> When we localize at <span class="process-math">\(P\text{,}\)</span> all the other components become the unit ideal, since their radicals are not contained in <span class="process-math">\(P\text{,}\)</span> and thus <span class="process-math">\(I_{P} = Q_P\text{.}\)</span> We can then contract to <span class="process-math">\(R\)</span> to get <span class="process-math">\(I_{P} \cap R = (Q_i)_{P_i} \cap R = Q_i\text{,}\)</span> since <span class="process-math">\(Q_i\)</span> is <span class="process-math">\(P_i\)</span>-primary and we can then apply  (6).</div>
 </div></article></div>
-<article class="remark remark-like" id="remark-54"><h3 class="heading">
+<article class="remark remark-like" id="remark-47"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.69</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-607">If <span class="process-math">\(R\)</span> is not noetherian, we may or may not have a primary decomposition for a given ideal. It is true that if an ideal <span class="process-math">\(I\)</span> in a general ring has a primary decomposition, then the primes occurring are the same in any irredundant decomposition. However, they are not the associated primes of <span class="process-math">\(I\)</span> in general; rather, they are the primes that occur as radicals of annihilators of elements.</div></article><article class="example example-like" id="ex-decomposition-of-radical-ideal-is-unique"><h3 class="heading">
+<div class="para" id="p-638">If <span class="process-math">\(R\)</span> is not noetherian, we may or may not have a primary decomposition for a given ideal. It is true that if an ideal <span class="process-math">\(I\)</span> in a general ring has a primary decomposition, then the primes occurring are the same in any irredundant decomposition. However, they are not the associated primes of <span class="process-math">\(I\)</span> in general; rather, they are the primes that occur as radicals of annihilators of elements.</div></article><article class="example example-like" id="ex-decomposition-of-radical-ideal-is-unique"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.70</span><span class="period">.</span><span class="space"> </span><span class="title">Decomposition of Radical Ideal is Unique.</span>
-</h3> <div class="para" id="p-608">If <span class="process-math">\(R\)</span> is noetherian, and <span class="process-math">\(I\)</span> is a radical ideal, then we have seen that <span class="process-math">\(I\)</span> coincides with the intersection of its minimal primes <span class="process-math">\(P_i\text{,}\)</span> meaning <span class="process-math">\(I=P_1 \cap \cdots \cap P_t\text{.}\)</span> This is the <em class="emphasis">only</em> primary decomposition of a radical ideal.</div> <div class="para" id="p-609">For a more concrete example, take the ideal <span class="process-math">\(I = \left( xy, xz, yz \right)\)</span> in <span class="process-math">\(k[x,y,z]\text{.}\)</span> This ideal is radical, so we just need to find its minimal primes. And indeed, one can check that <span class="process-math">\(\left( xy, xz, yz \right) = \left( x, y \right) \cap \left( x, z \right) \cap \left( y, z \right)\text{.}\)</span> More generally, the radical monomial ideals are precisely those that are squarefree, and the primary components of a monomial ideal are also monomial.</div></article><article class="example example-like" id="ex-decomposition-of-6-in-zsqrt-5-unique"><h3 class="heading">
+</h3> <div class="para" id="p-639">If <span class="process-math">\(R\)</span> is noetherian, and <span class="process-math">\(I\)</span> is a radical ideal, then we have seen that <span class="process-math">\(I\)</span> coincides with the intersection of its minimal primes <span class="process-math">\(P_i\text{,}\)</span> meaning <span class="process-math">\(I=P_1 \cap \cdots \cap P_t\text{.}\)</span> This is the <em class="emphasis">only</em> primary decomposition of a radical ideal.</div> <div class="para" id="p-640">For a more concrete example, take the ideal <span class="process-math">\(I = \left( xy, xz, yz \right)\)</span> in <span class="process-math">\(k[x,y,z]\text{.}\)</span> This ideal is radical, so we just need to find its minimal primes. And indeed, one can check that <span class="process-math">\(\left( xy, xz, yz \right) = \left( x, y \right) \cap \left( x, z \right) \cap \left( y, z \right)\text{.}\)</span> More generally, the radical monomial ideals are precisely those that are squarefree, and the primary components of a monomial ideal are also monomial.</div></article><article class="example example-like" id="ex-decomposition-of-6-in-zsqrt-5-unique"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.71</span><span class="period">.</span><span class="space"> </span><span class="title">Decomposition of <span class="process-math">\((6)\)</span> in <span class="process-math">\(\Z[\sqrt{-5}]\)</span> Unique.</span>
-</h3> <div class="para logical" id="p-610">
-<div class="para">Let’s get back to our motivating example in <span class="process-math">\(\mathbb{Z}[\sqrt{-5}]\text{,}\)</span> where some elements can be written as products of irreducible elements in more than one way. For example, we saw that</div>
+</h3> <div class="para logical" id="p-641">
+<div class="para">Let's get back to our motivating example in <span class="process-math">\(\mathbb{Z}[\sqrt{-5}]\text{,}\)</span> where some elements can be written as products of irreducible elements in more than one way. For example, we saw that</div>
 <div class="displaymath process-math">
 \begin{equation*}
 6 = 2 \cdot 3 = (1 + \sqrt{-5}) (1 - \sqrt{-5}).
@@ -908,19 +923,20 @@ I_{P} = (Q_1)_{P} \cap \cdots \cap (Q_t)_{P}
 <div class="para">In fact, all of these come components are minimal, and so this primary decomposition is unique. Primary decomposition saves the day!</div>
 </div></article><article class="definition definition-like" id="defn-symbolic-power"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.72</span><span class="period">.</span><span class="space"> </span><span class="title">Symbolic Power.</span>
-</h3> <div class="para" id="p-611">If <span class="process-math">\(P\)</span> is a prime ideal in a ring <span class="process-math">\(R\text{,}\)</span> the <span class="process-math">\(n\th\)</span> <em class="emphasis">symbolic power</em> of <span class="process-math">\(P\)</span> is <span class="process-math">\(P^{(n)} := P^n R_{P} \cap R\)</span>[^1].</div></article><article class="proposition theorem-like" id="prop-characterizations-of-symbolic-powers"><h3 class="heading">
+</h3> <div class="para" id="p-642">If <span class="process-math">\(P\)</span> is a prime ideal in a ring <span class="process-math">\(R\text{,}\)</span> the <span class="process-math">\(n\th\)</span> <em class="emphasis">symbolic power</em> of <span class="process-math">\(P\)</span> is <span class="process-math">\(P^{(n)} := P^n R_{P} \cap R\text{.}\)</span>
+</div></article><article class="proposition theorem-like" id="prop-characterizations-of-symbolic-powers"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">6.73</span><span class="period">.</span><span class="space"> </span><span class="title">Characterizations of Symbolic Powers.</span>
 </h3>
-<div class="para" id="p-612">Let <span class="process-math">\(R\)</span> be noetherian, and <span class="process-math">\(P\)</span> a prime ideal of <span class="process-math">\(R\text{.}\)</span> (a) <span class="process-math">\(P^{(n)}=\{ r\in R \ \mid \ rs\in P^n \textrm{ for some } s\notin P \}\)</span>[^1]. (b) <span class="process-math">\(P^{(n)}\)</span> is the unique smallest <span class="process-math">\(P\)</span>-primary ideal containing <span class="process-math">\(P^n\text{.}\)</span> (c) <span class="process-math">\(P^{(n)}\)</span> is the <span class="process-math">\(P\)</span>-primary component in any minimal primary decomposition of <span class="process-math">\(P^n\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-89"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-89"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-89"><article class="hiddenproof"><div class="para" id="p-613">The first characterization follows from the definition, and the fact that expanding and contraction to/from a localization is equivalent to saturating with respect to the multiplicative set, which we proved in .</div> <div class="para" id="p-614">We know that <span class="process-math">\(P^{(n)}\)</span> is <span class="process-math">\(P\)</span>-primary from one of the characterizations of primary we gave in . Any <span class="process-math">\(P\)</span>-primary ideal satisfies <span class="process-math">\(\fq R_{P} \cap R = \fq\text{,}\)</span> and if <span class="process-math">\(\fq\supseteq P^{n}\text{,}\)</span> then <span class="process-math">\(P^{(n)} = P^n R_{P} \cap R \subseteq \fq R_{P} \cap R = \fq\text{.}\)</span> Thus, <span class="process-math">\(P^{(n)}\)</span> is the unique smallest <span class="process-math">\(P\)</span>-primary ideal containing <span class="process-math">\(P^n\text{.}\)</span>
-</div> <div class="para" id="p-615">The last characterization follows from the second uniqueness theorem, .</div></article></div>
-<article class="example example-like" id="example-119"><h3 class="heading">
+<div class="para" id="p-643">Let <span class="process-math">\(R\)</span> be noetherian, and <span class="process-math">\(P\)</span> a prime ideal of <span class="process-math">\(R\text{.}\)</span> (a) <span class="process-math">\(P^{(n)}=\{ r\in R \ \mid \ rs\in P^n \textrm{ for some } s\notin P \}\text{.}\)</span> (b) <span class="process-math">\(P^{(n)}\)</span> is the unique smallest <span class="process-math">\(P\)</span>-primary ideal containing <span class="process-math">\(P^n\text{.}\)</span> (c) <span class="process-math">\(P^{(n)}\)</span> is the <span class="process-math">\(P\)</span>-primary component in any minimal primary decomposition of <span class="process-math">\(P^n\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-89"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-89"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-89"><article class="hiddenproof"><div class="para" id="p-644">The first characterization follows from the definition, and the fact that expanding and contraction to/from a localization is equivalent to saturating with respect to the multiplicative set, which we proved in .</div> <div class="para" id="p-645">We know that <span class="process-math">\(P^{(n)}\)</span> is <span class="process-math">\(P\)</span>-primary from one of the characterizations of primary we gave in . Any <span class="process-math">\(P\)</span>-primary ideal satisfies <span class="process-math">\(\fq R_{P} \cap R = \fq\text{,}\)</span> and if <span class="process-math">\(\fq\supseteq P^{n}\text{,}\)</span> then <span class="process-math">\(P^{(n)} = P^n R_{P} \cap R \subseteq \fq R_{P} \cap R = \fq\text{.}\)</span> Thus, <span class="process-math">\(P^{(n)}\)</span> is the unique smallest <span class="process-math">\(P\)</span>-primary ideal containing <span class="process-math">\(P^n\text{.}\)</span>
+</div> <div class="para" id="p-646">The last characterization follows from the second uniqueness theorem, .</div></article></div>
+<article class="example example-like" id="example-111"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.74</span><span class="period">.</span><span class="space"> </span><span class="title">.</span>
-</h3> <div class="para logical" id="p-616"><ol class="decimal">
-<li id="li-43"><div class="para" id="p-derived-li-43">In <span class="process-math">\(R=k[x,y,z]\text{,}\)</span> the prime <span class="process-math">\(P=(y,z)\)</span> satisfies <span class="process-math">\(P^{(n)}=P^n\)</span> for all <span class="process-math">\(n\text{.}\)</span> This follows along the same lines as .</div></li>
-<li id="li-44"><div class="para" id="p-derived-li-44">In <span class="process-math">\(R=k[x,y,z]=(xy-z^n)\text{,}\)</span> where <span class="process-math">\(n \geqslant 2\text{,}\)</span> we have seen in Example  that the square of <span class="process-math">\(P=(y,z)\)</span> is not primary, and therefore <span class="process-math">\(P^{(2)}\neq P^2\text{.}\)</span> Indeed, <span class="process-math">\(xy=z^n \in P^2\text{,}\)</span> and <span class="process-math">\(x\notin P\text{,}\)</span> so <span class="process-math">\(y\in P^{(2)}\)</span> but <span class="process-math">\(y \notin P^2\text{.}\)</span>
+</h3> <div class="para logical" id="p-647"><ol class="decimal">
+<li id="li-61"><div class="para" id="p-derived-li-61">In <span class="process-math">\(R=k[x,y,z]\text{,}\)</span> the prime <span class="process-math">\(P=(y,z)\)</span> satisfies <span class="process-math">\(P^{(n)}=P^n\)</span> for all <span class="process-math">\(n\text{.}\)</span> This follows along the same lines as .</div></li>
+<li id="li-62"><div class="para" id="p-derived-li-62">In <span class="process-math">\(R=k[x,y,z]=(xy-z^n)\text{,}\)</span> where <span class="process-math">\(n \geqslant 2\text{,}\)</span> we have seen in Example  that the square of <span class="process-math">\(P=(y,z)\)</span> is not primary, and therefore <span class="process-math">\(P^{(2)}\neq P^2\text{.}\)</span> Indeed, <span class="process-math">\(xy=z^n \in P^2\text{,}\)</span> and <span class="process-math">\(x\notin P\text{,}\)</span> so <span class="process-math">\(y\in P^{(2)}\)</span> but <span class="process-math">\(y \notin P^2\text{.}\)</span>
 </div></li>
-<li id="li-45"><div class="para" id="p-derived-li-45">Let <span class="process-math">\(X=X_{3\times 3}\)</span> be a <span class="process-math">\(3\times 3\)</span> matrix of indeterminates, and <span class="process-math">\(k[X]\)</span> be a polynomial ring over a field~<span class="process-math">\(k\text{.}\)</span> Let <span class="process-math">\(P=I_2(X)\)</span> be the ideal generated by <span class="process-math">\(2\times 2\)</span> minors of <span class="process-math">\(X\text{.}\)</span> Write <span class="process-math">\(\Delta_{\substack{i|k \\j |l}}\)</span> for the determinant of the submatrix with rows <span class="process-math">\(i,j\)</span> and columns <span class="process-math">\(k,l\text{.}\)</span> We find<div class="displaymath process-math">
+<li id="li-63"><div class="para" id="p-derived-li-63">Let <span class="process-math">\(X=X_{3\times 3}\)</span> be a <span class="process-math">\(3\times 3\)</span> matrix of indeterminates, and <span class="process-math">\(k[X]\)</span> be a polynomial ring over a field~<span class="process-math">\(k\text{.}\)</span> Let <span class="process-math">\(P=I_2(X)\)</span> be the ideal generated by <span class="process-math">\(2\times 2\)</span> minors of <span class="process-math">\(X\text{.}\)</span> Write <span class="process-math">\(\Delta_{\substack{i|k \\j |l}}\)</span> for the determinant of the submatrix with rows <span class="process-math">\(i,j\)</span> and columns <span class="process-math">\(k,l\text{.}\)</span> We find<div class="displaymath process-math">
 \begin{equation*}
 \begin{align*} x_{11} \det(X) = &amp; \, x_{11}x_{31} \Delta_{\substack{1|2 \\2 |3}} - x_{11}x_{32} \Delta_{\substack{1|1 \\2 |3}} + x_{11}x_{33} \Delta_{\substack{1|1 \\2 |2}} \\
 =&amp; \, (x_{11}x_{31} \Delta_{\substack{1|2 \\2 |3}} - x_{11}x_{32} \Delta_{\substack{1|1 \\2 |3}} + x_{11}x_{33} \Delta_{\substack{1|1 \\2 |2}} ) \\
@@ -929,10 +945,10 @@ I_{P} = (Q_1)_{P} \cap \cdots \cap (Q_t)_{P}
 \end{align*}
 \end{equation*}
 </div>Note that in the second row, we subtracted the Laplace expansion of the determinant of the matrix with row 3 replaced by another copy of row 1. That is, we subtracted zero.</div></li>
-</ol></div></article><article class="remark remark-like" id="remark-55"><h3 class="heading">
+</ol></div></article><article class="remark remark-like" id="remark-48"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">6.75</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-617">While we will not discuss symbolic powers in detail, they are ubiquitous in commutative algebra. They show up as tools to prove various important theorems of different flavors, and they are also interesting objects in their own right. In particular, symbolic powers can be interpreted from a geometric perspective, via the Zariski-Nagata Theorem. Roughly, this theorem says that when we consider symbolic powers of prime ideals over <span class="process-math">\(\mathbb{C}[x_1, \ldots, x_d]\text{,}\)</span> the polynomials in <span class="process-math">\(P^{(n)}\)</span> are precisely the polynomials that vanish  on the variety corresponding to <span class="process-math">\(P\text{.}\)</span> This result can be made sense of more generally, for any radical ideal in <span class="process-math">\(\mathbb{C}[x_1, \ldots, x_d]\)</span> over any perfect field <span class="process-math">\(k\text{,}\)</span> and even when <span class="process-math">\(k = \mathbb{Z}\text{.}\)</span>
+<div class="para" id="p-648">While we will not discuss symbolic powers in detail, they are ubiquitous in commutative algebra. They show up as tools to prove various important theorems of different flavors, and they are also interesting objects in their own right. In particular, symbolic powers can be interpreted from a geometric perspective, via the Zariski-Nagata Theorem. Roughly, this theorem says that when we consider symbolic powers of prime ideals over <span class="process-math">\(\mathbb{C}[x_1, \ldots, x_d]\text{,}\)</span> the polynomials in <span class="process-math">\(P^{(n)}\)</span> are precisely the polynomials that vanish  on the variety corresponding to <span class="process-math">\(P\text{.}\)</span> This result can be made sense of more generally, for any radical ideal in <span class="process-math">\(\mathbb{C}[x_1, \ldots, x_d]\)</span> over any perfect field <span class="process-math">\(k\text{,}\)</span> and even when <span class="process-math">\(k = \mathbb{Z}\text{.}\)</span>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-ass-primes.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-krull-intersection.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

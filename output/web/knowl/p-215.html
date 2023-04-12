@@ -13,26 +13,20 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">
-<span class="process-math">\(\Rightarrow\)</span> (b): Let <span class="process-math">\(f_1, \ldots, f_n\)</span> be homogeneous generators for <span class="process-math">\(I\text{.}\)</span> If <span class="process-math">\(f\in I\text{,}\)</span> we can write <span class="process-math">\(f\)</span> as</div>
+<div class="para">Consider the group with two elements <span class="process-math">\(G=\{e,g\}\text{.}\)</span> To define an action of <span class="process-math">\(G\)</span> on <span class="process-math">\(R=k[x]\text{,}\)</span> we need only to define <span class="process-math">\(g \cdot x\text{,}\)</span> since <span class="process-math">\(e\)</span> is the identity and <span class="process-math">\(g\)</span> acts linearly. Consider the action of <span class="process-math">\(G\)</span> on <span class="process-math">\(R=k[x]\)</span> given by <span class="process-math">\(g \cdot x = -x\text{,}\)</span> so <span class="process-math">\(g \cdot f(x) = f(-x)\text{.}\)</span> Suppose that the characteristic of <span class="process-math">\(k\)</span> is not 2, so <span class="process-math">\(-1 \neq 1\text{.}\)</span> Write <span class="process-math">\(f= a_n x^n + a_{n-1} x^{n-1} + \cdots + a_0\text{.}\)</span> We have <span class="process-math">\(g \cdot x^i=(-x)^i = (-1)^i x^i\text{,}\)</span> so</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f = r_1 f_1 + \cdots + r_n f_n.
+g\cdot f = (-1)^n a_n x^n+ (-1)^{n-1} a_{n-1} x^{n-1} +  \cdots  + a_0,
 \end{equation*}
 </div>
-<div class="para">We can also write each <span class="process-math">\(r_i\)</span> as a sum of its components, say <span class="process-math">\(r_i = [r_i]_{d_{i,1}} + \cdots + [r_i]_{d_{i,m_i}}\text{.}\)</span> Then, after substituting and collecting,</div>
+<div class="para">which differs from <span class="process-math">\(f\)</span> unless for each odd <span class="process-math">\(i\text{,}\)</span> <span class="process-math">\(a_i=0\text{.}\)</span> That is, [ R^G = { f R  |  }.] Any such <span class="process-math">\(f\)</span> is a polynomial in <span class="process-math">\(x^2\text{,}\)</span> so we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f= \sum_{d} ( [r_1]_{d-|f_1|} f_1 + \cdots +   [r_n]_{d-|f_n|} f_n)
+R^G = k[x^2].
 \end{equation*}
 </div>
-<div class="para">expresses <span class="process-math">\(f\)</span> as a sum of homogeneous elements of different degrees, so</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f_d =  [r_1]_{d-|f_1|} f_1 + \cdots +   [r_n]_{d-|f_n|} f_n \in I.
-\end{equation*}
+<div class="para">In particular, <span class="process-math">\(R^G\)</span> is a finitely generated <span class="process-math">\(k\)</span>-algebra.</div>
 </div>
-</div>
-<span class="incontext"><a href="sec-graded-rings.html#p-215" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-inv-rings-1.html#p-215" class="internal">in-context</a></span>
 </body>
 </html>
