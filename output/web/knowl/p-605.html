@@ -12,15 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">Associated Primes Localize in Noetherian Rings ##### Statement Let <span class="process-math">\(R\)</span> be a noetherian ring, <span class="process-math">\(W\)</span> a multiplicative set, and <span class="process-math">\(M\)</span> a module. Then</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\Ass_{W^{-1}R}(W^{-1}M)=\{W^{-1}P  \ | \ P \in \Ass_R(M), \, P \cap W = \varnothing\}.
-\end{equation*}
-</div>
-<div class="para">##### <em class="emphasis">Proof.</em> Given <span class="process-math">\(P \in \Ass_R(M)\)</span> such that <span class="process-math">\(P \cap W= \varnothing\text{,}\)</span> <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Localization Ideals|Lemma]] says that <span class="process-math">\(W^{-1}P\)</span> is a prime in <span class="process-math">\(W^{-1}R\text{.}\)</span> Then <span class="process-math">\(W^{-1}R /W^{-1}P \cong W^{-1}(R/P) \hookrightarrow W^{-1}M\)</span> by exactness, so <span class="process-math">\(W^{-1}P\)</span> is an associated prime of <span class="process-math">\(W^{-1} M\text{.}\)</span>
-</div>
+<div class="para">First, observe that any element of <span class="process-math">\(R\)</span> can be written as a unit times <span class="process-math">\(x^{m/n}\)</span> for some <span class="process-math">\(m,n\text{,}\)</span> so any associated prime of <span class="process-math">\(R/(x)\)</span> must be the annihilator of <span class="process-math">\(x^{m/n}+(x)\)</span> for some <span class="process-math">\(m \leq n\text{.}\)</span> However, we claim that these are never prime. Indeed, we have <span class="process-math">\(\ann(x^{m/n}+(x))=(x^{1-m/n})\text{,}\)</span> which is not prime since <span class="process-math">\((x^{1/2-m/2n})^2 \in (x^{1-m/n})\)</span> but <span class="process-math">\(x^{1/2-m/2n} \notin (x^{1-m/n})\text{.}\)</span>
 </div>
 <span class="incontext"><a href="sec-ass-primes.html#p-605" class="internal">in-context</a></span>
 </body>

@@ -13,13 +13,14 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">For any <span class="process-math">\(n\text{,}\)</span> we have a chain of primes</div>
+<div class="para">Let <span class="process-math">\(R = k[x_{11},x_{21},x_{22}, x_{31}, x_{32}, x_{33},\ldots]\)</span> be a polynomial ring in infinitely many variables, which we are thinking of as arranged in an infinite triangle. <span class="process-math">\(R\)</span> is clearly infinite-dimensional and not noetherian. Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(x_{n1}) \subsetneq (x_{n1},x_{n2}) \subsetneq \cdots \subsetneq (x_{n1},\ldots, x_{nn})
+W = R \setminus \big((x_{11}) \cup (x_{21},x_{22}) \cup (x_{31},x_{32},x_{33})  \cup \cdots \big) = \bigcap_{n \geqslant 1} \big(R \setminus (x_{n1},\dots,x_{nn})\big)
 \end{equation*}
 </div>
-<div class="para">in <span class="process-math">\(R\text{.}\)</span> As these primes are all contained in <span class="process-math">\((x_{n1},\ldots, x_{nn})\text{,}\)</span> none of these intersects <span class="process-math">\(W\text{,}\)</span> so the expansion to <span class="process-math">\(S\)</span> of the chain above yields a proper chain of primes in <span class="process-math">\(S\text{.}\)</span> It follows that <span class="process-math">\(\dim(S) \geqslant n\)</span> for all <span class="process-math">\(n \geqslant 1\text{,}\)</span> so <span class="process-math">\(S\)</span> is infinite-dimensional.</div>
+<div class="para">and <span class="process-math">\(S=W^{-1}R\text{.}\)</span> Note that <span class="process-math">\(W\)</span> is an intersection of multiplicatively closed subsets, so this is a valid localization of <span class="process-math">\(R\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="sec-dim-height.html#p-687" class="internal">in-context</a></span>
 </body>

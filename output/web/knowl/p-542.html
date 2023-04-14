@@ -12,7 +12,21 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Let <span class="process-math">\(I\)</span> be an ideal in <span class="process-math">\(R\text{.}\)</span> If <span class="process-math">\(I = P_1 \cap \cdots \cap P_n\)</span> where each <span class="process-math">\(P_i\)</span> is prime and <span class="process-math">\(P_i \not\subseteq P_j\)</span> for each <span class="process-math">\(i \neq j\text{,}\)</span> then <span class="process-math">\(\Min(I)=\{ P_1, \ldots, P_n\}\text{.}\)</span> Moreover, <span class="process-math">\(I\)</span> must be radical.</div>
+<div class="para logical">
+<div class="para">Suppose that we can delete <span class="process-math">\(P_i\text{,}\)</span> meaning that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bigcap_{j=1}^n P_j = \bigcap_{j \neq i} P_j.
+\end{equation*}
+</div>
+<div class="para">Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_i \supseteq \bigcap_{j=1}^n P_j = \bigcap_{j \neq i} P_j \supseteq \prod_{j \neq i} P_j.
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(P_i\)</span> is prime, this implies that <span class="process-math">\(P_i \supseteq P_j\)</span> for some <span class="process-math">\(j \neq i\text{,}\)</span> but this contradicts the assumption that the primes are incomparable.</div>
+</div>
 <span class="incontext"><a href="sec-min-support.html#p-542" class="internal">in-context</a></span>
 </body>
 </html>

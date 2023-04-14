@@ -12,7 +12,28 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">The dimension of the polynomial ring <span class="process-math">\(k[x_1,\dots,x_d]\)</span> is <span class="process-math">\(d\text{.}\)</span>
+<div class="para logical">
+<div class="para">When <span class="process-math">\(d=0\text{,}\)</span> <span class="process-math">\(R\)</span> is a domain that is integral over a field, hence <span class="process-math">\(R\)</span> is a field by . Now suppose the statement holds for <span class="process-math">\(d-1\text{,}\)</span> and let <span class="process-math">\(R\)</span> be a finitely generated domain over some field <span class="process-math">\(k\)</span> with Noether normalization <span class="process-math">\(A = k[z_1, \ldots, z_d]\text{.}\)</span> Consider a maximal ideal <span class="process-math">\(\fm\)</span> of <span class="process-math">\(R\)</span> and a saturated chain</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0 \subsetneq Q_1 \subsetneq \cdots \subsetneq  Q_s = \fm.
+\end{equation*}
+</div>
+<div class="para">By , its contraction to <span class="process-math">\(A=k[z_1,\dots,z_d]\)</span> is a chain of <span class="process-math">\(s\)</span> distinct primes in <span class="process-math">\(R\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0 \subsetneq P_1 :=  Q_1 \cap A \subsetneq \cdots \subsetneq P_s :=  Q_s \cap A.
+\end{equation*}
+</div>
+<div class="para">Our assumption that the original chain is saturated implies that <span class="process-math">\(Q_1\)</span> has height 1. Suppose that <span class="process-math">\(P_1\)</span> had height <span class="process-math">\(2\)</span> or more. By , we would be able to construct a chain up to $Q_1 $ of length <span class="process-math">\(2\)</span> or more, but <span class="process-math">\(Q_1\)</span> has height <span class="process-math">\(1\text{.}\)</span> Thus <span class="process-math">\(P_1\)</span> has height <span class="process-math">\(1\text{.}\)</span> Since <span class="process-math">\(k[z_1,\dots,z_d]\)</span> is a UFD, <span class="process-math">\(P_1=(f)\)</span> for some prime element <span class="process-math">\(f\text{,}\)</span> by . After a change of variables, as in , we can assume that <span class="process-math">\(f\)</span> is monic in <span class="process-math">\(z_d\)</span> with coefficients in <span class="process-math">\(k[z_1,\dots,z_{d-1}]\text{.}\)</span> So <span class="process-math">\(k[z_1,\dots,z_{d-1}] \subseteq A/(f) \subseteq R/Q_1\)</span> are module-finite extensions, and the induction hypothesis applies to <span class="process-math">\(R/Q_1\text{.}\)</span> Now</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0 = Q_1/Q_1 \subsetneq Q_2/Q_1 \subsetneq \cdots\subsetneq Q_s/Q_1 = \fm/Q_1
+\end{equation*}
+</div>
+<div class="para">is a saturated chain in the domain <span class="process-math">\(R/Q_1\)</span> going up to the maximal ideal <span class="process-math">\(\fm/Q_1\text{.}\)</span> The induction hypothesis then says that this chain has length <span class="process-math">\(d-1\text{,}\)</span> so <span class="process-math">\(k-1=d-1\text{,}\)</span> and <span class="process-math">\(k=d\text{.}\)</span>
+</div>
 </div>
 <span class="incontext"><a href="sec-noether-normalizations.html#p-780" class="internal">in-context</a></span>
 </body>

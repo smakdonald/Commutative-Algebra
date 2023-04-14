@@ -13,13 +13,21 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">In <span class="process-math">\(k[x,y,z]\text{,}\)</span> the radical ideal <span class="process-math">\(I = (xy,xz,yz)\)</span> corresponds to the variety <span class="process-math">\(X\)</span> given by the union of the three coordinate axes. Each of these axes is a variety in its own right, corresponding to the ideals <span class="process-math">\((x,y)\text{,}\)</span> <span class="process-math">\((x,z)\)</span> and <span class="process-math">\((y,z)\text{.}\)</span> The three axes are the irreducible components of <span class="process-math">\(X\text{.}\)</span> And indeed, <span class="process-math">\((x,y)\text{,}\)</span> <span class="process-math">\((x,z)\)</span> and <span class="process-math">\((y,z)\)</span> are the three minimal primes over <span class="process-math">\(I\text{,}\)</span> and</div>
+<div class="para">Now assume that <span class="process-math">\(\mathcal{I}(X)\)</span> is not prime, and fix <span class="process-math">\(f, g \notin \mathcal{I}(X)\)</span> with <span class="process-math">\(fg \in \mathcal{I}(X)\text{.}\)</span> Then</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(xy,xz,yz) = (x,y) \cap (x,z) \cap (y,z).
+X \subseteq \mathcal{Z}(fg) = \mathcal{Z}(f) \cup \mathcal{Z}(g).
 \end{equation*}
 </div>
-<div class="para"># Local Rings</div>
+<div class="para">The intersections</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_f = \mathcal{Z}(f) \cap X = \mathcal{Z}(\mathcal{I}(X) + (f))
+\quad \textrm{ and } \quad
+V_g = \mathcal{Z}(g) \cap X = \mathcal{Z}(\mathcal{I}(X) + (g))
+\end{equation*}
+</div>
+<div class="para">are varieties, and <span class="process-math">\(X = V_f \cup V_g\text{.}\)</span> Finally, since <span class="process-math">\(f \notin \mathcal{I}(X)\text{,}\)</span> then <span class="process-math">\(X \not\subseteq V_f\text{.}\)</span> Similarly, <span class="process-math">\(X \not\subseteq V_g\text{.}\)</span> Thus <span class="process-math">\(X\)</span> is reducible.</div>
 </div>
 <span class="incontext"><a href="sec-nullstell.html#p-436" class="internal">in-context</a></span>
 </body>

@@ -13,13 +13,15 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(M\)</span> be a module, and <span class="process-math">\(N_1,\dots,N_t\)</span> be a finite collection of submodules. Let <span class="process-math">\(W\)</span> be a multiplicative set. Then,</div>
-<div class="displaymath process-math">
+<div class="para">Given a submodule <span class="process-math">\(N\)</span> of <span class="process-math">\(M\text{,}\)</span> we can apply the <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Localization is Exact|Theorem]] to the short exact sequence</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
-W^{-1} (N_1 \cap \cdots \cap N_t) = W^{-1} N_1 \cap \cdots \cap W^{-1} N_t \subseteq W^{-1}M.
+\begin{CD}
+0@&gt;&gt;&gt;N@&gt;&gt;&gt;M@&gt;&gt;&gt;M/N@&gt;&gt;&gt;0
+\end{CD}
 \end{equation*}
 </div>
-<div class="para">##### <em class="emphasis">Proof.</em> The containment <span class="process-math">\(W^{-1} (N_1 \cap \cdots \cap N_t) \subseteq W^{-1} N_1 \cap \cdots \cap W^{-1} N_t\)</span> is clear. Elements of <span class="process-math">\(W^{-1} N_1 \cap \cdots \cap W^{-1} N_t\)</span> are of the form <span class="process-math">\(\frac{n_1}{w_1}= \cdots = \frac{n_t}{w_t}\text{;}\)</span> we can find a common denominator to realize this in <span class="process-math">\(W^{-1} (N_1 \cap \cdots \cap N_t)\text{.}\)</span>
+<div class="para">and conclude that that <span class="process-math">\(W^{-1}(M/N) \cong W^{-1}M / W^{-1}N\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="sec-localization.html#p-506" class="internal">in-context</a></span>
