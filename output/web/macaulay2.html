@@ -75,7 +75,7 @@ window.MathJax = {
 <div id="searchempty"><span>No results.</span></div>
 <ol id="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -177,7 +177,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="backmatter.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="backmatter.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec-getting-started.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="sec-modules.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="backmatter.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec-getting-started.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\ann{\operatorname{ann}}
 \newcommand{\Ass}{\operatorname{Ass}}
@@ -459,9 +459,16 @@ window.MathJax = {
 \)</span></div>
 <div class="ptx-page">
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
-<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-commutative-algebra-i.html" class="internal"><span class="codenumber">I</span> <span class="title">Commutative Algebra</span></a></div>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Warning!</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="part-commutative-algebra.html" class="internal"><span class="codenumber">I</span> <span class="title">Commutative Algebra</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-finiteness-conditions.html" class="internal"><span class="codenumber">1</span> <span class="title">Finiteness Conditions</span></a></div>
@@ -543,22 +550,42 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural">
-<li class="active">
-<div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-getting-started.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Getting Started</span></a></div></li></ul>
+<li>
+<div class="toc-item"><a href="intro.html" class="internal"><span class="codenumber">A</span> <span class="title">Setting the Stage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-rings-ideals.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Rings and Ideals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-modules.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Modules</span></a></div></li>
+</ul>
 </li>
-<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
-<li><div class="toc-item"><a href="appendix-list-results.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Results</span></a></div></li>
+<li class="active">
+<div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">B</span> <span class="title">Macaulay2</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-getting-started.html" class="internal"><span class="codenumber">B.1</span> <span class="title">Getting Started</span></a></div></li>
+<li><div class="toc-item"><a href="sec-asking-for-help.html" class="internal"><span class="codenumber">B.2</span> <span class="title">Asking Macaulay2 for Help</span></a></div></li>
+<li><div class="toc-item"><a href="sec-basic-commands.html" class="internal"><span class="codenumber">B.3</span> <span class="title">Basic Commands</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-results.html" class="internal"><span class="codenumber">D</span> <span class="title">List of Results</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
 <li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="appendix" id="macaulay2"><h2 class="heading">
-<span class="type">Appendix</span> <span class="codenumber">A</span> <span class="title">Macaulay2</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="appendix" id="macaulay2"><h2 class="heading">
+<span class="type">Appendix</span> <span class="codenumber">B</span> <span class="title">Macaulay2</span>
 </h2>
-<section class="introduction" id="introduction-4"><div class="para" id="p-845">There are several computer algebra systems dedicated to algebraic geometry and commutative algebra computations, such as Singular (more popular among algebraic geometers), CoCoA (which is more popular with european commutative algebraists, having originated in Genova, Italy), and Macaulay2. There are many computations you could run on any of these systems (and others), but we will focus on Macaulay2 since it's the most popular computer algebra system among US based commutative algebraists.</div> <div class="para" id="p-846">Macaulay2, as the name suggests, is a successor of a previous computer algebra system named Macaulay. Macaulay was first developed in 1983 by Dave Bayer and Mike Stillman, and while some still use it today, the system has not been updated since its final release in 2000. In 1993, Daniel Grayson and Mike Stillman released the first version of Macaulay2, and the current stable version if Macaulay2 1.16.</div> <div class="para" id="p-847">Macaulay2, or M2 for short, is an open-source project, with many contributors writing packages that are then released with the newest Macaulay2 version. Journals like the Journal of Software for Algebra and Geometry publish peer-refereed short articles that describe and explain the functionality of new packages, with the package source code being peer reviewed as well.</div> <div class="para" id="p-848">The National Science Foundation has funded Macaulay2 since 1992. Besides funding the project through direct grants, the NSF has also funded several Macaulay2 workshops — conferences where Macaulay2 package developers gather to work on new packages, and to share updates to the Macaulay2 core code and recent packages.</div></section><nav class="summary-links"><ul><li><a href="sec-getting-started.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Getting Started</span></a></li></ul></nav></section></div>
+<section class="introduction" id="introduction-5"><div class="para" id="p-952">There are several computer algebra systems dedicated to algebraic geometry and commutative algebra computations, such as <a class="external" href="https://www.singular.uni-kl.de/" target="_blank">Singular</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-6" id="fn-6"><sup> 1 </sup></a> (more popular among algebraic geometers), <a class="external" href="https://cocoa.dima.unige.it/cocoa/" target="_blank">CoCoA</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-7" id="fn-7"><sup> 2 </sup></a> (which is more popular with european commutative algebraists, having originated in Genova, Italy), and <a class="external" href="https://faculty.math.illinois.edu/Macaulay2/" target="_blank">Macaulay2</a><a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-8" id="fn-8"><sup> 3 </sup></a>. There are many computations you could run on any of these systems (and others), but we will focus on Macaulay2 since it's the most popular computer algebra system among US based commutative algebraists.</div> <div class="para" id="p-953">Macaulay2, as the name suggests, is a successor of a previous computer algebra system named Macaulay. Macaulay was first developed in 1983 by Dave Bayer and Mike Stillman, and while some still use it today, the system has not been updated since its final release in 2000. In 1993, Daniel Grayson and Mike Stillman released the first version of Macaulay2, and the current stable version if Macaulay2 1.16.</div> <div class="para" id="p-954">Macaulay2, or M2 for short, is an open-source project, with many contributors writing packages that are then released with the newest Macaulay2 version. Journals like the Journal of Software for Algebra and Geometry publish peer-refereed short articles that describe and explain the functionality of new packages, with the package source code being peer reviewed as well.</div> <div class="para" id="p-955">The National Science Foundation has funded Macaulay2 since 1992. Besides funding the project through direct grants, the NSF has also funded several Macaulay2 workshops — conferences where Macaulay2 package developers gather to work on new packages, and to share updates to the Macaulay2 core code and recent packages.</div></section><nav class="summary-links"><ul>
+<li><a href="sec-getting-started.html" class="internal"><span class="codenumber">B.1</span> <span class="title">Getting Started</span></a></li>
+<li><a href="sec-asking-for-help.html" class="internal"><span class="codenumber">B.2</span> <span class="title">Asking Macaulay2 for Help</span></a></li>
+<li><a href="sec-basic-commands.html" class="internal"><span class="codenumber">B.3</span> <span class="title">Basic Commands</span></a></li>
+</ul></nav></section><div class="hidden-content tex2jax_ignore" id="hk-fn-6"><div class="fn"><code class="code-inline tex2jax_ignore">https://www.singular.uni-kl.de/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-7"><div class="fn"><code class="code-inline tex2jax_ignore">https://cocoa.dima.unige.it/cocoa/</code></div></div>
+<div class="hidden-content tex2jax_ignore" id="hk-fn-8"><div class="fn"><code class="code-inline tex2jax_ignore">https://faculty.math.illinois.edu/Macaulay2/</code></div></div>
+</div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="backmatter.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-getting-started.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="sec-modules.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-getting-started.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer">

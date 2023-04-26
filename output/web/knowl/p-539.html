@@ -13,15 +13,15 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(S=\{ \text{ideals} \ I \subseteq R \ | \ \Min(I) \ \text{is infinite} \}\text{,}\)</span> and suppose, to obtain a contradiction, that <span class="process-math">\(S\neq \es\text{.}\)</span> Since <span class="process-math">\(R\)</span> is noetherian, <span class="process-math">\(S\)</span> has a maximal element <span class="process-math">\(J\text{.}\)</span> If <span class="process-math">\(J\)</span> was a prime ideal, then <span class="process-math">\(\Min(J) = \{ J \}\)</span> would be finite, by , so <span class="process-math">\(J\)</span> is not prime. However, <span class="process-math">\(\Min(J)=\Min(\sqrt{J})\text{,}\)</span> and thus <span class="process-math">\(\sqrt{J} \supseteq J\)</span> is also in <span class="process-math">\(S\text{,}\)</span> so we conclude that <span class="process-math">\(J\)</span> is radical. Since <span class="process-math">\(J\)</span> is not prime, we can find some <span class="process-math">\(a, b \notin J\)</span> with <span class="process-math">\(ab \in J\text{.}\)</span> Then <span class="process-math">\(J \subsetneq J + (a) \subseteq \sqrt{J + (a)}\)</span> and <span class="process-math">\(J \subsetneq \sqrt{J + (b)}\text{.}\)</span> Since <span class="process-math">\(J\)</span> is maximal in <span class="process-math">\(S\text{,}\)</span> we conclude that <span class="process-math">\(\sqrt{J + (a)}\)</span> and <span class="process-math">\(\sqrt{J + (b)}\)</span> have finitely many minimal primes, so we can write</div>
+<div class="para">Let <span class="process-math">\((R,\fm,k)\)</span> be a local ring, and <span class="process-math">\(M\)</span> be a finitely generated module. For <span class="process-math">\(m_1,\dots,m_s\in M\text{,}\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sqrt{J + (a)} = P_1 \cap \cdots \cap P_t \textrm{ and } \sqrt{J + (b)} = P_{t+1} \cap \cdots \cap P_s
+m_1,\dots, m_s \text{ generate } M \Longleftrightarrow \overline{m_1},\dots,\overline{m_s} \text{ generate } M/\fm M.
 \end{equation*}
 </div>
-<div class="para">for some prime ideals <span class="process-math">\(P_i\text{.}\)</span>
+<div class="para">Thus, any generating set for <span class="process-math">\(M\)</span> consists of at least <span class="process-math">\(\dim_k (M/\fm M)\)</span> elements.</div>
 </div>
-</div>
-<span class="incontext"><a href="sec-min-support.html#p-539" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec-nak.html#p-539" class="internal">in-context</a></span>
 </body>
 </html>

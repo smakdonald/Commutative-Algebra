@@ -10,14 +10,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
-<div class="para">Since <span class="process-math">\(W\)</span> is a multiplicatively closed subset of <span class="process-math">\(R\text{,}\)</span> its image in <span class="process-math">\(S\)</span> is also multiplicatively closed. Given <span class="process-math">\(x\in S\)</span> and <span class="process-math">\(w\in W\text{,}\)</span> then we have equations of the form</div>
+<body class="ignore-math"><article class="hiddenproof"><div class="para">We will prove some of these and leave the rest as an exercise.</div> <div class="para">A prime has height <span class="process-math">\(0\)</span> if and only if it contains no other prime, which is equivalent being a minimal prime of <span class="process-math">\(R\text{.}\)</span>
+</div> <div class="para">If <span class="process-math">\(I\)</span> is contained in a minimal prime <span class="process-math">\(Q\)</span> of <span class="process-math">\(R\text{,}\)</span> then <span class="process-math">\(\ht(Q)=0\)</span> by (1), so <span class="process-math">\(\ht(I)=0\)</span> by definition. Conversely, if <span class="process-math">\(\ht(I)=0\text{,}\)</span> by definition, there is a minimal prime of <span class="process-math">\(I\)</span> of height <span class="process-math">\(0\text{,}\)</span> so some minimal prime of <span class="process-math">\(I\)</span> is a minimal prime of <span class="process-math">\(R\text{,}\)</span> so <span class="process-math">\(I\)</span> is contained in a minimal prime of <span class="process-math">\(R\text{.}\)</span>
+</div> <div class="para logical">
+<div class="para">It suffices to show that if <span class="process-math">\(\dim(R/P) \geqslant a\)</span> and <span class="process-math">\(\ht(P) \geqslant b\)</span> then <span class="process-math">\(\dim(R) \geqslant a+b\text{.}\)</span> By definition, <span class="process-math">\(\ht(P) \geqslant b\)</span> means that there is a chain of primes</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x^n + r_1 x^{n-1} + \cdots + r_n = 0 \implies \left( \frac{x}{w} \right)^n + \frac{r_1}{w} \left( \frac{x}{w} \right)^{n-1} + \cdots + \frac{r_n}{w^n}  =0.
+Q_0 \subsetneq Q_1 \subsetneq \cdots \subsetneq Q_b = P.
 \end{equation*}
 </div>
-<div class="para">Thus <span class="process-math">\(\frac{x}{w}\)</span> is integral over <span class="process-math">\(W^{-1}S\text{,}\)</span> and <span class="process-math">\(S\)</span> is integral over <span class="process-math">\(R\text{.}\)</span>
+<div class="para">By (5), <span class="process-math">\(\dim(R/P) \geqslant a\)</span> means that there is a chain of primes</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathfrak{a}_0 \subsetneq \mathfrak{a}_1 \subsetneq \cdots \subsetneq \mathfrak{a}_a
+\end{equation*}
 </div>
-</div></article></body>
+<div class="para">with <span class="process-math">\(\mathfrak{a}_0 \supseteq P\text{.}\)</span> We can assume without loss of generality that <span class="process-math">\(\mathfrak{a}_0 = P\text{,}\)</span> since if not, we can add it to the bottom of the chain. Putting these chains together, we get a chain of length <span class="process-math">\(a+b\)</span> in <span class="process-math">\(\Spec(R)\text{,}\)</span> so <span class="process-math">\(\dim(R) \geqslant a+b\text{.}\)</span>
+</div>
+</div> <div class="para">Let <span class="process-math">\(\dim(R/I) \geqslant a\)</span> and <span class="process-math">\(\ht(I) \geqslant b\text{.}\)</span> The inequality <span class="process-math">\(\ht(I) \geqslant b\)</span> means that for every minimal prime <span class="process-math">\(P\)</span> of <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(\ht(P) \geqslant b\text{.}\)</span> The inequality <span class="process-math">\(\dim(R/I) \geqslant a\)</span> implies that there exists a minimal prime of <span class="process-math">\(P\)</span> of <span class="process-math">\(I\)</span> such that <span class="process-math">\(\dim(R/P) \geqslant a\text{.}\)</span> For such a minimal prime as in the latter statement, using (5), we get the desired conclusion.</div></article></body>
 </html>

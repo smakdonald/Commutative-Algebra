@@ -12,6 +12,23 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Proof</span></h3>
-<div class="para">If <span class="process-math">\(I\subseteq R\)</span> is a proper ideal, then by  there is a maximal ideal <span class="process-math">\(\fm \supseteq I\text{,}\)</span> so <span class="process-math">\(\mathcal{Z}(\fm)\subseteq \mathcal{Z}(I)\text{.}\)</span> Since <span class="process-math">\(\fm=(x_1-a_1,\dots,x_d-a_d)\)</span> for some <span class="process-math">\(a_i \in k\text{,}\)</span> <span class="process-math">\(\mathcal{Z}(\fm)\)</span> is a point, and thus nonempty.</div></article><span class="incontext"><a href="sec-nullstell.html#proof-48" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">For (1), it is clear that <span class="process-math">\(\cI(\varnothing) = R\text{.}\)</span> Now assume <span class="process-math">\(k\)</span> is infinite. We show by induction on <span class="process-math">\(n\)</span> that any nonzero polynomial in <span class="process-math">\(k[x_1,\dots,x_n]\)</span> is nonzero at some point in <span class="process-math">\(\A^n_k\text{.}\)</span> The case <span class="process-math">\(n=1\)</span> is standard: a polynomial in <span class="process-math">\(k[x]\)</span> of degree <span class="process-math">\(d\)</span> can have at most <span class="process-math">\(d\)</span> roots — in particular, it cannot have infinitely many roots. Let <span class="process-math">\(n \geqslant 2\)</span> and let <span class="process-math">\(f(x_1,\dots,x_n)\in k[x_1,\dots,x_n]\)</span> be a nonzero polynomial. If <span class="process-math">\(f\)</span> is a nonzero constant, it is nonzero at any point. Otherwise, we can assume that <span class="process-math">\(f\)</span> nontrivally involves some variable, say <span class="process-math">\(x_n\text{.}\)</span> Write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x_1,\dots,x_n) = f_d(x_1,\dots,x_{n-1}) x_n^d + \cdots + f_0(x_1,\dots,x_{n-1}).
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(f\)</span> is identically zero, then for every <span class="process-math">\((a_1,\dots,a_{n-1})\in \A^{n-1}_k\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f_d(a_1,\dots,a_{n-1}) x_n^d + \cdots + f_0(a_1,\dots,a_{n-1})
+\end{equation*}
+</div>
+<div class="para">is a polynomial in one variable that is identically zero, so it is the zero polynomial. Thus each <span class="process-math">\(f_i(a_1,\dots,a_{n-1})\)</span> is identically zero. Since this holds for all <span class="process-math">\((a_1,\dots,a_{n-1})\in \A^{n-1}_k\text{,}\)</span> by the induction hypothesis we conclude that each <span class="process-math">\(f_i\)</span> is the zero polynomial. Therefore, <span class="process-math">\(f(x_1,\dots,x_n)\)</span> is the zero polynomial, as required.</div>
+</div> <div class="para logical"><ol class="decimal"><li><div class="para">is clear from the definition of <span class="process-math">\(\cI\text{.}\)</span>
+</div></li></ol></div> <div class="para">For (3), note that <span class="process-math">\(f,g\in \cI(X)\)</span> and <span class="process-math">\(r\in R\)</span> implies <span class="process-math">\(X\subseteq \cZ(f,g)\)</span> implies <span class="process-math">\(X \subseteq \cZ(rf+g)\)</span> implies <span class="process-math">\(rf+g \in \cI(X)\text{,}\)</span> so <span class="process-math">\(\cI(X)\)</span> is an ideal. If <span class="process-math">\(f^t\in \cI(X)\text{,}\)</span> then <span class="process-math">\(f(a_1,\dots,a_n)^t=0\)</span> for all <span class="process-math">\((a_1,\dots,a_n)\in X\text{,}\)</span> so <span class="process-math">\(f(a_1,\dots,a_n)=0\)</span> for all <span class="process-math">\((a_1,\dots,a_n)\in X\text{,}\)</span> and <span class="process-math">\(f\in \cI(X)\text{.}\)</span>
+</div></article><span class="incontext"><a href="sec-varieties.html#proof-48" class="internal">in-context</a></span>
 </body>
 </html>

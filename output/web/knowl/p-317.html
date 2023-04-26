@@ -12,7 +12,22 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Let <span class="process-math">\(R\)</span> be a commutative ring with <span class="process-math">\(1\neq 0\text{,}\)</span> and let <span class="process-math">\(I\)</span> be an ideal of <span class="process-math">\(R\text{.}\)</span> 1. The ideal <span class="process-math">\(I\)</span> is maximal if and only if <span class="process-math">\(R/I\)</span> is a field. 2. The ideal <span class="process-math">\(I\)</span> is prime if and only if <span class="process-math">\(R/I\)</span> is an integral domain. 3. Every maximal ideal of <span class="process-math">\(R\)</span> is prime.</div>
-<span class="incontext"><a href="sec-prime-maximal-ideals.html#p-317" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">If <span class="process-math">\(k\)</span> is a field, <span class="process-math">\(S = k[x,y]\)</span> is noetherian by <a href="" class="xref" data-knowl="./knowl/hilbert-basis-theorem.html" title="Theorem 1.82: Hilbert's Basis Theorem">Hilbert's Basis Theorem</a> , but we claim that the subring</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/hilbert-basis-theorem.html">
+\begin{equation*}
+R = k[xy,xy^2,xy^3,\ldots]
+\end{equation*}
+</div>
+<div class="para">of <span class="process-math">\(S = k[x,y]\)</span> is not noetherian. Indeed,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/hilbert-basis-theorem.html">
+\begin{equation*}
+(xy) \subseteq (xy,xy^2) \subseteq (xy,xy^2,xy^3) \subseteq \cdots
+\end{equation*}
+</div>
+<div class="para">is an ascending chain of ideals of <span class="process-math">\(R\)</span> that does not stabilize. Notice that if we considered the same chain of ideals in <span class="process-math">\(S\text{,}\)</span> then it does stabilize, and in fact it is the constant chain <span class="process-math">\((xy)\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec-inv-rings-2.html#p-317" class="internal">in-context</a></span>
 </body>
 </html>

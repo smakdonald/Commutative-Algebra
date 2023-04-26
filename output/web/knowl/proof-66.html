@@ -13,17 +13,34 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Proof</span></h3>
 <div class="para logical">
-<div class="para">localization is exact, so for any <span class="process-math">\(P\text{,}\)</span>
-</div>
+<div class="para">Let <span class="process-math">\(S=\{ \text{ideals} \ I \subseteq R \ | \ \Min(I) \ \text{is infinite} \}\text{,}\)</span> and suppose, to obtain a contradiction, that <span class="process-math">\(S\neq \es\text{.}\)</span> Since <span class="process-math">\(R\)</span> is noetherian, <span class="process-math">\(S\)</span> has a maximal element <span class="process-math">\(J\text{.}\)</span> If <span class="process-math">\(J\)</span> was a prime ideal, then <span class="process-math">\(\Min(J) = \{ J \}\)</span> would be finite, by , so <span class="process-math">\(J\)</span> is not prime. However, <span class="process-math">\(\Min(J)=\Min(\sqrt{J})\text{,}\)</span> and thus <span class="process-math">\(\sqrt{J} \supseteq J\)</span> is also in <span class="process-math">\(S\text{,}\)</span> so we conclude that <span class="process-math">\(J\)</span> is radical. Since <span class="process-math">\(J\)</span> is not prime, we can find some <span class="process-math">\(a, b \notin J\)</span> with <span class="process-math">\(ab \in J\text{.}\)</span> Then <span class="process-math">\(J \subsetneq J + (a) \subseteq \sqrt{J + (a)}\)</span> and <span class="process-math">\(J \subsetneq \sqrt{J + (b)}\text{.}\)</span> Since <span class="process-math">\(J\)</span> is maximal in <span class="process-math">\(S\text{,}\)</span> we conclude that <span class="process-math">\(\sqrt{J + (a)}\)</span> and <span class="process-math">\(\sqrt{J + (b)}\)</span> have finitely many minimal primes, so we can write</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\begin{CD}
-0@&gt;&gt;&gt;L_{p}@&gt;&gt;&gt;M_{p}@&gt;&gt;&gt;N_{p}@&gt;&gt;&gt;0
-\end{CD}
+\sqrt{J + (a)} = P_1 \cap \cdots \cap P_t \textrm{ and } \sqrt{J + (b)} = P_{t+1} \cap \cdots \cap P_s
 \end{equation*}
 </div>
-<div class="para">is exact. If <span class="process-math">\(P \in \Supp(L) \cup \Supp(N)\text{,}\)</span> then <span class="process-math">\(L_P\)</span> or <span class="process-math">\(N_P\)</span> is nonzero, so <span class="process-math">\(M_P\)</span> must be nonzero as well. On the other hand, if <span class="process-math">\(P \notin \Supp(L) \cup \Supp(N)\text{,}\)</span> then <span class="process-math">\(L_P = N_P =0\text{,}\)</span> so <span class="process-math">\(M_P=0\text{.}\)</span>
+<div class="para">for some prime ideals <span class="process-math">\(P_i\text{.}\)</span>
 </div>
+</div> <div class="para logical">
+<div class="para">Let <span class="process-math">\(f \in \sqrt{J + (a)} \cap \sqrt{J + (b)}\text{.}\)</span> Some sufficiently high power of <span class="process-math">\(f\)</span> is in both <span class="process-math">\(J + (a)\)</span> and <span class="process-math">\(J + (b)\text{,}\)</span> so there exist <span class="process-math">\(n, m \geq 1\)</span> such that</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f^n \in J + (a) \quad \textrm{ and } \quad f^m \in J + (b).
+\end{equation*}
+</div>
+<div class="para">Thus</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+f^{n+m} \in (J + (a))(J + (b)) \subseteq J^2 + J(a) + J(b) + (\underset{\in J}{ab}) \subseteq J.
+\end{equation*}
+</div>
+<div class="para">Therefore, <span class="process-math">\(f \in \sqrt{J} = J\text{.}\)</span> This shows that</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+J = \sqrt{J + (a)} \cap \sqrt{J + (b)} = P_1\cap \cdots \cap P_t \cap P_{t+1} \cap \cdots \cap P_s.
+\end{equation*}
+</div>
+<div class="para">By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Intersection of Primes are Min Primes|Lemma]], we see that <span class="process-math">\(\Min(J)\)</span> must be a subset of <span class="process-math">\(\{P_1,\dots,P_s\}\text{,}\)</span> so it is finite.</div>
 </div></article><span class="incontext"><a href="sec-min-support.html#proof-66" class="internal">in-context</a></span>
 </body>
 </html>

@@ -75,7 +75,7 @@ window.MathJax = {
 <div id="searchempty"><span>No results.</span></div>
 <ol id="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -459,9 +459,16 @@ window.MathJax = {
 \)</span></div>
 <div class="ptx-page">
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
-<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-commutative-algebra-i.html" class="internal"><span class="codenumber">I</span> <span class="title">Commutative Algebra</span></a></div>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Warning!</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="part-commutative-algebra.html" class="internal"><span class="codenumber">I</span> <span class="title">Commutative Algebra</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-finiteness-conditions.html" class="internal"><span class="codenumber">1</span> <span class="title">Finiteness Conditions</span></a></div>
@@ -544,11 +551,23 @@ window.MathJax = {
 <div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-getting-started.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Getting Started</span></a></div></li></ul>
+<div class="toc-item"><a href="intro.html" class="internal"><span class="codenumber">A</span> <span class="title">Setting the Stage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-rings-ideals.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Rings and Ideals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-modules.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Modules</span></a></div></li>
+</ul>
 </li>
-<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
-<li><div class="toc-item"><a href="appendix-list-results.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Results</span></a></div></li>
+<li>
+<div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">B</span> <span class="title">Macaulay2</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-getting-started.html" class="internal"><span class="codenumber">B.1</span> <span class="title">Getting Started</span></a></div></li>
+<li><div class="toc-item"><a href="sec-asking-for-help.html" class="internal"><span class="codenumber">B.2</span> <span class="title">Asking Macaulay2 for Help</span></a></div></li>
+<li><div class="toc-item"><a href="sec-basic-commands.html" class="internal"><span class="codenumber">B.3</span> <span class="title">Basic Commands</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-results.html" class="internal"><span class="codenumber">D</span> <span class="title">List of Results</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
 <li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
@@ -557,26 +576,25 @@ window.MathJax = {
 <span class="type">Section</span> <span class="codenumber">5.2</span> <span class="title">Localization</span>
 </h2>
 <blockquote class="blockquote" id="blockquote-19">
-<div class="para" id="p-458">“The best way to be global is to be local”</div> <cite class="attribution">―Alex Atala</cite>
+<div class="para" id="p-477">“The best way to be global is to be local.”</div> <cite class="attribution">―Alex Atala</cite>
 </blockquote>
 <article class="example example-like" id="ex-powers-of-element-is-multiplicatively-closed"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.11</span><span class="period">.</span><span class="space"> </span><span class="title">Powers of Element is Multiplicatively Closed.</span>
 </h3>
-<div class="para" id="p-459">Let <span class="process-math">\(R\)</span> be a ring. For any <span class="process-math">\(f\in R\text{,}\)</span> the set <span class="process-math">\(W=\{1, f, f^2, f^3, \dots\}\)</span> is a multiplicative set.</div></article><article class="example example-like" id="ex-complement-of-prime-ideal-is-multiplicative"><h3 class="heading">
+<div class="para" id="p-478">Let <span class="process-math">\(R\)</span> be a ring. For any <span class="process-math">\(f\in R\text{,}\)</span> the set <span class="process-math">\(W=\{1, f, f^2, f^3, \dots\}\)</span> is a multiplicative set.</div></article><article class="example example-like" id="ex-complement-of-prime-ideal-is-multiplicative"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.12</span><span class="period">.</span><span class="space"> </span><span class="title">Complement of Prime Ideal is Multiplicative.</span>
 </h3>
-<div class="para" id="p-460">Let <span class="process-math">\(R\)</span> be a ring. If <span class="process-math">\(P \subseteq R\)</span> is a prime ideal, the set <span class="process-math">\(W=R \setminus P\)</span> is multiplicative</div></article><article class="definition definition-like" id="defn-regular-element"><h3 class="heading">
+<div class="para" id="p-479">Let <span class="process-math">\(R\)</span> be a ring. If <span class="process-math">\(P \subseteq R\)</span> is a prime ideal, the set <span class="process-math">\(W=R \setminus P\)</span> is multiplicative</div></article><article class="definition definition-like" id="defn-regular-element"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.13</span><span class="period">.</span><span class="space"> </span><span class="title">Regular Element.</span>
-</h3> <div class="para" id="p-461">Let <span class="process-math">\(R\)</span> be a ring. An element that is not a zerodivisor is called a <span class="process-math">\(\defnn{regular element}\text{.}\)</span>
-</div></article><article class="example example-like" id="ex-regular-elements-are-multiplicative"><h3 class="heading">
+</h3> <div class="para" id="p-480">Let <span class="process-math">\(R\)</span> be a ring. An element that is not a zerodivisor is called a <em class="emphasis">nonzerodivisor</em> or a <em class="emphasis">regular element</em>.</div></article><article class="example example-like" id="ex-regular-elements-are-multiplicative"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.14</span><span class="period">.</span><span class="space"> </span><span class="title">Regular Elements are Multiplicative.</span>
 </h3>
-<div class="para" id="p-462">Let <span class="process-math">\(R\)</span> be a ring. The set of regular elements in <span class="process-math">\(R\)</span> forms a multiplicatively closed subset.</div></article><article class="example example-like" id="ex-intersection-of-multiplicative-sets-is-multiplicative"><h3 class="heading">
+<div class="para" id="p-481">Let <span class="process-math">\(R\)</span> be a ring. The set of regular elements in <span class="process-math">\(R\)</span> forms a multiplicatively closed subset.</div></article><article class="example example-like" id="ex-intersection-of-multiplicative-sets-is-multiplicative"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.15</span><span class="period">.</span><span class="space"> </span><span class="title">Intersection of Multiplicative Sets is Multiplicative.</span>
 </h3>
-<div class="para" id="p-463">An arbitrary intersection of multiplicatively closed subsets is multiplicatively closed. In particular, for any family of primes <span class="process-math">\(\{\fp _{\lambda} \}\text{,}\)</span> the complement of <span class="process-math">\(\bigcup_{\lambda} \fp _{\lambda}\)</span> is multiplicatively closed.</div></article><article class="definition definition-like" id="defn-localization"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.16</span><span class="period">.</span><span class="space"> </span><span class="title">Localization.</span>
-</h3> <div class="para logical" id="p-464">
+<div class="para" id="p-482">An arbitrary intersection of multiplicatively closed subsets is multiplicatively closed. In particular, for any family of primes <span class="process-math">\(\{\fp _{\lambda} \}\text{,}\)</span> the complement of <span class="process-math">\(\bigcup_{\lambda} \fp _{\lambda}\)</span> is multiplicatively closed.</div></article><article class="definition definition-like" id="defn-localization"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.16</span><span class="period">.</span><span class="space"> </span><span class="title">Localization of a Ring.</span>
+</h3> <div class="para logical" id="p-483">
 <div class="para">Let <span class="process-math">\(R\)</span> be a ring, and <span class="process-math">\(W\)</span> be a multiplicative set with <span class="process-math">\(0\notin W\text{.}\)</span> The <em class="emphasis">localization</em> of <span class="process-math">\(R\)</span> at <span class="process-math">\(W\)</span> is the ring</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -597,20 +615,20 @@ W^{-1} R :=  \left\{ \frac{r}{w} \ \Big| \ r\in R, w\in W \right\} / \sim
 </div>
 <div class="para">The zero in <span class="process-math">\(W^{-1}R\)</span> is <span class="process-math">\(\frac{0}{1}\)</span> and the identity is <span class="process-math">\(\frac{1}{1}\text{.}\)</span>
 </div>
-</div></article><article class="remark remark-like" id="remark-35"><h3 class="heading">
+</div> <div class="para" id="p-484">EMPTY </div></article><article class="remark remark-like" id="remark-35"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.17</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-465">Note that we write elements in <span class="process-math">\(W^{-1}R\)</span> in the form <span class="process-math">\(\frac{r}{w}\)</span> even though they are equivalence classes of such expressions.</div></article><article class="example example-like" id="ex-field-of-fractions-is-a-localization"><h3 class="heading">
+<div class="para" id="p-485">Note that we write elements in <span class="process-math">\(W^{-1}R\)</span> in the form <span class="process-math">\(\frac{r}{w}\)</span> even though they are equivalence classes of such expressions.</div></article><article class="example example-like" id="ex-field-of-fractions-is-a-localization"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.18</span><span class="period">.</span><span class="space"> </span><span class="title">Field of Fractions is a Localization.</span>
 </h3>
-<div class="para" id="p-466">Note that if <span class="process-math">\(R\)</span> is a domain, the equivalence relation simplifies to <span class="process-math">\(rw'=r'w\text{,}\)</span> so <span class="process-math">\(R \subseteq W^{-1}R \subseteq \mathrm{Frac}(R)\text{,}\)</span> and in particular <span class="process-math">\(W^{-1}R\)</span> is a domain too. In particular, <span class="process-math">\(\mathrm{Frac}(R)\)</span> is a localization of <span class="process-math">\(R\text{.}\)</span>
+<div class="para" id="p-486">Note that if <span class="process-math">\(R\)</span> is a domain, the equivalence relation simplifies to <span class="process-math">\(rw'=r'w\text{,}\)</span> so <span class="process-math">\(R \subseteq W^{-1}R \subseteq \mathrm{Frac}(R)\text{,}\)</span> and in particular <span class="process-math">\(W^{-1}R\)</span> is a domain too. In particular, <span class="process-math">\(\mathrm{Frac}(R)\)</span> is a localization of <span class="process-math">\(R\text{.}\)</span>
 </div></article><article class="remark remark-like" id="remark-36"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.19</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-467">In the localization of <span class="process-math">\(R\)</span> at <span class="process-math">\(W\text{,}\)</span> every element of <span class="process-math">\(W\)</span> becomes a unit. The following universal property says roughly that <span class="process-math">\(W^{-1}R\)</span> is the smallest <span class="process-math">\(R\)</span>-algebra in which every element of <span class="process-math">\(W\)</span> is a unit.</div></article><article class="proposition theorem-like" id="prop-ump-of-localizations"><h3 class="heading">
+<div class="para" id="p-487">In the localization of <span class="process-math">\(R\)</span> at <span class="process-math">\(W\text{,}\)</span> every element of <span class="process-math">\(W\)</span> becomes a unit. The following universal property says roughly that <span class="process-math">\(W^{-1}R\)</span> is the smallest <span class="process-math">\(R\)</span>-algebra in which every element of <span class="process-math">\(W\)</span> is a unit.</div></article><article class="proposition theorem-like" id="prop-ump-of-localizations"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.20</span><span class="period">.</span><span class="space"> </span><span class="title">UMP of Localizations.</span>
 </h3>
-<div class="para logical" id="p-468">
+<div class="para logical" id="p-488">
 <div class="para">Let <span class="process-math">\(R\)</span> be a ring, and <span class="process-math">\(W\)</span> a multiplicative set with <span class="process-math">\(0\notin W\text{.}\)</span> Let <span class="process-math">\(S\)</span> be an <span class="process-math">\(R\)</span>-algebra in which every element of <span class="process-math">\(W\)</span> is a unit. Then there is a unique homomorphism <span class="process-math">\(\alpha\)</span> such that the following diagram commutes:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -625,42 +643,42 @@ S
 </div></article><article class="example example-like" id="ex-localization-of-powers-of-element"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.21</span><span class="period">.</span><span class="space"> </span><span class="title">Localization of Powers of Element.</span>
 </h3>
-<div class="para" id="p-469">For <span class="process-math">\(f\in R\)</span> and <span class="process-math">\(W=\{1, f, f^2, f^3, \dots\} = \{ f^n \mid n \geqslant 0 \}\text{,}\)</span> we usually write <span class="process-math">\(R_f\)</span> for <span class="process-math">\(W^{-1}R\text{.}\)</span>
+<div class="para" id="p-489">For <span class="process-math">\(f\in R\)</span> and <span class="process-math">\(W=\{1, f, f^2, f^3, \dots\} = \{ f^n \mid n \geqslant 0 \}\text{,}\)</span> we usually write <span class="process-math">\(R_f\)</span> for <span class="process-math">\(W^{-1}R\text{.}\)</span>
 </div></article><article class="example example-like" id="ex-total-ring-of-fractions"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.22</span><span class="period">.</span><span class="space"> </span><span class="title">Total Ring of Fractions.</span>
 </h3>
-<div class="para" id="p-470">When <span class="process-math">\(W\)</span> is the set of nonzerodivisors on <span class="process-math">\(R\text{,}\)</span> we call <span class="process-math">\(W^{-1}R\)</span> the <span class="process-math">\(\defnn{total ring of fractions}\)</span> of <span class="process-math">\(R\text{.}\)</span> When <span class="process-math">\(R\)</span> is a domain, this is just the fraction field of <span class="process-math">\(R\text{,}\)</span> and in this case this coincides with the localization at the prime <span class="process-math">\((0)\text{.}\)</span>
+<div class="para" id="p-490">When <span class="process-math">\(W\)</span> is the set of nonzerodivisors on <span class="process-math">\(R\text{,}\)</span> we call <span class="process-math">\(W^{-1}R\)</span> <em class="emphasis">the total ring of fractions</em> of <span class="process-math">\(R\text{.}\)</span> When <span class="process-math">\(R\)</span> is a domain, this is just the fraction field of <span class="process-math">\(R\text{,}\)</span> and in this case this coincides with the localization at the prime <span class="process-math">\((0)\text{.}\)</span>
 </div></article><article class="example example-like" id="ex-localization-at-a-prime"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.23</span><span class="period">.</span><span class="space"> </span><span class="title">Localization at a Prime.</span>
 </h3>
-<div class="para" id="p-471">For a prime ideal <span class="process-math">\(P\)</span> in <span class="process-math">\(R\text{,}\)</span> we generally write <span class="process-math">\(R_{P}\)</span> for <span class="process-math">\((R\setminus P)^{-1} R\text{,}\)</span> and call it the <span class="process-math">\(\defnn{localization}\)</span> of <span class="process-math">\(R\)</span> at <span class="process-math">\(P\text{.}\)</span> Given an ideal <span class="process-math">\(I\)</span> in <span class="process-math">\(R\text{,}\)</span> we sometimes write <span class="process-math">\(I_P\)</span> to refer to <span class="process-math">\(I R_P\text{,}\)</span> the image of <span class="process-math">\(I\)</span> via the canonical map <span class="process-math">\(R \to R_P\text{.}\)</span> Notice that when we localize at a prime <span class="process-math">\(P\text{,}\)</span> the resulting ring is a local ring <span class="process-math">\((R_P,P_{P})\text{.}\)</span> We can think of the process of localization at <span class="process-math">\(P\)</span> as <em class="emphasis">zooming in</em> at the prime <span class="process-math">\(P\text{.}\)</span> Many properties of an ideal <span class="process-math">\(I\)</span> can be checked <em class="emphasis">locally</em>, by checking them for <span class="process-math">\(I R_P\)</span> for each prime <span class="process-math">\(P \in V(I)\text{.}\)</span>
+<div class="para" id="p-491">For a prime ideal <span class="process-math">\(P\)</span> in <span class="process-math">\(R\text{,}\)</span> we generally write <span class="process-math">\(R_{P}\)</span> for <span class="process-math">\((R\setminus P)^{-1} R\text{,}\)</span> and call it the <em class="emphasis">localization</em> of <span class="process-math">\(R\)</span> at <span class="process-math">\(P\)</span>. Given an ideal <span class="process-math">\(I\)</span> in <span class="process-math">\(R\text{,}\)</span> we sometimes write <span class="process-math">\(I_P\)</span> to refer to <span class="process-math">\(I R_P\text{,}\)</span> the image of <span class="process-math">\(I\)</span> via the canonical map <span class="process-math">\(R \to R_P\text{.}\)</span> Notice that when we localize at a prime <span class="process-math">\(P\text{,}\)</span> the resulting ring is a local ring <span class="process-math">\((R_P,P_{P})\text{.}\)</span> We can think of the process of localization at <span class="process-math">\(P\)</span> as <em class="emphasis">zooming in</em> at the prime <span class="process-math">\(P\text{.}\)</span> Many properties of an ideal <span class="process-math">\(I\)</span> can be checked <em class="emphasis">locally</em>, by checking them for <span class="process-math">\(I R_P\)</span> for each prime <span class="process-math">\(P \in V(I)\text{.}\)</span>
 </div></article><article class="example example-like" id="ex-kx_1dotsx_d_x_1dotsx_d-is-local"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.24</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(k[x_1,\dots,x_d]_{(x_1,\dots,x_d)}\)</span> is Local.</span>
 </h3>
-<div class="para" id="p-472">A local ring one often encounters is <span class="process-math">\(k[x_1,\dots,x_d]_{(x_1,\dots,x_d)}\text{.}\)</span> We can consider this as the ring of rational functions that in lowest terms have a denominator with nonzero constant term. Note that we can talk about lowest terms since the polynomial ring is a UFD.</div></article><article class="example example-like" id="ex-local-ring-of-the-point"><h3 class="heading">
+<div class="para" id="p-492">A local ring one often encounters is <span class="process-math">\(k[x_1,\dots,x_d]_{(x_1,\dots,x_d)}\text{.}\)</span> We can consider this as the ring of rational functions that in lowest terms have a denominator with nonzero constant term. Note that we can talk about lowest terms since the polynomial ring is a UFD.</div></article><article class="example example-like" id="ex-local-ring-of-the-point"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.25</span><span class="period">.</span><span class="space"> </span><span class="title">Local Ring of the Point.</span>
 </h3>
-<div class="para logical" id="p-473">
+<div class="para logical" id="p-493">
 <div class="para">If <span class="process-math">\(k\)</span> is algebraically closed and <span class="process-math">\(I\)</span> is a radical ideal, then <span class="process-math">\(k[x_1,\dots,x_d]/I= k[X]\)</span> is the coordinate ring of some affine variety, and <span class="process-math">\((x_1,\dots,x_d)=\fm_{\underline{0}}\)</span> is the ideal defining the origin (as a point in <span class="process-math">\(X \subseteq \mathbb{A}^d\)</span>). Then we call</div>
 <div class="displaymath process-math">
 \begin{equation*}
 k[X]_{\fm_{\underline{0}}} :=  (k[x_1,\dots,x_d]/I)_{(x_1,\dots,x_d)}
 \end{equation*}
 </div>
-<div class="para">the {} <span class="process-math">\(\underline{0} \in X\text{;}\)</span> some people write this as <span class="process-math">\(\mathcal{O}_{X,\underline{0}}\text{.}\)</span> The radical ideals of this ring consist of radical ideals of <span class="process-math">\(k[X]\)</span> that are contained in <span class="process-math">\(\fm_{\underline{0}}\text{,}\)</span> which by the Nullstellensatz correspond to subvarieties of <span class="process-math">\(X\)</span> that contain <span class="process-math">\(\underline{0}\text{.}\)</span> Similarly, we can define the local ring at any point <span class="process-math">\(\underline{a} \in X\text{.}\)</span>
+<div class="para">the <em class="emphasis">local ring of a point</em> <span class="process-math">\(\underline{0} \in X\text{;}\)</span> some people write this as <span class="process-math">\(\mathcal{O}_{X,\underline{0}}\text{.}\)</span> The radical ideals of this ring consist of radical ideals of <span class="process-math">\(k[X]\)</span> that are contained in <span class="process-math">\(\fm_{\underline{0}}\text{,}\)</span> which by the Nullstellensatz correspond to subvarieties of <span class="process-math">\(X\)</span> that contain <span class="process-math">\(\underline{0}\text{.}\)</span> Similarly, we can define the local ring at any point <span class="process-math">\(\underline{a} \in X\text{.}\)</span>
 </div>
 </div></article><article class="lemma theorem-like" id="lem-localization-ideals"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.26</span><span class="period">.</span><span class="space"> </span><span class="title">Localization Ideals.</span>
 </h3>
-<div class="para logical" id="p-474">
+<div class="para logical" id="p-494">
 <div class="para">Let <span class="process-math">\(W\)</span> be multiplicatively closed in <span class="process-math">\(R\text{.}\)</span> (a) If <span class="process-math">\(I\)</span> is an ideal in <span class="process-math">\(R\text{,}\)</span> then <span class="process-math">\(W^{-1} I = I W^{-1} R\text{.}\)</span> (b) If <span class="process-math">\(I\)</span> is an ideal in <span class="process-math">\(R\text{,}\)</span> then <span class="process-math">\(W^{-1} I \cap R = \{ r \in R \ | \  wr\in I \textrm{ for some } w\in W\}\text{.}\)</span> (c) If <span class="process-math">\(J\)</span> is an ideal in <span class="process-math">\(W^{-1}R\text{,}\)</span> then <span class="process-math">\(W^{-1}(J \cap R) = J\text{.}\)</span> (d) If <span class="process-math">\(\fp\)</span> is prime and <span class="process-math">\(W \cap \fp=\es\text{,}\)</span> then <span class="process-math">\(W^{-1}\fp =\fp (W^{-1}R)\)</span> is prime. (e) The map <span class="process-math">\(\Spec(W^{-1} R) \to \Spec(R)\)</span> is injective, with image</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \{\fp \in \Spec(R) \ | \ \fp \cap W = \varnothing\}.
 \end{equation*}
 </div>
-</div></article><article class="hiddenproof" id="proof-53"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-53"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-53"><article class="hiddenproof"><div class="para logical" id="p-475"><ol class="decimal">
-<li id="li-76"><div class="para logical" id="p-476">
+</div></article><article class="hiddenproof" id="proof-56"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-56"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-56"><article class="hiddenproof"><div class="para logical" id="p-495"><ol class="decimal">
+<li id="li-81"><div class="para logical" id="p-496">
 <div class="para">Note that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -682,7 +700,7 @@ a \cdot \frac{s}{w} = \frac{sa}{w}
 <div class="para">and <span class="process-math">\(sa \in I\text{,}\)</span> we conclude that <span class="process-math">\(W^{-1} I = I W^{-1} R\text{.}\)</span>
 </div>
 </div></li>
-<li id="li-77"><div class="para logical" id="p-477">
+<li id="li-82"><div class="para logical" id="p-497">
 <div class="para">If <span class="process-math">\(wr \in I\)</span> for some <span class="process-math">\(w \in W\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -704,15 +722,15 @@ u(rw - a \cdot 1) = 0 \Leftrightarrow  r(uw) = wa \in I.
 <div class="para">Since <span class="process-math">\(W\)</span> is multiplicatively closed, <span class="process-math">\(uw \in W\text{,}\)</span> and thus the element <span class="process-math">\(t := uw \in W\)</span> satisfies <span class="process-math">\(tr \in I\text{.}\)</span>
 </div>
 </div></li>
-<li id="li-78"><div class="para" id="p-478">The containment <span class="process-math">\(W^{-1}(J \cap R) \subseteq J\)</span> holds for general reasons: given any map <span class="process-math">\(f\text{,}\)</span> and a subset <span class="process-math">\(J\)</span> of the target of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(f(f^{-1}(J)) \subseteq J\text{.}\)</span> On the other hand, if <span class="process-math">\(\frac{a}{w} \in J\text{,}\)</span> then <span class="process-math">\(\frac{a}{1} \in J\text{,}\)</span> since its a unit multiple of an element of <span class="process-math">\(J\text{,}\)</span> and thus <span class="process-math">\(a \in J \cap R\text{,}\)</span> so <span class="process-math">\(\frac{a}{w} \in W^{-1}(J \cap R)\text{.}\)</span>
+<li id="li-83"><div class="para" id="p-498">The containment <span class="process-math">\(W^{-1}(J \cap R) \subseteq J\)</span> holds for general reasons: given any map <span class="process-math">\(f\text{,}\)</span> and a subset <span class="process-math">\(J\)</span> of the target of <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(f(f^{-1}(J)) \subseteq J\text{.}\)</span> On the other hand, if <span class="process-math">\(\frac{a}{w} \in J\text{,}\)</span> then <span class="process-math">\(\frac{a}{1} \in J\text{,}\)</span> since its a unit multiple of an element of <span class="process-math">\(J\text{,}\)</span> and thus <span class="process-math">\(a \in J \cap R\text{,}\)</span> so <span class="process-math">\(\frac{a}{w} \in W^{-1}(J \cap R)\text{.}\)</span>
 </div></li>
-<li id="li-79"><div class="para" id="p-479">First, since <span class="process-math">\(W\cap P =\varnothing\text{,}\)</span> and <span class="process-math">\(P\)</span> is prime, no element of <span class="process-math">\(W\)</span> kills <span class="process-math">\(\bar{1}=1 + P\)</span> in <span class="process-math">\(R/P\text{,}\)</span> so <span class="process-math">\(\bar{1}/1\)</span> is nonzero in <span class="process-math">\(W^{-1}(R/P)\text{.}\)</span> Thus, <span class="process-math">\(W^{-1}R / W^{-1}P \cong W^{-1}(R/P)\)</span> is nonzero, and a localization of a domain, hence is a domain. Thus, <span class="process-math">\(W^{-1}P\)</span> is prime.</div></li>
-<li id="li-80"><div class="para" id="p-480">First, by part b), the map <span class="process-math">\(P \mapsto W^{-1}P\text{,}\)</span> for <span class="process-math">\(S=\{P \in \Spec(R) \ | \ P \cap W = \varnothing\}\)</span> sends primes to primes. We claim that</div></li>
-</ol></div> <div class="para" id="p-481">
+<li id="li-84"><div class="para" id="p-499">First, since <span class="process-math">\(W\cap P =\varnothing\text{,}\)</span> and <span class="process-math">\(P\)</span> is prime, no element of <span class="process-math">\(W\)</span> kills <span class="process-math">\(\bar{1}=1 + P\)</span> in <span class="process-math">\(R/P\text{,}\)</span> so <span class="process-math">\(\bar{1}/1\)</span> is nonzero in <span class="process-math">\(W^{-1}(R/P)\text{.}\)</span> Thus, <span class="process-math">\(W^{-1}R / W^{-1}P \cong W^{-1}(R/P)\)</span> is nonzero, and a localization of a domain, hence is a domain. Thus, <span class="process-math">\(W^{-1}P\)</span> is prime.</div></li>
+<li id="li-85"><div class="para" id="p-500">First, by part b), the map <span class="process-math">\(P \mapsto W^{-1}P\text{,}\)</span> for <span class="process-math">\(S=\{P \in \Spec(R) \ | \ P \cap W = \varnothing\}\)</span> sends primes to primes. We claim that</div></li>
+</ol></div> <div class="para" id="p-501">
 <span class="process-math">\(\Spec(W^{-1} R)\)</span> <span class="process-math">\(Q\)</span> <span class="process-math">\(W^{-1}P\)</span>
-</div> <div class="para" id="p-482">#empty</div> <div class="para" id="p-483">
-<span class="process-math">\(S\)</span> <span class="process-math">\(Q \cap R\)</span> <span class="process-math">\(P\)</span> are inverse maps.</div> <div class="para" id="p-484">We have already seen that <span class="process-math">\(J=(J\cap R) W^{-1}R\)</span> for any ideal <span class="process-math">\(J\)</span> in <span class="process-math">\(W^{-1}R\text{.}\)</span>
-</div> <div class="para logical" id="p-485">
+</div> <div class="para" id="p-502">#empty</div> <div class="para" id="p-503">
+<span class="process-math">\(S\)</span> <span class="process-math">\(Q \cap R\)</span> <span class="process-math">\(P\)</span> are inverse maps.</div> <div class="para" id="p-504">We have already seen that <span class="process-math">\(J=(J\cap R) W^{-1}R\)</span> for any ideal <span class="process-math">\(J\)</span> in <span class="process-math">\(W^{-1}R\text{.}\)</span>
+</div> <div class="para logical" id="p-505">
 <div class="para">If <span class="process-math">\(W\cap P=\varnothing\text{,}\)</span> then using part a) and the definition of prime, we have that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -723,7 +741,7 @@ W^{-1}P \cap R = \lbrace r \in R \, \mid \, rw \in P \textrm{ for some } w \in W
 <article class="corollary theorem-like" id="cor-map-on-spec-localization-prime"><h3 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.27</span><span class="period">.</span><span class="space"> </span><span class="title">Map on Spec Localization Prime.</span>
 </h3>
-<div class="para logical" id="p-486">
+<div class="para logical" id="p-506">
 <div class="para">Let <span class="process-math">\(R\)</span> be a ring and <span class="process-math">\(P\)</span> be a prime ideal in <span class="process-math">\(R\text{.}\)</span> The map on spectra induced by the canonical map <span class="process-math">\(R \to R_P\)</span> corresponds to the inclusion</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -732,7 +750,7 @@ W^{-1}P \cap R = \lbrace r \in R \, \mid \, rw \in P \textrm{ for some } w \in W
 </div>
 </div></article><article class="definition definition-like" id="defn-module-localization"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.28</span><span class="period">.</span><span class="space"> </span><span class="title">Module Localization.</span>
-</h3> <div class="para logical" id="p-487">
+</h3> <div class="para logical" id="p-507">
 <div class="para">Let <span class="process-math">\(R\)</span> be a ring, <span class="process-math">\(W\)</span> be a multiplicative set, and <span class="process-math">\(M\)</span> an <span class="process-math">\(R\)</span>-module. The <em class="emphasis">localization</em> of <span class="process-math">\(M\)</span> at <span class="process-math">\(W\)</span> is the <span class="process-math">\(W^{-1}R\)</span>-module</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -745,12 +763,15 @@ W^{-1} M := \left\{ \frac{m} {w} \ \Big| \ m\in M, w\in W \right\} / \sim
 \frac{m}{v}+\frac{n}{w}=\frac{mw+nv}{vw} \quad \text{and} \quad \frac{r}{v} \frac{m}{w}=\frac{rm}{vw}.
 \end{equation*}
 </div>
-</div></article><article class="example example-like" id="ex-kxyxy-has-non-injective-canonical-maps"><h3 class="heading">
+</div></article><div class="para" id="p-508">We will use the notations <span class="process-math">\(M_f\)</span> and <span class="process-math">\(M_P\)</span> analagously to <span class="process-math">\(R_f\)</span> and <span class="process-math">\(R_P\text{.}\)</span>
+</div>
+<div class="para" id="p-509">If <span class="process-math">\(R\)</span> is not a domain, the canonical map <span class="process-math">\(R\to W\inv R\)</span> is not necessarily injective.</div>
+<article class="example example-like" id="ex-kxyxy-has-non-injective-canonical-maps"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.29</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(k[x,y]/(xy)\)</span> has Non Injective Canonical Maps.</span>
 </h3>
-<div class="para" id="p-488"></div>
+<div class="para" id="p-510"></div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like"><div class="para logical" id="p-489">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like"><div class="para logical" id="p-511">
 <div class="para">Consider <span class="process-math">\(R = k[x,y]/(xy)\text{.}\)</span> The canonical maps <span class="process-math">\(R \longrightarrow R_{(x)}\)</span> and <span class="process-math">\(R \longrightarrow R_y\)</span> are not injective, since in both cases <span class="process-math">\(y\)</span> is invertible in the localization, and thus</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -760,7 +781,7 @@ x \mapsto \frac{x}{1} = \frac{xy}{y} = \frac{0}{y} = \frac{0}{1}.
 </div></div></div>
 </div></article><article class="definition definition-like" id="defn-annihilator"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.30</span><span class="period">.</span><span class="space"> </span><span class="title">Annihilator.</span>
-</h3> <div class="para logical" id="p-490">
+</h3> <div class="para logical" id="p-512">
 <div class="para">The <em class="emphasis">annihilator</em> of a module <span class="process-math">\(M\)</span> is the ideal</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -769,7 +790,7 @@ x \mapsto \frac{x}{1} = \frac{xy}{y} = \frac{0}{y} = \frac{0}{1}.
 </div>
 </div></article><article class="definition definition-like" id="defn-colon-ideal"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.31</span><span class="period">.</span><span class="space"> </span><span class="title">Colon Ideal.</span>
-</h3> <div class="para logical" id="p-491">
+</h3> <div class="para logical" id="p-513">
 <div class="para">Let <span class="process-math">\(I\)</span> and <span class="process-math">\(J\)</span> be ideals in a ring <span class="process-math">\(R\text{.}\)</span> The <em class="emphasis">colon</em> of <span class="process-math">\(I\)</span> and <span class="process-math">\(J\)</span> is the ideal</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -785,7 +806,7 @@ x \mapsto \frac{x}{1} = \frac{xy}{y} = \frac{0}{y} = \frac{0}{1}.
 </div></article><article class="example example-like" id="ex-annihilators-and-colons-are-ideals"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.32</span><span class="period">.</span><span class="space"> </span><span class="title">Annihilators and Colons are Ideals.</span>
 </h3>
-<div class="para logical" id="p-492">
+<div class="para logical" id="p-514">
 <div class="para">The annihilator of <span class="process-math">\(M\)</span> is an ideal in <span class="process-math">\(R\text{,}\)</span> and</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -797,15 +818,15 @@ x \mapsto \frac{x}{1} = \frac{xy}{y} = \frac{0}{y} = \frac{0}{1}.
 </div></article><article class="example example-like" id="ex-mcong-rannm"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.33</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(M\cong R/\ann(M)\)</span>.</span>
 </h3>
-<div class="para" id="p-493">If <span class="process-math">\(M = R m\)</span> is a cyclic <span class="process-math">\(R\)</span>-module, then <span class="process-math">\(M \cong R/I\)</span> for some ideal <span class="process-math">\(I\text{.}\)</span>
+<div class="para" id="p-515">If <span class="process-math">\(M = R m\)</span> is a cyclic <span class="process-math">\(R\)</span>-module, then <span class="process-math">\(M \cong R/I\)</span> for some ideal <span class="process-math">\(I\text{.}\)</span>
 </div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like"><div class="para" id="p-494">Notice that <span class="process-math">\(I \cdot (R/I) = 0\text{,}\)</span> and that given an element <span class="process-math">\(g \in R\text{,}\)</span> we have <span class="process-math">\(g (R/I) = 0\)</span> if and only if <span class="process-math">\(g \in I\text{.}\)</span> Therefore, <span class="process-math">\(M \cong R/\ann(M)\text{.}\)</span>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like"><div class="para" id="p-516">Notice that <span class="process-math">\(I \cdot (R/I) = 0\text{,}\)</span> and that given an element <span class="process-math">\(g \in R\text{,}\)</span> we have <span class="process-math">\(g (R/I) = 0\)</span> if and only if <span class="process-math">\(g \in I\text{.}\)</span> Therefore, <span class="process-math">\(M \cong R/\ann(M)\text{.}\)</span>
 </div></div></div>
 </div></article><article class="example example-like" id="ex-ideals-contained-in-annihilator"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.34</span><span class="period">.</span><span class="space"> </span><span class="title">Ideals Contained in Annihilator.</span>
 </h3>
-<div class="para logical" id="p-495">
+<div class="para logical" id="p-517">
 <div class="para">Let <span class="process-math">\(M\)</span> be an <span class="process-math">\(R\)</span>-module. If <span class="process-math">\(I\)</span> is an ideal in <span class="process-math">\(R\)</span> such that <span class="process-math">\(I \subseteq \ann(M)\text{,}\)</span> then <span class="process-math">\(I M = 0\text{,}\)</span> and thus <span class="process-math">\(M\)</span> is naturally an <span class="process-math">\(R/I\)</span>-module with the <em class="emphasis">same</em> structure it has as an <span class="process-math">\(R\)</span>-module, meaning</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -817,22 +838,28 @@ x \mapsto \frac{x}{1} = \frac{xy}{y} = \frac{0}{y} = \frac{0}{1}.
 </div></article><article class="example example-like" id="ex-annihilator-of-quotient-is-colon"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.35</span><span class="period">.</span><span class="space"> </span><span class="title">Annihilator of Quotient is Colon.</span>
 </h3>
-<div class="para" id="p-496">If <span class="process-math">\(N \subseteq M\)</span> are <span class="process-math">\(R\)</span>-modules, then <span class="process-math">\(\ann(M/N) = (N :_R M)\text{.}\)</span>
+<div class="para" id="p-518">If <span class="process-math">\(N \subseteq M\)</span> are <span class="process-math">\(R\)</span>-modules, then <span class="process-math">\(\ann(M/N) = (N :_R M)\text{.}\)</span>
 </div></article><article class="lemma theorem-like" id="lem-zero-in-localization"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.36</span><span class="period">.</span><span class="space"> </span><span class="title">Zero in Localization.</span>
 </h3>
-<div class="para" id="p-497">Let <span class="process-math">\(M\)</span> be an <span class="process-math">\(R\)</span>-module, and <span class="process-math">\(W\)</span> a multiplicative set. Then the following are equivalent: - <span class="process-math">\(\frac{m}{w}\in W^{-1}M \ \text{ is zero}\)</span> - <span class="process-math">\(vm=0 \textrm{ for some } v\in W\)</span> - <span class="process-math">\(\ann_R(m) \cap W \neq \es.\)</span> Note in particular that this holds for <span class="process-math">\(w=1\text{.}\)</span>
-</div></article><article class="hiddenproof" id="proof-54"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-54"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-54"><article class="hiddenproof"><div class="para" id="p-498">For the first equivalence, we use the equivalence relation defining <span class="process-math">\(W^{-1}R\)</span> to note that <span class="process-math">\(\frac{m}{w}=\frac{0}{1}\)</span> in <span class="process-math">\(W^{-1}M\)</span> if and only if there exists some <span class="process-math">\(v\in W\)</span> such that <span class="process-math">\(0=v(1m-0w)=vm\text{.}\)</span> The second equivalence just comes from the definition of the annihilator.</div></article></div>
+<div class="para" id="p-519">Let <span class="process-math">\(M\)</span> be an <span class="process-math">\(R\)</span>-module, and <span class="process-math">\(W\)</span> a multiplicative set. Then the following are equivalent: - <span class="process-math">\(\frac{m}{w}\in W^{-1}M \ \text{ is zero}\)</span> - <span class="process-math">\(vm=0 \textrm{ for some } v\in W\)</span> - <span class="process-math">\(\ann_R(m) \cap W \neq \es.\)</span> Note in particular that this holds for <span class="process-math">\(w=1\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-57"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-57"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-57"><article class="hiddenproof"><div class="para" id="p-520">For the first equivalence, we use the equivalence relation defining <span class="process-math">\(W^{-1}R\)</span> to note that <span class="process-math">\(\frac{m}{w}=\frac{0}{1}\)</span> in <span class="process-math">\(W^{-1}M\)</span> if and only if there exists some <span class="process-math">\(v\in W\)</span> such that <span class="process-math">\(0=v(1m-0w)=vm\text{.}\)</span> The second equivalence just comes from the definition of the annihilator.</div></article></div>
 <article class="example example-like" id="ex-canonical-localization-map-and-injectivity"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.37</span><span class="period">.</span><span class="space"> </span><span class="title">Canonical Localization Map and Injectivity.</span>
 </h3>
-<div class="para" id="p-499">As a consequence of the previous <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Zero in Localization|Lemma]], it follows that if <span class="process-math">\(R\)</span> is a domain, then the canonical map <span class="process-math">\(R \to W^{-1}R\)</span> is always injective for any multiplicatively closed set <span class="process-math">\(W\text{,}\)</span> since every nonzero <span class="process-math">\(r \in R\)</span> has <span class="process-math">\(\ann(r) = 0\text{.}\)</span>
-</div> <div class="para" id="p-500">Notice, however, that even when <span class="process-math">\(R\)</span> is a domain, the elements in a module <span class="process-math">\(M\)</span> may still have nontrivial annihilators, and thus <span class="process-math">\(M \to W^{-1} M\)</span> may fail to be injective.</div></article><article class="example example-like" id="ex-induced-localization-module-homomorphism"><h3 class="heading">
+<div class="para" id="p-521">As a consequence of  <a href="" class="xref" data-knowl="./knowl/lem-zero-in-localization.html" title="Lemma 5.36: Zero in Localization">Lemma 5.36</a>, it follows that if <span class="process-math">\(R\)</span> is a domain, then the canonical map <span class="process-math">\(R \to W^{-1}R\)</span> is always injective for any multiplicatively closed set <span class="process-math">\(W\text{,}\)</span> since every nonzero <span class="process-math">\(r \in R\)</span> has <span class="process-math">\(\ann(r) = 0\text{.}\)</span>
+</div> <div class="para" id="p-522">Notice, however, that even when <span class="process-math">\(R\)</span> is a domain, the elements in a module <span class="process-math">\(M\)</span> may still have nontrivial annihilators, and thus <span class="process-math">\(M \to W^{-1} M\)</span> may fail to be injective.</div></article><article class="example example-like" id="ex-induced-localization-module-homomorphism"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.38</span><span class="period">.</span><span class="space"> </span><span class="title">Induced Localization Module Homomorphism.</span>
 </h3>
-<div class="para" id="p-501">If <span class="process-math">\(M\xrightarrow{\alpha} N\)</span> is an <span class="process-math">\(R\)</span>-module homomorphism, then there is a <span class="process-math">\(W^{-1}R\)</span>-module homomorphism <span class="process-math">\(W^{-1}M \xrightarrow{W^{-1}\alpha} W^{-1}N\)</span> given by the rule <span class="process-math">\(W^{-1}\alpha (\frac{m}{w}) = \frac{\alpha(m)}{w}\text{.}\)</span>
-</div> <div class="para logical" id="p-502">
-<div class="para">Hom and Localization ##### Statement Let <span class="process-math">\(R\)</span> be a noetherian ring, <span class="process-math">\(W\)</span> be a multiplicative set, <span class="process-math">\(M\)</span> be a finitely generated <span class="process-math">\(R\)</span>-module, and <span class="process-math">\(N\)</span> an arbitrary <span class="process-math">\(R\)</span>-module. Then,</div>
+<div class="para" id="p-523">If <span class="process-math">\(M\xrightarrow{\alpha} N\)</span> is an <span class="process-math">\(R\)</span>-module homomorphism, then there is a <span class="process-math">\(W^{-1}R\)</span>-module homomorphism <span class="process-math">\(W^{-1}M \xrightarrow{W^{-1}\alpha} W^{-1}N\)</span> given by the rule <span class="process-math">\(W^{-1}\alpha (\frac{m}{w}) = \frac{\alpha(m)}{w}\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like"><div class="para" id="p-524">Proving this lemma actually requires some homological algebra that we do not have, so for now we will just believe it.</div></div></div>
+</div></article><article class="lemma theorem-like" id="lem-hom-localization"><h3 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.39</span><span class="period">.</span><span class="space"> </span><span class="title">Hom and Localization.</span>
+</h3>
+<div class="para logical" id="p-525">
+<div class="para">Let <span class="process-math">\(R\)</span> be a noetherian ring, <span class="process-math">\(W\)</span> be a multiplicative set, <span class="process-math">\(M\)</span> be a finitely generated <span class="process-math">\(R\)</span>-module, and <span class="process-math">\(N\)</span> an arbitrary <span class="process-math">\(R\)</span>-module. Then,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \Hom_{W^{-1}R}(W^{-1}M , W^{-1}N) \cong W^{-1} \Hom_R(M,N).
@@ -844,13 +871,10 @@ x \mapsto \frac{x}{1} = \frac{xy}{y} = \frac{0}{y} = \frac{0}{1}.
 \Hom_{R_{P}}(M_{P} , N_{P}) \cong \Hom_R(M,N)_{P}.
 \end{equation*}
 </div>
-</div>
-<div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like"><div class="para" id="p-503">Proving this lemma actually requires some homological algebra that we do not have, so for now we will just believe it.</div></div></div>
 </div></article><article class="theorem theorem-like" id="thm-localization-is-exact"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.39</span><span class="period">.</span><span class="space"> </span><span class="title">Localization is Exact.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.40</span><span class="period">.</span><span class="space"> </span><span class="title">Localization is Exact.</span>
 </h3>
-<div class="para logical" id="p-504">
+<div class="para logical" id="p-526">
 <div class="para">Given a short exact sequence of <span class="process-math">\(R\)</span>-modules</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -869,9 +893,9 @@ x \mapsto \frac{x}{1} = \frac{xy}{y} = \frac{0}{y} = \frac{0}{1}.
 </div>
 <div class="para">is also exact.</div>
 </div></article><article class="example example-like" id="ex-localization-preserves-inclusions"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.40</span><span class="period">.</span><span class="space"> </span><span class="title">Localization Preserves Inclusions.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.41</span><span class="period">.</span><span class="space"> </span><span class="title">Localization Preserves Inclusions.</span>
 </h3>
-<div class="para logical" id="p-505">
+<div class="para logical" id="p-527">
 <div class="para">It follows from this <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Zero in Localization|Lemma]] that if <span class="process-math">\(\begin{CD}N@&gt;\a&gt;&gt;M\end{CD}\)</span> is injective, then <span class="process-math">\(W^{-1}\alpha\)</span> is also injective, since</div>
 <div class="displaymath process-math" data-contains-math-knowls=" ">
 \begin{equation*}
@@ -880,9 +904,9 @@ x \mapsto \frac{x}{1} = \frac{xy}{y} = \frac{0}{y} = \frac{0}{1}.
 </div>
 <div class="para">So this explains some of <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Localization is Exact|Theorem]], since it shows that localization preserves inclusions.</div>
 </div></article><article class="example example-like" id="ex-localizations-and-quotients-commute"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.41</span><span class="period">.</span><span class="space"> </span><span class="title">Localizations and Quotients Commute.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.42</span><span class="period">.</span><span class="space"> </span><span class="title">Localizations and Quotients Commute.</span>
 </h3>
-<div class="para logical" id="p-506">
+<div class="para logical" id="p-528">
 <div class="para">Given a submodule <span class="process-math">\(N\)</span> of <span class="process-math">\(M\text{,}\)</span> we can apply the <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Localization is Exact|Theorem]] to the short exact sequence</div>
 <div class="displaymath process-math" data-contains-math-knowls="">
 \begin{equation*}
@@ -894,18 +918,17 @@ x \mapsto \frac{x}{1} = \frac{xy}{y} = \frac{0}{y} = \frac{0}{1}.
 <div class="para">and conclude that that <span class="process-math">\(W^{-1}(M/N) \cong W^{-1}M / W^{-1}N\text{.}\)</span>
 </div>
 </div></article><article class="lemma theorem-like" id="lem-localization-commutes-with-finite-intersections"><h3 class="heading">
-<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.42</span><span class="period">.</span><span class="space"> </span><span class="title">Localization Commutes with Finite Intersections.</span>
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.43</span><span class="period">.</span><span class="space"> </span><span class="title">Localization Commutes with Finite Intersections.</span>
 </h3>
-<div class="para logical" id="p-507">
+<div class="para logical" id="p-529">
 <div class="para">Let <span class="process-math">\(M\)</span> be a module, and <span class="process-math">\(N_1,\dots,N_t\)</span> be a finite collection of submodules. Let <span class="process-math">\(W\)</span> be a multiplicative set. Then,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 W^{-1} (N_1 \cap \cdots \cap N_t) = W^{-1} N_1 \cap \cdots \cap W^{-1} N_t \subseteq W^{-1}M.
 \end{equation*}
 </div>
-<div class="para">##### <em class="emphasis">Proof.</em> The containment <span class="process-math">\(W^{-1} (N_1 \cap \cdots \cap N_t) \subseteq W^{-1} N_1 \cap \cdots \cap W^{-1} N_t\)</span> is clear. Elements of <span class="process-math">\(W^{-1} N_1 \cap \cdots \cap W^{-1} N_t\)</span> are of the form <span class="process-math">\(\frac{n_1}{w_1}= \cdots = \frac{n_t}{w_t}\text{;}\)</span> we can find a common denominator to realize this in <span class="process-math">\(W^{-1} (N_1 \cap \cdots \cap N_t)\text{.}\)</span>
-</div>
-</div></article></section></div>
+</div></article><article class="hiddenproof" id="proof-58"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-58"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-58"><article class="hiddenproof"><div class="para" id="p-530">The containment <span class="process-math">\(W^{-1} (N_1 \cap \cdots \cap N_t) \subseteq W^{-1} N_1 \cap \cdots \cap W^{-1} N_t\)</span> is clear. Elements of <span class="process-math">\(W^{-1} N_1 \cap \cdots \cap W^{-1} N_t\)</span> are of the form <span class="process-math">\(\frac{n_1}{w_1}= \cdots = \frac{n_t}{w_t}\text{;}\)</span> we can find a common denominator to realize this in <span class="process-math">\(W^{-1} (N_1 \cap \cdots \cap N_t)\text{.}\)</span>
+</div></article></div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-local-rings.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-nak.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

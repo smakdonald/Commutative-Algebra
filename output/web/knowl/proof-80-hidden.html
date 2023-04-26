@@ -10,6 +10,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para">Suppose that <span class="process-math">\(Q\)</span> is primary and <span class="process-math">\(xy \in \sqrt{Q}\text{.}\)</span> Then <span class="process-math">\(x^n y^n\in Q\)</span> for some <span class="process-math">\(n\text{.}\)</span> If <span class="process-math">\(y\notin \sqrt{Q}\text{,}\)</span> then <span class="process-math">\(y^n\notin \sqrt{Q}\text{.}\)</span> Since <span class="process-math">\(Q\)</span> is primary, we must have <span class="process-math">\(x^n\in Q\text{,}\)</span> so <span class="process-math">\(x\in \sqrt{Q}\text{.}\)</span>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">Apply this <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Associated Primes and SES|Lemma]] to the short exact sequence</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;A@&gt;&gt;&gt;A\oplus B@&gt;&gt;&gt;B@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">We obtain <span class="process-math">\(\Ass(A) \subseteq \Ass(A \oplus B) \subseteq \Ass(A) \cup \Ass(B)\text{.}\)</span> Repeat with</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;B@&gt;&gt;&gt;A\oplus B@&gt;&gt;&gt;A@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">to conclude that <span class="process-math">\(\Ass(B) \subseteq \Ass(A \oplus B)\text{.}\)</span> So we have shown both <span class="process-math">\(\Ass(A) \subseteq \Ass(A \oplus B)\)</span> and <span class="process-math">\(\Ass(B) \subseteq \Ass(A \oplus B)\text{,}\)</span> so <span class="process-math">\(\Ass(A) \cup \Ass(B) \subseteq \Ass(A \oplus B)\text{.}\)</span> Since we have also already shown <span class="process-math">\(\Ass(A \oplus B) \subseteq \Ass(A) \cup \Ass(B)\text{,}\)</span> we must have <span class="process-math">\(\Ass(A \oplus B) = \Ass(A) \cup \Ass(B)\text{.}\)</span>
+</div>
 </div></article></body>
 </html>

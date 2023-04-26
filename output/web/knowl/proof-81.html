@@ -12,54 +12,7 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Proof</span></h3>
-<div class="para logical">
-<div class="para">
-<span class="process-math">\((1) \iff (2)\text{:}\)</span> Saying <span class="process-math">\(y\)</span> is a zerodivisor modulo <span class="process-math">\(Q\)</span> if there is some <span class="process-math">\(x\notin Q\)</span> with <span class="process-math">\(xy\in Q\text{.}\)</span> So the condition that every zerodivisor on <span class="process-math">\(R/Q\)</span> must be nilpotent is equivalent to</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\exists x \notin Q : xy \in Q \implies y^n \in Q.
-\end{equation*}
-</div>
-<div class="para">This is exactly the condition that <span class="process-math">\(Q\)</span> is a primary ideal.</div>
-</div> <div class="para logical">
-<div class="para">
-<span class="process-math">\((2) \iff (3)\text{:}\)</span> First, note that the associated primes of <span class="process-math">\(R/Q\)</span> are the associated primes of the ideal <span class="process-math">\(Q\text{,}\)</span> while the minimal primes of <span class="process-math">\(R/Q\)</span> are the minimal primes of <span class="process-math">\(Q\text{.}\)</span> By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Theorem - Zerodivisors Associated Primes|Theorem]],</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\bigcup_{P \in \Ass(Q)} P \, = \, \mathcal{Z}(R/Q).
-\end{equation*}
-</div>
-<div class="para">Every minimal prime of <span class="process-math">\(Q\)</span> is associated to <span class="process-math">\(Q\text{,}\)</span> so</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\bigcap_{P \in \Min(Q)} P = \bigcap_{P \in \Ass(Q)} P.
-\end{equation*}
-</div>
-<div class="para">Finally, every nilpotent element is always a zerodivisor. Putting all these together, we always have the following:</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\bigcup_{P \in \Ass(Q)} P \, = \, \mathcal{Z}(R/Q) \, \supseteq  \{ r \in R \mid r + Q \in \mathcal{N}(R/Q) \} \, = \bigcap_{P \in \Min(Q)} P = \bigcap_{P \in \Ass(Q)} P.
-\end{equation*}
-</div>
-<div class="para">On the one hand, (2) says that the set of zerodivisors on <span class="process-math">\(R/Q\)</span> coincides with the elements in the nilradical of <span class="process-math">\(R/Q\text{;}\)</span> thus (2) is the statement that we have equality throughout. So (2) holds if and only if</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-\bigcup_{P \in \Ass(Q)} P \, = \bigcap_{P \in \Ass(Q)} P.
-\end{equation*}
-</div>
-<div class="para">The rest of the proof is elementary set theory: the intersection and union of a collection of sets agree if and only if there is only one set. More precisely, we have equality above if and only if there is only one associated prime.</div>
-</div> <div class="para">
-<span class="process-math">\((3) \iff (4)\)</span> is clear, given that every ideal has a minimal prime and minimal primes are always associated, so having a single associated prime means having only one minimal prime and no embedded primes.</div> <div class="para">
-<span class="process-math">\((1) \iff (5)\text{:}\)</span> Given the observation that the radical of a primary ideal is prime, this is just a rewording of the definition.</div> <div class="para logical">
-<div class="para">
-<span class="process-math">\((5) \iff (6)\text{:}\)</span> By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Localization Ideals|Lemma]], we have the following characterization:</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
-\begin{equation*}
-Q R_P \cap R = \lbrace r \in R \mid sr \in Q \textrm{ for some } s \notin P \rbrace.
-\end{equation*}
-</div>
-<div class="para">Thus the second condition in <span class="process-math">\((5)\)</span> is equivalent to <span class="process-math">\(Q R_Q \cap R = Q\text{.}\)</span>
-</div>
-</div></article><span class="incontext"><a href="sec-primary-decomp.html#proof-81" class="internal">in-context</a></span>
+<div class="para">If <span class="process-math">\(M\neq 0\text{,}\)</span> then <span class="process-math">\(M\)</span> has at least one associated prime, by , so there is an inclusion <span class="process-math">\(R/P_1 \subseteq M\text{.}\)</span> Let <span class="process-math">\(M_1\)</span> be the image of this inclusion. If <span class="process-math">\(M/M_1\neq 0\text{,}\)</span> it has an associated prime, so there is an <span class="process-math">\(M_2 \subseteq M\)</span> such that <span class="process-math">\(R/P_2 \cong M_2/M_1 \subseteq R/M_1\text{.}\)</span> Continuing this process, we get a strictly ascending chain of submodules of <span class="process-math">\(M\)</span> where the successive quotients are of the form <span class="process-math">\(R/P_i\text{.}\)</span> If we do not have <span class="process-math">\(M_t=M\)</span> for some <span class="process-math">\(t\text{,}\)</span> then we get an infinite strictly ascending chain of submodules of <span class="process-math">\(M\text{,}\)</span> which contradicts that <span class="process-math">\(M\)</span> is a noetherian module.</div> <div class="para">In the graded case, if <span class="process-math">\(P_i\)</span> is the annihilator of an element <span class="process-math">\(m_i\)</span> of degree <span class="process-math">\(t_i\text{,}\)</span> we have a degree-preserving map <span class="process-math">\((R/P_i)(t_i)\cong R m_i\)</span> sending the class of <span class="process-math">\(1\)</span> to <span class="process-math">\(m_i\text{.}\)</span>
+</div></article><span class="incontext"><a href="sec-ass-primes.html#proof-81" class="internal">in-context</a></span>
 </body>
 </html>

@@ -12,7 +12,27 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Suppose <span class="process-math">\(I\)</span> is prime. If <span class="process-math">\((r + I)(r' + I) = 0 + I\text{,}\)</span> then <span class="process-math">\(rr' \in I\)</span> and hence either <span class="process-math">\(r \in I\)</span> or <span class="process-math">\(r' \in I\text{,}\)</span> so that either <span class="process-math">\(r + I = 0\)</span> or <span class="process-math">\(r'+ I = 0\text{.}\)</span> This proves <span class="process-math">\(R/I\)</span> is a domain. Suppose <span class="process-math">\(R/I\)</span> is a domain and that <span class="process-math">\(xy \in I\text{.}\)</span> Then <span class="process-math">\((x + I)(y + I) = 0\)</span> in <span class="process-math">\(R/I\)</span> and hence either <span class="process-math">\(x+ I = 0\)</span> or <span class="process-math">\(y + I = 0\text{.}\)</span> It follows <span class="process-math">\(x \in I\)</span> or <span class="process-math">\(y \in I\text{,}\)</span> so that <span class="process-math">\(I\)</span> is prime.</div>
-<span class="incontext"><a href="sec-prime-maximal-ideals.html#p-319" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">We consider the map <span class="process-math">\(\rho\!: R \to R^G\)</span> given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rho(r)=\frac{1}{|G|} \sum_{g\in G} g\cdot r.
+\end{equation*}
+</div>
+<div class="para">First, note that the image of this map lies in <span class="process-math">\(R^G\text{,}\)</span> since acting by <span class="process-math">\(g\)</span> just permutes the elements in the sum, so the sum itself remains the same. We claim that this map <span class="process-math">\(\rho\)</span> is a splitting for the inclusion <span class="process-math">\(R^G \subseteq R\text{.}\)</span> To see that, let <span class="process-math">\(s\in R^G\)</span> and <span class="process-math">\(r\in R\text{.}\)</span> We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rho(sr)=\frac{1}{|G|} \sum_{g\in G} g\cdot (sr) =\frac{1}{|G|} \sum_{g\in G} (g\cdot s)(g\cdot r) =\frac{1}{|G|} \sum_{g\in G} s(g\cdot r) = s \frac{1}{|G|} \sum_{g\in G} (g\cdot r) = s \rho(r),
+\end{equation*}
+</div>
+<div class="para">so <span class="process-math">\(\rho\)</span> is <span class="process-math">\(R^G\)</span>-linear, and for <span class="process-math">\(s\in R^G\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\rho(s)=\frac{1}{|G|} \sum_{g\in G} g\cdot s=s.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec-inv-rings-2.html#p-319" class="internal">in-context</a></span>
 </body>
 </html>

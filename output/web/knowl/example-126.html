@@ -12,7 +12,29 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.6</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
-</h3> <div class="para">The ideal <span class="process-math">\((xy,xz)\)</span> in <span class="process-math">\(k[x,y,z]\)</span> has minimal primes of heights 1 and 2.</div></article><span class="incontext"><a href="sec-height-generators.html#example-126" class="internal">in-context</a></span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.62</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
+</h3> <div class="para logical">
+<div class="para">Let us compute the dimension of the ring <span class="process-math">\(R = k[a,b,c,d]/I\text{,}\)</span> where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I=(b^2-ac,c^2-bd,bc-ad).
+\end{equation*}
+</div>
+<div class="para">We claim that <span class="process-math">\(A = k[a,d]\subseteq R\)</span> is a Noether normalization. The inclusion is integral, since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+b^2=ac \implies b^4=a^2 c^2 = a^2bd,
+\end{equation*}
+</div>
+<div class="para">so <span class="process-math">\(b\)</span> satisfies <span class="process-math">\(t^4 - a^2d t =0\text{.}\)</span> Similarly, one can show that <span class="process-math">\(c\)</span> satisfies <span class="process-math">\(t^4-ad^2t\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+c^2=bd \implies c^4 = b^2 d^2 = acd^2,
+\end{equation*}
+</div>
+<div class="para">so <span class="process-math">\(c\)</span> satisfies <span class="process-math">\(t^4-ad^2t\text{.}\)</span>
+</div>
+</div> <div class="para">We also need to show that <span class="process-math">\(a,d\)</span> are algebraically independent over <span class="process-math">\(k\text{,}\)</span> or equivalently that the map from the polynomial ring <span class="process-math">\(\psi\! : k[u,v] \to R\)</span> with <span class="process-math">\(\psi(u)=a\text{,}\)</span> <span class="process-math">\(\psi(v)=d\)</span> is injective.</div> <div class="para">First assume that <span class="process-math">\(k=\overline{k}\)</span> is algebraically closed. Observe that the map #empty</div> <div class="para">is surjective: given <span class="process-math">\(a,d \in k\text{,}\)</span> write <span class="process-math">\(a=\alpha^3, d=\delta^3\text{,}\)</span> and note that <span class="process-math">\((\alpha^3, \alpha^2 \delta, \alpha \delta^2, \delta^3)\)</span> is an element of <span class="process-math">\(X=\cZ(I)\)</span> that maps to <span class="process-math">\((a,d)\text{.}\)</span> Thus, the kernel of the induced map on coordinate rings <span class="process-math">\(k[\mathbb{A}^2] \to k[X]\)</span> is <span class="process-math">\(\cI(\mathbb{A}^2) = 0\text{;}\)</span> i.e, the map is injective. By the Nullstellensatz, <span class="process-math">\(\mathcal{I}(\cZ(I))= \sqrt{I}\text{,}\)</span> and our induced map on coordinate rings is the map #empty Since this map is injective, and this factors as #empty the first map is injective.</div></article><span class="incontext"><a href="sec-noether-normalizations.html#example-126" class="internal">in-context</a></span>
 </body>
 </html>

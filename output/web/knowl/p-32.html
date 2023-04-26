@@ -12,14 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">When a module is given to us in this format, as the cokernel of some matrix, we are essentially being given a presentation: the number of rows is the number of generators, while each column corresponds to a relation among those generators. If one the vector <span class="process-math">\((r_1, \ldots, r_n)\)</span> appears in a column of the matrix, that means that the generators <span class="process-math">\(m_1, \ldots, m_n\)</span> satisfy the relation</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/ch-local-rings.html">
-\begin{equation*}
-r_1 m_1 + \cdots + r_n m_n  = 0.
-\end{equation*}
-</div>
-<div class="para">Keep in mind that when you do a calculation and the result is a module given to you in this format, Macaulay2 will not necessarily respond with a <em class="emphasis">minimal</em> presentation: one of the generators given might actually be a linear combination of the remaining ones, so there might be more generators than necessary, and there might be superfluous relations which follow as linear combinations of the others. You might be able to get rid of some superfluous generators and relations using the command <code class="code-inline tex2jax_ignore">prune</code>. We will discuss this in more detail when we talk about local rings in <a href="ch-local-rings.html" class="internal" title="Chapter 5: Local Rings">Chapter 5</a>.</div>
+<div class="para">We say that a module <span class="process-math">\(M\)</span> is <em class="emphasis">finitely generated</em> if we can find a finite generating set for <span class="process-math">\(M.\)</span>
 </div>
 <span class="incontext"><a href="sec-gen-mod.html#p-32" class="internal">in-context</a></span>
 </body>

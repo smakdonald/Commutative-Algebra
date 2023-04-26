@@ -13,28 +13,20 @@
 <body class="ignore-math">
 <article class="li"><h4 class="heading">
 <span class="type">Item</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
-</h4>
-<div class="para logical">
-<div class="para">If <span class="process-math">\(wr \in I\)</span> for some <span class="process-math">\(w \in W\text{,}\)</span> then</div>
-<div class="displaymath process-math">
+</h4>Let <span class="process-math">\(k\)</span> be a field, and let <span class="process-math">\(R=k[x_1,\dots,x_n]\)</span> be a polynomial ring with the standard grading. Given <span class="process-math">\(c\in k=R_0\text{,}\)</span> the homomorphism of <span class="process-math">\(R\)</span>-modules <span class="process-math">\(R\to R\)</span> given by <span class="process-math">\(f\mapsto cf\)</span> is degree preserving. However, if instead we take <span class="process-math">\(g\in R_d\)</span> for some <span class="process-math">\(d&gt;0\text{,}\)</span> then the map<div class="displaymath process-math">
 \begin{equation*}
-\frac{r}{1} = \frac{wr}{w} \in W^{-1} I.
+\begin{CD}
+R@&gt;&gt;&gt; R\\\\
+f@&gt;&gt;&gt; gf
+\end{CD}
 \end{equation*}
-</div>
-<div class="para">Conversely, if <span class="process-math">\(r \in W^{-1} I \cap R\text{,}\)</span> then that means that</div>
-<div class="displaymath process-math">
+</div>is not degree preserving, although it is a graded map of degree <span class="process-math">\(d\text{.}\)</span> We can make this a degree-preserving map if we shift the grading on <span class="process-math">\(R\)</span> by defining <span class="process-math">\(R(-d)\)</span> to be the <span class="process-math">\(R\)</span>-module <span class="process-math">\(R\)</span> but with the <span class="process-math">\(\Z\)</span>-grading given by <span class="process-math">\(R(-d)_t=R_{t-d}\text{.}\)</span> With this grading, the component of degree <span class="process-math">\(d\)</span> of <span class="process-math">\(R(-d)\)</span> is <span class="process-math">\(R(-d)_d=R_0=k\text{.}\)</span> Now the map<div class="displaymath process-math">
 \begin{equation*}
-\frac{r}{1} = \frac{a}{w} \textrm{ for some } a \in I, w \in W.
+\begin{CD}
+R(-d)@&gt;&gt;&gt; R\\\\
+f@&gt;&gt;&gt; gf
+\end{CD}
 \end{equation*}
-</div>
-<div class="para">By definition of the equivalence relation defining <span class="process-math">\(W^{-1}R\text{,}\)</span> this means that there exists <span class="process-math">\(u \in W\)</span> such that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-u(rw - a \cdot 1) = 0 \Leftrightarrow  r(uw) = wa \in I.
-\end{equation*}
-</div>
-<div class="para">Since <span class="process-math">\(W\)</span> is multiplicatively closed, <span class="process-math">\(uw \in W\text{,}\)</span> and thus the element <span class="process-math">\(t := uw \in W\)</span> satisfies <span class="process-math">\(tr \in I\text{.}\)</span>
-</div>
-</div></article><span class="incontext"><a href="sec-localization.html#li-77" class="internal">in-context</a></span>
+</div>is degree preserving.</article><span class="incontext"><a href="sec-graded-rings.html#li-77" class="internal">in-context</a></span>
 </body>
 </html>

@@ -12,23 +12,14 @@
 </head>
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Proof</span></h3>
-<div class="para">We will prove some of these and leave the rest as an exercise.</div> <div class="para">A prime has height <span class="process-math">\(0\)</span> if and only if it contains no other prime, which is equivalent being a minimal prime of <span class="process-math">\(R\text{.}\)</span>
-</div> <div class="para">If <span class="process-math">\(I\)</span> is contained in a minimal prime <span class="process-math">\(Q\)</span> of <span class="process-math">\(R\text{,}\)</span> then <span class="process-math">\(\ht(Q)=0\)</span> by (1), so <span class="process-math">\(\ht(I)=0\)</span> by definition. Conversely, if <span class="process-math">\(\ht(I)=0\text{,}\)</span> by definition, there is a minimal prime of <span class="process-math">\(I\)</span> of height <span class="process-math">\(0\text{,}\)</span> so some minimal prime of <span class="process-math">\(I\)</span> is a minimal prime of <span class="process-math">\(R\text{,}\)</span> so <span class="process-math">\(I\)</span> is contained in a minimal prime of <span class="process-math">\(R\text{.}\)</span>
-</div> <div class="para logical">
-<div class="para">It suffices to show that if <span class="process-math">\(\dim(R/P) \geqslant a\)</span> and <span class="process-math">\(\ht(P) \geqslant b\)</span> then <span class="process-math">\(\dim(R) \geqslant a+b\text{.}\)</span> By definition, <span class="process-math">\(\ht(P) \geqslant b\)</span> means that there is a chain of primes</div>
+<div class="para logical">
+<div class="para">The canonical map <span class="process-math">\(R \to R/I_1 \oplus R/I_2\)</span> sending <span class="process-math">\(r \mapsto (r+I_1, r+I_2)\)</span> has kernel <span class="process-math">\(I_1 \cap I_2\text{,}\)</span> so there is an inclusion <span class="process-math">\(R/(I_1 \cap I_2) \subseteq R/I_1 \oplus R/I_2\text{.}\)</span> Hence, by  and ,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-Q_0 \subsetneq Q_1 \subsetneq \cdots \subsetneq Q_b = P.
+\Ass(R/(I_1\cap I_2)) \subseteq \Ass(R/I_1 \oplus R/I_2) = \Ass(R/I_1) \cup \Ass(R/I_2).
 \end{equation*}
 </div>
-<div class="para">By (5), <span class="process-math">\(\dim(R/P) \geqslant a\)</span> means that there is a chain of primes</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mathfrak{a}_0 \subsetneq \mathfrak{a}_1 \subsetneq \cdots \subsetneq \mathfrak{a}_a
-\end{equation*}
-</div>
-<div class="para">with <span class="process-math">\(\mathfrak{a}_0 \supseteq P\text{.}\)</span> We can assume without loss of generality that <span class="process-math">\(\mathfrak{a}_0 = P\text{,}\)</span> since if not, we can add it to the bottom of the chain. Putting these chains together, we get a chain of length <span class="process-math">\(a+b\)</span> in <span class="process-math">\(\Spec(R)\text{,}\)</span> so <span class="process-math">\(\dim(R) \geqslant a+b\text{.}\)</span>
-</div>
-</div> <div class="para">Let <span class="process-math">\(\dim(R/I) \geqslant a\)</span> and <span class="process-math">\(\ht(I) \geqslant b\text{.}\)</span> The inequality <span class="process-math">\(\ht(I) \geqslant b\)</span> means that for every minimal prime <span class="process-math">\(P\)</span> of <span class="process-math">\(I\text{,}\)</span> <span class="process-math">\(\ht(P) \geqslant b\text{.}\)</span> The inequality <span class="process-math">\(\dim(R/I) \geqslant a\)</span> implies that there exists a minimal prime of <span class="process-math">\(P\)</span> of <span class="process-math">\(I\)</span> such that <span class="process-math">\(\dim(R/P) \geqslant a\text{.}\)</span> For such a minimal prime as in the latter statement, using (5), we get the desired conclusion.</div></article><span class="incontext"><a href="sec-dim-height.html#proof-91" class="internal">in-context</a></span>
+<div class="para">The statement for larger <span class="process-math">\(t\)</span> follows by an easy induction.</div>
+</div></article><span class="incontext"><a href="sec-primary-decomp.html#proof-91" class="internal">in-context</a></span>
 </body>
 </html>

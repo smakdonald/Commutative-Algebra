@@ -12,8 +12,22 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Set <span class="process-math">\(S = k[t^3]\subseteq R\text{.}\)</span> We note that <span class="process-math">\(t^3\)</span> does not satisfy any algebraic relation over <span class="process-math">\(k\text{,}\)</span> so <span class="process-math">\(S\)</span> is isomorphic to a polynomial ring in one variable, where that one variable corresponds to <span class="process-math">\(t^3\text{.}\)</span> Moreover, note that the inclusion <span class="process-math">\(S \subseteq R\)</span> is integral, since <span class="process-math">\(t^4\)</span> satisfies the monic polynomial <span class="process-math">\((T^4)^3- (t^3)^4=0\)</span> and <span class="process-math">\(t^5\)</span> satisfies the monic polynomial <span class="process-math">\((T^5)^3 - (t^3)^5=0\text{.}\)</span> Polynomial rings in one variable have dimension <span class="process-math">\(1\text{,}\)</span> so <span class="process-math">\(\dim(S) = 1\text{.}\)</span>
+<div class="para logical">
+<div class="para">Let's get back to our motivating example in <span class="process-math">\(\mathbb{Z}[\sqrt{-5}]\text{,}\)</span> where some elements can be written as products of irreducible elements in more than one way. For example, we saw that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+6 = 2 \cdot 3 = (1 + \sqrt{-5}) (1 - \sqrt{-5}).
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-dim-height.html#p-701" class="internal">in-context</a></span>
+<div class="para">So <span class="process-math">\((6) = (2) \cap (3)\text{,}\)</span> but while <span class="process-math">\((2)\)</span> is primary, <span class="process-math">\((3)\)</span> is not. In fact, <span class="process-math">\((3)\)</span> has two distinct minimal primes, and the following is a minimal primary decomposition for <span class="process-math">\((6)\text{:}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(6) = (2) \cap (3, 1+\sqrt{-5}) \cap (3, 1 - \sqrt{-5}).
+\end{equation*}
+</div>
+<div class="para">In fact, all of these come components are minimal, and so this primary decomposition is unique. Primary decomposition saves the day!</div>
+</div>
+<span class="incontext"><a href="sec-primary-decomp.html#p-701" class="internal">in-context</a></span>
 </body>
 </html>

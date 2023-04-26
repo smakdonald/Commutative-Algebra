@@ -10,19 +10,13 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body class="ignore-math"><article class="hiddenproof"><div class="para">Let <span class="process-math">\(P \subseteq Q\)</span> be primes in <span class="process-math">\(R\text{.}\)</span> After quotient out by <span class="process-math">\(P\text{,}\)</span> we can assume that <span class="process-math">\(R\)</span> is a domain and <span class="process-math">\(P=0\text{.}\)</span> Fix a saturated chain <span class="process-math">\(C\)</span> from <span class="process-math">\(Q\)</span> to a maximal ideal <span class="process-math">\(\fm\text{.}\)</span> Given two saturated chains <span class="process-math">\(C'\text{,}\)</span> <span class="process-math">\(C''\)</span> from <span class="process-math">\(0\)</span> to <span class="process-math">\(Q\text{,}\)</span> the concatenations <span class="process-math">\(C'|C\)</span> and <span class="process-math">\(C''|C\)</span> are saturated chains from <span class="process-math">\(0\)</span> to <span class="process-math">\(\fm\text{,}\)</span> so by  they must have the same length. It follows that <span class="process-math">\(C'\)</span> and <span class="process-math">\(C''\)</span> have the same length.</div> <div class="para">Equidimensionality is immediate from .</div> <div class="para logical">
-<div class="para">We have</div>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">The map <span class="process-math">\(\phi\)</span> sends a monomial term <span class="process-math">\(d x_1^{a_1} \cdots x_n^{a_n}\)</span> to a polynomial with unique highest degree term <span class="process-math">\(d x_n^{a_1 N^{n-1} + a_2 N^{n-2} + \cdots + a_{n-1} N + a_n}\text{.}\)</span> For each of the monomials <span class="process-math">\(d x_1^{a_1} \cdots x_n^{a_n}\)</span> in <span class="process-math">\(f\)</span> with nonzero coefficient <span class="process-math">\(d \neq 0\text{,}\)</span> we must have each <span class="process-math">\(a_i \leqslant N\text{,}\)</span> so the map</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\ht(I) = \min\{\ht(P) \mid P\in \Min(I)\}
+(a_1,\dots,a_n) \mapsto a_1 N^{n-1} + a_2 N^{n-2} + \cdots + a_{n-1} N + a_n
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\dim(R/I) = \max\{\dim(R/P) \mid P \in \Min(I)\}.
-\end{equation*}
-</div>
-<div class="para">Therefore, it suffices to show the equality for prime ideals, since if <span class="process-math">\(P \in \Min(I)\)</span> attains <span class="process-math">\(\ht(I)\text{,}\)</span> which is the minimal value of <span class="process-math">\(\ht(Q)\)</span> for <span class="process-math">\(Q \in \Min(I)\text{,}\)</span> then it also attains the maximal value of <span class="process-math">\(\dim(R/Q)\)</span> for <span class="process-math">\(Q \in \Min(I)\text{.}\)</span> Now, take a saturated chain of primes <span class="process-math">\(C\)</span> from <span class="process-math">\(0\)</span> to <span class="process-math">\(P\text{,}\)</span> and a saturated chain <span class="process-math">\(C'\)</span> from <span class="process-math">\(P\)</span> to a maximal ideal <span class="process-math">\(\fm\text{.}\)</span> Since <span class="process-math">\(R\)</span> is catenary, <span class="process-math">\(C\)</span> has length <span class="process-math">\(\ht(P)\text{.}\)</span> Moreover, <span class="process-math">\(C'\)</span> has length <span class="process-math">\(\dim(R/P)\)</span> by , and <span class="process-math">\(C|C'\)</span> has length <span class="process-math">\(\dim(R)\)</span> by .</div>
+<div class="para">is injective when restricted to the set of exponent tuples of <span class="process-math">\(f\text{.}\)</span> Therefore, none of the terms can cancel. We find that the leading term is of the promised form.</div>
 </div></article></body>
 </html>

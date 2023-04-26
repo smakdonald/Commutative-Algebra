@@ -75,7 +75,7 @@ window.MathJax = {
 <div id="searchempty"><span>No results.</span></div>
 <ol id="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
 <li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
 <ol class="hidden avatar">
 <li data-val="You!" tabindex="-1">
@@ -177,7 +177,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="sec-getting-started.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="backmatter.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="appendix-list-results.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="sec-basic-commands.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="backmatter.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="appendix-list-results.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\ann{\operatorname{ann}}
 \newcommand{\Ass}{\operatorname{Ass}}
@@ -459,9 +459,16 @@ window.MathJax = {
 \)</span></div>
 <div class="ptx-page">
 <div id="ptx-sidebar"><nav id="ptx-toc" class="depth3 parts"><ul class="structural">
-<li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="part-commutative-algebra-i.html" class="internal"><span class="codenumber">I</span> <span class="title">Commutative Algebra</span></a></div>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">Warning!</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="part-commutative-algebra.html" class="internal"><span class="codenumber">I</span> <span class="title">Commutative Algebra</span></a></div>
 <ul class="structural">
 <li>
 <div class="toc-item"><a href="ch-finiteness-conditions.html" class="internal"><span class="codenumber">1</span> <span class="title">Finiteness Conditions</span></a></div>
@@ -544,17 +551,29 @@ window.MathJax = {
 <div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural">
 <li>
-<div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">A</span> <span class="title">Macaulay2</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="sec-getting-started.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Getting Started</span></a></div></li></ul>
+<div class="toc-item"><a href="intro.html" class="internal"><span class="codenumber">A</span> <span class="title">Setting the Stage</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-rings-ideals.html" class="internal"><span class="codenumber">A.1</span> <span class="title">Rings and Ideals</span></a></div></li>
+<li><div class="toc-item"><a href="sec-modules.html" class="internal"><span class="codenumber">A.2</span> <span class="title">Modules</span></a></div></li>
+</ul>
 </li>
-<li class="active"><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">B</span> <span class="title">List of Definitions</span></a></div></li>
-<li><div class="toc-item"><a href="appendix-list-results.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Results</span></a></div></li>
+<li>
+<div class="toc-item"><a href="macaulay2.html" class="internal"><span class="codenumber">B</span> <span class="title">Macaulay2</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-getting-started.html" class="internal"><span class="codenumber">B.1</span> <span class="title">Getting Started</span></a></div></li>
+<li><div class="toc-item"><a href="sec-asking-for-help.html" class="internal"><span class="codenumber">B.2</span> <span class="title">Asking Macaulay2 for Help</span></a></div></li>
+<li><div class="toc-item"><a href="sec-basic-commands.html" class="internal"><span class="codenumber">B.3</span> <span class="title">Basic Commands</span></a></div></li>
+</ul>
+</li>
+<li class="active"><div class="toc-item"><a href="appendix-list-definitions.html" class="internal"><span class="codenumber">C</span> <span class="title">List of Definitions</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-list-results.html" class="internal"><span class="codenumber">D</span> <span class="title">List of Results</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
 <li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="appendix" id="appendix-list-definitions"><h2 class="heading">
-<span class="type">Appendix</span> <span class="codenumber">B</span> <span class="title">List of Definitions</span>
+<span class="type">Appendix</span> <span class="codenumber">C</span> <span class="title">List of Definitions</span>
 </h2>
 <h4 class="heading" title="Chapter 1: Finiteness Conditions">
 <span class="codenumber">1</span><span class="space"> </span><span class="title">Finiteness Conditions</span>
@@ -588,55 +607,59 @@ window.MathJax = {
 <div>
 <a href="" class="xref" data-knowl="./knowl/defn-exact-sequence.html" title="Definition 1.61: Exact Sequence">Definition 1.61</a> Exact Sequence</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-noetherian-ring.html" title="Definition 1.66: Noetherian Ring">Definition 1.66</a> Noetherian Ring</div>
+<a href="" class="xref" data-knowl="./knowl/def-ses.html" title="Definition 1.62: Short Exact Sequence">Definition 1.62</a> Short Exact Sequence</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-noetherian-module.html" title="Definition 1.72: Noetherian Module">Definition 1.72</a> Noetherian Module</div>
+<a href="" class="xref" data-knowl="./knowl/defn-noetherian-ring.html" title="Definition 1.67: Noetherian Ring">Definition 1.67</a> Noetherian Ring</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/defn-noetherian-module.html" title="Definition 1.73: Noetherian Module">Definition 1.73</a> Noetherian Module</div>
 <h4 class="heading" title="Chapter 2: Graded Rings">
 <span class="codenumber">2</span><span class="space"> </span><span class="title">Graded Rings</span>
 </h4>
 <div>
 <a href="" class="xref" data-knowl="./knowl/defn-graded-ring.html" title="Definition 2.1: Graded Ring">Definition 2.1</a> Graded Ring</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/def-homogeneous-component.html" title="Definition 2.2: Homogeneous Component">Definition 2.2</a> Homogeneous Component</div>
+<a href="" class="xref" data-knowl="./knowl/def-homogeneous-element.html" title="Definition 2.2: Homogeneous Element">Definition 2.2</a> Homogeneous Element</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-homogeneous-ideal.html" title="Definition 2.7: Homogeneous Ideal">Definition 2.7</a> Homogeneous Ideal</div>
+<a href="" class="xref" data-knowl="./knowl/def-homogeneous-component.html" title="Definition 2.3: Homogeneous Component">Definition 2.3</a> Homogeneous Component</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-graded-module.html" title="Definition 2.12: Graded Module">Definition 2.12</a> Graded Module</div>
+<a href="" class="xref" data-knowl="./knowl/defn-homogeneous-ideal.html" title="Definition 2.8: Homogeneous Ideal">Definition 2.8</a> Homogeneous Ideal</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-graded-ring-homomorphism.html" title="Definition 2.13: Graded Ring Homomorphism">Definition 2.13</a> Graded Ring Homomorphism</div>
+<a href="" class="xref" data-knowl="./knowl/defn-graded-module.html" title="Definition 2.13: Graded Module">Definition 2.13</a> Graded Module</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-graded-module-homomorphism.html" title="Definition 2.15: Graded Module Homomorphism">Definition 2.15</a> Graded Module Homomorphism</div>
+<a href="" class="xref" data-knowl="./knowl/defn-graded-ring-homomorphism.html" title="Definition 2.14: Graded Ring Homomorphism">Definition 2.14</a> Graded Ring Homomorphism</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-direct-summand.html" title="Definition 2.22: Direct Summand">Definition 2.22</a> Direct Summand</div>
+<a href="" class="xref" data-knowl="./knowl/defn-graded-module-homomorphism.html" title="Definition 2.16: Graded Module Homomorphism">Definition 2.16</a> Graded Module Homomorphism</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-expansion-contraction.html" title="Definition 2.25: Expansion and Contraction">Definition 2.25</a> Expansion and Contraction</div>
+<a href="" class="xref" data-knowl="./knowl/defn-direct-summand.html" title="Definition 2.23: Direct Summand">Definition 2.23</a> Direct Summand</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/defn-expansion-contraction.html" title="Definition 2.26: Expansion and Contraction">Definition 2.26</a> Expansion and Contraction</div>
 <h4 class="heading" title="Chapter 3: Prime Ideals">
 <span class="codenumber">3</span><span class="space"> </span><span class="title">Prime Ideals</span>
 </h4>
 <div>
 <a href="" class="xref" data-knowl="./knowl/defn-prime-ideal.html" title="Definition 3.1: Prime Ideal">Definition 3.1</a> Prime Ideal</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-maximal-ideal.html" title="Definition 3.5: Maximal Ideal">Definition 3.5</a> Maximal Ideal</div>
+<a href="" class="xref" data-knowl="./knowl/defn-maximal-ideal.html" title="Definition 3.6: Maximal Ideal">Definition 3.6</a> Maximal Ideal</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-residue-field.html" title="Definition 3.6: Residue Field">Definition 3.6</a> Residue Field</div>
+<a href="" class="xref" data-knowl="./knowl/defn-residue-field.html" title="Definition 3.7: Residue Field">Definition 3.7</a> Residue Field</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-prime-spectrum.html" title="Definition 3.11: Prime Spectrum">Definition 3.11</a> Prime Spectrum</div>
+<a href="" class="xref" data-knowl="./knowl/defn-prime-spectrum.html" title="Definition 3.12: Prime Spectrum">Definition 3.12</a> Prime Spectrum</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-vi.html" title="Definition 3.12: V(I)">Definition 3.12</a> <span class="process-math">\(V(I)\)</span>
+<a href="" class="xref" data-knowl="./knowl/defn-vi.html" title="Definition 3.13: V(I)">Definition 3.13</a> <span class="process-math">\(V(I)\)</span>
 </div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-radical-ideal.html" title="Definition 3.16: Radical Ideal">Definition 3.16</a> Radical Ideal</div>
+<a href="" class="xref" data-knowl="./knowl/defn-radical-ideal.html" title="Definition 3.17: Radical Ideal">Definition 3.17</a> Radical Ideal</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-reduced-ring.html" title="Definition 3.18: Reduced Ring">Definition 3.18</a> Reduced Ring</div>
+<a href="" class="xref" data-knowl="./knowl/defn-reduced-ring.html" title="Definition 3.19: Reduced Ring">Definition 3.19</a> Reduced Ring</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-induced-map-on-spec.html" title="Definition 3.22: Induced Map on \Spec">Definition 3.22</a> Induced Map on <span class="process-math">\(\Spec\)</span>
+<a href="" class="xref" data-knowl="./knowl/defn-induced-map-on-spec.html" title="Definition 3.23: Induced Map on \Spec">Definition 3.23</a> Induced Map on <span class="process-math">\(\Spec\)</span>
 </div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-minimal-prime-2.html" title="Definition 3.24: Minimal Prime">Definition 3.24</a> Minimal Prime</div>
+<a href="" class="xref" data-knowl="./knowl/defn-minimal-prime-2.html" title="Definition 3.25: Minimal Prime">Definition 3.25</a> Minimal Prime</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-minimal-prime-3.html" title="Definition 3.25: Minimal Prime">Definition 3.25</a> Minimal Prime</div>
+<a href="" class="xref" data-knowl="./knowl/defn-minimal-prime-3.html" title="Definition 3.26: Minimal Prime">Definition 3.26</a> Minimal Prime</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-multiplicatively-closed-set.html" title="Definition 3.27: Multiplicatively Closed Set">Definition 3.27</a> Multiplicatively Closed Set</div>
+<a href="" class="xref" data-knowl="./knowl/defn-multiplicatively-closed-set.html" title="Definition 3.28: Multiplicatively Closed Set">Definition 3.28</a> Multiplicatively Closed Set</div>
 <h4 class="heading" title="Chapter 4: Affine Varieties">
 <span class="codenumber">4</span><span class="space"> </span><span class="title">Affine Varieties</span>
 </h4>
@@ -666,7 +689,7 @@ window.MathJax = {
 <div>
 <a href="" class="xref" data-knowl="./knowl/defn-regular-element.html" title="Definition 5.13: Regular Element">Definition 5.13</a> Regular Element</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-localization.html" title="Definition 5.16: Localization">Definition 5.16</a> Localization</div>
+<a href="" class="xref" data-knowl="./knowl/defn-localization.html" title="Definition 5.16: Localization of a Ring">Definition 5.16</a> Localization of a Ring</div>
 <div>
 <a href="" class="xref" data-knowl="./knowl/defn-module-localization.html" title="Definition 5.28: Module Localization">Definition 5.28</a> Module Localization</div>
 <div>
@@ -674,11 +697,11 @@ window.MathJax = {
 <div>
 <a href="" class="xref" data-knowl="./knowl/defn-colon-ideal.html" title="Definition 5.31: Colon Ideal">Definition 5.31</a> Colon Ideal</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-minimal-generators.html" title="Definition 5.49: Minimal Generators">Definition 5.49</a> Minimal Generators</div>
+<a href="" class="xref" data-knowl="./knowl/defn-minimal-generators.html" title="Definition 5.50: Minimal Generators">Definition 5.50</a> Minimal Generators</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-minimal-number-of-generators.html" title="Definition 5.51: Minimal Number of Generators">Definition 5.51</a> Minimal Number of Generators</div>
+<a href="" class="xref" data-knowl="./knowl/defn-minimal-number-of-generators.html" title="Definition 5.52: Minimal Number of Generators">Definition 5.52</a> Minimal Number of Generators</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-minimal-number-of-generators-graded.html" title="Definition 5.52: Minimal Number of Generators (Graded)">Definition 5.52</a> Minimal Number of Generators (Graded)</div>
+<a href="" class="xref" data-knowl="./knowl/defn-minimal-number-of-generators-graded.html" title="Definition 5.53: Minimal Number of Generators (Graded)">Definition 5.53</a> Minimal Number of Generators (Graded)</div>
 <h4 class="heading" title="Chapter 6: Decomposing Ideals">
 <span class="codenumber">6</span><span class="space"> </span><span class="title">Decomposing Ideals</span>
 </h4>
@@ -695,15 +718,15 @@ window.MathJax = {
 <div>
 <a href="" class="xref" data-knowl="./knowl/defn-module-zerodivisor.html" title="Definition 6.26: Module Zerodivisor">Definition 6.26</a> Module Zerodivisor</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-shift.html" title="Definition 6.33: Shift">Definition 6.33</a> Shift</div>
+<a href="" class="xref" data-knowl="./knowl/defn-shift.html" title="Definition 6.34: Shift">Definition 6.34</a> Shift</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-embedded-prime.html" title="Definition 6.40: Embedded Prime">Definition 6.40</a> Embedded Prime</div>
+<a href="" class="xref" data-knowl="./knowl/defn-embedded-prime.html" title="Definition 6.43: Embedded Prime">Definition 6.43</a> Embedded Prime</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-primary-ideal.html" title="Definition 6.46: Primary Ideal">Definition 6.46</a> Primary Ideal</div>
+<a href="" class="xref" data-knowl="./knowl/defn-primary-ideal.html" title="Definition 6.49: Primary Ideal">Definition 6.49</a> Primary Ideal</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-primary-decomposition.html" title="Definition 6.61: Primary Decomposition">Definition 6.61</a> Primary Decomposition</div>
+<a href="" class="xref" data-knowl="./knowl/defn-primary-decomposition.html" title="Definition 6.64: Primary Decomposition">Definition 6.64</a> Primary Decomposition</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-symbolic-power.html" title="Definition 6.72: Symbolic Power">Definition 6.72</a> Symbolic Power</div>
+<a href="" class="xref" data-knowl="./knowl/defn-symbolic-power.html" title="Definition 6.75: Symbolic Power">Definition 6.75</a> Symbolic Power</div>
 <h4 class="heading" title="Chapter 7: Global Dimension Theory">
 <span class="codenumber">7</span><span class="space"> </span><span class="title">Global Dimension Theory</span>
 </h4>
@@ -731,15 +754,29 @@ window.MathJax = {
 <span class="codenumber">8</span><span class="space"> </span><span class="title">Local Dimension Theory</span>
 </h4>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-embedding-dimension.html" title="Definition 8.10: Embedding Dimension">Definition 8.10</a> Embedding Dimension</div>
+<a href="" class="xref" data-knowl="./knowl/defn-embedding-dimension.html" title="Definition 8.11: Embedding Dimension">Definition 8.11</a> Embedding Dimension</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-regular-local-ring.html" title="Definition 8.11: Regular Local Ring">Definition 8.11</a> Regular Local Ring</div>
+<a href="" class="xref" data-knowl="./knowl/defn-regular-local-ring.html" title="Definition 8.12: Regular Local Ring">Definition 8.12</a> Regular Local Ring</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-system-of-parameters.html" title="Definition 8.15: System of Parameters">Definition 8.15</a> System of Parameters</div>
+<a href="" class="xref" data-knowl="./knowl/defn-system-of-parameters.html" title="Definition 8.16: System of Parameters">Definition 8.16</a> System of Parameters</div>
 <div>
-<a href="" class="xref" data-knowl="./knowl/defn-absolutely-minimal-prime.html" title="Definition 8.16: Absolutely Minimal Prime">Definition 8.16</a> Absolutely Minimal Prime</div></section></div>
+<a href="" class="xref" data-knowl="./knowl/defn-absolutely-minimal-prime.html" title="Definition 8.17: Absolutely Minimal Prime">Definition 8.17</a> Absolutely Minimal Prime</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-ring.html" title="Definition A.1: Ring">Definition A.1</a> Ring</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-ring-map.html" title="Definition A.3: Ring Homomorphism">Definition A.3</a> Ring Homomorphism</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-subring.html" title="Definition A.4: Subring">Definition A.4</a> Subring</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-ideal.html" title="Definition A.5: Ideal">Definition A.5</a> Ideal</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-domain.html" title="Definition A.8: Domain, PID">Definition A.8</a> Domain, PID</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-module.html" title="Definition A.14: Modules">Definition A.14</a> Modules</div>
+<div>
+<a href="" class="xref" data-knowl="./knowl/def-submodule.html" title="Definition A.15: Submodule, Homomorphism, Quotient Modules">Definition A.15</a> Submodule, Homomorphism, Quotient Modules</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-getting-started.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="appendix-list-results.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="sec-basic-commands.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="appendix-list-results.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer">

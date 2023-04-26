@@ -13,13 +13,14 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Proof</span></h3>
 <div class="para logical">
-<div class="para">The canonical map <span class="process-math">\(R \to R/I_1 \oplus R/I_2\)</span> sending <span class="process-math">\(r \mapsto (r+I_1, r+I_2)\)</span> has kernel <span class="process-math">\(I_1 \cap I_2\text{,}\)</span> so there is an inclusion <span class="process-math">\(R/(I_1 \cap I_2) \subseteq R/I_1 \oplus R/I_2\text{.}\)</span> Hence, by  and ,</div>
-<div class="displaymath process-math">
+<div class="para">Let <span class="process-math">\(P \in \Ass_R(M)\text{,}\)</span> and fix <span class="process-math">\(m \in M\)</span> such that <span class="process-math">\(P = \ann_R(m)\text{.}\)</span> Let <span class="process-math">\(Q \in V(P)\text{.}\)</span> By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Proposition - Supp(M) = Ann(M)|Proposition]], <span class="process-math">\(Q \in \Supp(R/P)\text{.}\)</span> Since <span class="process-math">\(0 \to R/P \xrightarrow{m} M\)</span> is exact and localization is exact, <span class="process-math">\(0 \to (R/P)_Q \to M_{Q}\)</span> is also exact. Since <span class="process-math">\((R/P)_Q \neq 0\text{,}\)</span> we must also have <span class="process-math">\(M_{Q} \neq 0\text{,}\)</span> and thus <span class="process-math">\(Q \in \Supp(M)\text{.}\)</span> This shows <span class="process-math">\(\Supp(M) \, \supseteq \displaystyle\bigcup_{P \in \Ass(M)} V(P)\text{.}\)</span> Now let <span class="process-math">\(Q\)</span> be a prime ideal and suppose that</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ">
 \begin{equation*}
-\Ass(R/(I_1\cap I_2)) \subseteq \Ass(R/I_1 \oplus R/I_2) = \Ass(R/I_1) \cup \Ass(R/I_2).
+Q \notin \bigcup_{P\in \Ass(M)} V(P).
 \end{equation*}
 </div>
-<div class="para">The statement for larger <span class="process-math">\(t\)</span> follows by an easy induction.</div>
-</div></article><span class="incontext"><a href="sec-primary-decomp.html#proof-84" class="internal">in-context</a></span>
+<div class="para">In particular, <span class="process-math">\(Q\)</span> does not contain any associated prime of <span class="process-math">\(M\text{.}\)</span> Then there is no associated prime of <span class="process-math">\(M\)</span> that does not intersect <span class="process-math">\(R \setminus Q\text{,}\)</span> so <span class="process-math">\(\Ass_{R_{Q}}(M_{Q})=\varnothing\text{.}\)</span> By <code class="code-inline tex2jax_ignore">[provisional cross-reference: cite]</code> [[Mathematics/Commutative Algebra/Results/Lemma - Nonzero Element Localizes|Lemma]], <span class="process-math">\(M_{Q}=0\text{.}\)</span>
+</div>
+</div></article><span class="incontext"><a href="sec-ass-primes.html#proof-84" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,14 +13,28 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">For an example that is a finitely generated algebra over a field, consider <span class="process-math">\(R = S/I\)</span> with <span class="process-math">\(S = k[x,y,z]\)</span> and <span class="process-math">\(I =(xy,xz,x^2-x)\text{.}\)</span> This ring has dimension two: <span class="process-math">\(A=k[y,z]\)</span> is a noether normalization, as <span class="process-math">\(x^2-x=0\)</span> makes <span class="process-math">\(x\)</span> integral over <span class="process-math">\(A\text{,}\)</span> and no nonzero polynomial in <span class="process-math">\(y,z\)</span> in <span class="process-math">\(k[x,y,z]\)</span> can belong to the ideal <span class="process-math">\((x) \supseteq (xy,xz,x^2-x)\text{.}\)</span> However,</div>
+<div class="para">Let us compute the dimension of the ring <span class="process-math">\(R = k[a,b,c,d]/I\text{,}\)</span> where</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\displaystyle R/(x-1) \cong \frac{k[x,y,z]}{(y,z,x-1)}\cong k
+I=(b^2-ac,c^2-bd,bc-ad).
 \end{equation*}
 </div>
-<div class="para">has dimension zero.</div>
+<div class="para">We claim that <span class="process-math">\(A = k[a,d]\subseteq R\)</span> is a Noether normalization. The inclusion is integral, since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+b^2=ac \implies b^4=a^2 c^2 = a^2bd,
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-sops.html#p-844" class="internal">in-context</a></span>
+<div class="para">so <span class="process-math">\(b\)</span> satisfies <span class="process-math">\(t^4 - a^2d t =0\text{.}\)</span> Similarly, one can show that <span class="process-math">\(c\)</span> satisfies <span class="process-math">\(t^4-ad^2t\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+c^2=bd \implies c^4 = b^2 d^2 = acd^2,
+\end{equation*}
+</div>
+<div class="para">so <span class="process-math">\(c\)</span> satisfies <span class="process-math">\(t^4-ad^2t\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec-noether-normalizations.html#p-844" class="internal">in-context</a></span>
 </body>
 </html>

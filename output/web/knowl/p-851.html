@@ -11,8 +11,17 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Paragraph</span></h2>
-<div class="para">We can now do all sorts of computations over our ring <span class="process-math">\(R\text{.}\)</span> For example, we can define an ideal in <span class="process-math">\(R\)</span> as follows:</div>
-<span class="incontext"><a href="sec-getting-started.html#p-851" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">Consider the symbolic powers <span class="process-math">\(Q^{(n)}\)</span> of <span class="process-math">\(Q\text{.}\)</span> We will show that these stabilize in <span class="process-math">\(R\text{.}\)</span> Since <span class="process-math">\(\overline{R} = R/(f)\)</span> is Artinian, the descending chain of ideals</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q \overline{R} \supseteq Q^{(2)}\overline{R} \supseteq Q^{(3)}\overline{R} \supseteq \cdots
+\end{equation*}
+</div>
+<div class="para">stabilizes. We then have some <span class="process-math">\(n\)</span> such that <span class="process-math">\(Q^{(n)} \overline{R} = Q^{(m)} \overline{R}\)</span> for all <span class="process-math">\(m \geqslant n\text{,}\)</span> and in particular, <span class="process-math">\(Q^{(n)} \overline{R} = Q^{(n+1)} \overline{R}\text{.}\)</span> Pulling back to <span class="process-math">\(R\text{,}\)</span> we get <span class="process-math">\(Q^{(n)} \subseteq Q^{(n+1)} + (f)\text{.}\)</span> Then any element <span class="process-math">\(a \in Q^{(n)}\)</span> can be written as <span class="process-math">\(a = b + fr\text{,}\)</span> where <span class="process-math">\(b \in Q^{(n+1)} \subseteq Q^{(n)}\)</span> and <span class="process-math">\(r \in R\text{.}\)</span> Notice that this implies that <span class="process-math">\(fr \in Q^{(n)}\text{.}\)</span> Since <span class="process-math">\(f\notin Q\text{,}\)</span> we must have <span class="process-math">\(r\in Q^{(n)}\text{.}\)</span> This yields <span class="process-math">\(Q^{(n)} = \fq^{(n+1)} + f \fq^{(n)}\text{.}\)</span> Thus, <span class="process-math">\(Q^{(n)} / Q^{(n+1)} = f(Q^{(n)} / \fq^{(n+1)})\text{,}\)</span> so <span class="process-math">\(Q^{(n)} / Q^{(n+1)} = \fm(Q^{(n)} / Q^{(n+1)})\text{.}\)</span> By , <span class="process-math">\(Q^{(n)} = Q^{(n+1)}\)</span> in <span class="process-math">\(R\text{.}\)</span> Similarly, we obtain <span class="process-math">\(Q^{(n)} = Q^{(m)}\)</span> for all <span class="process-math">\(m \geqslant n\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec-height-generators.html#p-851" class="internal">in-context</a></span>
 </body>
 </html>

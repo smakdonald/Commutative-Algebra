@@ -12,33 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">The following are equivalent:</div>
-<ol class="decimal">
-<li><div class="para">
-<span class="process-math">\(\Lambda\)</span> generates <span class="process-math">\(S\)</span> as an <span class="process-math">\(R\)</span>-algebra.</div></li>
-<li><div class="para logical">
-<div class="para">Every element in <span class="process-math">\(S\)</span> admits a polynomial expression in <span class="process-math">\(\Lambda\)</span> with coefficients in <span class="process-math">\(\phi(R)\text{,}\)</span> i.e.</div>
-<div class="displaymath process-math">
-\begin{equation*}
-S = \left\{\sum_{\mathrm{finite}} \phi(r_{i_1, \ldots, i_n}) \lambda_1^{i_1} \cdots \lambda_n^{i_n} \mid r_l \in R, \lambda_j\in\Lambda, i_j \geqslant 0 \right\}.
-\end{equation*}
-</div>
-</div></li>
-<li><div class="para logical">
-<div class="para">If <span class="process-math">\(R[X]\)</span> is a polynomial ring on a set of indeterminates <span class="process-math">\(X\)</span> in bijection with <span class="process-math">\(\Lambda\text{,}\)</span> then the <span class="process-math">\(R\)</span>-algebra homomorphism</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{CD}
-R[X]^{n}@&gt;\pi&gt;&gt; S\\\\
-x_{i}@&gt;&gt;&gt; \l_{i}
-\end{CD}
-\end{equation*}
-</div>
-<div class="para">is surjective.</div>
-</div></li>
-</ol>
-</div>
-<span class="incontext"><a href="sec-algebras.html#p-41" class="internal">in-context</a></span>
+<div class="para">Note that above, when we first defined the module <span class="process-math">\(N\text{,}\)</span> Macaulay2 immediately stored that information in this exact way, as the image of the same map we just defined. This is useful to keep in mind when you see the results for a computation: if a module is given to us as the image of a matrix, then we are being told that our module is a submodule of some free module. If the matrix has <span class="process-math">\(n\)</span> rows, then that means our module is a submodule of <span class="process-math">\(R^n\text{.}\)</span> Each column corresponds to a generator of our module (as a submodule of <span class="process-math">\(R^n\)</span>).</div>
+<span class="incontext"><a href="sec-gen-mod.html#p-41" class="internal">in-context</a></span>
 </body>
 </html>

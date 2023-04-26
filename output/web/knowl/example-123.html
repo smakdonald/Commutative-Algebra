@@ -12,15 +12,22 @@
 </head>
 <body class="ignore-math">
 <article class="example example-like"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.61</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
-</h3> <div class="para">Let us use our dimension theorems to give two different proofs that over any field <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(\displaystyle R=k[x,y,z]/(y^2-xz)\)</span> has dimension 2.</div> <div class="para">First, we claim that <span class="process-math">\(A = k[x,z]\)</span> is a Noether normalization of <span class="process-math">\(R\text{.}\)</span> First, note that <span class="process-math">\(x\)</span> and <span class="process-math">\(z\)</span> are algebraically independent over <span class="process-math">\(k\text{.}\)</span> Moreover, <span class="process-math">\(R = A[y]\)</span> and <span class="process-math">\(y\)</span> satisfies the monic polynomial <span class="process-math">\(t^2-xz \in A[t]\text{,}\)</span> so <span class="process-math">\(A \subseteq R = A[y]\)</span> is integral, and thus module-finite by . Therefore, <span class="process-math">\(\dim(R) = 2\text{.}\)</span>
-</div> <div class="para logical">
-<div class="para">Alternatively, one can show that <span class="process-math">\(y^2-xz\)</span> is irreducible, e.g., by thinking of it as a polynomial in <span class="process-math">\(y\)</span> and applying Eisenstein's criterion. Then <span class="process-math">\((y^2-xz)\)</span> is a prime of height one, so by  the dimension of <span class="process-math">\(R\)</span> is</div>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.34</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
+</h3> <div class="para logical">
+<div class="para">Suppose <span class="process-math">\(f\)</span> is a regular element on <span class="process-math">\(R\text{,}\)</span> but not a unit. Since <span class="process-math">\(f\)</span> is regular, the map <span class="process-math">\(R \longrightarrow R_f\)</span> is an inclusion, but we claim it is not integral. If <span class="process-math">\(\frac{1}{f}\)</span> is integral over <span class="process-math">\(R\text{,}\)</span> there would be <span class="process-math">\(a_i \in R\)</span> such that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\dim(R) = \dim(k[x,y,z])-\ht((y^2-xz))=3-1=2.
+\frac{1}{f^n} + \frac{a_{n-1}}{f^{n-1}} + \cdots + \frac{a_1}{f} + a_0 = 0.
 \end{equation*}
 </div>
-</div></article><span class="incontext"><a href="sec-noether-normalizations.html#example-123" class="internal">in-context</a></span>
+<div class="para">After multiplying by <span class="process-math">\(f^n\)</span> all terms are of the form <span class="process-math">\(\frac{r}{1}\text{,}\)</span> and thus in <span class="process-math">\(R\text{,}\)</span> since the localization map is injective. So</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1 = -( a_{n-1} f + \cdots + a_1 f^{n-1} + a_0 f^n) \in (f),
+\end{equation*}
+</div>
+<div class="para">and <span class="process-math">\(f\)</span> must be a unit. So whenever <span class="process-math">\(f\)</span> is a regular element but not a unit, <span class="process-math">\(R \longrightarrow R_f\)</span> is an example of an inclusion that is not integral. Note that the image of the map on Spec is the complement of <span class="process-math">\(V(f)\text{,}\)</span> so in particular the map is not surjective.</div>
+</div> <div class="para">In contrast, the map <span class="process-math">\(R \longrightarrow R/(f)\)</span> is integral, since it is module-finite, but it is not an inclusion. The map on Spec is again not surjective: its image is <span class="process-math">\(V(f)\text{.}\)</span>
+</div></article><span class="incontext"><a href="sec-over-up-down.html#example-123" class="internal">in-context</a></span>
 </body>
 </html>

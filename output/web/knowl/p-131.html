@@ -13,25 +13,25 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical"><ol class="decimal">
-<li><div class="para">The ring <span class="process-math">\(\mathbb{Z}[\sqrt{d}]\text{,}\)</span> where <span class="process-math">\(d \in \mathbb{Z}\)</span> is not a perfect square, is integral over <span class="process-math">\(\mathbb{Z}\text{.}\)</span>                 Indeed, <span class="process-math">\(\sqrt{d}\)</span> satisfies the monic polynomial <span class="process-math">\(x^2-d\text{,}\)</span> and since the integral closure of <span class="process-math">\(\mathbb{Z}\)</span> is a ring containing <span class="process-math">\(\mathbb{Z}\)</span> and <span class="process-math">\(\sqrt{d}\text{,}\)</span> and <span class="process-math">\(\mathbb{Z}[\sqrt{d}]\)</span> is the smallest such ring, we conclude that every element in <span class="process-math">\(\Z[\sqrt{d}]\)</span> is integral over <span class="process-math">\(\mathbb{Z}\text{.}\)</span>
-</div></li>
-<li>
-<div class="para logical">
-<div class="para">Let <span class="process-math">\(R=\C[x,y] \subseteq S=\C[x,y,z]/(x^2+y^2+z^2)\text{.}\)</span> Then we claim that <span class="process-math">\(S\)</span> is module-finite over <span class="process-math">\(R.\)</span> To see this we first need to realize <span class="process-math">\(R\)</span> as a subring of <span class="process-math">\(S\text{.}\)</span> To do that, consider the <span class="process-math">\(\C\)</span>-algebra homomorphism</div>
-<div class="displaymath process-math">
+<li><div class="para">When <span class="process-math">\(R\)</span> is a field, this is a basic linear algebra fact. We will deduce the case of a general ring from the field case. The ring <span class="process-math">\(R\)</span> is a <span class="process-math">\(\Z\)</span>-algebra, so we can write <span class="process-math">\(R\)</span> as a quotient of some polynomial ring <span class="process-math">\(\Z[X]\text{.}\)</span> Let <span class="process-math">\(\psi:\Z[X]\to R\)</span> be a surjection, <span class="process-math">\(a_{ij}\in \Z[X]\)</span> be such that <span class="process-math">\(\psi(a_{ij})=b_{ij},\)</span> and let <span class="process-math">\(A=[a_{ij}]\text{.}\)</span> Note that<div class="displaymath process-math">
 \begin{equation*}
-\begin{CD}
-R@&gt;\varphi&gt;&gt; S\\\\
-(x,y)@&gt;&gt;&gt; (x,y)
-\end{CD}
+\psi(\mathrm{adj}(A)_{ij})=\mathrm{adj}(B)_{ij} \quad \textrm{ and } \quad \psi((\mathrm{adj}(A) A)_{ij}) = (\mathrm{adj}(B) B)_{ij},
+\end{equation*}
+</div>since <span class="process-math">\(\psi\)</span> is a homomorphism, and the entries are the same polynomial functions of the entries of the matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(B\text{,}\)</span> respectively. Thus, it suffices to establish<div class="displaymath process-math">
+\begin{equation*}
+\mathrm{adj}(B) B = \det(B) I_{n\times n}
+\end{equation*}
+</div>in the case when <span class="process-math">\(R=\Z[X]\text{,}\)</span> and we can do this entry by entry. Now, <span class="process-math">\(R=\Z[X]\)</span> is an integral domain, hence a subring of a field (its fraction field). Since both sides of the equation<div class="displaymath process-math">
+\begin{equation*}
+\left( \mathrm{adj}(B) B \right)_{ij} = \left( \det(B) I_{n\times n}\right)_{ij}
+\end{equation*}
+</div>live in <span class="process-math">\(R\)</span> and are equal in the fraction field (by linear algebra) they are equal in <span class="process-math">\(R\text{.}\)</span> This holds for all <span class="process-math">\(i, j\text{,}\)</span> and thus 1) holds.</div></li>
+<li><div class="para">By assumption, we have <span class="process-math">\((r I_{n\times n} - B) v=0\text{,}\)</span> so by part 1)<div class="displaymath process-math">
+\begin{equation*}
+\det(r I_{n\times n} - B) v=\mathrm{adj}(r I_{n\times n} - B) (r I_{n\times n} - B) v = 0.
 \end{equation*}
 </div>
-<div class="para">The kernel of <span class="process-math">\(\varphi\)</span> consists of the polynomials in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> that are multiples of <span class="process-math">\(x^2+y^2+z^2\text{,}\)</span> but any nonzero multiple of <span class="process-math">\(x^2+y^2+z^2\)</span> in <span class="process-math">\(\C[x,y,z]=R[z]\)</span> must have <span class="process-math">\(z\)</span>-degree at least <span class="process-math">\(2\text{,}\)</span> which implies it involves <span class="process-math">\(z\)</span> and thus it is not in <span class="process-math">\(\C[x,y]\text{.}\)</span> We conclude that <span class="process-math">\(\varphi\)</span> is injective, and thus <span class="process-math">\(R \subseteq S.\)</span>
-</div>
-</div>
-<div class="para">Now <span class="process-math">\(S\)</span> is generated over <span class="process-math">\(R\)</span> as an algebra by one element, <span class="process-math">\(z\text{,}\)</span> and <span class="process-math">\(z\)</span> satisfies the monic equation <span class="process-math">\(t^2 + (x^2+y^2) = 0\text{,}\)</span> so <span class="process-math">\(S\)</span> is integral over <span class="process-math">\(R\text{.}\)</span>
-</div>
-</li>
+</div></li>
 </ol></div>
 <span class="incontext"><a href="sec-integral-extensions.html#p-131" class="internal">in-context</a></span>
 </body>

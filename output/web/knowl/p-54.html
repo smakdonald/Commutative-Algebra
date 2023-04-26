@@ -13,16 +13,11 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Unfortunately, Macaulay2 does not understand subalgebras directly, only quotient rings. But as we have discussed, any <span class="process-math">\(R\)</span>-algebra can be thought of as a quotient of a polynomial ring over <span class="process-math">\(R\text{.}\)</span> For example, the Veronese algebra <span class="process-math">\(V = \mathbb{Q}[x^2, xy, xz, y^2, yz, z^2]\)</span> is a quotient of a polynomial ring over <span class="process-math">\(\mathbb{Q}\)</span> in <span class="process-math">\(6\)</span> variables, since it has <span class="process-math">\(6\)</span> algebra generators. More precisely, <span class="process-math">\(V\)</span> is the image of the map</div>
+<div class="para">Every element in <span class="process-math">\(S\)</span> admits a polynomial expression in <span class="process-math">\(\Lambda\)</span> with coefficients in <span class="process-math">\(\phi(R)\text{,}\)</span> i.e.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\begin{CD}
-\Q[w_1, \ldots, w_6]@&gt;\pi&gt;&gt; R\\\\
-(w_1, \ldots, w_6)@&gt;&gt;&gt; (x^2, xy, xz, y^2, yz, z^2)
-\end{CD}
+S = \left\{\sum_{\mathrm{finite}} \phi(r_{i_1, \ldots, i_n}) \lambda_1^{i_1} \cdots \lambda_n^{i_n} \mid r_l \in R, \lambda_j\in\Lambda, i_j \geqslant 0 \right\}.
 \end{equation*}
-</div>
-<div class="para">so by the First Isomorphism Theorem, <span class="process-math">\(V \cong \mathbb{Q}[w_1, \ldots, w_6]/ \ker \pi\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="sec-algebras.html#p-54" class="internal">in-context</a></span>

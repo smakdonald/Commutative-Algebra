@@ -13,14 +13,17 @@
 <body class="ignore-math">
 <article class="hiddenproof"><h3 class="heading"><span class="type">Proof</span></h3>
 <div class="para logical">
-<div class="para">In this case we can reduce to the case of an inclusion: <span class="process-math">\(f\!: R \to S\)</span> factors through <span class="process-math">\(R/\ker f\text{,}\)</span> and the map induced on Spec factors as</div>
+<div class="para">Consider the maps</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\Spec(S) \longrightarrow \Spec(R) = \Spec(S) \longrightarrow \Spec(R/\ker f) \longrightarrow \Spec(R).
+\begin{CD}
+S@&gt;\pi&gt;&gt;S/PS@&gt;g&gt;&gt;(R\setminus P)\inv(S/PS).
+\end{CD}
 \end{equation*}
 </div>
-<div class="para">Since the map on spectra induced by <span class="process-math">\(R \longrightarrow R/\ker(f)\)</span> is injective, we can replace <span class="process-math">\(R\)</span> by the quotient and assume <span class="process-math">\(\varphi\)</span> is an integral inclusion.</div>
-</div> <div class="para">So suppose <span class="process-math">\(R \subseteq S\)</span> is integral, and let <span class="process-math">\(\fa = P \cap R = Q \cap R\text{.}\)</span> By , localizing at <span class="process-math">\((R\setminus \fa)\)</span> preserves integrality. %We claim that localizing at <span class="process-math">\((R\setminus \fp)\)</span> preserves integrality: if <span class="process-math">\(x\in S\)</span> and <span class="process-math">\(w\in R\setminus \fp\text{,}\)</span> then we have equations of the form</div> <div class="para">By localizing <span class="process-math">\(R\)</span> at <span class="process-math">\((R \setminus \fa)\text{,}\)</span> the image of <span class="process-math">\(\fa\)</span> is a maximal ideal. So we can reduce to the situation where <span class="process-math">\(R \cap P = R \cap Q\)</span> is a maximal ideal. By , <span class="process-math">\(P \subseteq Q\)</span> are both maximal ideals. Therefore, <span class="process-math">\(P = Q\text{.}\)</span>
+<div class="para">For any localization map or any quotient map, the induced map on Spec is a homeomorphism onto its image. The map on spectra induced by <span class="process-math">\(\pi\)</span> can be identified with the inclusion of <span class="process-math">\(V(P S)\)</span> into <span class="process-math">\(\Spec(S)\text{.}\)</span> For the second map, <span class="process-math">\(g\text{,}\)</span> we saw in  that the map on spectra can be identified with the inclusion of the set of primes that do not intersect <span class="process-math">\(R \setminus P\text{,}\)</span> i.e., those whose contraction is contained in <span class="process-math">\(P\text{.}\)</span> Therefore, <span class="process-math">\((g \circ \pi)^*\)</span> is injective, since it is the composition of two injective maps.</div>
+</div> <div class="para">On the one hand, if a prime <span class="process-math">\(Q\)</span> contains <span class="process-math">\(PS\text{,}\)</span> then <span class="process-math">\(Q \cap R \supseteq PS \cap R \supseteq P\text{.}\)</span> If moreover <span class="process-math">\(Q \cap R \subseteq P\text{,}\)</span> we must have <span class="process-math">\(Q \cap R = P\text{.}\)</span>
+</div> <div class="para">We have thus shown that the image of <span class="process-math">\((g \circ \pi)^*\)</span> is the set of primes in <span class="process-math">\(S\)</span> that contract to <span class="process-math">\(P\text{.}\)</span> %So <span class="process-math">\(Q\)</span> is in the image if and only if <span class="process-math">\(\psi^{-1}(Q) = P\text{.}\)</span>
 </div></article><span class="incontext"><a href="sec-over-up-down.html#proof-99" class="internal">in-context</a></span>
 </body>
 </html>

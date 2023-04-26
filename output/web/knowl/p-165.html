@@ -11,8 +11,45 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
-<div class="para">(4)<span class="process-math">\(\Rightarrow\)</span>(5): This is the definition of being finitely generated.</div>
-<span class="incontext"><a href="sec-noetherian.html#p-165" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">The sequence</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;M@&gt;f&gt;&gt;N
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is exact if and only if <span class="process-math">\(f\)</span> is injective. Similarly,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+M@&gt;f&gt;&gt;N@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is exact if and only if <span class="process-math">\(f\)</span> is surjective. As a consequence, we see that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;M@&gt;f&gt;&gt;N@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is exact if and only if <span class="process-math">\(f\)</span> is an isomorphism. Moreover,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{CD}
+0@&gt;&gt;&gt;A@&gt;f&gt;&gt;B@&gt;g&gt;&gt;C@&gt;&gt;&gt;0
+\end{CD}
+\end{equation*}
+</div>
+<div class="para">is a short exact sequence if and only if</div>
+<ol class="decimal"><li><div class="para"><span class="process-math">\(\displaystyle f \text{is injective} \amp g \text{is surjective} \amp \im f=\ker g\)</span></div></li></ol>
+<div class="para">So when this is indeed a short exact sequence, we can identify <span class="process-math">\(A\)</span> with its image <span class="process-math">\(f(A)\text{,}\)</span> which makes <span class="process-math">\(A = \ker g\text{.}\)</span> Moreover, since <span class="process-math">\(g\)</span> is surjective, by the First Isomorphism Theorem we conclude that <span class="process-math">\(C \cong B/A\text{,}\)</span> so we might abuse notation and identify <span class="process-math">\(C\)</span> with <span class="process-math">\(B/A\text{.}\)</span> In particular, note that <span class="process-math">\(C = \coker f\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec-ses.html#p-165" class="internal">in-context</a></span>
 </body>
 </html>
