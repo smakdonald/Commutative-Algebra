@@ -60,7 +60,7 @@ window.MathJax = {
 <link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.6/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_bluegreen_grey.css" rel="stylesheet" type="text/css">
 <link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext book ignore-math">
@@ -590,7 +590,7 @@ window.MathJax = {
 <div class="para">A morphism of varieties <span class="process-math">\(\phi: X \to Y\)</span> is an <em class="emphasis">isomorphism</em>  if there is some morphism of varieties <span class="process-math">\(\phi: Y \to X\)</span> such that <span class="process-math">\(\phi\circ \psi = \id_Y\)</span> and <span class="process-math">\(\psi \circ \phi = \id_X\text{.}\)</span>
 </div>
 </div></article><article class="example example-like" id="example-51"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.19</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.19</span><span class="period">.</span><span class="space"> </span><span class="title">.</span>
 </h3> <div class="para logical" id="p-421"><ol class="decimal">
 <li id="li-79"><div class="para" id="p-derived-li-79">Let <span class="process-math">\(k\)</span> be an infinite field. Consider <span class="process-math">\(X = \cZ(xy -1) \subseteq \A^2_k\)</span> (i.e., <span class="process-math">\(X\)</span> is a hyperbola) and define <span class="process-math">\(\phi: X \to \A^1_k\)</span> by <span class="process-math">\(\phi(a,b) = a\text{.}\)</span> Then <span class="process-math">\(\phi\)</span> is an algebraic map (indeed, it is given by a linear polynomial) and its image is <span class="process-math">\(\A^1_k \setminus \{0\}\text{,}\)</span> which is <em class="emphasis">not</em> an algebraic subset of <span class="process-math">\(\A^1_k\text{.}\)</span> So the set-theoretic image of a morphism of varieties need not be a variety.</div></li>
 <li id="li-80"><div class="para" id="p-derived-li-80">Take an infinite field, and let <span class="process-math">\(Y\)</span> be the classical cuspidal curve: <div class="displaymath process-math">
@@ -643,7 +643,7 @@ f(y_{1},\dots,y_{n})@&gt;&gt;&gt; f(g_{1}(x),\dots,g_n(x))
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.24</span><span class="period">.</span><span class="space"> </span><span class="title">Exercise -.</span>
 </h3> <div class="para" id="p-430">For any field <span class="process-math">\(k\text{,}\)</span> there is a contravariant functor from affine varieties over <span class="process-math">\(k\)</span> to affine <span class="process-math">\(k\)</span>-algebras that (a) on objects, maps a variety <span class="process-math">\(X\)</span> to its coordinate ring <span class="process-math">\(k[X]\text{,}\)</span> (b) on morphisms, maps a morphism of varieties <span class="process-math">\(X \xrightarrow{\phi} Y\)</span> to its pullback <span class="process-math">\(k[Y] \xrightarrow{\phi^*} k[X]\text{.}\)</span>
 </div></article><article class="example example-like" id="example-54"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.25</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.25</span><span class="period">.</span><span class="space"> </span><span class="title">.</span>
 </h3> <div class="para logical" id="p-431">
 <div class="para">We saw before that</div>
 <div class="displaymath process-math">
@@ -654,7 +654,7 @@ X= \{ (t,t^2,t^3) \ | \ t \in k \}
 <div class="para">is a subvariety of <span class="process-math">\(\mathbb{A}^3_k\text{.}\)</span> Thus its coordinate ring is of the form <span class="process-math">\(k[X] = k[x,y,z]/\cI(X)\text{.}\)</span> To compute <span class="process-math">\(\cI(X)\text{,}\)</span> note that the polynomials <span class="process-math">\(f \in k[x,y,z]\)</span> that vanish at every point of <span class="process-math">\(X\)</span> are precisely the polynomials in the kernel of the map <span class="process-math">\(k[x,y,z] \to k[t]\)</span> given by <span class="process-math">\(x \mapsto t\text{,}\)</span> <span class="process-math">\(y \mapsto t^2\text{,}\)</span> and <span class="process-math">\(z \mapsto t^3\text{.}\)</span> Then one can show that <span class="process-math">\(\cI(X) = (x^2-y,x^3-z)\text{.}\)</span> For an explicit field like <span class="process-math">\(\mathbb{R}\)</span> or <span class="process-math">\(\mathbb{C}\text{,}\)</span> we can also compute this kernel in Macaulay2. Notice, in fact, that <span class="process-math">\(k[X] \cong k[t,t^2,t^3]\text{.}\)</span>
 </div>
 </div></article><article class="example example-like" id="example-55"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.26</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\ex\)</span> -.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.26</span><span class="period">.</span><span class="space"> </span><span class="title">.</span>
 </h3> <div class="para logical" id="p-432">
 <div class="para">Fix a field <span class="process-math">\(k\text{,}\)</span> and let <span class="process-math">\(R = k[x,y,z]\text{.}\)</span> Consider the ideal <span class="process-math">\(P\)</span> given by</div>
 <div class="displaymath process-math">

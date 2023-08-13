@@ -12,7 +12,13 @@
 </head>
 <body class="ignore-math">
 <h2 class="heading"><span class="type">Paragraph</span></h2>
-<div class="para">When you make a new definition in Macaulay2, you might want to pay attention to what ring your new object is defined over. For example, now that we defined this ring <span class="process-math">\(S\text{,}\)</span> Macaulay2 has automatically taken <span class="process-math">\(S\)</span> to be our current ambient ring, and any calculation or definition we run next will be considered over <span class="process-math">\(S\)</span> and not <span class="process-math">\(R\text{.}\)</span> If you want to return to the original ring <span class="process-math">\(R\text{,}\)</span> you must first run the command <code class="code-inline tex2jax_ignore">use R</code>
+<div class="para logical">
+<div class="para">It's important to note that while <span class="process-math">\(R\)</span> is a ring, <span class="process-math">\(R^1\)</span> is the <span class="process-math">\(R\)</span>-module <span class="process-math">\(R\)</span> — this is a very important difference for Macaulay2, since these two objects have different types. So <span class="process-math">\(S\)</span> defined above is a ring, while <span class="process-math">\(M\)</span> is a module. Notice that Macaulay2 stored the module <span class="process-math">\(M\)</span> as the cokernel of the map</div>
+<div class="displaymath process-math">
+\begin{equation*}
+R^3\xrightarrow {[x^2\;\;y^2\;\;xy]} R.
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec-getting-started.html#p-962" class="internal">in-context</a></span>
 </body>
