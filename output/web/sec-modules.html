@@ -548,6 +548,19 @@ window.MathJax = {
 </ul>
 </li>
 <li>
+<div class="toc-item"><a href="part-homological.html" class="internal"><span class="codenumber">II</span> <span class="title">Homological Algebra</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="ch-where.html" class="internal"><span class="codenumber">1</span> <span class="title">Where Are We Going?</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="sec-complex-homology.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Complexes and Homology</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-complex-homology.html#subsec-complex-ses" class="internal"><span class="title">Complexes and Exact Sequences</span></a></div></li>
+<li><div class="toc-item"><a href="sec-complex-homology.html#subsec-homology" class="internal"><span class="title">Homology</span></a></div></li>
+</ul>
+</li></ul>
+</li></ul>
+</li>
+<li>
 <div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural">
 <li>
@@ -575,44 +588,44 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-modules"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">A.2</span> <span class="title">Modules</span>
 </h2>
-<div class="para" id="p-936">Just like linear algebra is the study of vector spaces over fields, commutative algebra often focuses on the structure of modules over commutative rings. While in other branches of algebra modules might be left- or right-modules, our modules are usually two sided, and we refer to them simply as modules.</div>
+<div class="para" id="p-977">Just like linear algebra is the study of vector spaces over fields, commutative algebra often focuses on the structure of modules over commutative rings. While in other branches of algebra modules might be left- or right-modules, our modules are usually two sided, and we refer to them simply as modules.</div>
 <article class="definition definition-like" id="def-module"><h2 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">A.15</span><span class="period">.</span><span class="space"> </span><span class="title">Modules.</span>
-</h2> <div class="para" id="p-937">Given a ring <span class="process-math">\(R\text{,}\)</span> an <dfn class="terminology"><span class="process-math">\(R\)</span>-module</dfn> <span class="process-math">\((M,+)\)</span> is an abelian group equipped with an <span class="process-math">\(R\)</span>-action that is compatible with the group structure. More precisely, there is an operation <span class="process-math">\(\cdot: R \times M \longrightarrow M\)</span> such that</div> <div class="para logical" id="p-938"><ul class="disc">
-<li id="li-109"><div class="para" id="p-939">
+</h2> <div class="para" id="p-978">Given a ring <span class="process-math">\(R\text{,}\)</span> an <dfn class="terminology"><span class="process-math">\(R\)</span>-module</dfn> <span class="process-math">\((M,+)\)</span> is an abelian group equipped with an <span class="process-math">\(R\)</span>-action that is compatible with the group structure. More precisely, there is an operation <span class="process-math">\(\cdot: R \times M \longrightarrow M\)</span> such that</div> <div class="para logical" id="p-979"><ul class="disc">
+<li id="li-112"><div class="para" id="p-980">
 <span class="process-math">\(r \cdot (a + b) = r \cdot a + r \cdot b\)</span> for all <span class="process-math">\(r \in R\)</span> and <span class="process-math">\(a, b \in M\text{,}\)</span>
 </div></li>
-<li id="li-110"><div class="para" id="p-940">
+<li id="li-113"><div class="para" id="p-981">
 <span class="process-math">\((r+s) \cdot a = r \cdot a + s \cdot a\)</span> for all <span class="process-math">\(r,s \in R\)</span> and <span class="process-math">\(a \in M\text{,}\)</span>
 </div></li>
-<li id="li-111"><div class="para" id="p-941">
+<li id="li-114"><div class="para" id="p-982">
 <span class="process-math">\((rs) \cdot a = r \cdot (s \cdot a)\)</span> for all <span class="process-math">\(r, s \in R\)</span> and <span class="process-math">\(a \in M\text{,}\)</span> and</div></li>
-<li id="li-112"><div class="para" id="p-942">
+<li id="li-115"><div class="para" id="p-983">
 <span class="process-math">\(1 \cdot a = a\)</span> for all <span class="process-math">\(a \in M\text{.}\)</span>
 </div></li>
-</ul></div> <div class="para" id="p-943">We typically write <span class="process-math">\(r a\)</span> for <span class="process-math">\(r \cdot a\text{,}\)</span> and denote the additive identity in <span class="process-math">\(M\)</span> by <span class="process-math">\(0\text{,}\)</span> or <span class="process-math">\(0_M\)</span> if we need to distinguish it from <span class="process-math">\(0_R\text{.}\)</span>
-</div></article><div class="para" id="p-944">The definitions of submodule, quotient of modules, and homomorphism of modules are very natural and easy to guess, but here they are.</div>
+</ul></div> <div class="para" id="p-984">We typically write <span class="process-math">\(r a\)</span> for <span class="process-math">\(r \cdot a\text{,}\)</span> and denote the additive identity in <span class="process-math">\(M\)</span> by <span class="process-math">\(0\text{,}\)</span> or <span class="process-math">\(0_M\)</span> if we need to distinguish it from <span class="process-math">\(0_R\text{.}\)</span>
+</div></article><div class="para" id="p-985">The definitions of submodule, quotient of modules, and homomorphism of modules are very natural and easy to guess, but here they are.</div>
 <article class="definition definition-like" id="def-submodule"><h2 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">A.16</span><span class="period">.</span><span class="space"> </span><span class="title">Submodule, Homomorphism, Quotient Modules.</span>
-</h2> <div class="para" id="p-945">If <span class="process-math">\(N \subseteq M\)</span> are <span class="process-math">\(R\)</span>-modules with compatible structures, we say that <span class="process-math">\(N\)</span> is a <dfn class="terminology">submodule</dfn> of <span class="process-math">\(M\text{.}\)</span>
-</div> <div class="para" id="p-946">A map <span class="process-math">\(M\xrightarrow f N\)</span> between <span class="process-math">\(R\)</span>-modules is a <dfn class="terminology">homomorphism of <span class="process-math">\(R\)</span>-modules</dfn> if it is a homomorphism of abelian groups that preserves the <span class="process-math">\(R\)</span>-action, meaning <span class="process-math">\(f(ra) = rf(a)\)</span> for all <span class="process-math">\(r \in R\)</span> and all <span class="process-math">\(a \in M\text{.}\)</span> We sometimes refer to <span class="process-math">\(R\)</span>-module homomorphisms as <dfn class="terminology"><span class="process-math">\(R\)</span>-module maps</dfn>, or <dfn class="terminology">maps of <span class="process-math">\(R\)</span>-modules</dfn>. An isomorphism of <span class="process-math">\(R\)</span>-modules is a bijective homomorphism, which we really should think about as a relabeling of the elements in our module. If two modules <span class="process-math">\(M\)</span> and <span class="process-math">\(N\)</span> are isomorphic, we write <span class="process-math">\(M \cong N\text{.}\)</span>
-</div> <div class="para" id="p-947">Given an <span class="process-math">\(R\)</span>-module <span class="process-math">\(M\)</span> and a submodule <span class="process-math">\(N \subseteq M\text{,}\)</span> the <dfn class="terminology">quotient module</dfn> <span class="process-math">\(M/N\)</span> is an <span class="process-math">\(R\)</span>-module whose elements are the equivalence classes under the relation on <span class="process-math">\(M\)</span> given by <span class="process-math">\(a \sim b \Leftrightarrow a-b \in N\text{.}\)</span> One can check that this set naturally inherits an <span class="process-math">\(R\)</span>-module structure from the <span class="process-math">\(R\)</span>-module structure on <span class="process-math">\(M\text{,}\)</span> and it comes equipped with a natural <dfn class="terminology">canonical map</dfn> <span class="process-math">\(M \longrightarrow M/N\)</span> induced by sending <span class="process-math">\(1\)</span> to its equivalence class.</div></article><article class="example example-like" id="example-135"><h2 class="heading">
+</h2> <div class="para" id="p-986">If <span class="process-math">\(N \subseteq M\)</span> are <span class="process-math">\(R\)</span>-modules with compatible structures, we say that <span class="process-math">\(N\)</span> is a <dfn class="terminology">submodule</dfn> of <span class="process-math">\(M\text{.}\)</span>
+</div> <div class="para" id="p-987">A map <span class="process-math">\(M\xrightarrow f N\)</span> between <span class="process-math">\(R\)</span>-modules is a <dfn class="terminology">homomorphism of <span class="process-math">\(R\)</span>-modules</dfn> if it is a homomorphism of abelian groups that preserves the <span class="process-math">\(R\)</span>-action, meaning <span class="process-math">\(f(ra) = rf(a)\)</span> for all <span class="process-math">\(r \in R\)</span> and all <span class="process-math">\(a \in M\text{.}\)</span> We sometimes refer to <span class="process-math">\(R\)</span>-module homomorphisms as <dfn class="terminology"><span class="process-math">\(R\)</span>-module maps</dfn>, or <dfn class="terminology">maps of <span class="process-math">\(R\)</span>-modules</dfn>. An isomorphism of <span class="process-math">\(R\)</span>-modules is a bijective homomorphism, which we really should think about as a relabeling of the elements in our module. If two modules <span class="process-math">\(M\)</span> and <span class="process-math">\(N\)</span> are isomorphic, we write <span class="process-math">\(M \cong N\text{.}\)</span>
+</div> <div class="para" id="p-988">Given an <span class="process-math">\(R\)</span>-module <span class="process-math">\(M\)</span> and a submodule <span class="process-math">\(N \subseteq M\text{,}\)</span> the <dfn class="terminology">quotient module</dfn> <span class="process-math">\(M/N\)</span> is an <span class="process-math">\(R\)</span>-module whose elements are the equivalence classes under the relation on <span class="process-math">\(M\)</span> given by <span class="process-math">\(a \sim b \Leftrightarrow a-b \in N\text{.}\)</span> One can check that this set naturally inherits an <span class="process-math">\(R\)</span>-module structure from the <span class="process-math">\(R\)</span>-module structure on <span class="process-math">\(M\text{,}\)</span> and it comes equipped with a natural <dfn class="terminology">canonical map</dfn> <span class="process-math">\(M \longrightarrow M/N\)</span> induced by sending <span class="process-math">\(1\)</span> to its equivalence class.</div></article><article class="example example-like" id="example-136"><h2 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">A.17</span><span class="period">.</span>
 </h2>
-<div class="para" id="p-948">The modules over a field <span class="process-math">\(k\)</span> are precisely all the <span class="process-math">\(k\)</span>-vector spaces. Linear transformations are precisely all the <span class="process-math">\(k\)</span>-module maps.</div></article><article class="example example-like" id="example-136"><h2 class="heading">
+<div class="para" id="p-989">The modules over a field <span class="process-math">\(k\)</span> are precisely all the <span class="process-math">\(k\)</span>-vector spaces. Linear transformations are precisely all the <span class="process-math">\(k\)</span>-module maps.</div></article><article class="example example-like" id="example-137"><h2 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">A.18</span><span class="period">.</span>
 </h2>
-<div class="para" id="p-949">The <span class="process-math">\(\mathbb{Z}\)</span>-modules are precisely all the abelian groups.</div></article><article class="example example-like" id="example-137"><h2 class="heading">
+<div class="para" id="p-990">The <span class="process-math">\(\mathbb{Z}\)</span>-modules are precisely all the abelian groups.</div></article><article class="example example-like" id="example-138"><h2 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">A.19</span><span class="period">.</span>
 </h2>
-<div class="para" id="p-950">When we think of the ring <span class="process-math">\(R\)</span> as a module over itself, the submodules of <span class="process-math">\(R\)</span> are precisely the ideals of <span class="process-math">\(R\text{.}\)</span>
+<div class="para" id="p-991">When we think of the ring <span class="process-math">\(R\)</span> as a module over itself, the submodules of <span class="process-math">\(R\)</span> are precisely the ideals of <span class="process-math">\(R\text{.}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-4"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-4"><h2 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">A.20</span><span class="period">.</span>
-</h2></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-4"><article class="exercise exercise-like"><div class="para" id="p-951">The kernel <span class="process-math">\(\operatorname{ker}f\)</span> and image <span class="process-math">\(\mathop{\mathrm{im}}f\)</span> of an <span class="process-math">\(R\)</span>-module homomorphism <span class="process-math">\(M\xrightarrow f N\)</span> are submodules of <span class="process-math">\(M\)</span> and <span class="process-math">\(N\text{,}\)</span> respectively.</div></article></div>
+</h2></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-4"><article class="exercise exercise-like"><div class="para" id="p-992">The kernel <span class="process-math">\(\operatorname{ker}f\)</span> and image <span class="process-math">\(\mathop{\mathrm{im}}f\)</span> of an <span class="process-math">\(R\)</span>-module homomorphism <span class="process-math">\(M\xrightarrow f N\)</span> are submodules of <span class="process-math">\(M\)</span> and <span class="process-math">\(N\text{,}\)</span> respectively.</div></article></div>
 <article class="theorem theorem-like" id="thm-fit-mod"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.21</span><span class="period">.</span><span class="space"> </span><span class="title">First Isomorphism Theorem.</span>
 </h2>
-<div class="para" id="p-952">If <span class="process-math">\(M \xrightarrow{f} N\)</span> is a homomorphism of <span class="process-math">\(R\)</span>-modules, then <span class="process-math">\(M/\operatorname{ker}f \cong \mathop{\mathrm{im}}{f}\text{.}\)</span>
+<div class="para" id="p-993">If <span class="process-math">\(M \xrightarrow{f} N\)</span> is a homomorphism of <span class="process-math">\(R\)</span>-modules, then <span class="process-math">\(M/\operatorname{ker}f \cong \mathop{\mathrm{im}}{f}\text{.}\)</span>
 </div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-rings-ideals.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="macaulay2.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

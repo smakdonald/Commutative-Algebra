@@ -548,6 +548,19 @@ window.MathJax = {
 </ul>
 </li>
 <li>
+<div class="toc-item"><a href="part-homological.html" class="internal"><span class="codenumber">II</span> <span class="title">Homological Algebra</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="ch-where.html" class="internal"><span class="codenumber">1</span> <span class="title">Where Are We Going?</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="sec-complex-homology.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Complexes and Homology</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-complex-homology.html#subsec-complex-ses" class="internal"><span class="title">Complexes and Exact Sequences</span></a></div></li>
+<li><div class="toc-item"><a href="sec-complex-homology.html#subsec-homology" class="internal"><span class="title">Homology</span></a></div></li>
+</ul>
+</li></ul>
+</li></ul>
+</li>
+<li>
 <div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
 <ul class="structural">
 <li>
@@ -575,42 +588,42 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-rings-ideals"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">A.1</span> <span class="title">Rings and Ideals</span>
 </h2>
-<div class="para" id="p-890">Commutative Algebra is the branch of algebra that studies commutative rings and modules over such rings. For a commutative algebraist, every ring is commutative and has a <span class="process-math">\(1 \neq 0\text{.}\)</span>
+<div class="para" id="p-931">Commutative Algebra is the branch of algebra that studies commutative rings and modules over such rings. For a commutative algebraist, every ring is commutative and has a <span class="process-math">\(1 \neq 0\text{.}\)</span>
 </div>
 <article class="definition definition-like" id="def-ring"><h2 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">A.1</span><span class="period">.</span><span class="space"> </span><span class="title">Ring.</span>
-</h2> <div class="para" id="p-891">A <dfn class="terminology">ring</dfn> is a set <span class="process-math">\(R\)</span> equipped with two binary operations <span class="process-math">\(+\)</span> and <span class="process-math">\(\cdot\)</span> satisfying the following properties:</div> <div class="para logical" id="p-892"><ol class="decimal">
-<li id="li-89">
-<div class="para" id="p-893">
+</h2> <div class="para" id="p-932">A <dfn class="terminology">ring</dfn> is a set <span class="process-math">\(R\)</span> equipped with two binary operations <span class="process-math">\(+\)</span> and <span class="process-math">\(\cdot\)</span> satisfying the following properties:</div> <div class="para logical" id="p-933"><ol class="decimal">
+<li id="li-92">
+<div class="para" id="p-934">
 <span class="process-math">\(R\)</span> is an abelian group under the addition operation <span class="process-math">\(+\text{,}\)</span> with additive identity <span class="process-math">\(0\text{,}\)</span> or <span class="process-math">\(0_R\)</span> if we need to specify which ring we are talking about. Explicitly, this means that</div>
-<div class="para logical" id="p-894"><ul class="disc">
-<li id="li-90"><div class="para" id="p-895">
+<div class="para logical" id="p-935"><ul class="disc">
+<li id="li-93"><div class="para" id="p-936">
 <span class="process-math">\(a + (b+c) = (a+b) + c\)</span> for all <span class="process-math">\(a, b, c \in R\text{,}\)</span>
 </div></li>
-<li id="li-91"><div class="para" id="p-896">
+<li id="li-94"><div class="para" id="p-937">
 <span class="process-math">\(a + b = b + a\)</span> for all <span class="process-math">\(a, b \in R\text{,}\)</span>
 </div></li>
-<li id="li-92"><div class="para" id="p-897">there is an element <span class="process-math">\(0 \in R\)</span> such that <span class="process-math">\(0 + a = a\)</span> for all <span class="process-math">\(a \in R\text{,}\)</span> and</div></li>
-<li id="li-93"><div class="para" id="p-898">for each <span class="process-math">\(a \in R\)</span> there exists an element <span class="process-math">\(-a \in R\)</span> such that <span class="process-math">\(a + (-a) = 0\text{.}\)</span>
+<li id="li-95"><div class="para" id="p-938">there is an element <span class="process-math">\(0 \in R\)</span> such that <span class="process-math">\(0 + a = a\)</span> for all <span class="process-math">\(a \in R\text{,}\)</span> and</div></li>
+<li id="li-96"><div class="para" id="p-939">for each <span class="process-math">\(a \in R\)</span> there exists an element <span class="process-math">\(-a \in R\)</span> such that <span class="process-math">\(a + (-a) = 0\text{.}\)</span>
 </div></li>
 </ul></div>
 </li>
-<li id="li-94">
-<div class="para" id="p-899">
+<li id="li-97">
+<div class="para" id="p-940">
 <span class="process-math">\(R\)</span> is a commutative monoid under the multiplication operation <span class="process-math">\(\cdot\text{,}\)</span> with multiplicative identity <span class="process-math">\(1_R\)</span> or simply <span class="process-math">\(1\text{.}\)</span> Explicitly, this means that</div>
-<div class="para logical" id="p-900"><ul class="disc">
-<li id="li-95"><div class="para" id="p-901">
+<div class="para logical" id="p-941"><ul class="disc">
+<li id="li-98"><div class="para" id="p-942">
 <span class="process-math">\((a \cdot b) \cdot c = a \cdot (b \cdot c)\)</span> for all <span class="process-math">\(a, b, c \in R\text{,}\)</span>
 </div></li>
-<li id="li-96"><div class="para" id="p-902">
+<li id="li-99"><div class="para" id="p-943">
 <span class="process-math">\(a \cdot b = b \cdot a\)</span> for all <span class="process-math">\(a, b \in R\text{,}\)</span> and</div></li>
-<li id="li-97"><div class="para" id="p-903">there exists an element <span class="process-math">\(1 \in R\)</span> such that <span class="process-math">\(1 \cdot a = a \cdot 1\)</span> for all <span class="process-math">\(a \in R\text{.}\)</span>
+<li id="li-100"><div class="para" id="p-944">there exists an element <span class="process-math">\(1 \in R\)</span> such that <span class="process-math">\(1 \cdot a = a \cdot 1\)</span> for all <span class="process-math">\(a \in R\text{.}\)</span>
 </div></li>
 </ul></div>
-<div class="para" id="p-904">We typically write <span class="process-math">\(ab\)</span> for <span class="process-math">\(a \cdot b\text{.}\)</span>
+<div class="para" id="p-945">We typically write <span class="process-math">\(ab\)</span> for <span class="process-math">\(a \cdot b\text{.}\)</span>
 </div>
 </li>
-<li id="li-98"><div class="para logical" id="p-905">
+<li id="li-101"><div class="para logical" id="p-946">
 <div class="para">multiplication is distributive with respect to addition, meaning that for all <span class="process-math">\(a, b, c \in R\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -618,71 +631,71 @@ a \cdot (b+c) = a \cdot b+a \cdot c.
 \end{equation*}
 </div>
 </div></li>
-<li id="li-99"><div class="para" id="p-906"><span class="process-math">\(1 \neq 0\text{.}\)</span></div></li>
-</ol></div></article><div class="para" id="p-907">In this text, <dfn class="terminology">all rings are commutative</dfn>. In other branches of algebra rings might fail to be commutative, but we will explicitly say <em class="emphasis">noncommutative ring</em> if that is the case. There also branches of algebra where rings are allowed to not have a multiplicative identity; we recommend <code class="code-inline tex2jax_ignore">[provisional cross-reference: WhyRings1]</code> for an excellent read on the topic of <em class="emphasis">Why rings should have a 1</em>.</div>
-<article class="example example-like" id="example-132"><h2 class="heading">
+<li id="li-102"><div class="para" id="p-947"><span class="process-math">\(1 \neq 0\text{.}\)</span></div></li>
+</ol></div></article><div class="para" id="p-948">In this text, <dfn class="terminology">all rings are commutative</dfn>. In other branches of algebra rings might fail to be commutative, but we will explicitly say <em class="emphasis">noncommutative ring</em> if that is the case. There also branches of algebra where rings are allowed to not have a multiplicative identity; we recommend <code class="code-inline tex2jax_ignore">[provisional cross-reference: WhyRings1]</code> for an excellent read on the topic of <em class="emphasis">Why rings should have a 1</em>.</div>
+<article class="example example-like" id="example-133"><h2 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">A.2</span><span class="period">.</span><span class="space"> </span><span class="title">Ring Examples.</span>
-</h2> <div class="para" id="p-908">Here are some examples of the kinds of rings we will be talking about.</div> <div class="para logical" id="p-909"><ol class="decimal">
-<li id="li-100"><div class="para" id="p-910">The integers <span class="process-math">\(\mathbb{Z}\text{,}\)</span> or any quotient of <span class="process-math">\(\mathbb{Z}\text{,}\)</span> which we write compactly as <span class="process-math">\(\mathbb{Z}/n\text{.}\)</span>
+</h2> <div class="para" id="p-949">Here are some examples of the kinds of rings we will be talking about.</div> <div class="para logical" id="p-950"><ol class="decimal">
+<li id="li-103"><div class="para" id="p-951">The integers <span class="process-math">\(\mathbb{Z}\text{,}\)</span> or any quotient of <span class="process-math">\(\mathbb{Z}\text{,}\)</span> which we write compactly as <span class="process-math">\(\mathbb{Z}/n\text{.}\)</span>
 </div></li>
-<li id="li-101"><div class="para" id="p-911">A polynomial ring, by which we typically mean <span class="process-math">\(R = k [x_1, \ldots, x_n]\text{,}\)</span> a polynomial ring in finitely many variables over a field <span class="process-math">\(k\text{.}\)</span>
+<li id="li-104"><div class="para" id="p-952">A polynomial ring, by which we typically mean <span class="process-math">\(R = k [x_1, \ldots, x_n]\text{,}\)</span> a polynomial ring in finitely many variables over a field <span class="process-math">\(k\text{.}\)</span>
 </div></li>
-<li id="li-102"><div class="para" id="p-912">A quotient of a polynomial ring by an ideal <span class="process-math">\(I\text{,}\)</span> say <span class="process-math">\(R = k[x_1, \ldots, x_n]/I\text{.}\)</span>
+<li id="li-105"><div class="para" id="p-953">A quotient of a polynomial ring by an ideal <span class="process-math">\(I\text{,}\)</span> say <span class="process-math">\(R = k[x_1, \ldots, x_n]/I\text{.}\)</span>
 </div></li>
-<li id="li-103"><div class="para" id="p-913">Rings of polynomials in infinitely many variables, <span class="process-math">\(R = k[x_1, x_2, \ldots]\text{.}\)</span>
+<li id="li-106"><div class="para" id="p-954">Rings of polynomials in infinitely many variables, <span class="process-math">\(R = k[x_1, x_2, \ldots]\text{.}\)</span>
 </div></li>
-<li id="li-104"><div class="para" id="p-914">Power series rings <span class="process-math">\(R = k[[ x_1, \ldots, x_n ]]\)</span> over a field <span class="process-math">\(k\text{.}\)</span> The elements are (formal) power series <span class="process-math">\(\displaystyle\sum_{a_i \geqslant 0} c_{a_1, \ldots, a_n} x_1^{a_1} \cdots x_n^{a_n}\text{.}\)</span>
+<li id="li-107"><div class="para" id="p-955">Power series rings <span class="process-math">\(R = k[[ x_1, \ldots, x_n ]]\)</span> over a field <span class="process-math">\(k\text{.}\)</span> The elements are (formal) power series <span class="process-math">\(\displaystyle\sum_{a_i \geqslant 0} c_{a_1, \ldots, a_n} x_1^{a_1} \cdots x_n^{a_n}\text{.}\)</span>
 </div></li>
-<li id="li-105"><div class="para" id="p-915">While any field <span class="process-math">\(k\)</span> is a ring, we will see that fields on their own are not very exciting from the perspective of the kinds of things we will be discussing in this class.</div></li>
+<li id="li-108"><div class="para" id="p-956">While any field <span class="process-math">\(k\)</span> is a ring, we will see that fields on their own are not very exciting from the perspective of the kinds of things we will be discussing in this class.</div></li>
 </ol></div></article><article class="definition definition-like" id="def-ring-map"><h2 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">A.3</span><span class="period">.</span><span class="space"> </span><span class="title">Ring Homomorphism.</span>
-</h2> <div class="para" id="p-916">Given rings <span class="process-math">\(R\)</span> and <span class="process-math">\(S\text{,}\)</span> a function <span class="process-math">\(R \xrightarrow{f} S\)</span> is a <dfn class="terminology">ring homomorphism</dfn> if <span class="process-math">\(f\)</span> preserves the operations and the multiplicative identity, meaning</div> <div class="para logical" id="p-917"><ul class="disc">
-<li id="li-106"><div class="para" id="p-918">
+</h2> <div class="para" id="p-957">Given rings <span class="process-math">\(R\)</span> and <span class="process-math">\(S\text{,}\)</span> a function <span class="process-math">\(R \xrightarrow{f} S\)</span> is a <dfn class="terminology">ring homomorphism</dfn> if <span class="process-math">\(f\)</span> preserves the operations and the multiplicative identity, meaning</div> <div class="para logical" id="p-958"><ul class="disc">
+<li id="li-109"><div class="para" id="p-959">
 <span class="process-math">\(f(a+b) = f(a) + f(b)\)</span> for all <span class="process-math">\(a, b \in R\text{,}\)</span>
 </div></li>
-<li id="li-107"><div class="para" id="p-919">
+<li id="li-110"><div class="para" id="p-960">
 <span class="process-math">\(f(ab) = f(a)f(b)\)</span> for all <span class="process-math">\(a, b \in R\text{,}\)</span> and</div></li>
-<li id="li-108"><div class="para" id="p-920"><span class="process-math">\(f(1)=1\text{.}\)</span></div></li>
-</ul></div> <div class="para" id="p-921">A bijective ring homomorphism is an <dfn class="terminology">isomorphism</dfn>. We should think about a ring isomorphism as a relabelling of the elements in our ring.</div></article><article class="definition definition-like" id="def-subring"><h2 class="heading">
+<li id="li-111"><div class="para" id="p-961"><span class="process-math">\(f(1)=1\text{.}\)</span></div></li>
+</ul></div> <div class="para" id="p-962">A bijective ring homomorphism is an <dfn class="terminology">isomorphism</dfn>. We should think about a ring isomorphism as a relabelling of the elements in our ring.</div></article><article class="definition definition-like" id="def-subring"><h2 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">A.4</span><span class="period">.</span><span class="space"> </span><span class="title">Subring.</span>
-</h2> <div class="para" id="p-922">A subset <span class="process-math">\(R \subseteq S\)</span> of a ring <span class="process-math">\(S\)</span> is a <dfn class="terminology">subring</dfn> if <span class="process-math">\(R\)</span> is also a ring with the structure induced by <span class="process-math">\(S\text{,}\)</span> meaning that the each operation on <span class="process-math">\(R\)</span> is the restrictions of the corresponding operation on <span class="process-math">\(S\)</span> to <span class="process-math">\(R\text{,}\)</span> and the <span class="process-math">\(0\)</span> and <span class="process-math">\(1\)</span> in <span class="process-math">\(R\)</span> are the <span class="process-math">\(0\)</span> and <span class="process-math">\(1\)</span> in <span class="process-math">\(S\text{,}\)</span> respectively.</div></article><div class="para" id="p-923">Often, we care about the ideals in a ring more than we care about individual elements.</div>
+</h2> <div class="para" id="p-963">A subset <span class="process-math">\(R \subseteq S\)</span> of a ring <span class="process-math">\(S\)</span> is a <dfn class="terminology">subring</dfn> if <span class="process-math">\(R\)</span> is also a ring with the structure induced by <span class="process-math">\(S\text{,}\)</span> meaning that the each operation on <span class="process-math">\(R\)</span> is the restrictions of the corresponding operation on <span class="process-math">\(S\)</span> to <span class="process-math">\(R\text{,}\)</span> and the <span class="process-math">\(0\)</span> and <span class="process-math">\(1\)</span> in <span class="process-math">\(R\)</span> are the <span class="process-math">\(0\)</span> and <span class="process-math">\(1\)</span> in <span class="process-math">\(S\text{,}\)</span> respectively.</div></article><div class="para" id="p-964">Often, we care about the ideals in a ring more than we care about individual elements.</div>
 <article class="definition definition-like" id="def-ideal"><h2 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">A.5</span><span class="period">.</span><span class="space"> </span><span class="title">Ideal.</span>
-</h2> <div class="para logical" id="p-924">
+</h2> <div class="para logical" id="p-965">
 <div class="para">A nonempty subset <span class="process-math">\(I\)</span> of a ring <span class="process-math">\(R\)</span> is an <dfn class="terminology">ideal</dfn> if it is closed for the addition and for multiplication by any element in <span class="process-math">\(R\text{:}\)</span> for any <span class="process-math">\(a, b \in I\)</span> and <span class="process-math">\(r \in R\text{,}\)</span> we must have <span class="process-math">\(a+b \in I\)</span> and <span class="process-math">\(ra \in I\text{.}\)</span> The <dfn class="terminology">ideal generated by</dfn> <span class="process-math">\(f_1, \ldots, f_n\text{,}\)</span> denoted <span class="process-math">\((f_1, \ldots, f_n)\text{,}\)</span> is the smallest ideal containing <span class="process-math">\(f_1, \ldots, f_n\text{,}\)</span> or equivalently,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 (f_1, \ldots, f_n) = \left\lbrace r_1 f_1 + \cdots r_n f_n \, | \, r_i \in R \right\rbrace.
 \end{equation*}
 </div>
-</div></article><article class="example example-like" id="example-133"><h2 class="heading">
+</div></article><article class="example example-like" id="example-134"><h2 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">A.6</span><span class="period">.</span><span class="space"> </span><span class="title">Ideal Examples.</span>
-</h2> <div class="para" id="p-925">Every ring has always at least two ideals, the <dfn class="terminology">zero ideal</dfn> <span class="process-math">\((0) = \left\lbrace 0 \right\rbrace\)</span> and the <dfn class="terminology">unit ideal</dfn> <span class="process-math">\((1) = R\text{.}\)</span>
-</div></article><div class="para" id="p-926">We will follow the convention that when we say <em class="emphasis">ideal</em> we actually mean an ideal <span class="process-math">\(I \neq R\text{.}\)</span>
+</h2> <div class="para" id="p-966">Every ring has always at least two ideals, the <dfn class="terminology">zero ideal</dfn> <span class="process-math">\((0) = \left\lbrace 0 \right\rbrace\)</span> and the <dfn class="terminology">unit ideal</dfn> <span class="process-math">\((1) = R\text{.}\)</span>
+</div></article><div class="para" id="p-967">We will follow the convention that when we say <em class="emphasis">ideal</em> we actually mean an ideal <span class="process-math">\(I \neq R\text{.}\)</span>
 </div>
 <article class="theorem theorem-like" id="thm-fit"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.7</span><span class="period">.</span><span class="space"> </span><span class="title">First Isomorphism Theorem.</span>
 </h2>
-<div class="para" id="p-927">If <span class="process-math">\(R \xrightarrow{\varphi} S\)</span> is a ring homomorphism, then <span class="process-math">\(R/\operatorname{ker}\varphi \cong \mathop{\mathrm{im}}{\varphi}\text{.}\)</span>
+<div class="para" id="p-968">If <span class="process-math">\(R \xrightarrow{\varphi} S\)</span> is a ring homomorphism, then <span class="process-math">\(R/\operatorname{ker}\varphi \cong \mathop{\mathrm{im}}{\varphi}\text{.}\)</span>
 </div></article><article class="exercise exercise-like" id="exercise-1"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-1"><h2 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">A.8</span><span class="period">.</span><span class="space"> </span><span class="title">Ideals in <span class="process-math">\(\Z\)</span>.</span>
-</h2></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1"><article class="exercise exercise-like"><div class="para" id="p-928">The ideals in <span class="process-math">\(\mathbb{Z}\)</span> are the sets of multiples of a fixed integer, meaning every ideal has the form <span class="process-math">\((n)\text{.}\)</span> In particular, every ideal in <span class="process-math">\(\mathbb{Z}\)</span> can be generated by one element.</div></article></div>
-<div class="para" id="p-929">This makes <span class="process-math">\(\mathbb{Z}\)</span> the canonical example of a <dfn class="terminology">principal ideal domain</dfn>.</div>
+</h2></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-1"><article class="exercise exercise-like"><div class="para" id="p-969">The ideals in <span class="process-math">\(\mathbb{Z}\)</span> are the sets of multiples of a fixed integer, meaning every ideal has the form <span class="process-math">\((n)\text{.}\)</span> In particular, every ideal in <span class="process-math">\(\mathbb{Z}\)</span> can be generated by one element.</div></article></div>
+<div class="para" id="p-970">This makes <span class="process-math">\(\mathbb{Z}\)</span> the canonical example of a <dfn class="terminology">principal ideal domain</dfn>.</div>
 <article class="definition definition-like" id="def-domain"><h2 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">A.9</span><span class="period">.</span><span class="space"> </span><span class="title">Domain, PID.</span>
-</h2> <div class="para" id="p-930">A <dfn class="terminology">domain</dfn> is a ring with no zerodivisors, meaning that <span class="process-math">\(rs = 0\)</span> implies that <span class="process-math">\(r = 0\)</span> or <span class="process-math">\(s = 0\text{.}\)</span> A <dfn class="terminology">principal ideal</dfn> is an ideal generated by one element. A <dfn class="terminology">principal ideal domain</dfn> or <dfn class="terminology">PID</dfn> is a domain where every ideal is <dfn class="terminology">principal</dfn>.</div></article><article class="exercise exercise-like" id="exercise-2"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-2"><h2 class="heading">
+</h2> <div class="para" id="p-971">A <dfn class="terminology">domain</dfn> is a ring with no zerodivisors, meaning that <span class="process-math">\(rs = 0\)</span> implies that <span class="process-math">\(r = 0\)</span> or <span class="process-math">\(s = 0\text{.}\)</span> A <dfn class="terminology">principal ideal</dfn> is an ideal generated by one element. A <dfn class="terminology">principal ideal domain</dfn> or <dfn class="terminology">PID</dfn> is a domain where every ideal is <dfn class="terminology">principal</dfn>.</div></article><article class="exercise exercise-like" id="exercise-2"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-2"><h2 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">A.10</span><span class="period">.</span><span class="space"> </span><span class="title">Polynomian Rings over Fields are PIDs.</span>
-</h2></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2"><article class="exercise exercise-like"><div class="para" id="p-931">Given a field <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(R = k[x]\)</span> is a principal ideal domain, so every ideal in <span class="process-math">\(R\)</span> is of the form <span class="process-math">\((f) = \left\lbrace fg \, | \, g \in R \right\rbrace\text{.}\)</span>
+</h2></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-2"><article class="exercise exercise-like"><div class="para" id="p-972">Given a field <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(R = k[x]\)</span> is a principal ideal domain, so every ideal in <span class="process-math">\(R\)</span> is of the form <span class="process-math">\((f) = \left\lbrace fg \, | \, g \in R \right\rbrace\text{.}\)</span>
 </div></article></div>
 <article class="exercise exercise-like" id="exercise-3"><a href="" data-knowl="" class="id-ref exercise-knowl original" data-refid="hk-exercise-3"><h2 class="heading">
 <span class="type">Checkpoint</span><span class="space"> </span><span class="codenumber">A.11</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(k[x,y]\)</span> not a PID.</span>
-</h2></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-3"><article class="exercise exercise-like"><div class="para" id="p-932">While <span class="process-math">\(R = k[x,y]\)</span> is a domain, it is <dfn class="terminology">not</dfn> a PID. We will see later that every ideal in <span class="process-math">\(R\)</span> is finitely generated, and yet we can construct ideals in <span class="process-math">\(R\)</span> with arbitrarily many generators!</div></article></div>
-<article class="example example-like" id="example-134"><h2 class="heading">
+</h2></a></article><div class="hidden-content tex2jax_ignore" id="hk-exercise-3"><article class="exercise exercise-like"><div class="para" id="p-973">While <span class="process-math">\(R = k[x,y]\)</span> is a domain, it is <dfn class="terminology">not</dfn> a PID. We will see later that every ideal in <span class="process-math">\(R\)</span> is finitely generated, and yet we can construct ideals in <span class="process-math">\(R\)</span> with arbitrarily many generators!</div></article></div>
+<article class="example example-like" id="example-135"><h2 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">A.12</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(\Z[x]\)</span> not a PID.</span>
-</h2> <div class="para" id="p-933">The ring <span class="process-math">\(\mathbb{Z}[x]\)</span> is a domain but <dfn class="terminology">not</dfn> a PID. For example, <span class="process-math">\((2,x)\)</span> is not principal.</div></article><article class="theorem theorem-like" id="thm-sunzi"><h2 class="heading">
+</h2> <div class="para" id="p-974">The ring <span class="process-math">\(\mathbb{Z}[x]\)</span> is a domain but <dfn class="terminology">not</dfn> a PID. For example, <span class="process-math">\((2,x)\)</span> is not principal.</div></article><article class="theorem theorem-like" id="thm-sunzi"><h2 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">A.13</span><span class="period">.</span><span class="space"> </span><span class="title">Sunzi's Remainder Theorem.</span>
 </h2>
-<div class="para logical" id="p-934">
+<div class="para logical" id="p-975">
 <div class="para">Let <span class="process-math">\(R\)</span> be a ring and <span class="process-math">\(I_1, \ldots, I_n\)</span> be pairwise coprime ideals in <span class="process-math">\(R\text{,}\)</span> meaning <span class="process-math">\(I_i + I_j = R\)</span> for all <span class="process-math">\(i \neq j\text{.}\)</span> Then <span class="process-math">\(I := I_1 \cap \cdots \cap I_n = I_1 \cdots  I_n\text{,}\)</span> and there is an isomorphism of rings</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -692,10 +705,10 @@ r + I@&gt;&gt;&gt;(r+I_1, \ldots, r+I_n)
 \end{CD}
 \end{equation*}
 </div>
-</div></article><article class="remark remark-like" id="remark-58"><h2 class="heading">
+</div></article><article class="remark remark-like" id="remark-62"><h2 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">A.14</span><span class="period">.</span>
 </h2>
-<div class="para" id="p-935">This theorem frequently goes by the name of The Chinese Remainder Theorem, but it has been remarked that this is somewhat like referencing the Pythagorean Theorem as The Greek Triangle Theorem or Fermat's Little Theorem as The French Power Postulate. In the interest of giving credit where credit is due, we include it here with the name of the 3rd-century Chinese mathematician, Sunzi, to whom the result is often attributed.</div></article></section></div>
+<div class="para" id="p-976">This theorem frequently goes by the name of The Chinese Remainder Theorem, but it has been remarked that this is somewhat like referencing the Pythagorean Theorem as The Greek Triangle Theorem or Fermat's Little Theorem as The French Power Postulate. In the interest of giving credit where credit is due, we include it here with the name of the 3rd-century Chinese mathematician, Sunzi, to whom the result is often attributed.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="intro.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-modules.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
